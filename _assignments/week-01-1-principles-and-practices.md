@@ -57,7 +57,7 @@ It would be nice if I can (and have enough time) to make the mobile app take pic
 </ul>
 <p></p>
 <h5>Who has done this before?</h5>
-I actually feel less panic with this idea than the other one, because I can find many online projects about each part of this system. I also found some related projects on Kickstarter:</p>
+I actually feel less panic with this idea than the other one, because I can find many online projects about each part of this system. I also found some related projects on Kickstarter:
 <ul>
 <li><a href="https://www.kickstarter.com/projects/picolor/picolor-any-color-anywhere-anytime">Picolor</a></li>
 <li><a href="https://www.kickstarter.com/projects/nixsensor/nix-color-sensor/posts">Nix Sensor</a></li>

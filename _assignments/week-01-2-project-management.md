@@ -39,7 +39,7 @@ active: 1
 <p>I often use an IDE called <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> from Jetbrains. They're not free, but I have a perpetual license until July 2020, since I used IntelliJ as a student before, and got a good discount for all Jetbrains products (they have WebStorm for JavaScripts, PyCharm for Python, etc.) for the upcoming years. I heard that institutions can apply for a <strong>FREE</strong> educational license though.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/ide.png" class="img-fluid w-100"/>
 <p></p>
-<p>With this IDE, I can easily create files from a template, and they also integrate a Terminal emulator. As the above screenshot, I can run command lines and open <a href="https://www.vim.org/">vim</a> editor right inside the IDE. But what I love the most are all of the smart code completion, framework assistance and safe refactoring features.</p>
+<p>With this IDE, I can easily create files from a template, and they also integrate a Terminal emulator. As the above screenshot, I can run command lines and open <a href="https://www.vim.org/">vim</a> editor right inside the IDE. But what I love the most are all of the smart code completion, framework assistance, and safe refactoring features.</p>
 </div>
 <p></p>
 
@@ -53,7 +53,7 @@ active: 1
 <p></p>
 
 <h5>Push changes to Gitlab</h5>
-<p>Git is a VCS (version control system) that helps us to track versions and collaboration in projects. Since I developed my website <strong>BEFORE</strong> getting access to the repo, I didn't clone the project. Instead, I removed the existing files directly on Gitlab, which led to a huge amount of commits. I also deleted the <code>.gitlab-ci.yml</code> file which is used for MkDocs sites, and created a new one for Jekyll there. The templates are available in the <strong>CI/CD Configuration</strong> section.</p>
+<p>Git is a VCS (version control system) that helps us to track versions as well as contributions in projects. Since I developed my website <strong>BEFORE</strong> getting access to the repo, I didn't clone the project. Instead, I removed the existing files directly on Gitlab, which led to a huge amount of commits. I also deleted the <code>.gitlab-ci.yml</code> file which is used for MkDocs sites and created a new one for Jekyll there. The templates are available in the <strong>CI/CD Configuration</strong> section.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/git-1.png" class="img-fluid w-100"/>
 <p></p>
 <p>The following command lines were slightly different from the usual add -> commit -> push process:</p>
