@@ -22,8 +22,10 @@ I have 2 nephews, one is 6 years old and one is 4 years old. As a dedicated aunt
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/idea-1.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Updated sketch</h6> 
-<p>I had a nice brainstorming session with my classmate David, and he suggested me to use only 3 twist-able segments to represent inputs, logics, and outputs. Another option is that each segment will have a rotating dial for kids to turn independently.</p>
+<p>I had a nice brainstorming session with my classmate David, and he suggested me to use only 3 segments: 1 represents all inputs, 1 represents all logics, 1 represents all outputs. And each segment will have a rotating dial/knob for kids to turn independently in order to choose a symbol they like. This can help me to reduce the workload of making too many pieces of cubes.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/idea.jpg" class="img-fluid w-100"/>
+<p>Another option is to make 3 segments as 3 (hexagon) cylinders twisted around an internal pivot (like the mechanism of a Rubik), each segment will have up to 4-6 faces, and each face will have the symbol of a single sensor/logic/actuator. 3 segments will make up to 4-6 combinations of input/logic/output, and each combination will represent a behavior. So, the dragon will have a series of 4-6 behaviors that made from randomly combined faces when kids twist the segments.</p>
+<p></p>
 <h5>Nice-to-have add-ons</h5>
 It would be nice if I can (and have enough time) to make the mobile app connect to a <a href="https://scratch.mit.edu/">Scratch</a> account and execute further complicated tasks.
 <p></p>
