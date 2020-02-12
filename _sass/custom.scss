@@ -1,0 +1,97 @@
+body
+{
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 14px !important;
+  display:flex;
+  flex-direction:column;
+}
+
+h2, h6, h4
+{
+  font-family: 'Oswald', sans-serif !important;
+  color: slategrey !important;
+}
+
+h6 {
+  font-size: 18px !important;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+
+a
+{
+  color: slategrey !important;
+  cursor: pointer;
+}
+
+.card-img {
+  position: relative;
+  width: 50%;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.card-img:hover .card-img-overlay {
+  opacity: 0.5;
+}
+
+.card-text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.highlight {
+  background-color: lightsteelblue;
+  color: black;
+  font-style: italic;
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+  a {
+    color: white !important;
+  }
+}
+
+.btn {
+  background-color: black;
+  color: white !important;
+  a {
+    color: white !important;
+  }
+}
+
+.btn-inactive {
+  background-color: lightslategrey !important;
+}
+
+#footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  text-align: center;
+  background-color: black;
+}
+
+
+

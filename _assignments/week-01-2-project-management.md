@@ -1,0 +1,86 @@
+---
+layout: assignment
+title: Project Management
+thumb: 02.png
+assignment: work through a git tutorial and build <a href="#">this personal website.</a>
+active: 1
+---
+
+<p class="font-italic font-weight-bold">* I separated 2 assignments of this week in order to avoid talking about too many things in a post. Please go 
+<a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html">here</a> to see the first part of the assignment.</p>
+<p class="font-italic font-weight-bold">* The Student Agreement has been signed <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/agreement.html">here.</a></p>
+<p class="font-italic font-weight-bold">* To download the source code of the website, please run this in Terminal:</p> 
+<pre class="bg-light py-2 mt-0"><code>$ git clone https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo.git</code></pre>
+<p></p>
+
+<h2>Website Development</h2>
+<h5>Jekyll</h5>
+<p>I have some experiences working with static site generators, namely <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://jekyllrb.com/docs/home/">Jekyll</a>. Eduardo also introduced us to MkDocs, and from what I understand it works in a similar way. Hence, I went ahead with Jekyll.</p>
+<p>In short, Jekyll renders texts in Markdown/HTML format using Liquid template. Static sites come out ready for deployment.</p>
+<ul>
+<li><kbd>$ gem install bundler jekyll</kbd>: install Jekyll</li>
+<li><kbd>$ jekyll new tue-fab-website</kbd>: generate a new Jekyll site</li>
+<li><kbd>$ cd tue-fab-website</kbd></li>
+<li>To avoid repeating myself, the next step is to create <code>_layouts</code> and pages/posts(<code>_assignments</code>) with <a href="https://jekyllrb.com/docs/front-matter/">front matters.</a> I used some Ruby codes to loop through posts, get <var>post.variable</var> values, and display them in HTML.</li> 
+<li>There are pieces of HTML that are re-usable in the <code>_includes</code> folder, e.g. footer or menu.</li>
+<li>Finally, I need to set a <code>baseurl</code> in <code>_config.yml</code> for configuration.</li> 
+<li><kbd>$ bundle exec jekyll serve</kbd>: now if I browse <a href="http://localhost:4000">http://localhost:4000</a> in my local machine, I can review my rendered site.</li>
+</ul>
+<p>A step-by-step tutorial is available <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">here.</a></p>
+<p></p>
+
+<h5>Bootstrap, Google Fonts and Font Awesome</h5>
+<p>I used <a href="http://getbootstrap.com/docs/4.1/">Bootstrap 4</a> to customize the styling of the website without writing too many CSS. To use Bootstrap together with Jekyll, I included this line <code>gem 'bootstrap', '~> 4.0.0'</code> in the <code>Gemfile</code>.</p>
+<p>There is also a <code>_sass/custom.css</code> file with some custom CSS. To customize fonts and icons, I used <a href="https://fonts.google.com/">Google Fonts</a> and <a href="https://fontawesome.com/v4.7.0/get-started/">Font Awesome</a> as CDN links in <code>_layouts/default.html</code>.</p>
+<p></p>
+
+<div class="share web _editor">
+<h5>IntelliJ IDEA</h5>
+<p>I often use an IDE called <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> from Jetbrains. They're not free, but I have a perpetual license until July 2020, since I used IntelliJ as a student before, and got a good discount for all Jetbrains products (they have WebStorm for JavaScripts, PyCharm for Python, etc.) for the upcoming years. I heard that institutions can apply for a <strong>FREE</strong> educational license though.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-01/ide.png" class="img-fluid w-100"/>
+<p></p>
+<p>With this IDE, I can easily create files from a template, and they also integrate a Terminal emulator. As the above screenshot, I can run command lines and open <a href="https://www.vim.org/">vim</a> editor right inside the IDE. But what I love the most are all of the smart code completion, framework assistance and safe refactoring features.</p>
+</div>
+<p></p>
+
+<h2>Git and Gitlab</h2>
+
+<h5>SSH key</h5>
+<p>Since I had access to my Gitlab repository from the very first class, and before I already generated an SSH key that links to my personal Gitlab account, the process became quite simple. All I need to do was to copy the SSH key in the personal Gitlab account and to paste it into my gitlab.fabcloud.org account as an existing key.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-01/ssh-1.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-01/ssh-2.png" class="img-fluid w-100"/>
+<p></p>
+
+<h5>Push changes to Gitlab</h5>
+<p>Git is a VCS (version control system) that helps us to track versions and collaboration in projects. Since I developed my website <strong>BEFORE</strong> getting access to the repo, I didn't clone the project. Instead, I removed the existing files directly on Gitlab, which led to a huge amount of commits. I also deleted the <code>.gitlab-ci.yml</code> file which is used for MkDocs sites, and created a new one for Jekyll there. The templates are available in the CI/CD Configuration section.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-01/git-1.png" class="img-fluid w-100"/>
+<p></p>
+<p>The following command lines were slightly different from the usual add -> commit -> push process:</p>
+<ul>
+<li><kbd>$ git init</kbd>: initialize a local repo</li>
+<li><kbd>$ git remote add origin gitlab_URL</kbd>: connect the Gitlab remote branch to my local repo</li>
+<li><kbd>$ git pull origin master --allow-unrelated-histories</kbd>: fetch and merge all files/changes that I don't have in my local repo, i.e. the new <code>.gitlab-ci.yml</code></li>
+<li><kbd>$ git status</kbd> and <kbd>$ git add</kbd>: to see changes and stage them for commit</li>
+<li><kbd>$ git commit -m "Messages here"</kbd>: commit changes</li>
+<li><kbd>$ git push --set-upstream origin master</kbd>: push changes to the Gitlab remote repo</li>
+</ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-01/git-3.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-01/git-4.png" class="img-fluid w-100"/>
+<p></p>
+<p>After pushing, I still couldn't deploy my website properly on Fab Academy server. It seems like the Bundler version required (2.0.2) is greater than the version in my <code>Gemfile.lock</code> (2.0.1 - checked the very last lines).</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-01/git-8.png" class="img-fluid w-100"/>
+<p>With the help from Viktor (Smari) and Oscar, I solved this by adding this line <code>- gem install bundler -v 2.0.2</code> right before <code>- bundle install</code> in the <code>.gitlab-ci.yml</code>. And I have my website deployed successfully!</p>
+<p></p>
+
+<h5>Compressing images</h5>
+<p>In order to check the size of the repo, I ran <kbd>du -sh * | sort -n</kbd> in Terminal. I used Photoshop to resize the images and to make sure the dpi (Resolution) to be 96 or 72. Since I'm not really happy with the way my Macbook screams and vibrates everytime I use Photoshop together with IntelliJ IDEA, I'm thinking about using <a href="https://imagemagick.org/index.php">ImageMagick</a> in the future.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-01/compress-1.png" class="img-fluid w-100"/>
+<p>However, I forgot one thing that even if I drag-to-delete a giant file after pushing it, the size of the Gitlab repo will remain big, since the file is still cached somehow in the history. For example, the actual size of my local repo is ~5MB, but the total size of files in my Gitlab repo is ~9MB. I intended to try <kbd>$ git filter-branch</kbd> to rewrite the history, but later I figured out from Oscar that we cannot rebase commits and run <kbd>$ git push -f</kbd>. So I leave it like this, keep this in mind and will add/remove files properly for the next assignments.</p>
+<p></p>
+
+<div class="container w-100 text-center py-4">
+<a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html">Previous Assignment</a>
+<a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html">Next Assignment</a>
+</div>

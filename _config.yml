@@ -1,0 +1,6 @@
+baseurl: http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo
+
+exclude: ['README.md']
+collections:
+  assignments:
+    output: true
