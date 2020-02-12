@@ -21,7 +21,7 @@ I have 2 nephews, one is 6 years old and one is 4 years old. As a dedicated aunt
 <p>There will be 3 groups of blocks: Input, Logic, Output. Kids will need at least one block of each group to perform the desired task. I want the robot to symbolize a cute and modular animal, so the first sketch was a Dachshund. Then my nephews and even my friends said they want to see an Asian dragon, because "You're Asian!" and "Dogs are boring, dragons are cool, they have powerrrrrrrr!". Hence, here is a dragon with customized powers that can be defined by kids through a trial-and-error process:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/idea-1.png" class="img-fluid w-100"/>
 <p></p>
-<h6>Updated sketch</h6> 
+<h6>Updates</h6> 
 <p>I had a nice brainstorming session with my classmate David, and he suggested me to use only 3 segments: 1 represents all inputs, 1 represents all logics, 1 represents all outputs. And each segment will have a rotating dial/knob for kids to turn independently in order to choose a symbol they like. This can help me to reduce the workload of making too many pieces of cubes.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/idea.jpg" class="img-fluid w-100"/>
 <p>Another option is to make 3 segments as 3 (hexagon) cylinders twisted around an internal pivot (like the mechanism of a Rubik), each segment will have up to 4-6 faces, and each face will have the symbol of a single sensor/logic/actuator. 3 segments will make up to 4-6 combinations of input/logic/output, and each combination will represent a behavior. So, the dragon will have a series of 4-6 behaviors that made from randomly combined faces when kids twist the segments.</p>

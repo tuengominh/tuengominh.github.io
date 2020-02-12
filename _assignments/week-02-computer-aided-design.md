@@ -71,8 +71,7 @@ active: 1
 <p></p>
 <h5>Fusion 360</h5>
 <p>Before the class, I took a look at previous students' websites and noticed that many of them chose to use <a href="https://www.autodesk.com/products/fusion-360/overview">Fusion 360.</a> That's why I tried it next. Since none of the "traditional" software (with the concept of modeling parts and making assemblies) has a Tue-friendly and intuitive UI, I watched <strong>MANY</strong> online tutorials in order to get used to the workflow. This is a good <a href="https://www.youtube.com/watch?v=qvrHuaHhqHI">tutorial</a>. After watching his series, I could create my first <strong>hinge</strong> and I was quite happy with it.</p>
-<p>I continued to make mistakes by adding unnecessary large files. This time I was confused about whether I should upload the videos recording the process of modeling the hinge or not, and I decided to upload compressed ones (~3MB) because "compressing videos" is mentioned in the assignment. <strong>AFTER</strong> adding them to git, I found out that I only need to embed Youtube links. To be honest, seeing the size of my repo getting unnecessarily bigger is quite frustrated.</p>
-<p>Anyway, below is the how-I-did-that videos:</p>
+<p>Below is the how-I-did-that videos:</p>
 <div class="text-center">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/aOBGm-fr3uk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
