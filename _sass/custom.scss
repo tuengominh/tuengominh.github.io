@@ -1,13 +1,11 @@
-body
-{
+body {
   font-family: 'Raleway', sans-serif !important;
   font-size: 14px !important;
   display:flex;
   flex-direction:column;
 }
 
-h2, h6, h4
-{
+h2, h6, h4 {
   font-family: 'Oswald', sans-serif !important;
   color: slategrey !important;
 }
@@ -20,10 +18,13 @@ h6 {
   color: black !important;
 }
 
-a
-{
+a {
   color: slategrey !important;
   cursor: pointer;
+}
+
+kbd {
+  background-color: slategrey !important;
 }
 
 .card-img {
