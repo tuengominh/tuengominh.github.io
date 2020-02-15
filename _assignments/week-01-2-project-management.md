@@ -88,11 +88,11 @@ active: 1
 <p></p>
 <ul>
 <li><kbd>$ git clone --mirror gitlab_URL</kbd>: clone a bare repo <code>tue-ngo.git</code> in my local machine</li>
-<li><kbd>$ du -sh . </kbd>: check the size of the bare repo which was 18M</li>
+<li><kbd>$ du -sh .</kbd>: check the size of the bare repo which was 18M</li>
 <li><kbd>$ git log --diff-filter=D --summary | grep "delete mode" > deleted_files.txt</kbd>: create a <code>deleted_files.txt</code> which includes all files in .git history with delete mode</li>
 <li><kbd>$ bfg --delete-folders "{assets, doc}" tue-ngo.git</kbd>: delete the folders that I want to remove from the history</li>
 <li><kbd>$ git reflog expire --expire=now --all && git gc --prune=now --aggressive</kbd>: clean up the mess</li>
-<li><kbd>$ du -sh . </kbd> and <kbd>$ git count-objects</kbd>: check the size of the bare repo again, which was 4.6M</li>
+<li><kbd>$ du -sh .</kbd> and <kbd>$ git count-objects</kbd>: check the size of the bare repo again, which was 4.6M</li>
 <li><kbd>$ git push --force</kbd>: force push changes to the Gitlab remote repo</li>
 </ul>
 <p>However, after I push changes to the repo, the size remains the same. I continued to search for solutions, and from what I understand from <a href="https://github.com/rtyley/bfg-repo-cleaner/issues/208">here</a> and <a href="https://stackoverflow.com/questions/31932574/clean-up-large-files-on-git-server">there</a>, it might be a Gitlab issue. Anyway, I gave up. I will keep this in mind and will add/remove files properly for the next assignments.</p>

@@ -48,18 +48,34 @@ active: 1
 <p>Adjusting the blade</p>
 <p>Set origin</p>
 <p></p>
-<h5>Laser Cutting</h5>
+<h5>Laser Cutting - Press-fit Construction Kit</h5>
 <h6>OpenSCAD</h6>
-<p>Parametric design is a design based on defining all the parameters, and by changing those parameteres we can quickly adjust our design.</p>
+<p>In the beginning, I planned to design in advance the possibilities of assembling my construction kit because pre-defining the outcome is a common flow of thought. However, I find that pre-imagining the possibilities with which the pieces will be assembled will inadvertently limit those possibilities to what I can imagine, thereby reducing the flexibility and the originality of the design as well as the joy and the creativity of ones who will actually use it - which is, in my opinion, the purpose and the meaning of a construction kit. Therefore, I switched my approach to simply defining a certain rule for the pieces of the construction kit.</p>
+<p>The most important requirement for this week's assignment is that our design must be parametric. Parametric design is basically designing based on defined parameters, and by changing those parameteres we can quickly adjust our design. After consulting some images online with the keyword "cardboard parametric design" as well as observing some of the previous year's models available at the Fab Lab, I decided to create a series of isosceles polygons, starting from triangles, squares, pentagons, and ending with hexagons. There will be different sizes for these polygons as well. After cutting and testing, I will add other supporting pieces, if necessary. With this in mind, it is obvious to know that OpenSCAD is the ideal choice to implement the design. Its object-oriented modeling capabilities will greatly reduce my time drawing the pieces. Here are the steps:</p>
+<ul>
+<li>Define a base module for a <code>Polygon()</code> with 2 parameters of apothem (inradius) and material thickness</li>
+<li>Define an <code>Element()</code> module from a <code>Polygon</code> and its related set of <code>Joints</code></li>
+<li>Call <code>Element()</code>, duplicate pieces and place them all together</li>
+<li>Use <code>projection(cut=true)</code> to flatten the set of pieces</li>
+<li>Render and export to DXF</li>
+</ul>
 <p></p>
-<h6>Tests and Final Cut</h6>
+<h6>Test and Final Cut</h6>
 <p>I used the same Trotec Speedy 100 machine used in the group test to cut my pieces. I'm really slow and careless when it comes to machines. I kept forgetting the necessary steps, and I had to ask people "Where did he click to do this?" or "Where should I click to do that?" all the time. Big thanks to everyone!</p> 
-<p>Manually focus the machine</p>
-<p>Measure cuttable area and nest</p>
-<p>Kerf, speed and power test</p>
+<p>In order to test the kerf and joint clearance, I cut 2 pieces first. Some essential steps to remember:</p>
+<ul>
+<li>Since I utilized the leftovers at the lab instead of cutting a whole new 600x300mm piece, I need to measure the cuttable area and nest the pieces in Rhino in order to optimize the position over the cuttable area</li>
+<li>Color-code the curves with red. Press <kbd>Ctrl</kbd> + <kbd>P</kbd> to preview the files and send it to TROTEC ControlBox</li>
+<li>Manually adjust the focus of the laser beam and use ducktape to fix the position of the cardboard in order to prevent losing focus</li>
+<li>Adjust the position of the job in TROTEC ControlBox and set up <strong>speed=1, power=40, PPI/Hz=1000</strong> in <strong>Material Settings</strong></li>
+<li>Start cutting!</li>
+</ul>
 <p>I need to shout out loud: <strong>Be careful with OpenSCAD!</strong> The easier it is for us to write, the easier it is for shits to happen. I mistyped something before exporting my design to DXF, and look how ridiculous things became:</p>
+<p>However, I quickly realized from this failed test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the cardboard was burned. Hence, instead of increasing power, I reduced the speed to <strong>0.8.</strong> And this time I have 2 pieces perfectly joined together!</p>
 <p></p>
 <h6>Final Result</h6>
+<p>Once I had the laser-cut cardboard pieces in my hands, I tried assembling them randomly. The results were more varied and interesting than I imagined, so I was quite happy with them and I didn't proceed with any further step.</p>
+<p>I brought the kit to the landlady where I'm staying. She enjoyed it, and here are her assembling results which are even more impressive:</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">
