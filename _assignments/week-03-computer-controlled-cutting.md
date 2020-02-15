@@ -44,16 +44,20 @@ active: 1
 <li>Width of loaded material: 50 to 700mm</li>
 <li>Cutting speed: up to 500mm/s</li>
 </ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/vinyl-0.jpg" class="img-fluid w-100"/>
 <p>Some essential steps to use the vinyl-cutter:</p>
 <ul>
 <li>Export the .ai file to a .eps template or a .bmp/.jpeg image. I exported my file to .bmp.</li>
 <li>Import the .bmp file to CutStudio, choose <strong>Object > Image Outline</strong> to get the trace of the design</li>
 <li>Load and fix the position of the vinyl paper, then adjust the blade</li>
 <li>Set the origin whenever I want the cut to start, and choose the setting <strong>Roll</strong></li>
-<li>Start cutting!</li>
+<li>Press <kbd>Ctrl</kbd> + <kbd>P</kbd> and start cutting!</li>
 </ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/cutstudio.png" class="img-fluid w-100"/>
 <p>After having my logo cut, I used masking tape to get the parts I want out and put it on my laptop.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/vinyl-1.jpg" class="img-fluid w-100"/>
 <p>The final result looks super nice though!</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/vinyl-3.jpg" class="img-fluid w-100"/>
 <p></p>
 <h5>Laser Cutting - Press-fit Construction Kit</h5>
 <h6>OpenSCAD</h6>
@@ -66,6 +70,7 @@ active: 1
 <li>Use <code>projection(cut=true)</code> to flatten the set of pieces</li>
 <li>Render and export to .dxf</li>
 </ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/openscad.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Test and Final Cut</h6>
 <p>I used the same Trotec Speedy 100 machine used in the group test to cut my pieces. I'm really slow and careless when it comes to machines. I kept forgetting the necessary steps, and I had to ask people "Where did he click to do this?" or "Where should I click to do that?" all the time. Big thanks to everyone!</p> 
@@ -78,11 +83,19 @@ active: 1
 <li>Start cutting!</li>
 </ul>
 <p>I need to shout out loud: <strong>Be careful with OpenSCAD!</strong> The easier it is for us to write, the easier it is for shits to happen. I mistyped something before exporting my design to DXF, and look how ridiculous things became:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
 <p>However, I quickly realized from this failed test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the cardboard was burned. I also didn't want the kerf to get bigger, so instead of increasing power, I reduced the speed to <strong>0.8.</strong> Since I utilized the leftovers at the lab instead of cutting another whole new 600x300mm piece, I had to measure the cuttable area and nested the pieces accordingly. And this time I had 2 pieces perfectly joined together!</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-0.jpg" class="img-fluid w-100"/>
 <p></p>
 <h6>Final Result</h6>
 <p>Once I had the laser-cut cardboard pieces in my hands, I tried assembling them randomly. The results were more varied and interesting than I imagined, so I was quite happy with them and I didn't proceed with any further step.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-1.jpg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-2.jpg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-3.jpg" class="img-fluid w-100"/>
 <p>I brought the kit to the landlady where I'm staying. She enjoyed it, and here are her assembling results which are even more impressive:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-5.jpg" class="img-fluid w-100"/>
 <p></p>
 
 <div class="container w-100 text-center py-4">
