@@ -10,13 +10,13 @@ active: 1
 <h2>Group Assignment</h2>
 <h5>The Friday Group</h5>
 <p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these below classmates during my multiple turns:</p>
-<ul>
+<!--<ul>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/arman-najari">Arman Naraji</a></li>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto Gonzalez</a></li>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard">Antoine Jaunard</a></li>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/benjamin-scott/">Benjamin Scott</a></li>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/tue-ngo/">Minh Tue Ngo</a> - yeah, it's me.</li>
-</ul>
+</ul>-->
 <p></p>
 <h5>First test with Cardboard 4mm</h5>
 <p>We used this same <a href="https://www.thingiverse.com/thing:728579">test file</a> provided by the instructors to test the laser cutter <a href="https://www.troteclaser.com/es/maquinas-laser/grabadora-laser-speedy/">Trotec Speedy 100</a> with different materials. The detailed specs of the machine:</p>
@@ -38,7 +38,7 @@ active: 1
 
 <h2>Individual Assignment</h2>
 <h5>Vinyl Cutting</h5>
-<p>I used the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> to cut a sticker of the logo which was designed in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html">previous assignment.</a> The detailed specs of the machine:</p>
+<p>I used the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> to cut a sticker of the logo which was designed in the <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cad/2D">previous assignment.</a> The detailed specs of the machine:</p>
 <ul>
 <li>Work area: 584 x 24998mm</li>
 <li>Width of loaded material: 50 to 700mm</li>
@@ -62,7 +62,7 @@ active: 1
 <h5>Laser Cutting - Press-fit Construction Kit</h5>
 <h6>OpenSCAD</h6>
 <p>In the beginning, I planned to design in advance the possibilities of assembling my construction kit because pre-defining the outcome is a common flow of thought. However, I find that pre-imagining the possibilities with which the pieces will be assembled will inadvertently limit those possibilities to what I can imagine, thereby reducing the flexibility and the originality of the design as well as the joy and the creativity of ones who will actually use it - which is, in my opinion, the purpose and the meaning of a construction kit. Therefore, I switched my approach to simply defining a certain rule for the pieces of the construction kit.</p>
-<p>The most important requirement for this week's assignment is that our design must be parametric. Parametric design is basically designing based on defined parameters, and by changing those parameteres we can quickly adjust our design. After consulting some images online with the keyword "cardboard parametric design" as well as observing some of the previous year's models available at the Fab Lab, I decided to create a series of isosceles polygons, starting from triangles, squares, pentagons, and ending with hexagons. There will be different sizes for these polygons as well. After cutting and testing, I will add other supporting pieces, if necessary. With this in mind, it is obvious to know that OpenSCAD is the ideal choice to implement the design. Its object-oriented modeling capabilities will greatly reduce my time drawing the pieces. Here are the steps:</p>
+<p>The most important requirement for this week's assignment is that our design must be parametric. Parametric design is basically designing based on defined parameters, and by changing those parameters we can quickly adjust our design. After consulting some images online with the keyword "cardboard parametric design" as well as observing some of the previous year's models available at the Fab Lab, I decided to create a series of isosceles polygons, starting from triangles, squares, pentagons, and ending with hexagons. There will be different sizes for these polygons as well. After cutting and testing, I will add other supporting pieces, if necessary. With this in mind, it is obvious to know that OpenSCAD is the ideal choice to implement the design. Its object-oriented modeling capabilities will greatly reduce my time drawing the pieces. Here are the steps:</p>
 <ul>
 <li>Define a base module for a <code>Polygon()</code> with 3 parameters of number of sides, apothem (inradius), and material thickness</li>
 <li>Define an <code>Element()</code> module from a <code>Polygon()</code> and its related set of <code>Joints()</code></li>
@@ -84,7 +84,8 @@ active: 1
 </ul>
 <p>I need to shout out loud: <strong>Be careful with OpenSCAD!</strong> The easier it is for us to write, the easier it is for shits to happen. I mistyped something before exporting my design to DXF, and look how ridiculous things became:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
-<p>However, I quickly realized from this failed test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the cardboard was burned. I also didn't want the kerf to get bigger, so instead of increasing power, I reduced the speed to <strong>0.8.</strong> Since I utilized the leftovers at the lab instead of cutting another whole new 600x300mm piece, I had to measure the cuttable area and nested the pieces accordingly. And this time I had 2 pieces perfectly joined together!</p>
+<p>However, I quickly realized from this failed test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the cardboard was burned. I also didn't want the kerf to get bigger, so instead of increasing power, I reduced the speed to <strong>0.8.</strong></p> 
+<p>For this second cut, I utilized the leftovers at the lab instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly. Finally, I had 2 pieces perfectly joined together!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-0.jpg" class="img-fluid w-100"/>
 <p></p>
 <h6>Final Result</h6>
@@ -96,6 +97,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-3.jpg" class="img-fluid w-100"/>
 <p>I brought the kit to the landlady where I'm staying. She enjoyed it, and here are her assembling results which are even more impressive:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-5.jpg" class="img-fluid w-100"/>
+<p>We have an angry lobster and a 2-head monster with wings!</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">
