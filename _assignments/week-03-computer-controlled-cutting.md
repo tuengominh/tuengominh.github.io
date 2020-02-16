@@ -27,7 +27,7 @@ active: 1
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-1.jpg" class="img-fluid w-100"/>
 <p>We chose to proceed with Cardboard 4mm and Plywood 4mm because we can find nice leftovers of those materials. I've personally learned from Santi that flexible plywood is not a good material for cutting.</p>
-<p>For the <strong>Material Settings</strong>, we followed the information on the Laser Cut Sample at the Fab Lab. The parts to be engraved were color-coded with black, and the parts to be cut were color-coded with red.</p> 
+<p>For the <strong>Material Settings</strong> in <a href="https://www.troteclaser.com/en/laser-machines/laser-software/jobcontrol/">TROTEC JobControl</a>, we followed the information on the Laser Cut Sample at the Fab Lab. The parts to be engraved were color-coded with black, and the parts to be cut were color-coded with red.</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-2.jpg" class="img-fluid w-100"/>
 <p>The settings we used for Cardboard 4mm:</p> 
 <ul>
@@ -48,7 +48,7 @@ active: 1
 <iframe width="640" height="480" src="https://www.youtube.com/embed/7-W_DdacGqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
-<p>However, the plywood were not cut through, and we had to both reduce the speed and increase the power: <strong>speed=0.8, power=80, PPI/Hz=1000</strong>. We executed the cut twice, so the cut was a bit messy. The outcome is not perfect, but it's fine.</p>
+<p>However, the plywood was not cut through, and we had to both reduce the speed and increase the power: <strong>speed=0.8, power=80, PPI/Hz=1000</strong>. We executed the cut twice, so the cut was a bit messy. The outcome is not perfect, but it's fine.</p>
 <p>The result of the second test:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-4.jpg" class="img-fluid w-100"/>
 <p></p>
@@ -65,7 +65,7 @@ active: 1
 <p>Some essential steps to use the vinyl-cutter:</p>
 <ul>
 <li>Export the .ai file to a .eps template or a .bmp/.jpeg image. I exported my file to .bmp.</li>
-<li>Import the .bmp file to CutStudio, choose <strong>Object > Image Outline</strong> to get the trace of the design</li>
+<li>Import the .bmp file to <a href="https://www.rolanddgi.com/productos/software/roland-cutstudio-software">CutStudio</a>, choose <strong>Object > Image Outline</strong> to get the trace of the design</li>
 <li>Load and fix the position of the vinyl paper, then adjust the blade</li>
 <li>Set the origin whenever I want the cut to start, and choose the setting <strong>Roll</strong></li>
 <li>Press <kbd>Ctrl</kbd> + <kbd>P</kbd> and start cutting!</li>
@@ -78,8 +78,10 @@ active: 1
 <p></p>
 <h5>Laser Cutting - Press-fit Construction Kit</h5>
 <h6>OpenSCAD</h6>
-<p>In the beginning, I planned to design in advance the possibilities of assembling my construction kit because pre-defining the outcome is a common flow of thought. However, I find that pre-imagining the possibilities with which the pieces will be assembled will inadvertently limit those possibilities to what I can imagine, thereby reducing the flexibility and the originality of the design as well as the joy and the creativity of ones who will actually use it - which is, in my opinion, the purpose and the meaning of a construction kit. Therefore, I switched my approach to simply defining a certain rule for the pieces of the construction kit.</p>
-<p>The most important requirement for this week's assignment is that our design must be parametric. Parametric design is basically designing based on defined parameters, and by changing those parameters we can quickly adjust our design. After consulting some images online with the keyword "cardboard parametric design" as well as observing some of the previous year's models available at the Fab Lab, I decided to create a series of isosceles polygons, starting from triangles, squares, pentagons, and ending with hexagons. There will be different sizes for these polygons as well. After cutting and testing, I will add other supporting pieces, if necessary. With this in mind, it is obvious to know that OpenSCAD is the ideal choice to implement the design. Its object-oriented modeling capabilities will greatly reduce my time drawing the pieces. Here are the steps:</p>
+<p>I find that pre-calculating the possibilities with which the pieces will be assembled will inadvertently limit those possibilities to what I can imagine, thereby reducing both the flexibility of the design and the creativity of ones who will actually use it. Therefore, I switched my approach to simply defining a certain rule for the pieces of the construction kit.</p>
+<p>The most important requirement for this week's assignment is that our design must be parametric. Parametric design is basically designing based on defined parameters, and by changing those parameters we can quickly adjust our design. After consulting some images online with the keyword "cardboard parametric design" as well as observing some of the previous year's models available at the Fab Lab, I decided to create a series of isosceles polygons, starting from triangles, squares, pentagons, and ending with hexagons. There would be different sizes for these polygons as well. After cutting and testing, I would add other supporting pieces, if necessary. With this in mind, it was obvious to know that OpenSCAD is the ideal choice to implement the design. Its object-oriented modeling capabilities would greatly reduce my time drawing the pieces.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/openscad.png" class="img-fluid w-100"/>
+<p>Here you go the detailed steps:</p>
 <ul>
 <li>Define a base module for a <code>Polygon()</code> with 3 parameters of the number of sides, apothem (inradius), and material thickness</li>
 <li>Define an <code>Element()</code> module from a <code>Polygon()</code> and its related set of <code>Joints()</code></li>
@@ -87,22 +89,24 @@ active: 1
 <li>Use <code>projection(cut=true)</code> to flatten the set of pieces</li>
 <li>Render and export to .dxf</li>
 </ul>
-<img src="{{site.baseurl}}/assets/img/assignments/week-03/openscad.png" class="img-fluid w-100"/>
+<p>In order to test the kerf and joint clearance, I directly used 2 hexagon pieces in my design and proceeded with these following values: 3.95mm, 3.90mm, 3.85mm, 3.80mm.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/openscad-2.png" class="img-fluid w-100"/>
 <p></p>
-<h6>Test and Final Cut</h6>
-<p>I used the same Trotec Speedy 100 machine used in the group test to cut my pieces. I'm really slow and careless when it comes to machines. I kept forgetting the necessary steps, and I had to ask people "Where did he click to do this?" or "Where should I click to do that?" all the time. Big thanks to everyone!</p> 
-<p>In order to test the kerf and joint clearance, I directly used some of my pieces. Some essential steps to remember:</p>
+<h6>Kerf Test and Final Cut</h6>
+<p>I used the same Trotec Speedy 100 machine used in the group test to cut my pieces. I'm really slow and careless when it comes to machines. I kept forgetting the necessary steps, and I had to ask people "Where did he click to do this?" or "Where should I click to do that?" all the time. Big thanks to everyone!</p>  
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-2.png" class="img-fluid w-100"/>
+<p>Some essential steps to remember:</p>
 <ul>
 <li>Nest the pieces in Rhino in order to optimize the position over the cuttable area</li>
-<li>Color-code the curves with red. Press <kbd>Ctrl</kbd> + <kbd>P</kbd> to preview the files and send it to TROTEC ControlBox</li>
+<li>Color-code the curves with this execution order: black, red, blue, etc. Press <kbd>Ctrl</kbd> + <kbd>P</kbd> to preview the files and send it to JobControl</li>
 <li>Manually adjust the focus of the laser beam and use masking tape to fix the position of the cardboard in order to prevent losing focus</li>
-<li>Adjust the position of the job in TROTEC ControlBox and set up <strong>speed=1, power=40, PPI/Hz=1000</strong> in <strong>Material Settings</strong></li>
+<li>Adjust the position of the job in JobControl and set up <strong>speed=1, power=40, PPI/Hz=1000</strong> in <strong>Material Settings</strong></li>
 <li>Start cutting!</li>
 </ul>
-<p>I need to shout out loud: <strong>Be careful with OpenSCAD!</strong> The easier it is for us to write, the easier it is for shits to happen. I mistyped something before exporting my design to DXF, and look how ridiculous things became:</p>
-<img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
-<p>However, I quickly realized from this failed test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45, the cardboard was burned a bit during the rastering process. I also didn't want to make the kerf bigger, so instead of increasing power, I reduced the speed to <strong>0.8.</strong></p> 
-<p>For this second cut, I utilized the leftovers at the lab instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly. Finally, I had 2 pieces perfectly joined together!</p>
+<p>The cut pieces shown above helped me confirm the kerf value to be used would be <strong>3.85mm</strong>. Hence, I continued to cut the rest of my design with that final value. In addition, I noticed from the test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the kerf was a bit too big, so instead of increasing power, I reduced the speed to <strong>0.8.</strong></p> 
+<p>For this second cut, I utilized the leftovers at the lab instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-1.png" class="img-fluid w-100"/>
+<p>Finally, I had the pieces perfectly joined together!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-0.jpg" class="img-fluid w-100"/>
 <p></p>
 <h6>Final Result</h6>
@@ -112,9 +116,9 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-2.jpg" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-3.jpg" class="img-fluid w-100"/>
-<p>I brought the kit to the landlady where I'm staying. She enjoyed it, and here are her assembling results which are even more impressive:</p>
+<p>I brought the kit to the landlady where I'm staying. She enjoyed playing with it, and here are her impressive results:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-5.jpg" class="img-fluid w-100"/>
-<p>We have an angry lobster and a 2-head monster with wings!</p>
+<p>Here we have a resting bird, an angry lobster, a 2-headed monster with wings, and a square-headed scorpio!</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">
