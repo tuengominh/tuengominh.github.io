@@ -6,7 +6,7 @@ assignment: model a possible Final Project in different 2D and 3D CAD software.
 active: 1
 ---
 
-<p class="font-italic font-weight-bold">* All .stl and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cad">here</a>.</p>
+<p class="font-italic font-weight-bold">* All STL and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cad">here</a>.</p>
 
 <p>This week was both interesting and overwhelming to me. There were too many new things to learn, especially when my knowledge of 3D design is almost zero. I only had a very <strong>BRIEF</strong> introduction about creating standard primitives with <a href="https://www.autodesk.com/products/3ds-max/overview">3Ds Max</a> when I went to college, and it has been almost 10 years. Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood, with the help from my classmate Arman. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
 <p>My plan was to design 3D-printable modules that have some similarities with the modular robot in my mind (see <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html">idea #1</a>).</p> 
@@ -14,7 +14,7 @@ active: 1
 <h2>2D Design</h2>
 <p>I've already used 2D Design software before in college. In order to allocate more time for learning new 3D software, I went ahead with the vector-based Illustrator which I already know how to use. For this assignment, I decided to simply draw a possible logo for my Final Project.</p>
 <h5>Illustrator vs. Photoshop</h5>
-<p>In short, raster or bitmap graphics (.jpg, .jpeg, .bmp) are made up of a bunch of tiny dots, while vector graphics are made from mathematical paths. Because of that, vector graphics are easier to be scaled and modified without loss of quality or resolution. I think the most basic concept of Photoshop is to draw and fill color in separated "layers", then merge them to finalize the design. On the other hand, we draw shapes in Illustrator by placing paths in a given 2D space thanks to dimensions and angles, then combine or trim them to form the desired image.</p>
+<p>In short, raster or bitmap graphics (<code>.jpg, .jpeg, .bmp</code>) are made up of a bunch of tiny dots, while vector graphics are made from mathematical paths. Because of that, vector graphics are easier to be scaled and modified without loss of quality or resolution. I think the most basic concept of Photoshop is to draw and fill color in separated "layers", then merge them to finalize the design. On the other hand, we draw shapes in Illustrator by placing paths in a given 2D space thanks to dimensions and angles, then combine or trim them to form the desired image.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/2D.png" class="img-fluid w-100"/>
 <p></p>
 <h5>ImageMagick</h5>

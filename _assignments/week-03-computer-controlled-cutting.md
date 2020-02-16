@@ -5,7 +5,7 @@ thumb: 04.jpg
 assignment: characterize a laser-cutter (in-group); to test the vinyl-cutter (individual); to design and to laser-cut a parametric construction kit (individual). 
 active: 1
 ---
-<p class="font-italic font-weight-bold">* All .dxf and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cut">here</a>.</p>
+<p class="font-italic font-weight-bold">* All DXF and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cut">here</a>.</p>
 
 <h2>Group Assignment</h2>
 <h5>The Friday Group</h5>
@@ -72,8 +72,8 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/vinyl-0.jpg" class="img-fluid w-100"/>
 <p>Some essential steps to use the vinyl-cutter:</p>
 <ul>
-<li>Export the .ai file to a .eps template or a .bmp/.jpeg image. I exported my file to .bmp.</li>
-<li>Import the .bmp file to <a href="https://www.rolanddgi.com/productos/software/roland-cutstudio-software">CutStudio</a>, choose <strong>Object > Image Outline</strong> to get the trace of the design</li>
+<li>Export the <code>.ai</code> file to a <code>.eps</code> template or a <code>.bmp/.jpeg</code> image. I exported my file to <code>.bmp</code>.</li>
+<li>Import the <code>.bmp</code> file to <a href="https://www.rolanddgi.com/productos/software/roland-cutstudio-software">CutStudio</a>, choose <strong>Object > Image Outline</strong> to get the trace of the design</li>
 <li>Load and fix the position of the vinyl paper, then adjust the blade</li>
 <li>Set the origin whenever I want the cut to start, and choose the setting <strong>Roll</strong></li>
 <li>Press <kbd>Ctrl</kbd> + <kbd>P</kbd> and start cutting!</li>
@@ -95,7 +95,7 @@ active: 1
 <li>Define an <code>Element()</code> module from a <code>Polygon()</code> and its related set of <code>Joints()</code></li>
 <li>Call <code>Element()</code>, duplicate pieces and place them all together</li>
 <li>Use <code>projection(cut=true)</code> to flatten the set of pieces</li>
-<li>Render and export to .dxf</li>
+<li>Render and export to <code>.dxf</code></li>
 </ul>
 <p>In order to test the kerf and joint clearance, I directly used 2 hexagon pieces in my design and proceeded with these following values of kerf width: 0.05mm, 0.1mm, 0.15mm, 0.2mm.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/openscad-2.png" class="img-fluid w-100"/>

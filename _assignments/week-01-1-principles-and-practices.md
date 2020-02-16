@@ -10,7 +10,7 @@ active: 1
 <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-2-project-management.html">here</a> to see the second part of the assignment.</p>
 
 I have 2 nephews, one is 6 years old and one is 4 years old. As a dedicated aunt, I've always wanted to build or develop some toys that could engage them in STEAM activities, so when they grow up they will be more than well-prepared to adapt to future jobs. That's why I'm pretty sure that my Final Project should be a connected toy, and I came up with some below <strong>INITIAL</strong> ideas.
-<p class="font-italic font-weight-bold">* I used <a href="https://www.apple.com/keynote/">Keynote</a> to sketch my ideas. It may sound weird but I'm not really comfortable with my handwriting and drawings. And it's quite easy, I just need to search for .png images, and draw some lines or rectangles to quickly (and nicely) demonstrate what's on my mind.</p>
+<p class="font-italic font-weight-bold">* I used <a href="https://www.apple.com/keynote/">Keynote</a> to sketch my ideas. It may sound weird but I'm not really comfortable with my handwriting and drawings. And it's quite easy, I just need to search for images online, and draw some lines or rectangles to quickly (and nicely) demonstrate what's on my mind.</p>
 <p></p>
 
 <h2>#1. A modular robot to teach kids how to make (almost) anything</h2>
