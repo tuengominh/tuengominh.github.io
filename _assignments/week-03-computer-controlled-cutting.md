@@ -9,31 +9,48 @@ active: 1
 
 <h2>Group Assignment</h2>
 <h5>The Friday Group</h5>
-<p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these below classmates during my multiple turns:</p>
-<!--<ul>
+<p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these below classmates during my session:</p>
+<ul>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/arman-najari">Arman Naraji</a></li>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto Gonzalez</a></li>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard">Antoine Jaunard</a></li>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/benjamin-scott/">Benjamin Scott</a></li>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/tue-ngo/">Minh Tue Ngo</a> - yeah, it's me.</li>
-</ul>-->
+</ul>
 <p></p>
 <h5>First test with Cardboard 4mm</h5>
-<p>We used this same <a href="https://www.thingiverse.com/thing:728579">test file</a> provided by the instructors to test the laser cutter <a href="https://www.troteclaser.com/es/maquinas-laser/grabadora-laser-speedy/">Trotec Speedy 100</a> with different materials. The detailed specs of the machine:</p>
+<p>We used this <a href="https://www.thingiverse.com/thing:728579">test file</a> provided by the instructors to test the laser cutter <a href="https://www.troteclaser.com/es/maquinas-laser/grabadora-laser-speedy/">Trotec Speedy 100</a> with different materials. The detailed specs of the machine:</p>
 <ul>
 <li>Work area: 600 x 300mm</li>
 <li>Height: 132mm</li>
 <li>Laser power: 12-60W</li>
 </ul>
-<p>We chose to proceed with Cardboard 4mm and Plywood 4mm because we can find nice leftovers here. I've personally learned from Santi that flexible plywood is not a good material for cutting.</p>
-<p>For the <strong>Material Settings</strong>, we followed the information on the Laser Cut Sample at the Fab Lab:</p>
-<p>The settings we used for Cardboard 4mm:</p>
-<p>Result of the first test:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-1.jpg" class="img-fluid w-100"/>
+<p>We chose to proceed with Cardboard 4mm and Plywood 4mm because we can find nice leftovers of those materials. I've personally learned from Santi that flexible plywood is not a good material for cutting.</p>
+<p>For the <strong>Material Settings</strong>, we followed the information on the Laser Cut Sample at the Fab Lab. The parts to be engraved were color-coded with black, and the parts to be cut were color-coded with red.</p> 
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-2.jpg" class="img-fluid w-100"/>
+<p>The settings we used for Cardboard 4mm:</p> 
+<ul>
+<li>Raster (Engrave): <strong>speed=100, power=80, PPI/Hz=1000</strong></p></li>
+<li>Cut: <strong>speed=1, power=45, PPI/Hz=1000</strong></p></li>
+</ul>
+<p>The result of the first test:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-3.jpg" class="img-fluid w-100"/>
 <p></p>
 <h5>Second test with Plywood 4mm</h5>
-<p>The settings we used for Plywood 4mm:</p>
-<p>An enjoyable rastering and cutting process:</p>
-<p>Result of the second test:</p>
+<p>This time we divided the parts to be engraved and the parts to be cut into 2 separate layers, and cut them in 2 separate cuts. The settings we used for Plywood 4mm:</p>
+<ul>
+<li>Raster (Engrave): <strong>speed=100, power=80, PPI/Hz=1000</strong></p></li>
+<li>Cut: <strong>speed=1, power=75, PPI/Hz=1000</strong></p></li>
+</ul>
+<p>This rastering and cutting process was totally enjoyable:</p>
+<div class="text-center">
+<iframe width="640" height="480" src="https://www.youtube.com/embed/7-W_DdacGqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p></p>
+<p>However, the plywood were not cut through, and we had to both reduce the speed and increase the power: <strong>speed=0.8, power=80, PPI/Hz=1000</strong>. We executed the cut twice, so the cut was a bit messy. The outcome is not perfect, but it's fine.</p>
+<p>The result of the second test:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-4.jpg" class="img-fluid w-100"/>
 <p></p>
 
 <h2>Individual Assignment</h2>
@@ -84,7 +101,7 @@ active: 1
 </ul>
 <p>I need to shout out loud: <strong>Be careful with OpenSCAD!</strong> The easier it is for us to write, the easier it is for shits to happen. I mistyped something before exporting my design to DXF, and look how ridiculous things became:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
-<p>However, I quickly realized from this failed test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the cardboard was burned. I also didn't want the kerf to get bigger, so instead of increasing power, I reduced the speed to <strong>0.8.</strong></p> 
+<p>However, I quickly realized from this failed test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45, the cardboard was burned a bit during the rastering process. I also didn't want to make the kerf bigger, so instead of increasing power, I reduced the speed to <strong>0.8.</strong></p> 
 <p>For this second cut, I utilized the leftovers at the lab instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly. Finally, I had 2 pieces perfectly joined together!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-0.jpg" class="img-fluid w-100"/>
 <p></p>
