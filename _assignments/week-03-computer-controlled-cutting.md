@@ -9,7 +9,7 @@ active: 1
 
 <h2>Group Assignment</h2>
 <h5>The Friday Group</h5>
-<p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these below classmates during my session:</p>
+<p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these classmates during my session:</p>
 <ul>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/arman-najari">Arman Naraji</a></li>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto Gonzalez</a></li>
@@ -31,8 +31,8 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-2.jpg" class="img-fluid w-100"/>
 <p>The settings we used for Cardboard 4mm:</p> 
 <ul>
-<li>Raster (Engrave): <strong>speed=100, power=80, PPI/Hz=1000</strong></p></li>
-<li>Cut: <strong>speed=1, power=45, PPI/Hz=1000</strong></p></li>
+<li>Raster (Engrave): <strong>speed=100, power=40, PPI/Hz=1000</strong> (at first, it was accidentally set to <strong>speed=40, power=10, PPI/Hz=1000</strong> though)</li>
+<li>Cut: <strong>speed=1, power=45, PPI/Hz=1000</strong></li>
 </ul>
 <p>The result of the first test:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-3.jpg" class="img-fluid w-100"/>
@@ -40,8 +40,8 @@ active: 1
 <h5>Second test with Plywood 4mm</h5>
 <p>This time we divided the parts to be engraved and the parts to be cut into 2 separate layers, and cut them in 2 separate cuts. The settings we used for Plywood 4mm:</p>
 <ul>
-<li>Raster (Engrave): <strong>speed=100, power=80, PPI/Hz=1000</strong></p></li>
-<li>Cut: <strong>speed=1, power=75, PPI/Hz=1000</strong></p></li>
+<li>Raster (Engrave): <strong>speed=100, power=80, PPI/Hz=1000</strong></li>
+<li>Cut: <strong>speed=1, power=75, PPI/Hz=1000</strong></li>
 </ul>
 <p>This rastering and cutting process was totally enjoyable:</p>
 <div class="text-center">
@@ -81,7 +81,7 @@ active: 1
 <p>In the beginning, I planned to design in advance the possibilities of assembling my construction kit because pre-defining the outcome is a common flow of thought. However, I find that pre-imagining the possibilities with which the pieces will be assembled will inadvertently limit those possibilities to what I can imagine, thereby reducing the flexibility and the originality of the design as well as the joy and the creativity of ones who will actually use it - which is, in my opinion, the purpose and the meaning of a construction kit. Therefore, I switched my approach to simply defining a certain rule for the pieces of the construction kit.</p>
 <p>The most important requirement for this week's assignment is that our design must be parametric. Parametric design is basically designing based on defined parameters, and by changing those parameters we can quickly adjust our design. After consulting some images online with the keyword "cardboard parametric design" as well as observing some of the previous year's models available at the Fab Lab, I decided to create a series of isosceles polygons, starting from triangles, squares, pentagons, and ending with hexagons. There will be different sizes for these polygons as well. After cutting and testing, I will add other supporting pieces, if necessary. With this in mind, it is obvious to know that OpenSCAD is the ideal choice to implement the design. Its object-oriented modeling capabilities will greatly reduce my time drawing the pieces. Here are the steps:</p>
 <ul>
-<li>Define a base module for a <code>Polygon()</code> with 3 parameters of number of sides, apothem (inradius), and material thickness</li>
+<li>Define a base module for a <code>Polygon()</code> with 3 parameters of the number of sides, apothem (inradius), and material thickness</li>
 <li>Define an <code>Element()</code> module from a <code>Polygon()</code> and its related set of <code>Joints()</code></li>
 <li>Call <code>Element()</code>, duplicate pieces and place them all together</li>
 <li>Use <code>projection(cut=true)</code> to flatten the set of pieces</li>
