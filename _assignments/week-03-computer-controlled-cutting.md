@@ -52,6 +52,14 @@ active: 1
 <p>The result of the second test:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-4.jpg" class="img-fluid w-100"/>
 <p></p>
+<h5>What I learned</h5>
+<ul>
+<li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process.</li>
+<li>The delicate balance between translational speed and laser power defines the quality of the cut.</li>
+<li>As power increases, the energy in the laser increases, which will result in a deeper cut and a bigger kerf. High power could also make more smoke and charred edges. So, power is a necessity to reach a required cutting or engraving depth, but over-using it is quite destructive to our materials.</li>
+<li>As speed increases, the energy is exposed to a point in a shorter time, which will result in a shallower cut and a thinner kerf. Increasing speed will also quicken the cutting time.</li>
+</ul>
+<p></p>
 
 <h2>Individual Assignment</h2>
 <h5>Vinyl Cutting</h5>
@@ -89,7 +97,7 @@ active: 1
 <li>Use <code>projection(cut=true)</code> to flatten the set of pieces</li>
 <li>Render and export to .dxf</li>
 </ul>
-<p>In order to test the kerf and joint clearance, I directly used 2 hexagon pieces in my design and proceeded with these following values: 3.95mm, 3.90mm, 3.85mm, 3.80mm.</p>
+<p>In order to test the kerf and joint clearance, I directly used 2 hexagon pieces in my design and proceeded with these following values of kerf width: 0.05mm, 0.1mm, 0.15mm, 0.2mm.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/openscad-2.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Kerf Test and Final Cut</h6>
@@ -103,8 +111,8 @@ active: 1
 <li>Adjust the position of the job in JobControl and set up <strong>speed=1, power=40, PPI/Hz=1000</strong> in <strong>Material Settings</strong></li>
 <li>Start cutting!</li>
 </ul>
-<p>The cut pieces shown above helped me confirm the kerf value to be used would be <strong>3.85mm</strong>. Hence, I continued to cut the rest of my design with that final value. In addition, I noticed from the test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the kerf was a bit too big, so instead of increasing power, I reduced the speed to <strong>0.8.</strong></p> 
-<p>For this second cut, I utilized the leftovers at the lab instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
+<p>The cut pieces shown above helped me confirm the kerf width to be used would be <strong>0.15mm</strong>. Hence, I modified the design and continued to cut the rest of my design with that final value. In addition, I noticed from the test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the kerf was a bit too thick, so instead of increasing power, I reduced the speed. My final settings: <strong>speed=0.8, power=40, PPI/Hz=1000.</strong></p> 
+<p>For this second cut, I utilized the leftovers instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-1.png" class="img-fluid w-100"/>
 <p>Finally, I had the pieces perfectly joined together!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-0.jpg" class="img-fluid w-100"/>
