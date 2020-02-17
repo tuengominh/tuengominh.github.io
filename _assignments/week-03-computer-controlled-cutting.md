@@ -91,6 +91,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/openscad.png" class="img-fluid w-100"/>
 <p>Here you go the detailed steps:</p>
 <ul>
+<li>Some "global" parameters of the design: the thickness of the material, the depth of the joints, and the cutting kerf width</li>
 <li>Define a base module for a <code>Polygon()</code> with 3 parameters of the number of sides, apothem (inradius), and material thickness</li>
 <li>Define an <code>Element()</code> module from a <code>Polygon()</code> and its related set of <code>Joints()</code></li>
 <li>Call <code>Element()</code>, duplicate pieces and place them all together</li>
