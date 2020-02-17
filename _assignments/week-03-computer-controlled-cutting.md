@@ -104,6 +104,8 @@ active: 1
 <h6>Kerf Test and Final Cut</h6>
 <p>I used the same Trotec Speedy 100 machine used in the group test to cut my pieces. I'm really slow and careless when it comes to machines. I kept forgetting the necessary steps, and I had to ask people "Where did he click to do this?" or "Where should I click to do that?" all the time. Big thanks to everyone!</p>  
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-2.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/trotec.jpg" class="img-fluid w-100"/>
 <p>Some essential steps to remember:</p>
 <ul>
 <li>Nest the pieces in Rhino in order to optimize the position over the cuttable area</li>
@@ -112,9 +114,14 @@ active: 1
 <li>Adjust the position of the job in JobControl and set up <strong>speed=1, power=40, PPI/Hz=1000</strong> in <strong>Material Settings</strong></li>
 <li>Start cutting!</li>
 </ul>
-<p>The cut pieces shown above helped me confirm the kerf width to be used would be <strong>0.15mm</strong>. Hence, I modified the design and continued to cut the rest of my design with that final value. In addition, I noticed from the test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the kerf was a bit too thick, so instead of increasing power, I reduced the speed. My final settings: <strong>speed=0.8, power=40, PPI/Hz=1000.</strong></p> 
+<p>The cut pieces shown below helped me confirm the kerf width to be used would be <strong>0.15mm</strong>. Hence, I modified the design and continued to cut the rest of my design with that final value.</p> 
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
 <p>For this second cut, I utilized the leftovers instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-1.png" class="img-fluid w-100"/>
+<p>In addition, I noticed from the test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the kerf was a bit too thick, so instead of increasing power, I reduced the speed. My final settings: <strong>speed=0.8, power=40, PPI/Hz=1000.</strong></p> 
+<div class="text-center">
+<iframe width="640" height="480" src="https://www.youtube.com/embed/IaLSPBNrnwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <p>Finally, I had the pieces perfectly joined together!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-0.jpg" class="img-fluid w-100"/>
 <p></p>
