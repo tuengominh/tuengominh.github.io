@@ -108,13 +108,13 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/trotec.jpg" class="img-fluid w-100"/>
 <p>Some essential steps to remember:</p>
 <ul>
-<li>Nest the pieces in Rhino in order to optimize the position over the cuttable area</li>
+<li>Nest the pieces in Rhino in order to optimize the position over the cuttable area. We can use <a href="https://deepnest.io/">DeepNest</a> for this, but I did it manually.</li>
 <li>Color-code the curves with this execution order: black, red, blue, etc. Press <kbd>Ctrl</kbd> + <kbd>P</kbd> to preview the files and send it to JobControl</li>
 <li>Manually adjust the focus of the laser beam and use masking tape to fix the position of the cardboard in order to prevent losing focus</li>
 <li>Adjust the position of the job in JobControl and set up <strong>speed=1, power=40, PPI/Hz=1000</strong> in <strong>Material Settings</strong></li>
 <li>Start cutting!</li>
 </ul>
-<p>The cut pieces shown below helped me confirm the kerf width to be used would be <strong>0.15mm</strong>. Hence, I modified the design and continued to cut the rest of my design with that final value.</p> 
+<p>The cut pieces shown below helped me confirm the kerf width to be used would be <strong>0.15mm</strong>. The pieces just perfectly joined together without being squeezed or loose. Hence, I modified the parameter in OpenSCAD and continued to cut the rest of my design with that final value.</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
 <p>For this second cut, I utilized the leftovers instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-1.png" class="img-fluid w-100"/>
@@ -122,6 +122,7 @@ active: 1
 <div class="text-center">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/IaLSPBNrnwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+<p></p>
 <p>Finally, I had the pieces perfectly joined together!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-0.jpg" class="img-fluid w-100"/>
 <p></p>
