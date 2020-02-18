@@ -31,10 +31,10 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-2.jpg" class="img-fluid w-100"/>
 <p>The settings we used for Cardboard 4mm:</p> 
 <ul>
-<li>Raster (Engrave): <strong>speed=100, power=40, PPI/Hz=1000</strong> (at first, it was accidentally set to <strong>speed=40, power=10, PPI/Hz=1000</strong> though)</li>
-<li>Cut: <strong>speed=1, power=45, PPI/Hz=1000</strong></li>
+<li>Raster (Engrave): <strong>speed=100, power=60, PPI/Hz=1000</strong></li>
+<li>Cut: <strong>speed=1, power=40, PPI/Hz=1000</strong></li>
 </ul>
-<p>The result of the first test:</p>
+<p>The result of the first test, the power seemed to be over-increased:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-3.jpg" class="img-fluid w-100"/>
 <p></p>
 <h5>Second test with Plywood 4mm</h5>
@@ -118,7 +118,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
 <p>For this second cut, I utilized the leftovers instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-1.png" class="img-fluid w-100"/>
-<p>In addition, I noticed from the test that the cardboard had not been completely cut through, and I had to use a knife to get the pieces out. However, the last time we set the power to 45 in the group test, the kerf was a bit too thick, so instead of increasing power, I reduced the speed. My final settings: <strong>speed=0.8, power=40, PPI/Hz=1000.</strong></p> 
+<p>In addition, I noticed from the test that some bigger pieces had not been completely cut through, and I had to use a knife to get them out. Instead of increasing power, I reduced the speed. My final settings: <strong>speed=0.8, power=40, PPI/Hz=1000.</strong></p> 
 <div class="text-center">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/IaLSPBNrnwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
