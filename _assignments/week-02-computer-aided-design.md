@@ -8,7 +8,7 @@ active: 1
 
 <p class="font-italic font-weight-bold">* All STL and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cad">here</a>.</p>
 
-<p>This week was both interesting and overwhelming to me. There were too many new things to learn, especially when my knowledge of 3D design is almost zero. I only had a very <strong>BRIEF</strong> introduction about creating standard primitives with <a href="https://www.autodesk.com/products/3ds-max/overview">3Ds Max</a> when I went to college, and it has been almost 10 years. Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood, with the help from my classmate Arman. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
+<p>This week was both interesting and overwhelming to me. There were too many new things to learn, especially when my knowledge of 3D design is almost zero. Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood, with the help from my classmate Arman. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
 <p>My plan was to design 3D-printable modules that have some similarities with the modular robot in my mind (see <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html">idea #1</a>).</p> 
  
 <h2>2D Design</h2>
@@ -27,6 +27,18 @@ active: 1
 <p></p>
 
 <h2>3D Design</h2>
+<h5>Previous experience with 3Ds Max</h5>
+<p>I only had a very <strong>BRIEF</strong> introduction about creating standard primitives with <a href="https://www.autodesk.com/products/3ds-max/overview">3Ds Max</a> when I went to college, and it has been almost 10 years. Below is one of my previous models which were designed in 3Ds Max.</p>
+<div class="sketchfab-embed-wrapper text-center">
+    <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/83082e9022044550a2ba6207adaf420b/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/3d-models/temple-3ds-max-83082e9022044550a2ba6207adaf420b?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic;font-weight: bold; color: #1CAAD9;">Temple - 3Ds Max</a>
+    by <a href="https://sketchfab.com/tuengominh?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic;font-weight: bold; color: #1CAAD9;">tuengominh</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic;font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</p>
+</div>
+<p></p>
 <h5>OpenSCAD</h5>
 <p>Eduardo briefly introduced us to OpenSCAD before his Grasshopper session, and I found the idea of a script-only based modeler quite tempting. For my Final Project, I have a few options to model the <strong>connectors</strong> of blocks, such as built-in magnets, LEGO-compatible bricks, or hinges. I decided to try the LEGO option using OpenSCAD. I followed <a href="https://www.youtube.com/watch?v=ecd_eWPnynk">this tutorial</a>, with some customizations. My LEGO brick has a square shape and much thinner.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/openscad-1.png" class="img-fluid w-100"/>
