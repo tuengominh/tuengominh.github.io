@@ -114,7 +114,7 @@ active: 1
 </ul>
 <p></p>
 <h6>Conclusion</h6> 
-<p>I think Fusion 360 is pretty mature and its GUI is more intuitive than some other traditional CAD software. I can follow the tutorials smoothly, and imagining how to create bodies from sketches or how to join them is not an impossible task. I'm quite sure that I will use Fusion 360 and OpenSCAD to continue modeling my Final Project (if there is no potential limitation regarding switching between them). However, the fancy idea of "parametric modeling inside a <a href="https://es.wikipedia.org/wiki/NURBS">NURBs-based</a> software with the help of a node-based visual programming environment" convinced me to try <a href="https://www.grasshopper3d.com/">Grasshopper</a>.</p>
+<p>I think Fusion 360 is pretty mature and its GUI is more intuitive than some other traditional CAD software. I can follow the tutorials smoothly, and imagining how to create bodies from sketches or how to join them is not an impossible task. I'm quite sure that I will use Fusion 360 and OpenSCAD to model the main parts of my Final Project (if there is no potential limitation regarding switching between them). However, the fancy idea of "parametric modeling inside a <a href="https://es.wikipedia.org/wiki/NURBS">NURBs-based</a> software with the help of a node-based visual programming environment" convinced me to try <a href="https://www.grasshopper3d.com/">Grasshopper</a>.</p>
 <p></p>
 <h5>Rhino and Grasshopper</h5>
 <p> I followed this <a href="https://blog.ramboll.com/rcd/tutorials/a-beginners-guide-to-visual-scripting-with-grasshopper.html">tutorial</a> to learn Grasshopper without getting my brain tangled by its "spaghetti" workflow. However, my brain still exploded when I tried to create a press-fit enclosure for my robot block. In the end, since I'm not there yet, I went back to this <a href="https://www.youtube.com/watch?v=ZKfNJ1xEbaQ&feature=share&fbclid=IwAR11kqTYkCtYluORHRRZ4WRHLGB39lUTlNRoORs2SoBvbF0nVmzrmNKJaow">tutorial</a> and simply create the same parametric rotating table.</p>
@@ -203,7 +203,7 @@ active: 1
 <p>Here is a useful <a href="https://www.dummies.com/web-design-development/blender/blender-for-dummies-cheat-sheet/">cheat sheet.</a></p>
 <p></p>
 <h6>Conclusion</h6> 
-<p>To be honest, I've never been a fan of the concept of modifying surfaces, curves, edges, vertices, and meshes. I personally prefer tools that give me the feeling that I'm being precise and formulaic. Blender is an amazing software and it gives its users a lot of freedom, but manipulating the whole model as if it's an artwork is simply not my thing.</p>
+<p>To be honest, I've never been a fan of the concept of modifying surfaces, curves, edges, vertices, and meshes. I personally prefer tools that give me the feeling that I'm being precise and formulaic. Blender is an amazing software and it gives its users a lot of freedom, but manipulating the whole model as if it's an artwork is simply not my thing. However, for some specific parts of my Final Project (for example the dragon's head), I might need to incorporate Blender.</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">

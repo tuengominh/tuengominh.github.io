@@ -54,7 +54,7 @@ active: 1
 <p></p>
 <h5>What I learned</h5>
 <ul>
-<li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process. The delicate balance between translational speed and laser power defines the quality of the cut as well as the kerf width.</li>
+<li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process. The delicate balance between translational speed and laser power defines the quality of the cut as well as the kerf width. We should not abuse neither power nor speed.</li>
 <li>As power increases, the energy in the laser increases, which will result in a deeper cut and a bigger kerf. High power could also make more smoke and charred edges. So, power is a necessity to reach a required cutting or engraving depth, but over-using it is quite destructive to our materials.</li>
 <li>As speed increases, the energy is exposed to a point in a shorter time, which will result in a shallower, unstable cut and a thinner kerf. Increasing speed will also quicken the cutting time.</li>
 </ul>
@@ -95,7 +95,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
 <p>For this final cut, I utilized the leftovers instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-1.png" class="img-fluid w-100"/>
-<p>In addition, I noticed that some bigger pieces had not been completely cut through, and I had to use a knife to get them out. The next time cutting big pieces with cardboard, instead of increasing power, I will reduce the speed to <strong>0.8</strong></p> 
+<p>In addition, I noticed that some bigger pieces had not been completely cut through, and I had to use a knife to get them out. The next time cutting big pieces with cardboard, instead of increasing power, I will reduce the speed to <strong>0.8.</strong></p>
 <div class="text-center">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/IaLSPBNrnwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -136,6 +136,13 @@ active: 1
 <p>The final result looks super nice though!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/vinyl-3.jpg" class="img-fluid w-100"/>
 <p></p>
+
+<!--<h2>Extra: Living Hinges</h2>
+<p>After the regional review, I realized I didn't go through the kerf test for other materials. I also wanted to test the living hinges for my Final Project after bumping into <a href="https://www.rs-online.com/designspark/laser-cut-living-hinges-for-neater-designs">this article.</a> That's why I proceeded to test different gaps of a straight living hinges and also other types of living hinges. I use <a href="https://obrary.com/products/living-hinge-patterns?variant=798259727">this design</a> online and modified a bit. I will test with plywood and acrylic.</p>
+<h6>Conclusion</h6>
+<p></p>
+<h6>Conclusion</h6>
+<p></p>-->
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html">Previous Assignment</a>
