@@ -15,7 +15,7 @@ active: 1
 
 <h2>Website Development</h2>
 <h5>Jekyll</h5>
-<p>I have some experiences working with static site generators, namely <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://jekyllrb.com/docs/home/">Jekyll</a>. Eduardo also introduced us to MkDocs, and from what I understand it works in a similar way. Hence, I went ahead with Jekyll.</p>
+<p>I have some experiences working with static site generators, namely <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://jekyllrb.com/docs/home/">Jekyll</a>. Our instructor Eduardo Chamorro also introduced us to MkDocs, and from what I understand it works in a similar way. Hence, I went ahead with Jekyll.</p>
 <p>In short, Jekyll renders texts in Markdown/HTML format using Liquid template. Static sites come out ready for deployment.</p>
 <ul>
 <li><kbd>$ gem install bundler jekyll</kbd>: install Jekyll</li>
@@ -71,7 +71,7 @@ active: 1
 <p></p>
 <p>After pushing, I still couldn't deploy my website properly on Fab Academy server. It seems like the Bundler version required (2.0.2) is greater than the version in my <code>Gemfile.lock</code> (2.0.1 - checked the very last lines).</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/git-8.png" class="img-fluid w-100"/>
-<p>With the help from Viktor (Smari) and Oscar, I solved this by adding this line <code>- gem install bundler -v 2.0.2</code> right before <code>- bundle install</code> in the <code>.gitlab-ci.yml</code>. And I have my website deployed successfully!</p>
+<p>With the help from our instructor Oscar Gonzalez and Viktor Smari from the Code Lab, I solved this by adding this line <code>- gem install bundler -v 2.0.2</code> right before <code>- bundle install</code> in the <code>.gitlab-ci.yml</code>. And I have my website deployed successfully!</p>
 <p></p>
 
 <h5>Managing size of the local and remote repositories</h5>

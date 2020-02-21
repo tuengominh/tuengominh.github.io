@@ -146,5 +146,5 @@ active: 1
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html">Previous Assignment</a>
-<a class="btn btn-inactive m-2" href="#">Next Assignment</a>
+<a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-electronics-production.html">Next Assignment</a>
 </div>

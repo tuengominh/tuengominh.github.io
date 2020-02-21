@@ -8,13 +8,14 @@ active: 1
 
 <p class="font-italic font-weight-bold">* All STL and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cad">here</a>.</p>
 
-<p>This week was both interesting and overwhelming to me. There were too many new things to learn, especially when my knowledge of 3D design is almost zero. Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood, with the help from my classmate Arman. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
+<p>This week was both interesting and overwhelming to me. There were too many new things to learn, especially when my knowledge of 3D design is almost zero. Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
 <p>My plan was to design 3D-printable modules that have some similarities with the modular robot in my mind (see <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html">idea #1</a>).</p> 
  
 <h2>2D Design</h2>
 <p>I've already used 2D Design software before in college. In order to allocate more time for learning new 3D software, I went ahead with the vector-based Illustrator which I already know how to use. For this assignment, I decided to simply draw a possible logo for my Final Project.</p>
 <h5>Illustrator vs. Photoshop</h5>
-<p>In short, raster or bitmap graphics (<code>.jpg, .jpeg, .bmp</code>) are made up of a bunch of tiny dots, while vector graphics are made from mathematical paths. Because of that, vector graphics are easier to be scaled and modified without loss of quality or resolution. I think the most basic concept of Photoshop is to draw and fill color in separated "layers", then merge them to finalize the design. On the other hand, we draw shapes in Illustrator by placing paths in a given 2D space thanks to dimensions and angles, then combine or trim them to form the desired image.</p>
+<p>In short, raster or bitmap graphics (<code>.jpg, .jpeg, .bmp</code>) are made up of a bunch of tiny dots, while vector graphics are made from mathematical paths. Because of that, vector graphics are easier to be scaled and modified without loss of quality or resolution.</p>
+<p>I think the most basic concept of Photoshop is to draw and fill color in separated "layers", then merge them to finalize the design. On the other hand, we draw shapes in Illustrator by placing paths in a given 2D space thanks to dimensions and angles, then combine or trim them to form the desired image:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/2D.png" class="img-fluid w-100"/>
 <p></p>
 <h5>ImageMagick</h5>
@@ -28,7 +29,7 @@ active: 1
 
 <h2>3D Design</h2>
 <h5>Previous experience with 3Ds Max</h5>
-<p>I only had a very <strong>BRIEF</strong> introduction about creating standard primitives with <a href="https://www.autodesk.com/products/3ds-max/overview">3Ds Max</a> when I went to college, and it has been almost 10 years. Below is one of my previous models designed in 3Ds Max.</p>
+<p>I only had a very <strong>BRIEF</strong> introduction about creating standard primitives with <a href="https://www.autodesk.com/products/3ds-max/overview">3Ds Max</a> when I went to college, and it has been almost 10 years. Below is one of my previous low-poly models designed in 3Ds Max:</p>
 <div class="sketchfab-embed-wrapper text-center">
     <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/83082e9022044550a2ba6207adaf420b/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
@@ -40,7 +41,7 @@ active: 1
 </div>
 <p></p>
 <h5>OpenSCAD</h5>
-<p>Eduardo briefly introduced us to OpenSCAD before his Grasshopper session, and I found the idea of a script-only based modeler quite tempting. For my Final Project, I have a few options to model the <strong>connectors</strong> of blocks, such as built-in magnets, LEGO-compatible bricks, or hinges. I decided to try the LEGO option using OpenSCAD. I followed <a href="https://www.youtube.com/watch?v=ecd_eWPnynk">this tutorial</a>, with some customizations. My LEGO brick has a square shape and much thinner.</p>
+<p>Eduardo briefly introduced us to OpenSCAD before his Grasshopper session, and I found the idea of a script-only based modeler quite tempting. For my Final Project, I have a few options to model the <strong>connectors</strong> of blocks, such as built-in magnets, LEGO-compatible bricks, or hinges. I decided to try the <strong>LEGO</strong> option using OpenSCAD. I followed <a href="https://www.youtube.com/watch?v=ecd_eWPnynk">this tutorial</a>, with some customizations. My LEGO brick has a square shape and much thinner.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/openscad-1.png" class="img-fluid w-100"/>
 <p>One of my favorite things about OpenSCAD is that I can modify a few variables to change the design of a whole object by <strong>TYPING</strong> (no need to select or click any button) or to check if certain parts of the modules can joint together without any complicated pre-calculation. In short, I can incorporate parametric design fast and algorithmically.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/openscad-4.png" class="img-fluid w-100"/>
@@ -82,7 +83,7 @@ active: 1
 <p><strong>I LOVE OPENSCAD!</strong> I've never imagined that I could create my first 3D Design in such a precise and straightforward way. It was such a nice experience for someone who has a programming background like me. It took me less than 10 minutes to create each model, and I'm so happy with the results. OpenSCAD is really powerful and has many potentials. I'd like to explore it more in the future.</p>
 <p></p>
 <h5>Fusion 360</h5>
-<p>Before the class, I took a look at previous students' websites and noticed that many of them chose to use <a href="https://www.autodesk.com/products/fusion-360/overview">Fusion 360.</a> That's why I tried it next. Since none of the "traditional" software (with the concept of modeling parts and making assemblies) has a Tue-friendly and intuitive UI, I watched <strong>MANY</strong> online tutorials in order to get used to the workflow. This is a good <a href="https://www.youtube.com/watch?v=qvrHuaHhqHI">tutorial</a>. After watching his series, I could create my first <strong>hinge</strong> and I was quite happy with it.</p>
+<p>Before the class, I took a look at previous students' websites and noticed that many of them chose to use <a href="https://www.autodesk.com/products/fusion-360/overview">Fusion 360.</a> That's why I tried it next. Since none of the "traditional" software (with the concept of modeling parts and making assemblies) has a Tue-friendly and intuitive UI, I watched <strong>MANY</strong> online tutorials in order to get used to the workflow. This is a good <a href="https://www.youtube.com/watch?v=qvrHuaHhqHI">tutorial</a>. After watching his series, I could create my first <strong>hinge connector</strong> model and I was quite happy with it.</p>
 <p>Below is the how-I-did-that videos:</p>
 <div class="text-center">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/aOBGm-fr3uk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -177,7 +178,7 @@ active: 1
 <p>In terms of solid mechanical objects, I will definitely go back to Fusion 360. However, I think Grasshopper is considerable when we need to design a large-scale and fancy construction. I still wanted to try an object-oriented approach by defining my own Cluster, hence I'm thinking about giving it the second try in the next assignment.</p>
 <p></p>
 <h5>Blender</h5>
-<p>I've had multiple headaches dealing with <a href="https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/3DSMax-Modifiers/files/GUID-D05DF785-F905-453E-BF64-DB4D59A9F200-htm.html">editable poly</a> in 3Ds Max before, so I was totally not interested in trying <a href="https://www.blender.org/">Blender</a>. But I'd like to review again what I know about mesh-based modeling, so I created a simple and random <strong>enclosure</strong> for the modular block of my robot (I have zero knowledge about circuit design anyway).</p> 
+<p>I've had multiple headaches dealing with <a href="https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/3DSMax-Modifiers/files/GUID-D05DF785-F905-453E-BF64-DB4D59A9F200-htm.html">editable poly</a> in 3Ds Max before, so I was totally not interested in trying <a href="https://www.blender.org/">Blender</a>. But I'd like to review again what I know about mesh-based modeling, so I created a simple and random <strong>enclosure</strong> for the modular blocks of my robot (I have zero knowledge about circuit design anyway).</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/blender-1.png" class="img-fluid w-100"/>
 <p>And this is what happened when I exported the <code>.blend</code> file to <code>.stl</code> and opened the object inside Fusion 360. In order to continue working on the model, I need to convert the <var>Mesh Body</var> to <a href="https://en.wikipedia.org/wiki/Boundary_representation">BREP.</a></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/blender-2.png" class="img-fluid w-100"/>
@@ -203,7 +204,7 @@ active: 1
 <p>Here is a useful <a href="https://www.dummies.com/web-design-development/blender/blender-for-dummies-cheat-sheet/">cheat sheet.</a></p>
 <p></p>
 <h6>Conclusion</h6> 
-<p>To be honest, I've never been a fan of the concept of modifying surfaces, curves, edges, vertices, and meshes. I personally prefer tools that give me the feeling that I'm being precise and formulaic. Blender is an amazing software and it gives its users a lot of freedom, but manipulating the whole model as if it's an artwork is simply not my thing. However, for some specific parts of my Final Project (for example the dragon's head), I might need to incorporate Blender.</p>
+<p>To be honest, I've never been a fan of the concept of modifying surfaces, curves, edges, vertices, and meshes. I personally prefer tools that give me the feeling that I'm being precise and formulaic. Blender is an amazing software and it gives its users a lot of freedom, but manipulating the whole model as if it's an artwork is simply not my thing. However, for some specific parts of my Final Project (for example the dragon's head), I might need to incorporate Blender and figure out a way to exchange files easily from Blender to Fusion 360.</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">
