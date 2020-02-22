@@ -57,6 +57,7 @@ active: 1
 <li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process. The delicate balance between translational speed and laser power defines the quality of the cut as well as the kerf width. We should not abuse neither power nor speed.</li>
 <li>As power increases, the energy in the laser increases, which will result in a deeper cut and a bigger kerf. High power could also make more smoke and charred edges. So, power is a necessity to reach a required cutting or engraving depth, but over-using it is quite destructive to our materials.</li>
 <li>As speed increases, the energy is exposed to a point in a shorter time, which will result in a shallower, unstable cut and a thinner kerf. Increasing speed will also quicken the cutting time.</li>
+<li>The laser-cutters cannot be left unattended, and the air ventilation should always be switched on.</li>
 </ul>
 <p></p>
 
@@ -83,7 +84,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-2.png" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/trotec.jpg" class="img-fluid w-100"/>
-<p>Some essential steps to remember:</p>
+<p>Our instructor Josep Marti guided me through some essential steps:</p>
 <ul>
 <li>Nest the pieces in Rhino in order to optimize the position over the cuttable area. We can use <a href="https://deepnest.io/">DeepNest</a> for this, but I did it manually because I mostly used leftovers from other students.</li>
 <li>Color-code the curves with this execution order: black, red, blue, etc. Press <kbd>Ctrl</kbd> + <kbd>P</kbd> to preview the files and send it to JobControl</li>
