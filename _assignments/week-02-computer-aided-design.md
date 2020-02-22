@@ -9,7 +9,7 @@ active: 1
 <p class="font-italic font-weight-bold">* All STL and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cad">here</a>.</p>
 
 <p>This week was both interesting and overwhelming to me. There were too many new things to learn, especially when my knowledge of 3D design is almost zero. Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
-<p>My plan was to design 3D-printable modules that have some similarities with the modular robot in my mind (see <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html">idea #1</a>).</p> 
+<p>My plan was to design 3D-printable modules that have some similarities with the modular robot in my mind (see <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html#idea">idea #1</a>).</p> 
  
 <h2>2D design</h2>
 <p>I've already used 2D Design software before in college. In order to allocate more time for learning new 3D software, I went ahead with the vector-based Illustrator which I already know how to use. For this assignment, I decided to simply draw a possible logo for my Final Project.</p>
