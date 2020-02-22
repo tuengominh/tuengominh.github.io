@@ -13,7 +13,7 @@ active: 1
 <pre class="bg-light py-2 mt-0"><code>$ git clone https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo.git</code></pre>
 <p></p>
 
-<h2>Website Development</h2>
+<h2>Website development</h2>
 <h5>Jekyll</h5>
 <p>I have some experiences working with static site generators, namely <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://jekyllrb.com/docs/home/">Jekyll</a>. Our instructor Eduardo Chamorro also introduced us to MkDocs, and from what I understand it works in a similar way. Hence, I went ahead with Jekyll.</p>
 <p>In short, Jekyll renders texts in Markdown/HTML format using Liquid template. Static sites come out ready for deployment.</p>
