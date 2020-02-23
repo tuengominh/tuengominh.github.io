@@ -51,11 +51,20 @@ active: 1
 <p></p>
 <h5>Available ICPs at Fab Lab Barcelona</h5>
 <ul>
-<li>FabISP: an in-system programmer for AVR micro-controllers, designed for production within a Fab Lab.</li>
+<li>FabISP: an ICP designed for production within a Fab Lab.</li>
 <li>FTDI SERIAL with UPDI adapter.</li>
-<li>CMSIS-DAP with SWD adapter SWD.</li>
+<li>CMSIS-DAP with SWD adapter.</li>
 </ul>
 <p>That's it, enough knowledge for this week. In 2 weeks, I will try to learn more about how to understand diagrams and how to design a circuit board.</p>
+<p></p>
+
+<h2>PCB Manufacturing</h2>
+<h5>Group assignment</h5>
+<p></p>
+<h5>FTDI SERIAL board and UPDI adapter</h5>
+<h6>mods vs. Fab Modules</h6>
+<h6>Milling the PCB</h6>
+<h6>Soldering components</h6>
 <p></p>
 
 <div class="container w-100 text-center py-4">

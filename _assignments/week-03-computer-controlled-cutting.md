@@ -32,7 +32,6 @@ active: 1
 
 <h2>Laser cutting</h2>
 <h5>Group assignment</h5>
-<h6>The Friday group</h6>
 <p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these classmates during my session:</p>
 <ul>
 <li><a href="http://fabacademy.org/2020/labs/barcelona/students/arman-najari">Arman Naraji</a></li>
