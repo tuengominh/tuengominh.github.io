@@ -49,23 +49,78 @@ active: 1
 <li><strong>In-circuit programming (ICP):</strong> also known as in-system programming (ISP), serial programming or in-circuit serial programming (ICSP) allows programming and reprogramming of micro-controllers while installed in a complete system. For the different types of chips, there are different programmers.</li>
 </ul>
 <p></p>
-<h5>Available ICPs at Fab Lab Barcelona</h5>
+<h5>Available ISPs at Fab Lab Barcelona</h5>
 <ul>
-<li>FabISP: an ICP designed for production within a Fab Lab.</li>
-<li>FTDI SERIAL with UPDI adapter.</li>
-<li>CMSIS-DAP with SWD adapter.</li>
+<li>FabISP: an ISP designed for production within a Fab Lab</li>
+<li>FTDI SERIAL with UPDI adapter</li>
+<li>CMSIS-DAP with SWD adapter</li>
 </ul>
 <p>That's it, enough knowledge for this week. In 2 weeks, I will try to learn more about how to understand diagrams and how to design a circuit board.</p>
 <p></p>
 
-<h2>PCB Manufacturing</h2>
+<h2>Manufacturing the boards</h2>
 <h5>Group assignment</h5>
+<p>We used <a href="https://www.rolanddga.com/es/productos/3d/srm-20-fresadora-compacta">Roland Mill SRM-20</a> to mill the test board. The detailed specs of the machine:</p>
+<ul>
+<li>Work area: 232 x 156mm</li>
+<li>Loadable workpiece weight: 2kg</li>
+<li>Operating speed: 6mm/min - 1,800 mm/min</li>
+<li>Operation strokes (x,y,z): 203 x 152 x 60mm</li>
+</ul>
 <p></p>
-<h5>FTDI SERIAL board and UPDI adapter</h5>
+<h5>Milling and soldering FTDI SERIAL board and UPDI adapter</h5>
+<p>In order to save time and materials, I teamed up with <a href="http://fabacademy.org/2020/labs/barcelona/students/roger-anguera/">Roger Anguera</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard">Antoine Jaunard</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/marco-cataffo">Marco Cataffo</a> because all of us were going to make the FTDI board & UPDI adapter. We did not expect that due to this we faced a lot of problems which perhaps we would not know of while milling a single board. I also learned how to mill multiple boards at the same time which is useful for my own Final Project.</p>
 <h6>mods vs. Fab Modules</h6>
-<h6>Milling the PCB</h6>
-<h6>Soldering components</h6>
+<p>We tried to use <a href="http://mods.cba.mit.edu/">mods</a> to create our first <code>.rml</code> files for the <a href="http://academy.cba.mit.edu/classes/embedded_programming/FTDI/USB-FT230XS-serial.traces.png">traces</a> of the FTDI SERIAL board. The workflow is a bit more complicated than <a href="http://fabmodules.org/">Fab Modules</a>, but is still digestible in general.</p>
+<p>Some essential steps to follow:</p>
+<ul>
+<li>Right-click and select <strong>program > open server program</strong></li>
+<li>Select the machine used to mill the PCD, in this case, <strong>Roland Mill SRM-20</strong></li>
+<li>Select input format which is usually image <code>.png</code>, drawing <code>.svg</code>, or mesh <code>.stl</code>. In this case, I chose <code>.png</code>. Now we can see a Grasshopper look-alike, which is not something I fancy.</li>
+<li>Select the <code>.png</code> file</li>
+<li>Modify settings for <strong>Roland SRM-20 milling machine</strong> to origin 0,0,0 and home 0,0,12 (x,y,z). We also need to check the <strong>cut depth</strong> for both trace (1/64) and outline (1/32) milling processes in <strong>set PCB defaults</strong> module.</li>
+<li>Click the <strong>calculate</strong> button in <strong>mill raster 2D</strong> module to calculate the toolpath</li>
+<li>Delete the WebSocket module and add <strong>module > open server module > file > save</strong> module instead.</li>
+<li>Connect the output file of <strong>Roland SRM-20 milling machine</strong> module to the input of <strong>save file</strong> module. This will help us to be able to save the <code>.rml</code> file.</li>
+</ul>
+<p>After generating the first <code>.rml</code> file, I decided to go back to Fab Modules for its Tue-friendly UI. In order to mill 4 FTDI boards at the same time, we had to generate 4 files with 4 different origins: 0,0,0; 25,0,0; 0,35,0; and 25,35,0. For milling 4 UPDI adapters, we exported 4 files with 4 different origins: 0,0,0; 25,0,0; 0,25,0; and 25,25,0. Here are some recaps of steps followed:</p>
+<ul>
+<li>Select <code>.png</code> input format and load the <code>.png</code> files</li>
+<li>Select <code>.rml</code> output format</li>
+<li>Select the proper process: PCB traces (1/64) or PCB outline (1/32). This will automatically define the proper <strong>cut depth</strong>.</li>
+<li>Select <strong>SRM-20</strong> in the output machine. Modify settings to origin 0,0,0 (x,y,z); zjog = 12; and home 0,0,12 (x,y,z).</li>
+<li>Select the proper <strong>direction</strong>. If there are thin traces on the board, we need to select the <strong>conventional</strong> direction in order to avoid broken traces.</li>
+<li>Click the <strong>calculate</strong> button to calculate the toolpath and click the <strong>save</strong> button to save the <code>.rml</code> file.</li>
+</ul>
 <p></p>
+<h6>Milling the PCB</h6>
+<p>We used <a href="http://download.rolanddg.jp/en/os_win10_3d.html">Roland VPanel</a> controller to adjusting the milling start point, the feed rate, and spindle speed.</p>
+<p>Here are the detailed steps to use the machine:</p>
+<ul>
+<li>Choose the correct milling bit for the job. We were provided with 2 bits: the 1/64" used for milling the traces on the board and the 1/32" used for drilling holes and cutting.</li>
+<li>Insert the milling bit into the machine and manually adjust the z-axis.</li>
+<li>Set origin X/Y and Z in Vpanel. Click the <strong>Spindle</strong> button to test if the milling bit can cut through the copper layer.</li>
+<li>Click the <strong>Cut</strong> button to add the 4 <code>.rml</code> files and start milling!</li>
+</ul>
+<p>Do I look like I was enjoying fixing the milling bit?</p>
+<p></p>
+<p>Below is a video recording the milling process:</p>
+<div class="text-center">
+<iframe width="640" height="480" src="https://www.youtube.com/embed/JKr3zOknjyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p></p>
+<p>We then had a problem with the UPDI adapters. We forgot to set the z-axis of the home point to be greater than 0, and that's why it made a scratch across the milled parts. Since there were places left, we milled 2 more UPDIs with the new settings.</p>
+<p>Final milled pieces came out neat!</p>
+<p>I used a multimeter to troubleshoot any issues with my PCBs. A multimeter is a device that’s used to measure electric current (amps), voltage (volts) and resistance (ohms). After ensuring the necessary connections, I moved forward to soldering the components.</p>
+<p></p>
+<h6>Soldering components</h6>
+<p>Once I had the milled pieces all-good, I started the soldering process. I wrote down a shopping list of all required components and collected them from available components at the Fab Lab.</p>
+<p>It took me plenty of time and patience to solder the components, especially the tiny IC. I even burned my hair while trying to see more clearly with my bare eyes, since the magnifying glass gave me headaches. Rutvij from Fab Lab Barcelona then said one magic phrase that saved my life: "Solder like you're painting with watercolor!". And here you go the pretty result:</p>
+<p>I tested the board with Santi's computer, and it was detected!</p>
+<p></p>
+
+<!--<h2>Conclusion</h2>
+<p></p>-->
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html">Previous Assignment</a>

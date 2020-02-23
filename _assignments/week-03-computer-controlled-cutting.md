@@ -32,14 +32,7 @@ active: 1
 
 <h2>Laser cutting</h2>
 <h5>Group assignment</h5>
-<p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these classmates during my session:</p>
-<ul>
-<li><a href="http://fabacademy.org/2020/labs/barcelona/students/arman-najari">Arman Naraji</a></li>
-<li><a href="http://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a></li>
-<li><a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard">Antoine Jaunard</a></li>
-<li><a href="http://fabacademy.org/2020/labs/barcelona/students/benjamin-scott/">Benjamin Scott</a></li>
-<li><a href="http://fabacademy.org/2020/labs/barcelona/students/tue-ngo/">Minh Tue Ngo</a> - yeah, it's me.</li>
-</ul>
+<p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these classmates during my session: <a href="http://fabacademy.org/2020/labs/barcelona/students/arman-najari">Arman Naraji</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard">Antoine Jaunard</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/benjamin-scott/">Benjamin Scott</a>.</p>
 <p></p>
 <h6>First test with cardboard 4mm</h6>
 <p>We used this <a href="https://www.thingiverse.com/thing:728579">test file</a> provided by the instructors to test the laser cutter <a href="https://www.troteclaser.com/es/maquinas-laser/grabadora-laser-speedy/">Trotec Speedy 100</a> with different materials. The detailed specs of the machine:</p>
@@ -114,6 +107,8 @@ active: 1
 <li>Adjust the position of the job in JobControl and set up <strong>speed=1, power=40, PPI/Hz=1000</strong> in <strong>Material Settings</strong></li>
 <li>Start cutting!</li>
 </ul>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/focus.jpg" class="img-fluid w-100"/>
 <p>The cut pieces shown below helped me confirm the kerf width to be used would be <strong>0.15mm</strong>. The pieces just perfectly joined together without being squeezed or loose. Hence, I modified the parameter in OpenSCAD and continued to cut the rest of my design with that final value.</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
 <p>For this final cut, I utilized the leftovers instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
