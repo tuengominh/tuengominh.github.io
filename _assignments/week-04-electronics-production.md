@@ -103,6 +103,7 @@ active: 1
 <li>Click the <strong>Cut</strong> button to add the 4 <code>.rml</code> files and start milling!</li>
 </ul>
 <p>Do I look like I was enjoying fixing the milling bit?</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-1.jpg" class="img-fluid w-100"/>
 <p></p>
 <p>Below is a video recording the milling process:</p>
 <div class="text-center">
@@ -110,13 +111,19 @@ active: 1
 </div>
 <p></p>
 <p>We then had a problem with the UPDI adapters. We forgot to set the z-axis of the home point to be greater than 0, and that's why it made a scratch across the milled parts. Since there were places left, we milled 2 more UPDIs with the new settings.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-2.jpg" class="img-fluid w-100"/>
 <p>Final milled pieces came out neat!</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-3.jpg" class="img-fluid w-100"/>
 <p>I used a multimeter to troubleshoot any issues with my PCBs. A multimeter is a device that’s used to measure electric current (amps), voltage (volts) and resistance (ohms). After ensuring the necessary connections, I moved forward to soldering the components.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-4.jpg" class="img-fluid w-100"/>
 <p></p>
 <h6>Soldering components</h6>
 <p>Once I had the milled pieces all-good, I started the soldering process. I wrote down a shopping list of all required components and collected them from available components at the Fab Lab.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-1.jpg" class="img-fluid w-100"/>
 <p>It took me plenty of time and patience to solder the components, especially the tiny IC. I even burned my hair while trying to see more clearly with my bare eyes, since the magnifying glass gave me headaches. Rutvij from Fab Lab Barcelona then said one magic phrase that saved my life: "Solder like you're painting with watercolor!". And here you go the pretty result:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-2.jpg" class="img-fluid w-100"/>
 <p>I tested the board with Santi's computer, and it was detected!</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-3.jpg" class="img-fluid w-100"/>
 <p></p>
 
 <!--<h2>Conclusion</h2>

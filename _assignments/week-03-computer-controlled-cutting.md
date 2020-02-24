@@ -98,6 +98,8 @@ active: 1
 <p>I used the same Trotec Speedy 100 machine used in the group test to cut my pieces. I'm really slow and careless when it comes to machines. I kept forgetting the necessary steps, and I had to ask people "Where did he click to do this?" or "Where should I click to do that?" all the time. Big thanks to everyone!</p>  
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-2.png" class="img-fluid w-100"/>
 <p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-03/focus.jpg" class="img-fluid w-100"/>
+<p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/trotec.jpg" class="img-fluid w-100"/>
 <p>Our instructor Josep Marti guided me through some essential steps:</p>
 <ul>
@@ -107,8 +109,6 @@ active: 1
 <li>Adjust the position of the job in JobControl and set up <strong>speed=1, power=40, PPI/Hz=1000</strong> in <strong>Material Settings</strong></li>
 <li>Start cutting!</li>
 </ul>
-<p></p>
-<img src="{{site.baseurl}}/assets/img/assignments/week-03/focus.jpg" class="img-fluid w-100"/>
 <p>The cut pieces shown below helped me confirm the kerf width to be used would be <strong>0.15mm</strong>. The pieces just perfectly joined together without being squeezed or loose. Hence, I modified the parameter in OpenSCAD and continued to cut the rest of my design with that final value.</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
 <p>For this final cut, I utilized the leftovers instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
