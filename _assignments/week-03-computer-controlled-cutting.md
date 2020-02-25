@@ -7,7 +7,9 @@ active: 1
 ---
 <p class="font-italic font-weight-bold">* All DXF and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cut">here</a>.</p>
 
-<h2 id="vinylcutter">Vinyl cutting</h2>
+<p>The very first thing I learned this week is time management. Staying in the queue for using the machines can be a disappointing waste of time if we don't know what to prepare and how to organize what to do. At the end of the week, I could only meet the minimum requirements of the assignment, and I was still left with the desire to try out more techniques and prototypes.</p>
+
+<h2 id="vinylcutter">Individual assignment - Vinyl cutting</h2>
 <p>I used the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> to cut a sticker of the logo which was designed in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html#2d">previous assignment.</a> The detailed specs of the machine:</p>
 <ul>
 <li>Work area: 584 x 24998mm</li>
@@ -31,7 +33,7 @@ active: 1
 <p></p>
 
 <h2>Laser cutting</h2>
-<h5>Group assignment</h5>
+<h5>Group assignment - Characterize the laser-cutting process</h5>
 <p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these classmates during my session: <a href="http://fabacademy.org/2020/labs/barcelona/students/arman-najari">Arman Naraji</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard">Antoine Jaunard</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/benjamin-scott/">Benjamin Scott</a>.</p>
 <p></p>
 <h6>First test with cardboard 4mm</h6>
@@ -68,7 +70,7 @@ active: 1
 <p>The result of the second test:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-4.jpg" class="img-fluid w-100"/>
 <p></p>
-<h6>What I learned</h6>
+<h6>What I personally learned</h6>
 <ul>
 <li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process. The delicate balance between translational speed and laser power defines the quality of the cut as well as the kerf width. We should not abuse neither power nor speed.</li>
 <li>As power increases, the energy in the laser increases, which will result in a deeper cut and a bigger kerf. High power could also make more smoke and charred edges. So, power is a necessity to reach a required cutting or engraving depth, but over-using it is quite destructive to our materials.</li>
@@ -77,7 +79,7 @@ active: 1
 </ul>
 <p></p>
 
-<h5>Press-fit construction kit</h5>
+<h5>Individual assignment - Parametric construction kit</h5>
 <h6>OpenSCAD</h6>
 <p>I find that pre-calculating the possibilities with which the pieces will be assembled will inadvertently limit those possibilities to what I can imagine, thereby reducing both the flexibility of the design and the creativity of ones who will actually use it. Therefore, I switched my approach to simply defining a certain rule for the pieces of the construction kit.</p>
 <p>The most important requirement for this week's assignment is that our design must be parametric. Parametric design is basically designing based on defined parameters, and by changing those parameters we can quickly adjust our design. After consulting some images online with the keyword "cardboard parametric design" as well as observing some of the previous year's models available at the Fab Lab, I decided to create a series of isosceles polygons, starting from triangles, squares, pentagons, and ending with hexagons. There would be different sizes for these polygons as well. After cutting and testing, I would add other supporting pieces, if necessary. With this in mind, it was obvious to know that OpenSCAD is the ideal choice to implement the design. Its object-oriented modeling capabilities would greatly reduce my time drawing the pieces.</p>
@@ -132,13 +134,6 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-5.jpg" class="img-fluid w-100"/>
 <p>Here we have a resting bird, an angry lobster, a 2-headed monster with wings, and a square-headed scorpio!</p>
 <p></p>
-
-<!--<h2>Extra: Living hinges</h2>
-<p>After the regional review, I realized I didn't go through the kerf test for other materials. I also wanted to test the living hinges for my Final Project after bumping into <a href="https://www.rs-online.com/designspark/laser-cut-living-hinges-for-neater-designs">this article.</a> That's why I proceeded to test different gaps of a straight living hinges and also other types of living hinges. I use <a href="https://obrary.com/products/living-hinge-patterns?variant=798259727">this design</a> online and modified a bit. I will test with plywood and acrylic.</p>
-<h6>Conclusion</h6>
-<p></p>
-<h6>Conclusion</h6>
-<p></p>-->
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html">Previous Assignment</a>
