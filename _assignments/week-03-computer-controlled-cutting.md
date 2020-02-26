@@ -7,8 +7,7 @@ active: 1
 ---
 <p class="font-italic font-weight-bold">* All DXF and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cut">here</a>.</p>
 
-<p class="font-italic font-weight-bold">* This week's group assignment was to test the proper <a href="#group">power, speed, frequency and kerf</a> values of different materials using a laser-cutter.</p>
-<!--<p>I also conducted a personal <a href="#living-hinge">kerf and living hinges test</a>.</p>-->
+<p class="font-italic font-weight-bold">* This week's group assignment was to test the proper <a href="#group">power, speed, frequency and kerf</a> values of different materials using a laser-cutter. In order to explore possible materials for my Final Project, I also conducted a personal kerf joint and bending test with <a href="#living-hinge">living hinges</a>.</p>
 
 <p class="font-italic font-weight-bold">* Besides, we were required to individually design and cut <a href="#vinylcutter">something</a> with the vinyl-cutter and a <a href="#construction-kit">parametric construction kit</a> that can be assembled in multiple ways.</p>
 
@@ -51,7 +50,8 @@ active: 1
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-1.jpg" class="img-fluid w-100"/>
 <p>We chose to proceed with cardboard 4mm and plywood 4mm because we can find nice leftovers of those materials. I've personally learned from Santi that flexible plywood is not a good material for cutting.</p>
-<p>For the <strong>Material Settings</strong> in <a href="https://www.troteclaser.com/en/laser-machines/laser-software/jobcontrol/">TROTEC JobControl</a>, we followed the information on the samples at the Fab Lab. The parts to be engraved (rastered) were color-coded with black, and the parts to be cut were color-coded with red.</p> 
+<p>The controller of TROTEC laser-cutters, <a href="https://www.troteclaser.com/en/laser-machines/laser-software/jobcontrol/">TROTEC JobControl</a>, calls the processes slightly different from us: the raster engraving process is called <strong>Engrave</strong>, the vector engraving process is the <strong>Cut</strong> one with way faster speed, and the vector cutting process is still called <strong>Cut</strong>.</p> 
+<p>For the <strong>Material Settings</strong> in JobControl, we followed the information on the samples at the Fab Lab. The parts to be raster-engraved were color-coded with black, and the parts to be vector-cut were color-coded with red.</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-2.jpg" class="img-fluid w-100"/>
 <p>The settings we used for cardboard 4mm:</p> 
 <ul>
@@ -62,7 +62,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-3.jpg" class="img-fluid w-100"/>
 <p></p>
 <h6>Second test with plywood 4mm</h6>
-<p>This time we divided the parts to be engraved (rastered) and the parts to be cut into 2 separate layers, export them to JobControl with different outputs (raster and vector), and cut them in 2 separate cuts. The settings we used for plywood 4mm:</p>
+<p>This time we divided the parts to be raster-engraved and the parts to be vector-cut into 2 separate layers, export them to JobControl with different outputs (raster and vector), and cut them in 2 separate cuts. The settings we used for plywood 4mm:</p>
 <ul>
 <li>Engrave (Raster): <strong>speed=100, power=80, PPI/Hz=1000</strong></li>
 <li>Cut: <strong>speed=1, power=75, PPI/Hz=1000</strong></li>
@@ -78,10 +78,10 @@ active: 1
 <p></p>
 <h6>What I personally learned</h6>
 <ul>
-<li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process. The delicate balance between translational speed and laser power defines the quality of the cut as well as the kerf width. We should not abuse neither power nor speed.</li>
+<li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process. Kerf width depends on many parameters, such as the thickness of the material (the thicker the material, the thinner the kerf), type of material (for example, acrylic and other materials with low melting point tend to create bigger kerf), the machine itself, the focus of the beam, and the settings of power, speed, and frequency.</li>
+<li>The delicate balance between translational speed and laser power defines the quality of the cut as well as the kerf width. We should abuse neither power nor speed.</li>
 <li>As power increases, the energy in the laser increases, which will result in a deeper cut and a bigger kerf. High power could also make more smoke and charred edges. So, power is a necessity to reach a required cutting or engraving depth, but over-using it is quite destructive to our materials.</li>
 <li>As speed increases, the energy is exposed to a point in a shorter time, which will result in a shallower, unstable cut and a thinner kerf. Increasing speed will also quicken the cutting time.</li>
-<li>The laser-cutters cannot be left unattended, and the air ventilation should always be switched on.</li>
 </ul>
 <p></p>
 
@@ -119,9 +119,9 @@ active: 1
 </ul>
 <p>The cut pieces shown below helped me confirm the kerf width to be used would be <strong>0.15mm</strong>. The pieces just perfectly joined together without being squeezed or loose. Hence, I modified the parameter in OpenSCAD and continued to cut the rest of my design with that final value.</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
-<p>For this final cut, I utilized the leftovers instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
+<p>For this final cut of my construction kit, I utilized the leftovers instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-1.png" class="img-fluid w-100"/>
-<p>In addition, I noticed that some bigger pieces had not been completely cut through, and I had to use a knife to get them out. The next time cutting big pieces with cardboard, instead of increasing power, I will reduce the speed to <strong>0.8.</strong></p>
+<p>In addition, I noticed that some bigger pieces had not been completely cut through, and I had to use a knife to get them out. I re-cut some big pieces with cardboard, and instead of increasing power, I reduced the speed to <strong>0.8.</strong></p>
 <div class="text-center">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/IaLSPBNrnwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -136,9 +136,67 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-2.jpg" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-3.jpg" class="img-fluid w-100"/>
-<p>I brought the kit to the landlady where I'm staying. She enjoyed playing with it, and here are her impressive results:</p>
+<p>I brought the kit to the landlady where I'm staying. She enjoyed playing with it, and her results were much more impressive. Here we have a resting bird, an angry lobster, a 2-headed monster with wings, and a square-headed scorpio!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-5.jpg" class="img-fluid w-100"/>
-<p>Here we have a resting bird, an angry lobster, a 2-headed monster with wings, and a square-headed scorpio!</p>
+<p></p>
+<h6>TL;DR</h6>
+<p>Essential steps to laser-cut like a boss:</p>
+<ul>
+<li>Safety first: the laser-cutters cannot be left unattended, and the air ventilation should always be switched on.</li>
+<li>Test the proper settings for the chosen material and machine: power, speed, resolution (for raster engraving) and frequency (for vector cutting)</li>
+<li>Measure the kerf width and modify your design accordingly (measuring with the caliper is quite handy)</li>
+<li>Nest the design within the cutting area, remove hidden lines completely, ensure 1:1 scale, and color-code them respectively to the execution order: <strong>raster (engrave) > engrave (vector cut with faster speed)> inside cut (details) > outside cut (borders)</strong></li>
+<li>Fix the material securely to the bed and manually focus the Z-axis</li>
+<li>Modify the settings for each process (raster, engrave, cut)</li>
+<li>Connect the user controller to the machine and execute</li>
+</ul>
+<p></p>
+
+<h5 id="living-hinge">Additional delivery - Kerf test and living hinges</h5>
+<p>After the regional review, I realized that I didn't proceed with any kerf joint and bending test with other materials rather than cardboard 4mm (which I'm pretty sure I won't use for my Final Project). I also bumped into <a href="https://www.rs-online.com/designspark/laser-cut-living-hinges-for-neater-designs">this article about neater design with living hinges</a>, which is also super tempting. Therefore, I'd like to go a further step by testing the cutting kerf width and the kerf bending capabilities of 2 potential materials for my Final Project: plywood 4mm and acrylic 3mm. I used the same above hexagons to test the kerf width and joint clearance (as acrylic 3mm, I prepared additional hexagons with bigger kerf values: 0.25, 0.30, 0.35 and 0.4). For testing the kerf bending, I intended to use different living hinge templates which I downloaded from <a href="https://obrary.com/products/living-hinge-patterns?variant=798259727">this guy</a> (of course, I modified them a bit).</p>
+<p>I used the same TROTEC Speedy 100 machine to cut my test with plywood 4mm. For acrylic 3mm, I used the bigger TROTEC Speedy 400 with these detailed specs:</p>
+<ul>
+<li>Work area: 1,000 x 600mm</li>
+<li>Height: 305mm</li>
+<li>Laser power: 60-120W</li>
+</ul>
+<p>The settings I used for plywood 4mm:</p>
+<ul>
+<li>Engrave (Raster): <strong>speed=100, power=60, PPI/Hz=1000</strong></li>
+<li>Engrave (Vector): <strong>speed=100, power=80, PPI/Hz=1000</strong></li>
+<li>Cut: <strong>speed=0.5, power=75, PPI/Hz=1000</strong></li>
+</ul>
+<p>The settings I used for acrylic 3mm:</p>
+<ul>
+<li>Engrave (Raster): <strong>speed=100, power=60, PPI/Hz=1000</strong></li>
+<li>Engrave (Vector): <strong>speed=100, power=70, PPI/Hz=20000</strong></li>
+<li>Cut: <strong>speed=0.5, power=60, PPI/Hz=20000</strong></li>
+</ul>
+<p>Final cut pieces came out neat for both machines:</p>
+<p>Bonus: a video recording the super nice process of laser-cutting cast acrylic:</p>
+<p></p>
+<h6>Result of kerf joint test</h6>
+<p>The cut pieces shown below helped me confirm the kerf width of plywood 4mm would be <strong>0.15mm</strong>. As for acrylic 3mm, the joint of the hexagons with <strong>0.40mm</strong> kerf width was still barely loose. Then I used a caliper to measure carefully some dimensions, and after doing some annoying maths, the kerf for acrylic 3mm should be somewhere in between of <strong>0.40mm</strong> and <strong>0.45mm.</strong></p>
+<p>Another thing I noticed after the test was that the surface of the material is also an important factor in making the joint stronger. Cardboard is a soft and flexible material, therefore we can squeeze the parts a bit and they can fit together, and so a slightly bigger kerf doesn't matter. Plywood is a rigid material, so we need to be a bit more precise. However, the rough surface of plywood can help increase adhesion, which is very helpful in the case of loose joints. As for acrylic with a smooth surface, the accuracy of kerf width needs to be increased, since the 2 pieces will slide out very easily if the kerf width is just slightly smaller than the required one.</p>
+<p></p>
+<h6>Result of living hinge test</h6>
+<p>The templates I used for the living hinge test were: straight intersecting lines with different gap values: 3mm, 6mm, and 12mm (yeah I know it was stupid to go with 12mm, but it was for the sake of learning); wavy cut lines with 3mm gap; cross/honeycomb cut lines with 3mm gap; and large hexagons/honeycombs with 3mm gap.</p>
+<p>Some observations for plywood 4mm:</p>
+<ul>
+<li>Straight intersecting lines: the further apart the single intersecting lines are, the bigger the bend radius will be. It was obvious that the one with 12mm gap cannot be bent at all, and the one with 6mm gap can only be bent insignificantly (less than 45 degrees). The one with 3mm gap seemed to be the best option since the bend radius was really stable and I can bend it up to 165 degrees - almost foldable.</li>
+<li>Wavy cut lines: the gap was a bit too big, therefore it can be bent insignificantly.</li>
+<li>Cross/honeycomb cut lines: the second best cutting technique that offered flexibility in all directions.</li>
+<li>Large hexagons/honeycombs: the thin gap made the traces broke immediately when being bent.</li>
+</ul>
+<p>After getting the result of plywood, I modified the design a bit before testing with acrylic: straight intersecting lines with 3mm gap; wavy cut lines with slightly less than 3mm gap; and large hexagons with slightly greater than 3mm gap. The results looked better, however, the one with straight intersecting lines was still the most flexible one.</p>
+<p></p>
+
+<h5>Conclusion</h5>
+<h6>Settings for different materials and processes:</h6>
+<p></p>
+<h6>Living hinges assessment:</h6>
+<p></p>
+<p>That's it, enough testing with laser-cutting. I'm looking forward to other substractive CAM techniques that will be introduced in the upcoming weeks. In case I will laser-cut some parts of my Final Project, I will try to test whether I can assemble those parts with 3D-printed parts after doing the tolerance test in the 5th week.</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">
