@@ -95,7 +95,10 @@ active: 1
 <li>Select the proper <strong>direction</strong>. If there are thin traces on the board, we need to select the <strong>conventional</strong> direction in order to avoid thin traces.</li>
 <li>Click the <strong>calculate</strong> button to calculate the toolpath and click the <strong>save</strong> button to save the <code>.rml</code> file.</li>
 </ul>
-
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/group-1.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/group-2.png" class="img-fluid w-100"/>
+<p></p>
 <p>We used <a href="http://download.rolanddg.jp/en/os_win10_3d.html">Roland VPanel</a> controller to adjusting the milling start point, the feed rate, and spindle speed. Detailed summary of the steps to use the milling machine and VPanel:</p>
 <ul>
 <li>Choose the correct milling bit for the job. We were provided with 2 bits: the 1/64" used for milling the traces on the board and the 1/32" used for drilling holes and cutting.</li>
@@ -103,11 +106,10 @@ active: 1
 <li>Set origin X/Y and Z in Vpanel. Click the <strong>Spindle</strong> button to test if the milling bit can cut through the copper layer.</li>
 <li>Click the <strong>Cut</strong> button, then add the 4 <code>.rml</code> files and start milling hy clicking the <strong>Output</strong> button!</li>
 </ul>
-
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/group-3.jpg" class="img-fluid w-100"/>
 <p>And here you go the result of the test:</p>
-
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/group-4.jpg" class="img-fluid w-100"/>
 <p>We had an issue with the outlines cutting. One side was not cut completely. We managed to generate the file multiple times and did the process again, but we still had the same problem. However, we could tell from the failed test that using the default settings of Fab Modules, the machine is able to mill up to <strong>0.010mm</strong> thin trace.</p>
-
 <h6>What I personally learned</h6>
 <ul>
 <li>Be careful while using the double-sided tape to fix the position of the workpiece. Any negligence can lead to a mess, especially when we are going to use leftovers.</li>
@@ -121,7 +123,6 @@ active: 1
 
 <h5 id="milling">Individual assignment - Milling and soldering the FTDI SERIAL board and the UPDI adapter</h5>
 <p>In order to save time and materials, I teamed up with <a href="http://fabacademy.org/2020/labs/barcelona/students/roger-anguera/">Roger Anguera</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard">Antoine Jaunard</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/marco-cataffo">Marco Cataffo</a> because all of us were going to make the FTDI board & UPDI adapter. We did not expect that due to this we faced a lot of problems which perhaps we would not know of while milling a single board. I also learned how to mill multiple boards at the same time which is useful for my own Final Project.</p>
-
 <h6>mods vs. Fab Modules</h6>
 <p>We tried to use <a href="http://mods.cba.mit.edu/">mods</a> to create our first <code>.rml</code> files for the <a href="http://academy.cba.mit.edu/classes/embedded_programming/FTDI/USB-FT230XS-serial.traces.png">traces</a> of the FTDI SERIAL board. The workflow is a bit more complicated than Fab Modules, but is still digestible in general.</p>
 <p>Some essential steps to follow:</p>
@@ -135,7 +136,9 @@ active: 1
 <li>Delete the WebSocket module and add <strong>module > open server module > file > save</strong> module instead.</li>
 <li>Connect the output file of <strong>Roland SRM-20 milling machine</strong> module to the input of <strong>save file</strong> module. This will help us to be able to save the <code>.rml</code> file.</li>
 </ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/mod.png" class="img-fluid w-100"/>
 <p>After generating the first <code>.rml</code> file, I decided to go back to Fab Modules for its Tue-friendly UI. In order to mill 4 FTDI boards at the same time, we had to generate 4 files with 4 different origins: 0,0,0; 25,0,0; 0,35,0; and 25,35,0. For milling 4 UPDI adapters, we exported 4 files with 4 different origins: 0,0,0; 25,0,0; 0,25,0; and 25,25,0.</p> 
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/fabmdl.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Milling the PCB</h6>
 <p>We used the same SRM-20 machine and followed the same above-mentioned steps to mill the 4 boards. Do I look like I was enjoying fixing the milling bit?</p>
@@ -146,33 +149,30 @@ active: 1
 <iframe width="640" height="480" src="https://www.youtube.com/embed/JKr3zOknjyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
-<p>We then had a problem with the UPDI adapters. We forgot to set the z-axis of the home point to be greater than 0, and that's why it made a scratch across the milled parts. Since there were places left, we milled 2 more UPDIs with the new settings: 50,0,0 and 50,25,0.</p>
+<p>The milled FTDI boards looked pretty nice though:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-0.jpg" class="img-fluid w-100"/>
+<p>We then had a problem with the UPDI adapters. We forgot to set the z-axis of the home point to be greater than 0, and that's why it made a scratch across the milled parts. Since there were places left, we milled 2 more UPDIs with zjog=12 and the new settings: 50,0,0 and 50,25,0.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-2.jpg" class="img-fluid w-100"/>
-<p>Final milled pieces came out neat!</p>
+<p>Final pieces came out neat!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-3.jpg" class="img-fluid w-100"/>
 <p>I used a multimeter to troubleshoot any issues with my PCBs. A multimeter is a device used to measure electric current (amps), voltage (volts) and resistance (ohms). After ensuring the necessary connections, I moved forward to soldering the components.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-4.jpg" class="img-fluid w-100"/>
 <p></p>
-
 <h6>Soldering components</h6>
 <p>Once I had the milled pieces all-good, I started the soldering process. I wrote down a shopping list of all required components and collected them from available components at the Fab Lab.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-1.jpg" class="img-fluid w-100"/>
-<p>It took me plenty of time and patience to solder the components, especially the tiny IC. I even burned my hair while trying to see more clearly with my bare eyes, since the magnifying glass gave me headaches. Rutvij from Fab Lab Barcelona then said one magic phrase that saved my life: "Solder like you're painting with watercolor!". And here you go the pretty and shiny result:</p>
+<p>It took me plenty of time and patience to solder the components, especially the tiny IC. I even burned my hair while trying to see more clearly with my bare eyes, since the LED light equipped loupe gave me headaches. Rutvij Pathak from Fab Lab Barcelona then said one magic phrase that saved my life: "Solder like you're painting with watercolor!". And here you go the pretty, shiny, and conductive (after testing with the multimeter) result:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-2.jpg" class="img-fluid w-100"/>
 <p>I tested the board with Santi's computer, and it was detected!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-3.jpg" class="img-fluid w-100"/>
-<p>However, when I tried to test it with other computers, it couldn't be detected. After trying check whether all connections are in beep-beep mode once again as Oscar suggested, I put more solder to one of the resistors, and finally, the board was detected on my Macbook!</p>
-<p></p>
-
-<h6>TL;DR</h6> 
-<p>Things I learned:</p>
+<p>However, when I tried to test it with other computers, it couldn't be detected. After checking whether all connections are in beep-beep mode once again as Oscar suggested, I put more solder to one of the resistors, and finally, the board was detected on my Macbook!</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-4.jpg" class="img-fluid w-100"/>
+<p>Things I learned during the soldering process:</p>
 <ul>
-<li>mods might be better than Fab Modules in terms of functionality, but the UI is really painful to use.</li>
-<li>Never put any Z to be 0.</li>
-<li>"Solder like you're painting with watercolor!"</li>
-<li>Make sure the components are soldered completely to the board.</li>
-<li>Always test whether there is any open circuit with multimeter.</li>
-<li>I know I said this already, but <strong>NEVER DROP THE MILLING BITS ONTO THE FLOOR!</strong></li>
+<li>Be careful of the soldering order. Make sure it's easy to access all components inside out, and none of them will be over-heated.</p>
+<p> To have easier access to the components, I used double-sided tape to fix the board to the table.</li>
+<li>Make sure the components are soldered completely to the board and all the welds are shiny. "Solder like you're painting with watercolor!"</li>
+<li>Always test whether there is an open circuit with multimeter.</li>
 </ul>
 <p></p>
 
@@ -181,6 +181,10 @@ active: 1
 <p>The steps followed were quite similar to what I did <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#vinylcutter">last week</a> with the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> machine. The only difference is that I had to stick the copper vinyl on top of a plastic sheet, and modify the <strong>Force</strong> settings to be a bit lower, around <strong>80 gf</strong>.</p>
 <p>The trickiest part of this was peeling out the parts that I didn't want from a tiny board (those are the parts usually removed in the milling process). The copper vinyl might be thin, but not flexible. A good tip here was to use 2 tweezers at the same time, 1 tweezer to peel and the other to fix the positions of the parts I wanted to keep. After struggling for a while, I have my pretty cut board which I was quite happy with:</p>
 <p>I decided not to proceed with the soldering process since I realized soldering over those not-so-clingy traces can be a real pain. I might want to try it out if I had some extra hands, and if so, I would solder as if I were performing an <a href="https://www.massageaholic.com/4-hand-massage-all-you-need-to-know/">Ayurvedic massage</a>.</p>
+<p></p>
+
+<h2>Conclusion</h2>
+<p>It was a useful week since electronics and circuits were one of the most important skills which I would like to acquire during the Fab Academy. This week is all about making, but more or less I feel more confident to explore further.</p>
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html">Previous Assignment</a>
