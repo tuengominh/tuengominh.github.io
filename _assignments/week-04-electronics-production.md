@@ -116,7 +116,7 @@ active: 1
 <li>In order to pause the milling process immediately when something bad happens, always keep the speed a bit slow, around 50-60. In the case of using leftovers, keep the speed around 20-30.</li>
 <li>In order to check if the cut depth is enough, we should execute the <strong>Spindle</strong> option and make sure the color of the dust is a pinky combination of copper and resin.</li>
 <li>Always reset Z origin after changing the milling bits, and moving to Z origin should be done <i>poco a poco</i>.</li>
-<li>Boards with thin traces should be generated in conventional direction.</li>
+<li><code>.rml</code> files of boards with thin traces should be generated with conventional direction selected.</li>
 <li>Last but not least, <strong>NEVER DROP THE MILLING BITS ONTO THE FLOOR!</strong></li>
 </ul>
 <p></p>
@@ -178,8 +178,11 @@ active: 1
 
 <h5 id="cutting">Additional delivery - Vinyl cutting the SWD adapter</h5>
 <p>After finishing the minimum requirements of this week, I tried to explore another PCB manufacturing process which is vinyl-cutting the board using copper vinyl sheet. For this extra ball, I chose to cut the SWD adapter. Our instructor Josep Marti guided me through the process since he had experiences cutting the copper vinyl before.</p>
-<img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-1.jpg" class="img-fluid w-100"/>
 <p>The steps followed were quite similar to what I did <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#vinylcutter">last week</a> with the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> machine. The only difference is that I had to stick the copper vinyl on top of a plastic sheet, and modify the <strong>Force</strong> settings to be a bit lower, around <strong>80 gf</strong>.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-1.jpg" class="img-fluid w-100"/>
+<p>Remember to double-check the size of the imported file before cutting.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-0.jpeg" class="img-fluid w-100"/>
+<p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-2.jpg" class="img-fluid w-100"/>
 <p>The trickiest part of this was peeling out the parts that I didn't want from a tiny board (those are the parts usually removed in the milling process). The copper vinyl might be thin, but not flexible. A good tip here was to use 2 tweezers at the same time, 1 tweezer to peel and the other to fix the positions of the parts I wanted to keep. After struggling for a while, I have my pretty cut board which I was quite happy with:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-3.jpg" class="img-fluid w-100"/>
