@@ -7,6 +7,11 @@ active: 1
 ---
 <p class="font-italic font-weight-bold">* All DXF and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cut">here</a>.</p>
 
+<p class="font-italic font-weight-bold">* This week's group assignment was to test the proper <a href="#group">power, speed, frequency and kerf</a> values of different materials using a laser-cutter.</p>
+<!--<p>I also conducted a personal <a href="#living-hinge">kerf and living hinges test</a>.</p>-->
+
+<p class="font-italic font-weight-bold">* Besides, we were required to individually design and cut <a href="#vinylcutter">something</a> with the vinyl-cutter and a <a href="#construction-kit">parametric construction kit</a> that can be assembled in multiple ways.</p>
+
 <p>The very first thing I learned this week is time management. Staying in the queue for using the machines can be a disappointing waste of time if we don't know what to prepare and how to organize what to do. At the end of the week, I could only meet the minimum requirements of the assignment, and I was still left with the desire to try out more techniques and prototypes.</p>
 
 <h2 id="vinylcutter">Individual assignment - Vinyl cutting</h2>
@@ -33,7 +38,7 @@ active: 1
 <p></p>
 
 <h2>Laser cutting</h2>
-<h5>Group assignment - Characterize the laser-cutting process</h5>
+<h5 id="group">Group assignment - Characterize the laser-cutting process</h5>
 <p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these classmates during my session: <a href="http://fabacademy.org/2020/labs/barcelona/students/arman-najari">Arman Naraji</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard">Antoine Jaunard</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/benjamin-scott/">Benjamin Scott</a>.</p>
 <p></p>
 <h6>First test with cardboard 4mm</h6>
@@ -79,7 +84,7 @@ active: 1
 </ul>
 <p></p>
 
-<h5>Individual assignment - Parametric construction kit</h5>
+<h5 id="construction-kit">Individual assignment - Parametric construction kit</h5>
 <h6>OpenSCAD</h6>
 <p>I find that pre-calculating the possibilities with which the pieces will be assembled will inadvertently limit those possibilities to what I can imagine, thereby reducing both the flexibility of the design and the creativity of ones who will actually use it. Therefore, I switched my approach to simply defining a certain rule for the pieces of the construction kit.</p>
 <p>The most important requirement for this week's assignment is that our design must be parametric. Parametric design is basically designing based on defined parameters, and by changing those parameters we can quickly adjust our design. After consulting some images online with the keyword "cardboard parametric design" as well as observing some of the previous year's models available at the Fab Lab, I decided to create a series of isosceles polygons, starting from triangles, squares, pentagons, and ending with hexagons. There would be different sizes for these polygons as well. After cutting and testing, I would add other supporting pieces, if necessary. With this in mind, it was obvious to know that OpenSCAD is the ideal choice to implement the design. Its object-oriented modeling capabilities would greatly reduce my time drawing the pieces.</p>

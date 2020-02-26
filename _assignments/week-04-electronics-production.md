@@ -9,9 +9,9 @@ active: 1
 
 <p class="font-italic font-weight-bold">* To me, electronics is a whole new world, and therefore I need to go through tutorials about <a href="#theory">basic concepts</a> regarding electronic components and circuits.</p>
 
-<p class="font-italic font-weight-bold">* This week's group assignment is to do a <a href="#group">line test</a> in order to understand the machining process.</p>
+<p class="font-italic font-weight-bold">* This week's group assignment was to do a <a href="#group">line test</a> in order to understand the machining process.</p>
 
-<p class="font-italic font-weight-bold">* Following the allocation of the instructors, I needed to make <a href="#milling">the FTDI SERIAL board and the UPDI adapter</a> this week. I also attempted to try <a href="#cutting">another method</a> to fabricate PCB.</p>
+<p class="font-italic font-weight-bold">* Following the allocation of the instructors, I needed to individually make <a href="#milling">the FTDI SERIAL board and the UPDI adapter</a> this week. I also attempted to try <a href="#cutting">another method</a> to fabricate PCB.</p>
 
 <h2 id="theory">Understanding electronics and the boards</h2>
 <p>Yes, you're right, I'm that type of person who needs to understand what I'm doing before doing it. After digesting the take-away notes from Oscar's classes, I followed <a href="https://www.makerspaces.com/basic-electronics/">this tutorial</a> to organize better all pieces of knowledge. Allow me to go through a very long note without any images attached, or go straight to the assignments <a href="#assignment">below.</a></p>
@@ -149,7 +149,7 @@ active: 1
 <iframe width="640" height="480" src="https://www.youtube.com/embed/JKr3zOknjyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
-<p>The milled FTDI boards looked pretty nice though:</p>
+<p>The first time we milled the FTDI boards, the Z-axis wasn't defined correctly and some un-milled parts remained on the PCB after the process. The un-milled parts are a bit coppery shiny compare to the rest. We had to restart the process and mill the boards a little deeper.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-0.jpg" class="img-fluid w-100"/>
 <p>We then had a problem with the UPDI adapters. We forgot to set the z-axis of the home point to be greater than 0, and that's why it made a scratch across the milled parts. Since there were places left, we milled 2 more UPDIs with zjog=12 and the new settings: 50,0,0 and 50,25,0.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-2.jpg" class="img-fluid w-100"/>
