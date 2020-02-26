@@ -9,11 +9,12 @@ active: 1
 <p class="font-italic font-weight-bold">* I separated 2 assignments of this week in order to avoid talking about too many things in a post. Please go 
 <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html">here</a> to see the first part of the assignment.</p>
 <p class="font-italic font-weight-bold">* The Student Agreement has been signed <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/agreement.html">here.</a></p>
+<p class="font-italic font-weight-bold">* The website was built using <a href="#web">Jekyll</a> and was managed with <a href="#git">Gitlab.</a></p> 
 <p class="font-italic font-weight-bold">* To download the source code of the website, please run in Terminal:</p> 
 <pre class="bg-light py-2 mt-0"><code>$ git clone https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo.git</code></pre>
 <p></p>
 
-<h2>Website development</h2>
+<h2 id="web">Website development</h2>
 <h5>Jekyll</h5>
 <p>I have some experiences working with static site generators, namely <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://jekyllrb.com/docs/home/">Jekyll</a>. Our instructor Eduardo Chamorro also introduced us to MkDocs, and from what I understand it works in a similar way. Hence, I went ahead with Jekyll.</p>
 <p>In short, Jekyll renders texts in Markdown/HTML format using Liquid template. Static sites come out ready for deployment.</p>
@@ -43,7 +44,7 @@ active: 1
 </div>
 <p></p>
 
-<h2>Git and Gitlab</h2>
+<h2 id="git">Git and Gitlab</h2>
 
 <h5>SSH key</h5>
 <p>Since I had access to my Gitlab repository from the very first class, and before I already generated an SSH key that links to my personal Gitlab account, the process became quite simple. All I need to do was to copy the SSH key in the personal Gitlab account and paste it into my gitlab.fabcloud.org account as an existing key.</p>

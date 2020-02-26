@@ -74,7 +74,7 @@ active: 1
 <p>Finally, the nightmare has come. I have never been good at electronics when I was in high school, and no one has ever considered me as a neat-handed person. Fortunately, the workflow was quite simple.</p>
 
 <h5 id="group">Group assignment - Characterize PCB production rules</h5>
-<p>The goal of this group assignment is for us to know the potential gaps between our traces, or how thin the traces could be. Since the machines are always occupied and the booking system at Fab Lab Barcelona was not really effective, our class couldn't have a chance to do many group tests. In the end, we were able to finish only 1 group test with the participation of the whole class.</p> 
+<p>The goal of this group assignment is for us to know the potential gaps between our traces, or how thin the traces could be. Since the machines were always occupied and the booking system at Fab Lab Barcelona was not really effective, our class couldn't have a chance to do many group tests. In the end, we were able to finish only 1 group test with the participation of the whole class.</p> 
 
 <p>We used the <a href="https://www.rolanddga.com/es/productos/3d/srm-20-fresadora-compacta">Roland MonoFab SRM-20</a> machine to mill this <a href="http://academy.cba.mit.edu/classes/electronics_production/linetest.png">test file</a> provided by the instructors. Detailed specs of the machine:</p>
 <ul>
@@ -88,23 +88,23 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/machine.jpg" class="img-fluid w-100"/>
 <p>We prepared the <code>.rml</code> files using <a href="http://fabmodules.org/">Fab Modules</a>. The workflow of Fab Modules is pretty straightforward, and here are some recaps of steps followed:</p>
 <ul>
-<li>Select <code>.png</code> input format and load the <code>.png</code> files</li>
+<li>Select <code>.png</code> input format and load the <code>.png</code> file</li>
 <li>Select <code>.rml</code> output format</li>
 <li>Select the proper process: PCB traces (1/64) or PCB outline (1/32). This will automatically define the proper <strong>cut depth</strong> (0.1mm for milling traces and 0.6mm for cutting).</li>
 <li>Select <strong>SRM-20</strong> in the output machine. Modify settings to origin 0,0,0 (x,y,z); zjog = 12 (to make sure the milling bit will be lifted up while moving across the workpiece and avoid damaging both the traces and the fragile bit itself); and home 0,0,12 (x,y,z).</li>
-<li>Select the proper <strong>direction</strong>. If there are thin traces on the board, we need to select the <strong>conventional</strong> direction in order to avoid thin traces.</li>
+<li>Select the proper <strong>direction</strong>. If there are thin traces on the board, we need to select the <strong>conventional</strong> direction in order to avoid broken traces.</li>
 <li>Click the <strong>calculate</strong> button to calculate the toolpath and click the <strong>save</strong> button to save the <code>.rml</code> file.</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/group-1.png" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/group-2.png" class="img-fluid w-100"/>
 <p></p>
-<p>We used <a href="http://download.rolanddg.jp/en/os_win10_3d.html">Roland VPanel</a> controller to adjusting the milling start point, the feed rate, and the spindle speed. A detailed summary of the steps to use the milling machine and VPanel:</p>
+<p>We used <a href="http://download.rolanddg.jp/en/os_win10_3d.html">Roland VPanel</a> controller to adjust the milling start point, the feed rate, and the spindle speed. Detailed summary of how to use the milling machine and VPanel:</p>
 <ul>
 <li>Choose the correct milling bit for the job. We were provided with 2 bits: the 1/64" used for milling the traces on the board and the 1/32" used for drilling holes and cutting.</li>
 <li>Insert the proper milling bit into the machine and manually adjust the Z origin.</li>
 <li>Set origin X/Y and Z in Vpanel. Click the <strong>Spindle</strong> button to test if the milling bit can cut through the copper layer.</li>
-<li>Click the <strong>Cut</strong> button, then add the 4 <code>.rml</code> files and start milling by clicking the <strong>Output</strong> button!</li>
+<li>Click the <strong>Cut</strong> button, then add the <code>.rml</code> file and start milling by clicking the <strong>Output</strong> button!</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/group-3.jpg" class="img-fluid w-100"/>
 <p>And here you go the result of the test:</p>
@@ -155,7 +155,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-2.jpg" class="img-fluid w-100"/>
 <p>Final pieces came out neat!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-3.jpg" class="img-fluid w-100"/>
-<p>I used a multimeter to troubleshoot any issues with my PCBs. A multimeter is a device used to measure electric current (amps), voltage (volts) and resistance (ohms). After ensuring the necessary connections, I moved forward to soldering the components.</p>
+<p>I used a multimeter to troubleshoot issues with my PCBs. A multimeter is a device used to measure electric current (amps), voltage (volts) and resistance (ohms). After ensuring the necessary connections, I moved forward to soldering the components.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-4.jpg" class="img-fluid w-100"/>
 <p></p>
 <h6>Soldering components</h6>
@@ -167,7 +167,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-3.jpg" class="img-fluid w-100"/>
 <p>However, when I tried to test it with other computers, it couldn't be detected. After checking whether all connections are in beep-beep mode once again as Oscar suggested, I put more solder to one of the resistors, and finally, the board was detected on my Macbook!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-4.jpg" class="img-fluid w-100"/>
-<p>Things I learned during the soldering process:</p>
+<h6>Things I learned during the soldering process</h6>
 <ul>
 <li>Be careful of the soldering order. Make sure it's easy to access all components inside out, and none of them will be over-heated.</li>
 <li> To have easier access to the components, I used double-sided tape to fix the board to the table.</li>
@@ -187,7 +187,7 @@ active: 1
 <p></p>
 
 <h2>Conclusion</h2>
-<p>It was a useful week since electronics and circuits were one of the most important skills which I would like to acquire during the Fab Academy. This week is all about making, but more or less I feel more confident to explore further.</p>
+<p>It was a useful week since electronics was one of the most important skills that I would like to acquire during the Fab Academy. This week is all about making, but I feel more confident to explore further the designing and programming process.</p>
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html">Previous Assignment</a>
