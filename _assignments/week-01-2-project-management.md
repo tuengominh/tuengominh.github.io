@@ -26,7 +26,9 @@ active: 1
 <li>There are pieces of HTML that are re-usable in the <code>_includes</code> folder, e.g. footer or menu.</li>
 <li>Finally, I need to set a <code>baseurl</code> in <code>_config.yml</code> for configuration.</li> 
 <li><kbd>$ bundle exec jekyll serve</kbd>: now if I browse <a href="http://localhost:4000">http://localhost:4000</a> in my local machine, I can review my rendered site.</li>
+<li>To review the content of the project as a tree in Terminal, run <kbd>find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'</kbd>.</li>
 </ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-01/jekyll.png" class="img-fluid w-100"/>
 <p>A step-by-step tutorial is available <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">here.</a></p>
 <p></p>
 

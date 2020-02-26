@@ -8,9 +8,9 @@ active: 1
 
 <p class="font-italic font-weight-bold">* I separated 2 assignments of this week in order to avoid talking about too many things in a post. Please go 
 <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-2-project-management.html">here</a> to see the second part of the assignment.</p>
+<p class="font-italic font-weight-bold">* I used <a href="https://www.apple.com/keynote/">Keynote</a> to sketch my ideas. It may sound weird but I'm not really comfortable with my handwriting and drawings. And it's quite easy, I just need to search for images online, and draw some lines or rectangles to quickly (and nicely) demonstrate what's on my mind.</p>
 
 I have 2 nephews, one is 6 years old and one is 4 years old. As a dedicated aunt, I've always wanted to build or develop some toys that could engage them in STEAM activities, so when they grow up they will be more than well-prepared to adapt to future jobs. That's why I'm pretty sure that my Final Project should be a connected toy, and I came up with some below <strong>INITIAL</strong> ideas.
-<p class="font-italic font-weight-bold">* I used <a href="https://www.apple.com/keynote/">Keynote</a> to sketch my ideas. It may sound weird but I'm not really comfortable with my handwriting and drawings. And it's quite easy, I just need to search for images online, and draw some lines or rectangles to quickly (and nicely) demonstrate what's on my mind.</p>
 <p></p>
 
 <h2 id="idea">#1. A modular robot to teach kids how to make (almost) anything</h2>
@@ -64,15 +64,16 @@ I actually feel less panic with this idea than the other one, because I can find
 </ul>
 <p></p>
 
-<h2>Final decision</h2>
-<p>After having a discussion with our instructor Santiago Fuentemilla in the 4th week, I decided to go ahead with the <strong>MODULAR ROBOT.</strong> The twist-able segments can complicate my process of designing and programming the electronic parts of the prototype. Hence, in order to make my life easier, Santi suggested me to go with the <strong>FIRST</strong> sketch. In addition, the younger kids won't be confused with the simple plug-and-play workflow though.</p>
-<p>Santi also introduced some cool projects related to my idea:</p>
+<h2>Final decision - Idea #1</h2>
+<p>After having a discussion with our instructors Santiago Fuentemilla and Xavier Dominguez in the 4th week, I decided to go ahead with the <strong>MODULAR ROBOT.</strong> The twist-able segments can complicate my process of designing and programming the electronic parts of the prototype. Hence, in order to make my life easier, Santi suggested me to go with the <strong>FIRST</strong> sketch. In addition, the younger kids won't be confused with the simple plug-and-play workflow though.</p>
+<p>Santi and Xavi also introduced some cool projects related to my idea:</p>
 <ul>
 <li><a href="http://archive.fabacademy.org/archives/2017/fablabamsterdam/students/60/finalprojectpage.html">Self-built IoT devices from LEGO bricks</a></li>
-<li><a href="https://kinderlabrobotics.com/">KIBO coding robot</a></li>
 <li><a href="http://archive.fabacademy.org/fabacademy2017/fablabbcn/students/74/finalproject.html">DIS/ORDER modular circuit for learning electronics</a></li>
+<li><a href="https://www.youtube.com/watch?v=FTpNI4NCvXA">Makeblock Inventor Kit with the amazing idea about connecting blocks using pogo pins.</a></li>
+<li><a href="https://ifttt.com/">IFTTT platform which can make my life easier connecting different parts of the project and go deep dive into the logics.</a></li>
 </ul>
-<p>Since what makes my idea different from other learning toy projects is the debugging process and the Logic blocks, my MVP for Fab Academy will have <strong>1 input block, 1 output block, and at least 2 logic blocks</strong>. We also think that being hung up on sensors and actuators will both distract me from making an almost-there prototype and distract the kids from trying out as many programming concepts as possible.</p>
+<p>Since we all agreed that what makes my idea different from other learning toy projects is the debugging process and the Logic blocks, my MVP for Fab Academy will have <strong>1 input block, 1 output block, and at least 2 logic blocks</strong>. We also think that being hung up on sensors and actuators will both distract me from making an almost-there prototype and distract the kids from trying out as many programming concepts as possible.</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">
