@@ -180,7 +180,7 @@ active: 1
 <p>After finishing the minimum requirements of this week, I tried to explore another PCB manufacturing process which is vinyl-cutting the board using copper vinyl sheet. For this extra ball, I chose to cut the SWD adapter. Our instructor Josep Marti guided me through the process since he had experiences cutting the copper vinyl before.</p>
 <p>The steps followed were quite similar to what I did <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#vinylcutter">last week</a> with the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> machine. The only difference is that I had to stick the copper vinyl on top of a plastic sheet, and modify the <strong>Force</strong> settings to be a bit lower, around <strong>80 gf</strong>.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-1.jpg" class="img-fluid w-100"/>
-<p>Remember to double-check the size of the imported file before cutting.</p>
+<p>Remember to double-check the correct size of the imported file and get the size of the loaded material from the machine before cutting.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-0.jpeg" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-2.jpg" class="img-fluid w-100"/>
