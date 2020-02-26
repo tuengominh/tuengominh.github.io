@@ -11,7 +11,7 @@ active: 1
 
 <p class="font-italic font-weight-bold">* This week's group assignment is to do a <a href="#group">line test</a> in order to understand the machining process.</p>
 
-<p class="font-italic font-weight-bold">Following the allocation of the instructors, I needed to make <a href="#milling">the FTDI SERIAL board and the UPDI adapter</a> this week. I also attempted to try <a href="#cutting">another method</a> to fabricate PCB.</p>
+<p class="font-italic font-weight-bold">* Following the allocation of the instructors, I needed to make <a href="#milling">the FTDI SERIAL board and the UPDI adapter</a> this week. I also attempted to try <a href="#cutting">another method</a> to fabricate PCB.</p>
 
 <h2 id="theory">Understanding electronics and the boards</h2>
 <p>Yes, you're right, I'm that type of person who needs to understand what I'm doing before doing it. After digesting the take-away notes from Oscar's classes, I followed <a href="https://www.makerspaces.com/basic-electronics/">this tutorial</a> to organize better all pieces of knowledge. Allow me to go through a very long note without any images attached, or go straight to the assignments <a href="#assignment">below.</a></p>
@@ -48,7 +48,7 @@ active: 1
 <li><strong>Resistors (R):</strong> They add resistance to the circuit and reduces the flow of electrical current. The resistance values are measured in ohms (Ω). Resistors of over 1000Ω are typically shorted using the letter K.</li>
 <li><strong>Capacitors (C):</strong> They ensure a steady electrical flow by storing electricity and discharging it into the circuit when there is a drop in electricity. Capacitors are measured in Farads( pF, nF, uF). These are often used interchangeably and that’s why a conversion chart is handy.</li>
 <li><strong>Diodes (D):</strong> They only allow electrical current to pass through them in one direction in order to prevent electricity from flowing in the wrong direction. <strong>LED</strong> is a light-emitting diode that will emit light when electricity flows through it.</li>
-<li><strong>Transistors (T):</strong>They turn current on or off when triggered by an electric signal by taking in a small electrical current at a base pin and amplifying it such that a much larger current can pass between the collector and emitter pins.</li>
+<li><strong>Transistors (T):</strong> They turn current on or off when triggered by an electric signal by taking in a small electrical current at a base pin and amplifying it such that a much larger current can pass between the collector and emitter pins.</li>
 <li><strong>Integrated circuit (IC):</strong> An integrated circuit is an entire specialized circuit that has been miniaturized to fit onto one small chip. Each leg of the chip connecting to a point within the circuit.</li>
 </ul>
 <p></p>
@@ -56,7 +56,7 @@ active: 1
 <h5>Micro-controller and micro-processor</h5>
 <ul>
 <li><strong>Micro-processor:</strong> is an IC that has only the CPU inside them. RAM, ROM, and other peripherals must be added externally to make them functional. Microprocessors perform unspecific tasks such as developing software, games, websites, photo editing, creating documents, etc. The relationship between input and output is not defined. They need a high amount of resources like RAM, ROM, I/O ports, etc.</li>
-<li><strong>Micro-controller:</strong> is an IC containing a processor and ROM. We can consider a micro-controller as a mini programmable computer.  Micro-controllers are dedicated to one task and run one specific program, for example, keyboards, mouse, remote, microwave, mobiles, watches, etc. The relationship between input and output is specifically defined. The ROM is used to store the program instructions that are rarely changed during the life of the system, sometimes known as <strong>firmware</strong>. There are also a set of input and output pins which can be used to interact with other micro-controllers.</li>
+<li><strong>Micro-controller:</strong> is an IC containing a processor and ROM. We can consider a micro-controller as a mini programmable computer.  Micro-controllers are dedicated to one task and run one specific program, for example, keyboards, mouse, remote, microwave, mobiles, watches, etc. The relationship between input and output is specifically defined. The ROM is used to store the program instructions that are rarely changed during the life of the system, sometimes known as <strong>firmware</strong>. There is also a set of input and output pins that can be used to interact with other micro-controllers.</li>
 </ul>
 <p></p>
 
@@ -85,7 +85,7 @@ active: 1
 <li>Input Format : RML-1</li>
 <li>Material: Modeling Wax, Chemical Wood, Foam, Acrylic, PCB</li>
 </ul>
-
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/machine.jpg" class="img-fluid w-100"/>
 <p>We prepared the <code>.rml</code> files using <a href="http://fabmodules.org/">Fab Modules</a>. The workflow of Fab Modules is pretty straightforward, and here are some recaps of steps followed:</p>
 <ul>
 <li>Select <code>.png</code> input format and load the <code>.png</code> files</li>
@@ -99,12 +99,12 @@ active: 1
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/group-2.png" class="img-fluid w-100"/>
 <p></p>
-<p>We used <a href="http://download.rolanddg.jp/en/os_win10_3d.html">Roland VPanel</a> controller to adjusting the milling start point, the feed rate, and spindle speed. Detailed summary of the steps to use the milling machine and VPanel:</p>
+<p>We used <a href="http://download.rolanddg.jp/en/os_win10_3d.html">Roland VPanel</a> controller to adjusting the milling start point, the feed rate, and the spindle speed. A detailed summary of the steps to use the milling machine and VPanel:</p>
 <ul>
 <li>Choose the correct milling bit for the job. We were provided with 2 bits: the 1/64" used for milling the traces on the board and the 1/32" used for drilling holes and cutting.</li>
 <li>Insert the proper milling bit into the machine and manually adjust the Z origin.</li>
 <li>Set origin X/Y and Z in Vpanel. Click the <strong>Spindle</strong> button to test if the milling bit can cut through the copper layer.</li>
-<li>Click the <strong>Cut</strong> button, then add the 4 <code>.rml</code> files and start milling hy clicking the <strong>Output</strong> button!</li>
+<li>Click the <strong>Cut</strong> button, then add the 4 <code>.rml</code> files and start milling by clicking the <strong>Output</strong> button!</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/group-3.jpg" class="img-fluid w-100"/>
 <p>And here you go the result of the test:</p>
@@ -169,17 +169,20 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-4.jpg" class="img-fluid w-100"/>
 <p>Things I learned during the soldering process:</p>
 <ul>
-<li>Be careful of the soldering order. Make sure it's easy to access all components inside out, and none of them will be over-heated.</p>
-<p> To have easier access to the components, I used double-sided tape to fix the board to the table.</li>
+<li>Be careful of the soldering order. Make sure it's easy to access all components inside out, and none of them will be over-heated.</li>
+<li> To have easier access to the components, I used double-sided tape to fix the board to the table.</li>
 <li>Make sure the components are soldered completely to the board and all the welds are shiny. "Solder like you're painting with watercolor!"</li>
-<li>Always test whether there is an open circuit with multimeter.</li>
+<li>Always test whether there is an open circuit with the multimeter.</li>
 </ul>
 <p></p>
 
 <h5 id="cutting">Additional delivery - Vinyl cutting the SWD adapter</h5>
 <p>After finishing the minimum requirements of this week, I tried to explore another PCB manufacturing process which is vinyl-cutting the board using copper vinyl sheet. For this extra ball, I chose to cut the SWD adapter. Our instructor Josep Marti guided me through the process since he had experiences cutting the copper vinyl before.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-1.jpg" class="img-fluid w-100"/>
 <p>The steps followed were quite similar to what I did <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#vinylcutter">last week</a> with the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> machine. The only difference is that I had to stick the copper vinyl on top of a plastic sheet, and modify the <strong>Force</strong> settings to be a bit lower, around <strong>80 gf</strong>.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-2.jpg" class="img-fluid w-100"/>
 <p>The trickiest part of this was peeling out the parts that I didn't want from a tiny board (those are the parts usually removed in the milling process). The copper vinyl might be thin, but not flexible. A good tip here was to use 2 tweezers at the same time, 1 tweezer to peel and the other to fix the positions of the parts I wanted to keep. After struggling for a while, I have my pretty cut board which I was quite happy with:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-3.jpg" class="img-fluid w-100"/>
 <p>I decided not to proceed with the soldering process since I realized soldering over those not-so-clingy traces can be a real pain. I might want to try it out if I had some extra hands, and if so, I would solder as if I were performing an <a href="https://www.massageaholic.com/4-hand-massage-all-you-need-to-know/">Ayurvedic massage</a>.</p>
 <p></p>
 
