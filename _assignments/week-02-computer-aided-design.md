@@ -7,8 +7,9 @@ active: 1
 ---
 
 <p class="font-italic font-weight-bold">* All STL and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cad">here</a>.</p>
+<p class="font-italic font-weight-bold">* Software I tried: <a href="#2d">Illustrator</a>, <a href="#openscad">OpenSCAD</a>, <a href="#fusion">Fusion 360</a>, <a href="#grasshopper">Grasshopper</a>, and <a href="#blender">Blender</a>.</p>
 
-<p>This week was both interesting and overwhelming to me. There were too many new things to learn, especially when my knowledge of 3D design is almost zero. Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
+<p>This week was both interesting and overwhelming to me. There were too many new things to learn, especially when my knowledge of 3D design is almost zero. I only had a very <strong>BRIEF</strong> introduction about creating standard primitives with <a href="https://www.autodesk.com/products/3ds-max/overview">3Ds Max</a> when I went to college, and it has been almost 10 years. Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
 <p>My plan was to design 3D-printable modules that have some similarities with the modular robot in my mind (see <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html#idea">idea #1</a>).</p> 
  
 <h2>2D design</h2>
@@ -28,19 +29,7 @@ active: 1
 <p></p>
 
 <h2>3D design</h2>
-<h5>Previous experience with 3Ds Max</h5>
-<p>I only had a very <strong>BRIEF</strong> introduction about creating standard primitives with <a href="https://www.autodesk.com/products/3ds-max/overview">3Ds Max</a> when I went to college, and it has been almost 10 years. Below is one of my previous low-poly models designed in 3Ds Max:</p>
-<div class="sketchfab-embed-wrapper text-center">
-    <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/83082e9022044550a2ba6207adaf420b/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/3d-models/temple-3ds-max-83082e9022044550a2ba6207adaf420b?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic;font-weight: bold; color: #1CAAD9;">Temple</a>
-    by <a href="https://sketchfab.com/tuengominh?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic;font-weight: bold; color: #1CAAD9;">tuengominh</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic;font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
-<p></p>
-<h5>OpenSCAD</h5>
+<h5 id="openscad">OpenSCAD</h5>
 <p>Eduardo briefly introduced us to OpenSCAD before his Grasshopper session, and I found the idea of a script-only based modeler quite tempting. For my Final Project, I have a few options to model the <strong>connectors</strong> of blocks, such as built-in magnets, LEGO-compatible bricks, or hinges. I decided to try the <strong>LEGO</strong> option using OpenSCAD. I followed <a href="https://www.youtube.com/watch?v=ecd_eWPnynk">this tutorial</a>, with some customizations. My LEGO brick has a square shape and much thinner.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/openscad-1.png" class="img-fluid w-100"/>
 <p>One of my favorite things about OpenSCAD is that I can modify a few variables to change the design of a whole object by <strong>TYPING</strong> (no need to select or click any button) or to check if certain parts of the modules can joint together without any complicated pre-calculation. In short, I can incorporate parametric design fast and algorithmically.</p>
@@ -82,7 +71,7 @@ active: 1
 <h6>Conclusion</h6> 
 <p><strong>I LOVE OPENSCAD!</strong> I've never imagined that I could create my first 3D Design in such a precise and straightforward way. It was such a nice experience for someone who has a programming background like me. It took me less than 10 minutes to create each model, and I'm so happy with the results. OpenSCAD is really powerful and has many potentials. I'd like to explore it more in the future.</p>
 <p></p>
-<h5>Fusion 360</h5>
+<h5 id="fusion">Fusion 360</h5>
 <p>Before the class, I took a look at previous students' websites and noticed that many of them chose to use <a href="https://www.autodesk.com/products/fusion-360/overview">Fusion 360.</a> That's why I tried it next. Since none of the "traditional" software (with the concept of modeling parts and making assemblies) has a Tue-friendly and intuitive UI, I watched <strong>MANY</strong> online tutorials in order to get used to the workflow. This is a good <a href="https://www.youtube.com/watch?v=qvrHuaHhqHI">tutorial</a>. After watching his series, I could create my first <strong>hinge connector</strong> model and I was quite happy with it.</p>
 <p>Below is the how-I-did-that videos:</p>
 <div class="text-center">
@@ -117,7 +106,7 @@ active: 1
 <h6>Conclusion</h6> 
 <p>I think Fusion 360 is pretty mature and its GUI is more intuitive than some other traditional CAD software. I can follow the tutorials smoothly, and imagining how to create bodies from sketches or how to join them is not an impossible task. I'm quite sure that I will use Fusion 360 and OpenSCAD to model the main parts of my Final Project (if there is no potential limitation regarding switching between them). However, the fancy idea of "parametric modeling inside a <a href="https://es.wikipedia.org/wiki/NURBS">NURBs-based</a> software with the help of a node-based visual programming environment" convinced me to try <a href="https://www.grasshopper3d.com/">Grasshopper</a>.</p>
 <p></p>
-<h5>Rhino and Grasshopper</h5>
+<h5 id="grasshopper">Rhino and Grasshopper</h5>
 <p> I followed this <a href="https://blog.ramboll.com/rcd/tutorials/a-beginners-guide-to-visual-scripting-with-grasshopper.html">tutorial</a> to learn Grasshopper without getting my brain tangled by its "spaghetti" workflow. However, my brain still exploded when I tried to create a press-fit enclosure for my robot block. In the end, since I'm not there yet, I went back to this <a href="https://www.youtube.com/watch?v=ZKfNJ1xEbaQ&feature=share&fbclid=IwAR11kqTYkCtYluORHRRZ4WRHLGB39lUTlNRoORs2SoBvbF0nVmzrmNKJaow">tutorial</a> and simply create the same parametric rotating table.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/grasshopper-1.jpg" class="img-fluid w-100"/>
 <p>Here are some customizations, mostly with using the same sliders to control both extrusion and offset at the same time:</p>
@@ -177,7 +166,7 @@ active: 1
 </pre>
 <p>In terms of solid mechanical objects, I will definitely go back to Fusion 360. However, I think Grasshopper is considerable when we need to design a large-scale and fancy construction. I still wanted to try an object-oriented approach by defining my own Cluster, hence I'm thinking about giving it the second try in the next assignment.</p>
 <p></p>
-<h5>Blender</h5>
+<h5 id="blender">Blender</h5>
 <p>I've had multiple headaches dealing with <a href="https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/3DSMax-Modifiers/files/GUID-D05DF785-F905-453E-BF64-DB4D59A9F200-htm.html">editable poly</a> in 3Ds Max before, so I was totally not interested in trying <a href="https://www.blender.org/">Blender</a>. But I'd like to review again what I know about mesh-based modeling, so I created a simple and random <strong>enclosure</strong> for the modular blocks of my robot (I have zero knowledge about circuit design anyway).</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/blender-1.png" class="img-fluid w-100"/>
 <p>And this is what happened when I exported the <code>.blend</code> file to <code>.stl</code> and opened the object inside Fusion 360. In order to continue working on the model, I need to convert the <var>Mesh Body</var> to <a href="https://en.wikipedia.org/wiki/Boundary_representation">BREP.</a></p>

@@ -17,11 +17,11 @@ I have 2 nephews, one is 6 years old and one is 4 years old. As a dedicated aunt
 <p></p>
 <h5>What will it do?</h5>
 <p>For the first idea, I intend to make an off-the-screen and modular robot that kids can customize in order to learn basic ideas of programming and robotics. This concept is not new, in fact, it has a long history with many innovative approaches. Even though, the new value I'd like to contribute is how kids can develop a <strong>DEBUG</strong> mindset. My robot should be able to inform kids (or parents) whether each step is successful or there is an error.</p>
-<h6>Initial sketch</h6> 
+<h6 id="final">Initial sketch</h6> 
 <p>There will be 3 groups of blocks: Input, Logic, Output. Kids will need at least one block of each group to perform the desired task. I want the robot to symbolize a cute and modular animal, for example, a Dachshund. Then my nephews and even my friends said they want to see an Asian dragon, because "You're Asian!" and "Dogs are boring, dragons are cool, they have powerrrrrrrr!". Hence, here is a dragon with customized powers that can be defined by kids through a trial-and-error process:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/idea-1.png" class="img-fluid w-100"/>
 <p></p>
-<h6>Second sketch</h6>
+<h6>Second iteration</h6>
 <p>I had a nice brainstorming session with my classmate David Prieto, and he suggested me to use only 3 segments: 1 includes all inputs, 1 includes all logics, and 1 includes all outputs. Each segment will have a rotating dial/knob for kids to turn independently in order to choose a symbol they like. This can help me to reduce the workload of making too many pieces of cubes.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/idea.jpg" class="img-fluid w-100"/>
 <p>Another option is to make 3 segments as 3 (hexagon) cylinders twisted around an internal pivot (like the mechanism of a Rubik), each segment will have up to 4-6 faces, and each face will have the symbol of a single sensor/logic/actuator. 3 segments will make up to 4-6 combinations of input/logic/output, and each combination will represent a behavior. So, the dragon will have a series of 4-6 behaviors made from randomly combined faces when kids twist the segments.</p>
@@ -65,13 +65,13 @@ I actually feel less panic with this idea than the other one, because I can find
 <p></p>
 
 <h2>Final decision - Idea #1</h2>
-<p>After having a discussion with our instructors Santiago Fuentemilla and Xavier Dominguez in the 4th week, I decided to go ahead with the <strong>MODULAR ROBOT.</strong> The twist-able segments can complicate my process of designing and programming the electronic parts of the prototype. Hence, in order to make my life easier, Santi suggested me to go with the <strong>FIRST</strong> sketch. In addition, the younger kids won't be confused with the simple plug-and-play workflow though.</p>
+<p>After having a discussion with our instructors Santiago Fuentemilla and Xavier Dominguez in the 4th week, I decided to go ahead with the <strong>MODULAR ROBOT.</strong> The twist-able segments can complicate my process of designing and programming the electronic parts of the prototype. Hence, in order to make my life easier, Santi suggested me to go with the <a href="#final"><strong>FIRST</strong></a> sketch. In addition, the younger kids won't be confused with the simple plug-and-play workflow though.</p>
 <p>Santi and Xavi also introduced some cool projects related to my idea:</p>
 <ul>
 <li><a href="http://archive.fabacademy.org/archives/2017/fablabamsterdam/students/60/finalprojectpage.html">Self-built IoT devices from LEGO bricks</a></li>
-<li><a href="http://archive.fabacademy.org/fabacademy2017/fablabbcn/students/74/finalproject.html">DIS/ORDER modular circuit for learning electronics</a></li>
-<li><a href="https://www.youtube.com/watch?v=FTpNI4NCvXA">Makeblock Inventor Kit with the amazing idea about connecting blocks using pogo pins.</a></li>
-<li><a href="https://ifttt.com/">IFTTT platform which can make my life easier connecting different parts of the project and go deep dive into the logics.</a></li>
+<li><a href="http://archive.fabacademy.org/fabacademy2017/fablabbcn/students/74/finalproject.html">DIS/ORDER modular circuit</a>for learning electronics</li>
+<li><a href="https://www.youtube.com/watch?v=FTpNI4NCvXA">Makeblock Inventor Kit</a>with the amazing idea about connecting blocks using pogo pins</li>
+<li><a href="https://ifttt.com/">IFTTT platform</a>which can make my life easier connecting different parts of the project and go deep dive into the logics</li>
 </ul>
 <p>Since we all agreed that what makes my idea different from other learning toy projects is the debugging process and the Logic blocks, my MVP for Fab Academy will have <strong>1 input block, 1 output block, and at least 2 logic blocks</strong>. We also think that being hung up on sensors and actuators will both distract me from making an almost-there prototype and distract the kids from trying out as many programming concepts as possible.</p>
 <p></p>
