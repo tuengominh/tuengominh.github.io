@@ -69,9 +69,9 @@ I actually feel less panic with this idea than the other one, because I can find
 <p>Santi and Xavi also introduced some cool projects related to my idea:</p>
 <ul>
 <li><a href="http://archive.fabacademy.org/archives/2017/fablabamsterdam/students/60/finalprojectpage.html">Self-built IoT devices from LEGO bricks</a></li>
-<li><a href="http://archive.fabacademy.org/fabacademy2017/fablabbcn/students/74/finalproject.html">DIS/ORDER modular circuit</a>for learning electronics</li>
-<li><a href="https://www.youtube.com/watch?v=FTpNI4NCvXA">Makeblock Inventor Kit</a>with the amazing idea about connecting blocks using pogo pins</li>
-<li><a href="https://ifttt.com/">IFTTT platform</a>which can make my life easier connecting different parts of the project and go deep dive into the logics</li>
+<li><a href="http://archive.fabacademy.org/fabacademy2017/fablabbcn/students/74/finalproject.html">DIS/ORDER modular circuit</a> for learning electronics</li>
+<li><a href="https://www.youtube.com/watch?v=FTpNI4NCvXA">Makeblock Inventor Kit</a> with the amazing idea about connecting blocks using pogo pins</li>
+<li><a href="https://ifttt.com/">IFTTT platform</a> which can make my life easier connecting different parts of the project and go deep dive into the logics</li>
 </ul>
 <p>Since we all agreed that what makes my idea different from other learning toy projects is the debugging process and the Logic blocks, my MVP for Fab Academy will have <strong>1 input block, 1 output block, and at least 2 logic blocks</strong>. We also think that being hung up on sensors and actuators will both distract me from making an almost-there prototype and distract the kids from trying out as many programming concepts as possible.</p>
 <p></p>

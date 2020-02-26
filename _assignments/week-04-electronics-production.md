@@ -167,13 +167,14 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-3.jpg" class="img-fluid w-100"/>
 <p>However, when I tried to test it with other computers, it couldn't be detected. After checking whether all connections are in beep-beep mode once again as Oscar suggested, I put more solder to one of the resistors, and finally, the board was detected on my Macbook!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-4.jpg" class="img-fluid w-100"/>
-<h6>Things I learned during the soldering process</h6>
+<h6>What I learned</h6>
 <ul>
 <li>Be careful of the soldering order. Make sure it's easy to access all components inside out, and none of them will be over-heated.</li>
 <li> To have easier access to the components, I used double-sided tape to fix the board to the table.</li>
 <li>Make sure the components are soldered completely to the board and all the welds are shiny. "Solder like you're painting with watercolor!"</li>
 <li>Always test whether there is an open circuit with the multimeter.</li>
 </ul>
+<p>In conclusion, it was a useful week since electronics was one of the most important skills that I would like to acquire during the Fab Academy. This week is all about showing our capabilities of making the PCB, but I feel more confident to explore further the designing and programming process.</p>
 <p></p>
 
 <h5 id="cutting">Additional delivery - Vinyl cutting the SWD adapter</h5>
@@ -188,9 +189,6 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-3.jpg" class="img-fluid w-100"/>
 <p>I decided not to proceed with the soldering process since I realized soldering over those not-so-clingy traces can be a real pain. I might want to try it out if I had some extra hands, and if so, I would solder as if I were performing an <a href="https://www.massageaholic.com/4-hand-massage-all-you-need-to-know/">Ayurvedic massage</a>.</p>
 <p></p>
-
-<h2>Conclusion</h2>
-<p>It was a useful week since electronics was one of the most important skills that I would like to acquire during the Fab Academy. This week is all about making, but I feel more confident to explore further the designing and programming process.</p>
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html">Previous Assignment</a>

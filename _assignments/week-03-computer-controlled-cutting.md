@@ -14,7 +14,8 @@ active: 1
 
 <p>The very first thing I learned this week is time management. Staying in the queue for using the machines can be a disappointing waste of time if we don't know what to prepare and how to organize what to do. At the end of the week, I could only meet the minimum requirements of the assignment, and I was still left with the desire to try out more techniques and prototypes.</p>
 
-<h2 id="vinylcutter">Individual assignment - Vinyl cutting</h2>
+<h2 id="vinylcutter">Vinyl cutting</h2>
+<h5>Individual assignment - Cut a vinyl sticker</h5>
 <p>I used the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> to cut a sticker of the logo which was designed in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html#2d">previous assignment.</a> The detailed specs of the machine:</p>
 <ul>
 <li>Work area: 584 x 24998mm</li>
