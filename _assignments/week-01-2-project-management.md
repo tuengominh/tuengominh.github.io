@@ -33,7 +33,7 @@ active: 1
 <p></p>
 
 <h5>Bootstrap, Google Fonts and Font Awesome</h5>
-<p>I used <a href="http://getbootstrap.com/docs/4.1/">Bootstrap 4</a> to customize the styling of the website without writing too many CSS. To use Bootstrap together with Jekyll, I included this line <code>gem 'bootstrap', '~> 4.0.0'</code> in the <code>Gemfile</code>.</p>
+<p>I used <a href="http://getbootstrap.com/docs/4.1/">Bootstrap 4</a> to customize the styling of the website without writing too many CSS. Bootstrap is a CSS framework used to make the responsive web design process (responsive layouts with columns and consistent whitespaces) easier by using classes. To use Bootstrap together with Jekyll, I included this line <code>gem 'bootstrap', '~> 4.0.0'</code> in the <code>Gemfile</code>.</p>
 <p>There is also a <code>_sass/custom.css</code> file with some custom CSS. To customize fonts and icons, I used <a href="https://fonts.google.com/">Google Fonts</a> and <a href="https://fontawesome.com/v4.7.0/get-started/">Font Awesome</a> as CDN links in <code>_layouts/default.html</code>.</p>
 <p></p>
 
