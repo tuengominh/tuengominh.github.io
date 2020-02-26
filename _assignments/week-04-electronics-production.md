@@ -149,7 +149,7 @@ active: 1
 <iframe width="640" height="480" src="https://www.youtube.com/embed/JKr3zOknjyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
-<p>The first time we milled the FTDI boards, the Z-axis wasn't defined correctly and some un-milled parts remained on the PCB after the process. The un-milled parts are a bit coppery shiny compare to the rest. We had to restart the process and mill the boards a little deeper.</p>
+<p>The first time we milled the FTDI boards, the Z-axis wasn't defined correctly and some un-milled parts remained on the PCB after the process. The un-milled parts are a bit coppery shiny compared to the rest. We had to restart the process and mill the boards a little deeper.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-0.jpg" class="img-fluid w-100"/>
 <p>We then had a problem with the UPDI adapters. We forgot to set the z-axis of the home point to be greater than 0, and that's why it made a scratch across the milled parts. Since there were places left, we milled 2 more UPDIs with zjog=12 and the new settings: 50,0,0 and 50,25,0.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-2.jpg" class="img-fluid w-100"/>
