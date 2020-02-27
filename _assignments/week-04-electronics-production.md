@@ -91,7 +91,7 @@ active: 1
 <li>Select <code>.png</code> input format and load the <code>.png</code> file</li>
 <li>Select <code>.rml</code> output format</li>
 <li>Select the proper process: PCB traces (1/64) or PCB outline (1/32). This will automatically define the proper <strong>cut depth</strong> (0.1mm for milling traces and 0.6mm for cutting).</li>
-<li>Select <strong>SRM-20</strong> in the output machine. Modify settings to origin 0,0,0 (x,y,z); zjog = 12 (to make sure the milling bit will be lifted up while moving across the workpiece and avoid damaging both the traces and the fragile bit itself); and home 0,0,12 (x,y,z).</li>
+<li>Select <strong>SRM-20</strong> in the output machine. Modify settings to origin 0,0,0 (x,y,z); zjog = 12mm (to make sure the milling bit will be lifted up while moving across the workpiece and avoid damaging both the traces and the fragile bit itself); and home 0,0,12 (x,y,z).</li>
 <li>Select the proper <strong>direction</strong>. If there are thin traces on the board, we need to select the <strong>conventional</strong> direction in order to avoid broken traces.</li>
 <li>Click the <strong>calculate</strong> button to calculate the toolpath and click the <strong>save</strong> button to save the <code>.rml</code> file.</li>
 </ul>
@@ -113,7 +113,7 @@ active: 1
 <h6>What I personally learned</h6>
 <ul>
 <li>Be careful while using the double-sided tape to fix the position of the workpiece. Any negligence can lead to a mess, especially when we are going to use leftovers.</li>
-<li>In order to pause the milling process immediately when something bad happens, always keep the speed a bit slow, around 50-60. In the case of using leftovers, keep the speed around 20-30.</li>
+<li>In order to pause the milling process immediately when something bad happens, always keep the speed a bit slow, around 50 - 60%. In the case of using leftovers, keep the speed around 20 - 30%.</li>
 <li>In order to check if the cut depth is enough, we should execute the <strong>Spindle</strong> option and make sure the color of the dust is a pinky combination of copper and resin.</li>
 <li>Always reset Z origin after changing the milling bits, and moving to Z origin should be done <i>poco a poco</i>.</li>
 <li><code>.rml</code> files of boards with thin traces should be generated with conventional direction selected.</li>
@@ -151,7 +151,7 @@ active: 1
 <p></p>
 <p>The first time we milled the FTDI boards, the Z-axis wasn't defined correctly and some un-milled parts remained on the PCB after the process. The un-milled parts are a bit coppery shiny compared to the rest. We had to restart the process and mill the boards a little deeper.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-0.jpg" class="img-fluid w-100"/>
-<p>We then had a problem with the UPDI adapters. We forgot to set the z-axis of the home point to be greater than 0, and that's why it made a scratch across the milled parts. Since there were places left, we milled 2 more UPDIs with zjog=12 and the new settings: 50,0,0 and 50,25,0.</p>
+<p>We then had a problem with the UPDI adapters. We forgot to set the z-axis of the home point to be greater than 0, and that's why it made a scratch across the milled parts. Since there were places left, we milled 2 more UPDIs with zhome=12mm and the new origins: 50,0,0 and 50,25,0.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-2.jpg" class="img-fluid w-100"/>
 <p>Final pieces came out neat!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-3.jpg" class="img-fluid w-100"/>

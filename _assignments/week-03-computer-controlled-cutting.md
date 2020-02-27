@@ -153,7 +153,7 @@ active: 1
 <p></p>
 
 <h5 id="living-hinge">Additional delivery - Kerf test and living hinges</h5>
-<p>After the regional review, I realized that I didn't proceed with any kerf joint and bending test with other materials rather than cardboard 4mm (which I'm pretty sure I won't use for my Final Project). I also bumped into <a href="https://www.rs-online.com/designspark/laser-cut-living-hinges-for-neater-designs">this article about neater design with living hinges</a>, which is also super tempting. Therefore, I'd like to go a further step by testing the cutting kerf width and the kerf bending capabilities of 2 potential materials for my Final Project: plywood 4mm and acrylic 3mm. I used the same above hexagons to test the kerf width and joint clearance (for acrylic 3mm, I prepared additional hexagons with bigger kerf values: 0.25, 0.30, 0.35 and 0.4). For testing the kerf bending, I intended to use different living hinge templates which I downloaded from <a href="https://obrary.com/products/living-hinge-patterns?variant=798259727">this guy</a> (of course, I modified them a bit).</p>
+<p>After the regional review, I realized that I didn't proceed with any kerf joint and bending test with other materials rather than cardboard 4mm (which I'm pretty sure I won't use for my Final Project). I also bumped into <a href="https://www.rs-online.com/designspark/laser-cut-living-hinges-for-neater-designs">this article about neater design with living hinges</a>, which is also super tempting. Therefore, I'd like to go a further step by testing the cutting kerf width and the kerf bending capabilities of 2 potential materials for my Final Project: plywood 4mm and acrylic 3mm. I used the same above hexagons to test the kerf width and joint clearance (for acrylic 3mm, I prepared additional hexagons with bigger kerf values: 0.25mm, 0.30mm, 0.35mm and 0.4mm). For testing the kerf bending, I intended to use different living hinge templates which I downloaded from <a href="https://obrary.com/products/living-hinge-patterns?variant=798259727">this guy</a> (of course, I modified them a bit).</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-3.png" class="img-fluid w-100"/>
 <p>I used the same TROTEC Speedy 100 machine to cut my test with plywood 4mm. For acrylic 3mm, I used the bigger TROTEC Speedy 400 with these detailed specs:</p>
 <ul>
@@ -166,7 +166,7 @@ active: 1
 <ul>
 <li>Engrave (Raster): <strong>speed=100, power=60, PPI/Hz=1000</strong></li>
 <li>Engrave (Vector): <strong>speed=100, power=80, PPI/Hz=1000</strong></li>
-<li>Cut: <strong>speed=0.5, power=75, PPI/Hz=1000</strong></li>
+<li>Cut: <strong>speed=0.5, power=75, PPI/Hz=1000</strong> (slower speed and lower power than the settings of the group test)</li>
 </ul>
 <p>The settings I used for acrylic 3mm:</p>
 <ul>
@@ -184,12 +184,12 @@ active: 1
 <h6>Result of kerf joint test</h6>
 <p>The cut pieces shown below helped me confirm the kerf width of plywood 4mm would be <strong>0.15mm</strong>.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kerf-1.jpg" class="img-fluid w-100"/>
-<p>For acrylic 3mm, the joint of the hexagons with <strong>0.40mm</strong> kerf width was still barely loose. Then I used a caliper to measure carefully some dimensions, and after doing some annoying maths, the kerf for acrylic 3mm should be somewhere in between of <strong>0.40mm</strong> and <strong>0.45mm.</strong></p>
+<p>For acrylic 3mm, the joint of the hexagons with <strong>0.40mm</strong> kerf width was almost-there, but it was still barely loose. Then I used a caliper to measure carefully some dimensions, and after doing some annoying maths, the kerf for acrylic 3mm should be somewhere in between of <strong>0.40mm</strong> and <strong>0.45mm.</strong></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kerf-2.jpg" class="img-fluid w-100"/>
-<p>Another thing I noticed after the test was that the surface of the material is also an important factor in making the joint stronger. Cardboard is a soft and flexible material, therefore we can squeeze the parts a bit and they can fit together, and so a slightly tighter joint doesn't matter. Plywood is a rigid material, so we need to be a bit more precise. However, the rough surface of plywood can help increase adhesion, which is very helpful in the case of loose joints. For acrylic with a smooth surface, the accuracy of kerf width needs to be increased, since the 2 pieces will slide out very easily if the actual kerf is just slightly bigger than the correct one.</p>
+<p>Another thing I noticed after the test was that the surface of the material is also an important factor in making the joint stronger. Cardboard is a soft and flexible material, therefore we can squeeze the parts a bit and they can fit together, and so a slightly tight joint doesn't matter. Plywood is a rigid material, so we need to be a bit more precise. However, the rough surface of plywood can help increase adhesion, which is very helpful in the case of loose joints. For acrylic with a smooth surface, the accuracy of kerf width needs to be increased, since the 2 pieces will slide out very easily if the actual kerf is just slightly bigger than the designed one.</p>
 <p></p>
 <h6>Result of living hinge test</h6>
-<p>The templates I used for the living hinge test were: straight intersecting lines with different gap values: 3mm, 6mm, and 12mm (yeah I know it was stupid to go with 12mm, but it was for the sake of learning); wavy cut lines with 3mm gap; cross/honeycomb cut lines with 3mm gap; and large hexagons/honeycombs with 3mm gap.</p>
+<p>The templates I used for the living hinge test were: straight intersecting lines with different gap values of 3mm, 6mm, and 12mm (yeah I know it was stupid to go with 12mm, but it was for the sake of learning); wavy cut lines; cross/honeycomb cut lines; and large hexagons/honeycombs.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/hinge-2.jpg" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/hinge-3.jpg" class="img-fluid w-100"/>
@@ -200,7 +200,7 @@ active: 1
 <li>Cross/honeycomb cut lines: the second-best cutting technique that offered flexibility in all directions.</li>
 <li>Large hexagons/honeycombs: the thin gap made the traces broke immediately when being bent.</li>
 </ul>
-<p>After getting the result of plywood, I modified the design a bit before testing with acrylic: straight intersecting lines with 3mm gap; wavy cut lines with slightly less than 3mm gap; and large hexagons with slightly greater than 3mm gap. The results looked better, however, the one with straight intersecting lines was still the most flexible one.</p>
+<p>After getting the result of plywood, I modified the design a bit before testing with acrylic: straight intersecting lines with 3mm gap; wavy cut lines with slightly thinner gap; and large hexagons with slightly greater gap. The results looked better, however, the one with straight intersecting lines was still the most flexible one.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/hinge-4.jpg" class="img-fluid w-100"/>
 <p></p>
 
