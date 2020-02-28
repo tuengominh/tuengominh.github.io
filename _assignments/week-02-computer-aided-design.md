@@ -9,7 +9,18 @@ active: 1
 <p class="font-italic font-weight-bold">* All STL and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cad">here</a>.</p>
 <p class="font-italic font-weight-bold">* Software I tried: <a href="#2d">Illustrator</a>, <a href="#openscad">OpenSCAD</a>, <a href="#fusion">Fusion 360</a>, <a href="#grasshopper">Grasshopper</a>, and <a href="#blender">Blender</a>.</p>
 
-<p>This week was both interesting and overwhelming to me. There were too many new things to learn, especially when my knowledge of 3D design is almost zero. I only had a very <strong>BRIEF</strong> introduction about creating standard primitives with <a href="https://www.autodesk.com/products/3ds-max/overview">3Ds Max</a> when I went to college, and it has been almost 10 years. Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
+<p>This week was both interesting and overwhelming to me. There were too many new things to learn, especially when my knowledge of 3D design is almost zero. I only had a very <strong>BRIEF</strong> introduction about creating standard primitives with <a href="https://www.autodesk.com/products/3ds-max/overview">3Ds Max</a> when I went to college, and it has been almost 10 years. Below is one of the models I designed with 3Ds Max before:</p>
+<div class="sketchfab-embed-wrapper text-center">
+    <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/83082e9022044550a2ba6207adaf420b/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/3d-models/temple-3ds-max-83082e9022044550a2ba6207adaf420b?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic; font-weight: bold; color: #1CAAD9;">Temple</a>
+    by <a href="https://sketchfab.com/tuengominh?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic; font-weight: bold; color: #1CAAD9;">tuengominh</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic; font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</p>
+</div> 
+<p></p>
+<p>Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
 <p>My plan was to design 3D-printable modules that have some similarities with the modular robot in my mind (see <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html#idea">idea #1</a>).</p> 
  
 <h2>2D design</h2>
