@@ -120,7 +120,7 @@ active: 1
 <h5 id="grasshopper">Rhino and Grasshopper</h5>
 <p> I followed this <a href="https://blog.ramboll.com/rcd/tutorials/a-beginners-guide-to-visual-scripting-with-grasshopper.html">tutorial</a> to learn Grasshopper without getting my brain tangled by its "spaghetti" workflow. However, my brain still exploded when I tried to create a press-fit enclosure for my robot block. In the end, since I'm not there yet, I went back to this <a href="https://www.youtube.com/watch?v=ZKfNJ1xEbaQ&feature=share&fbclid=IwAR11kqTYkCtYluORHRRZ4WRHLGB39lUTlNRoORs2SoBvbF0nVmzrmNKJaow">tutorial</a> and simply create the same parametric rotating table.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/grasshopper-1.jpg" class="img-fluid w-100"/>
-<p>Here are some customizations, mostly with using the same sliders to control both extrusion and offset at the same time:</p>
+<p>I tried to input some customizations, mostly with using the same sliders to control both extrusion and offset at the same time:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/grasshopper-2.jpg" class="img-fluid w-100"/>
 <p>In the below video, I played around with the number sliders and the central point to see the table transforming:</p>
 <div class="text-center">

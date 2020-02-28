@@ -333,7 +333,7 @@ active: 1
   </tbody>
 </table>
 <p></p>
-<p>That's it, enough testing with laser-cutting. I'm looking forward to other subtractive CAM techniques that will be introduced in the upcoming weeks. In case I will laser-cut some parts of my Final Project, I will try to test whether I can assemble those parts with 3D-printed parts after doing the tolerance test in the 5th week.</p>
+<p>That's it, enough testing with laser-cutting. I'm looking forward to other subtractive CAM techniques that will be introduced in the upcoming weeks. In case I will laser-cut some parts of my Final Project, I will try to test whether I can assemble those parts with 3D-printed parts after doing the tolerance test in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-05-3d-printing-and-scanning.html">5th week</a>.</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">
