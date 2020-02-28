@@ -30,7 +30,7 @@ active: 1
 <ul>
 <li>A circuit is a circular path that starts and stops at the same place and allows electricity to flow. A circuit should always be closed to work.</li>
 <li>Circuits are built to make electricity do something: light up, make noise, run programs, etc. And if we insert something useful - which we call <strong>load</strong> - into the circuit like an LED, the flowing electricity will do some work, like lighting up that LED.</li>
-<li>A <strong>short circuit</strong> is created when we connect a wire directly from the positive to the negative side of a power supply. This is bad because if there is no load to restrict the current flow, there won't be anything to slow down the current, and it will try to be infinite. This could cause the wire to burn up, damage the power supply, or drain the battery. It is very important to prevent short circuits by making sure that the positive voltage is never wired directly to ground.</li>
+<li>A <strong>short circuit</strong> is created when we connect a wire directly from the positive to the negative side of a power supply. This is bad because if there is no load to restrict the current flow, there won't be anything to slow down the current, and it will try to be infinite. This could cause the wire to burn up, damage the power supply, or drain the battery. It is very important to prevent short circuits by making sure that the positive voltage is never wired directly to ground (the negative terminal).</li>
 <li>The opposite of a short circuit is an <strong>open circuit</strong>. This is a circuit where the loop isn't fully connected. If your circuit doesn't work, the most likely cause is an open circuit. This is usually due to a broken connection or a loose wire.</li>
 <li>A <strong>printed circuit board (PCB)</strong> connects components using conductive tracks and pads etched from a layer of copper laminated onto a non-conductive substrate. Components are generally soldered onto the PCB.</li>
 </ul>
@@ -161,7 +161,7 @@ active: 1
 <h6>Soldering components</h6>
 <p>Once I had the milled pieces all-good, I started the soldering process. I wrote down a shopping list of all required components and collected them from available components at the Fab Lab.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-1.jpg" class="img-fluid w-100"/>
-<p>It took me plenty of time and patience to solder the components, especially the tiny IC. I even burned my hair while trying to see more clearly with my bare eyes, since the LED light equipped loupe gave me headaches. Rutvij Pathak from Fab Lab Barcelona then said one magic phrase that saved my life: "Solder like you're painting with watercolor!". And here you go the pretty, shiny, and conductive (after testing with the multimeter) result:</p>
+<p>It took me plenty of time and patience to solder the components, especially the tiny IC. I even burned my hair while trying to see more clearly with my bare eyes, since the LED light equipped loupe gave me headaches. Then our instructor Rutvij Pathak said one magic phrase that saved my life: "Solder like you're painting with watercolor!". And here you go the pretty, shiny, and conductive (after testing with the multimeter) result:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-2.jpg" class="img-fluid w-100"/>
 <p>I tested the board with Santi's computer, and it was detected!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-3.jpg" class="img-fluid w-100"/>

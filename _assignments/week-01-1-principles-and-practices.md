@@ -27,7 +27,7 @@ I have 2 nephews, one is 6 years old and one is 4 years old. As a dedicated aunt
 <p>Another option is to make 3 segments as 3 (hexagon) cylinders twisted around an internal pivot (like the mechanism of a Rubik), each segment will have up to 4-6 faces, and each face will have the symbol of a single sensor/logic/actuator. 3 segments will make up to 4-6 combinations of input/logic/output, and each combination will represent a behavior. So, the dragon will have a series of 4-6 behaviors made from randomly combined faces when kids twist the segments.</p>
 <p></p>
 <h5>Nice-to-have add-ons</h5>
-It would be nice if I can (and have enough time) to make the mobile app connect to a <a href="https://scratch.mit.edu/">Scratch</a> account and execute further complicated tasks with logics inside logics.
+It would be nice if I can (and have enough time to) make the mobile app connect to a <a href="https://scratch.mit.edu/">Scratch</a> account and execute further complicated tasks with logics inside logics.
 <p></p>
 <h5>Who will use it?</h5>
 Kids 4-7 years old. If the mobile/tablet application is available, kids up to 12 years old are welcomed.
@@ -48,7 +48,7 @@ Kids 4-7 years old. If the mobile/tablet application is available, kids up to 12
 I intend to make a duo of 2 devices: 1 color picker that can detect RGB code from real-life objects, convert them to CMYK and send that information to the color mixer in order to generate the desired shade.
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/idea-2.png" class="img-fluid w-100"/>
 <h5>Nice-to-have add-ons</h5>
-It would be nice if I can (and have enough time) to make the mobile app take pictures and detect colors (RGB, CMYK or HEX) from them.
+It would be nice if I can (and have enough time to) make the mobile app take pictures and detect colors (RGB, CMYK or HEX) from them.
 <p></p>
 <h5>Who will use them?</h5>
 <ul>
@@ -73,7 +73,7 @@ I actually feel less panic with this idea than the other one, because I can find
 <li><a href="https://www.youtube.com/watch?v=FTpNI4NCvXA">Makeblock Inventor Kit</a> with the amazing idea about connecting blocks using pogo pins</li>
 <li><a href="https://ifttt.com/">IFTTT platform</a> which can make my life easier connecting different parts of the project and go deep dive into the logics</li>
 </ul>
-<p>Since we all agreed that what makes my idea different from other learning toy projects is the debugging process and the Logic blocks, my MVP for Fab Academy will have <strong>1 input block, 1 output block, and at least 2 logic blocks</strong>. We also think that being hung up on sensors and actuators will both distract me from making an almost-there prototype and distract the kids from trying out as many programming concepts as possible.</p>
+<p>We all agreed that what makes my idea different from other learning toy projects is the debugging process and the Logic blocks. We also think that being hung up on sensors and actuators will both distract me from making an almost-there prototype and distract the kids from trying out as many programming concepts as possible. Hence, my MVP for Fab Academy will have <strong>1 Input block, 1 Output block, and at least 2 Logic blocks</strong>.</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">
