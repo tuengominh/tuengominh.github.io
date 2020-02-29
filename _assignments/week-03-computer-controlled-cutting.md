@@ -184,23 +184,23 @@ active: 1
 <h6>Result of kerf joint test</h6>
 <p>The cut pieces shown below helped me confirm the kerf width of plywood 4mm would be <strong>0.15mm</strong>.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kerf-1.jpg" class="img-fluid w-100"/>
-<p>For acrylic 3mm, the joint of the hexagons with <strong>0.40mm</strong> kerf width was almost-there, but it was still barely loose. Then I used a caliper to measure carefully some dimensions, and after doing some annoying maths, the kerf for acrylic 3mm should be somewhere in between of <strong>0.40mm</strong> and <strong>0.45mm.</strong></p>
+<p>For acrylic 3mm, the joint of the hexagons with <strong>0.40mm</strong> kerf width was still barely loose (which surprised me a lot since I didn't expect such a big kerf). Then I used a caliper to measure carefully some dimensions, and after doing some annoying maths, the kerf for acrylic 3mm should be somewhere in between of <strong>0.45mm</strong> and <strong>0.5mm.</strong> However, this is just my assumption. In case I will go ahead with acrylic for my Final Project, I might need to measure it properly again.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kerf-2.jpg" class="img-fluid w-100"/>
 <p>Another thing I noticed after the test was that the surface of the material is also an important factor in making the joint stronger. Cardboard is a soft and flexible material, therefore we can squeeze the parts a bit and they can fit together, and so a slightly tight joint doesn't matter. Plywood is a rigid material, so we need to be a bit more precise. However, the rough surface of plywood can help increase adhesion, which is very helpful in the case of loose joints. For acrylic with a smooth surface, the accuracy of kerf width needs to be increased, since the 2 pieces will slide out very easily if the actual kerf is just slightly bigger than the estimated one.</p>
 <p></p>
 <h6>Result of living hinge test</h6>
-<p>The templates I used for the living hinge test were: straight intersecting lines with different gap values of 3mm, 6mm, and 12mm (yeah I know it was stupid to go with 12mm, but it was for the sake of learning); wavy cut lines; cross/honeycomb cut lines; and large hexagons/honeycombs.</p>
+<p>The templates I used for the living hinge test were: straight intersecting lines with different interline values of 3mm, 6mm, and 12mm (yeah I know it was stupid to go with 12mm, but it was for the sake of learning); wavy cut lines with 6mm interline; cross/honeycomb cut lines with 6mm interline; and large hexagons/honeycombs with 6mm interline.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/hinge-2.jpg" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/hinge-3.jpg" class="img-fluid w-100"/>
 <p>Some observations for plywood 4mm:</p>
 <ul>
-<li>Straight intersecting lines: the further apart the single intersecting lines are, the bigger the bend radius will be. It was obvious that the one with 12mm gap cannot be bent at all, and the one with 6mm gap can only be bent insignificantly (less than 45 degrees). The one with 3mm gap seemed to be the best option since the bend radius was really stable and I can bend it up to 165 degrees - almost foldable.</li>
-<li>Wavy cut lines: the gap was a bit too big, therefore it can be bent insignificantly.</li>
-<li>Cross/honeycomb cut lines: the second-best cutting technique that offered flexibility in all directions.</li>
-<li>Large hexagons/honeycombs: the thin gap made the piece broke immediately when being bent.</li>
+<li>Straight intersecting lines: the further apart the single intersecting lines are, the bigger the bend radius will be. It was obvious that the one with 12mm interline cannot be bent at all, and the one with 6mm interline can only be bent insignificantly (less than 45 degrees). The one with 3mm interline seemed to be the best option since the bend radius was really stable and I can bend it up to 165 degrees - almost foldable.</li>
+<li>Wavy cut lines: the interline was a bit too big, therefore it can be bent insignificantly. However, it showed quite fair bending capabilities compared to the straight one with similar interline.</li>
+<li>Cross/honeycomb cut lines: it offered significant flexibility in other directions, even with a big 6mm interline.</li>
+<li>Large hexagons/honeycombs: the thin interline made the piece broke immediately when being bent. I also think one of the reason was that the pieces were bent in the same direction of the wood fiber.</li>
 </ul>
-<p>After getting the result of plywood, I modified the design a bit before testing with acrylic: straight intersecting lines with 3mm gap; wavy cut lines with slightly thinner gap; and large hexagons with slightly greater gap. The results looked better, however, the one with straight intersecting lines was still the most flexible one.</p>
+<p>After getting the result of plywood, I modified the design a bit before testing with acrylic: straight intersecting lines with 3mm interline; wavy cut lines with 3mm interline; and large hexagons with 6mm interline. The results looked better, however, the one with straight intersecting lines was still the most flexible one.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/hinge-4.jpg" class="img-fluid w-100"/>
 <p></p>
 
@@ -289,7 +289,7 @@ active: 1
       <td>60</td>
       <td>0.5</td>
       <td>20000</td>
-      <td>0.40 - 0.45mm</td>
+      <td>0.45 ~ 0.5mm</td>
     </tr>
   </tbody>
 </table>
@@ -314,15 +314,15 @@ active: 1
     </tr>
     <tr>
       <th scope="row">Wavy cut lines</th>
-      <td>Fair</td>
+      <td>Good</td>
       <td>Fair</td>
       <td>Fair</td>
     </tr>
     <tr>
       <th scope="row">Cross/honeycomb cut lines</th>
-      <td>Good</td>
+      <td>Poor</td>
       <td>Fair</td>
-      <td>Super good</td>
+      <td>Good</td>
     </tr>
     <tr>
       <th scope="row">Large hexagons/honeycombs</th>
