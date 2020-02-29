@@ -18,8 +18,10 @@ active: 1
 <p>I used the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> to cut a sticker of the logo which was designed in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html#2d">previous assignment.</a> The detailed specs of the machine:</p>
 <ul>
 <li>Work area: 584 x 24998mm</li>
-<li>Width of loaded material: 50 to 700mm</li>
 <li>Cutting speed: up to 500mm/s</li>
+<li>Cutting length: maximum 25m</li>
+<li>Cutting width: 50-700 mm</li>
+<li>Cutting force: 30 to 250gf</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/vinyl-0.jpg" class="img-fluid w-100"/>
 <p>Some essential steps to use the vinyl-cutter:</p>
@@ -44,7 +46,7 @@ active: 1
 <h6>First test with cardboard 4mm</h6>
 <p>We used this <a href="https://www.thingiverse.com/thing:728579">test file</a> provided by the instructors to test the laser cutter <a href="https://www.troteclaser.com/es/maquinas-laser/grabadora-laser-speedy/">Trotec Speedy 100</a> with different materials. The detailed specs of the machine:</p>
 <ul>
-<li>Work area: 600 x 300mm</li>
+<li>Work area: 610 x 305mm</li>
 <li>Height: 132mm</li>
 <li>Laser power: 12-60W</li>
 </ul>
@@ -157,9 +159,9 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-3.png" class="img-fluid w-100"/>
 <p>I used the same TROTEC Speedy 100 machine to cut my test with plywood 4mm. For acrylic 3mm, I used the bigger TROTEC Speedy 400 with these detailed specs:</p>
 <ul>
-<li>Work area: 1,000 x 600mm</li>
+<li>Work area: 1,000 x 610mm</li>
 <li>Height: 305mm</li>
-<li>Laser power: 60-120W</li>
+<li>Laser power: 40-120W</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/trotec-1.png" class="img-fluid w-100"/>
 <p>The settings I used for plywood 4mm:</p>

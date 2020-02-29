@@ -56,7 +56,7 @@ active: 1
 </p>
 </div>
 <p></p>
-<p>Since I wanted to go deeper and try an object-oriented approach (I usually code in Java), I gave it a second try. I created a flower-shaped vase by defining my own module <code>shape</code>. Detailed codes <a href = "https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/blob/master/assets/img/cad/openSCAD/flower-vase.scad">here.</a></p>
+<p id="vase">Since I wanted to go deeper and try an object-oriented approach (I usually code in Java), I gave it a second try. I created a flower-shaped vase by defining my own module <code>shape</code>. Detailed codes <a href = "https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/blob/master/assets/img/cad/openSCAD/flower-vase.scad">here.</a></p>
 <div class="sketchfab-embed-wrapper text-center">
     <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/444b0a2d6987432a8154bd9415564594/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 

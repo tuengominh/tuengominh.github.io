@@ -78,7 +78,7 @@ active: 1
 
 <p>We used the <a href="https://www.rolanddga.com/es/productos/3d/srm-20-fresadora-compacta">Roland MonoFab SRM-20</a> machine to mill this <a href="http://academy.cba.mit.edu/classes/electronics_production/linetest.png">test file</a> provided by the instructors. Detailed specs of the machine:</p>
 <ul>
-<li>Work area: 203 x 152 x 60mm</li>
+<li>Work area: 203.2 x 152.4 x 60.5mm</li>
 <li>Loadable workpiece weight: 2kg</li>
 <li>Operating speed: 6mm/min - 1,800mm/min</li>
 <li>Spindle speed: 3,000 – 7,000rpm</li>
