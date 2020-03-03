@@ -7,7 +7,7 @@ active: 1
 ---
 <p class="font-italic font-weight-bold">* All DXF and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cut">here</a>.</p>
 
-<p class="font-italic font-weight-bold">* This week's group assignment was to test the proper <a href="#group">power, speed, frequency and kerf</a> values of different materials using a laser-cutter. In order to explore possible materials for my Final Project, I also conducted a personal kerf joint and bending test with <a href="#living-hinge">living hinges</a>.</p>
+<p class="font-italic font-weight-bold">* This week's group assignment was to test the proper <a href="#group">power, speed, frequency and kerf</a> values of different materials using a laser-cutter. In order to explore possible materials for my Final Project, I also conducted a personal joint clearance and kerf bending test with <a href="#living-hinge">living hinges</a>.</p>
 
 <p class="font-italic font-weight-bold">* Besides, we were required to individually design and cut <a href="#vinylcutter">something</a> with the vinyl-cutter and a <a href="#construction-kit">parametric construction kit</a> that can be assembled in multiple ways.</p>
 
@@ -80,7 +80,7 @@ active: 1
 <p></p>
 <h6>What I personally learned</h6>
 <ul>
-<li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process. Kerf width depends on many parameters, such as the thickness of the material (the thicker the material, the thinner the kerf), type of material (for example, acrylic and other materials with low melting point tend to create bigger kerf), the machine itself, the focus of the beam, and the settings of power, speed, and frequency.</li>
+<li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process. Kerf width depends on many parameters, such as the thickness of the material (the thicker the material, the thinner the kerf), type of material (for example, I assumed that acrylic and other materials with low melting point will tend to create bigger kerf), the machine itself, the focus of the beam, and the settings of power, speed, and frequency.</li>
 <li>The delicate balance between translational speed and laser power defines the quality of the cut as well as the kerf width. We should abuse neither power nor speed.</li>
 <li>As power increases, the energy in the laser increases, which will result in a deeper cut and a bigger kerf. High power could also make more smoke and charred edges. So, power is a necessity to reach a required cutting or engraving depth, but over-using it is quite destructive to our materials.</li>
 <li>As speed increases, the energy is exposed to a point in a shorter time, which will result in a shallower, unstable cut and a thinner kerf. Increasing speed will also quicken the cutting time.</li>
@@ -101,10 +101,10 @@ active: 1
 <li>Use <code>projection(cut=true)</code> to flatten the set of pieces</li>
 <li>Render and export to <code>.dxf</code></li>
 </ul>
-<p>In order to test the kerf and joint clearance, I directly used the hexagon pieces in my design and proceeded with these following values of kerf width: 0.05mm, 0.1mm, 0.15mm, 0.2mm.</p>
+<p>In order to test the kerf width and joint clearance, I directly used the hexagon pieces in my design and proceeded with these following values of kerf width: 0.05mm, 0.1mm, 0.15mm, 0.2mm.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/openscad-2.png" class="img-fluid w-100"/>
 <p></p>
-<h6>Kerf test and final cut</h6>
+<h6>Joint clearance test and final cut</h6>
 <p>I used the same Trotec Speedy 100 machine used in the group test to cut my pieces. I'm really slow and careless when it comes to machines. I kept forgetting the necessary steps, and I had to ask people "Where did he click to do this?" or "Where should I click to do that?" all the time. Big thanks to everyone!</p>  
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-2.png" class="img-fluid w-100"/>
 <p></p>
@@ -119,7 +119,7 @@ active: 1
 <li>Adjust the position of the job in JobControl and set up <strong>speed=1, power=40, PPI/Hz=1000</strong> in <strong>Material Settings</strong></li>
 <li>Start cutting!</li>
 </ul>
-<p>The cut pieces shown below helped me confirm the kerf width to be used would be <strong>0.15mm</strong>. The pieces just perfectly joined together without being squeezed or loose. Hence, I modified the parameter in OpenSCAD and continued to cut the rest of my design with that final value.</p> 
+<p>The cut pieces shown below helped me confirm the kerf width to be used would be <strong>0.15mm</strong> in order to assemble 2 pieces securely. The pieces just perfectly joined together without being squeezed or loose. Hence, I modified the parameter in OpenSCAD and continued to cut the rest of my design with that final value.</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/test-2.jpg" class="img-fluid w-100"/>
 <p>For this final cut of my construction kit, I utilized the leftovers instead of cutting another whole new 600x300mm piece. That's why I had to measure the cuttable area and nested the pieces accordingly.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-1.png" class="img-fluid w-100"/>
@@ -154,8 +154,8 @@ active: 1
 </ul>
 <p></p>
 
-<h5 id="living-hinge">Additional delivery - Kerf test and living hinges</h5>
-<p>After the regional review, I realized that I didn't proceed with any kerf joint and bending test with other materials rather than cardboard 4mm (which I'm pretty sure I won't use for my Final Project). I also bumped into <a href="https://www.rs-online.com/designspark/laser-cut-living-hinges-for-neater-designs">this article about neater design with living hinges</a>, which is also super tempting. Therefore, I'd like to go a further step by testing the cutting kerf width and the kerf bending capabilities of 2 potential materials for my Final Project: plywood 4mm and acrylic 3mm. I used the same above hexagons to test the kerf width and joint clearance (for acrylic 3mm, I prepared additional hexagons with bigger kerf values: 0.25mm, 0.30mm, 0.35mm and 0.4mm). For testing the kerf bending, I intended to use different living hinge templates which I downloaded from <a href="https://obrary.com/products/living-hinge-patterns?variant=798259727">this guy</a> (of course, I modified them a bit).</p>
+<h5 id="living-hinge">Additional test - Joint clearance and living hinges</h5>
+<p>After the regional review, I realized that I didn't proceed with any joint clearance and kerf bending test with other materials rather than cardboard 4mm (which I'm pretty sure I won't use for my Final Project). I also bumped into <a href="https://www.rs-online.com/designspark/laser-cut-living-hinges-for-neater-designs">this article about neater design with living hinges</a>, which is also super tempting. Therefore, I'd like to go a further step by testing the cutting kerf width and the kerf bending capabilities of 2 potential materials for my Final Project: plywood 4mm and acrylic 3mm. I used the same above hexagons to test the kerf width and joint clearance (for acrylic 3mm, I prepared additional hexagons with bigger kerf values: 0.25mm, 0.30mm, 0.35mm and 0.4mm). For testing the kerf bending, I intended to use different living hinge templates which I downloaded from <a href="https://obrary.com/products/living-hinge-patterns?variant=798259727">this guy</a> (of course, I modified them a bit).</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/rhino-3.png" class="img-fluid w-100"/>
 <p>I used the same TROTEC Speedy 100 machine to cut my test with plywood 4mm. For acrylic 3mm, I used the bigger TROTEC Speedy 400 with these detailed specs:</p>
 <ul>
@@ -183,10 +183,10 @@ active: 1
 <iframe width="640" height="480" src="https://www.youtube.com/embed/L6fRo7ujGLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
-<h6>Result of kerf joint test</h6>
-<p>The cut pieces shown below helped me confirm the kerf width of plywood 4mm would be <strong>0.15mm</strong>.</p>
+<h6>Result of joint clearance test</h6>
+<p>The cut pieces shown below helped me confirm the kerf width of plywood 4mm would be <strong>0.15mm</strong> in order to assemble 2 pieces securely.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kerf-1.jpg" class="img-fluid w-100"/>
-<p>For acrylic 3mm, the joint of the hexagons with <strong>0.40mm</strong> kerf width was still barely loose (which surprised me a lot since I didn't expect such a big kerf). Then I used a caliper to measure carefully some dimensions, and after doing some annoying maths, the kerf for acrylic 3mm should be somewhere in between of <strong>0.45mm</strong> and <strong>0.5mm.</strong> However, this is just my assumption. In case I will go ahead with acrylic for my Final Project, I might need to measure it properly again.</p>
+<p>For acrylic 3mm, the joint of the hexagons with <strong>0.40mm</strong> kerf width was still barely loose (which surprised me a lot since I didn't expect such a big kerf). Also, the kerf width of each joint seemed to be inconsistent (I assumed that the laser cutter has different performances at different axes). That was why I used a caliper to measure carefully some dimensions, and after doing some annoying maths, the kerf for acrylic 3mm should be somewhere in between of <strong>0.45mm</strong> and <strong>0.5mm.</strong> However, this is not a good practice. In case I will go ahead with acrylic for my Final Project, I might need to test it properly again.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kerf-2.jpg" class="img-fluid w-100"/>
 <p>Another thing I noticed after the test was that the surface of the material is also an important factor in making the joint stronger. Cardboard is a soft and flexible material, therefore we can squeeze the parts a bit and they can fit together, and so a slightly tight joint doesn't matter. Plywood is a rigid material, so we need to be a bit more precise. However, the rough surface of plywood can help increase adhesion, which is very helpful in the case of loose joints. For acrylic with a smooth surface, the accuracy of kerf width needs to be increased, since the 2 pieces will slide out very easily if the actual kerf is just slightly bigger than the estimated one.</p>
 <p></p>
@@ -197,7 +197,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/hinge-3.jpg" class="img-fluid w-100"/>
 <p>Some observations for plywood 4mm:</p>
 <ul>
-<li>Straight intersecting lines: the further apart the single intersecting lines are, the bigger the bend radius will be. It was obvious that the one with 12mm interline cannot be bent at all, and the one with 6mm interline can only be bent insignificantly (less than 45 degrees). The one with 3mm interline seemed to be the best option since the bend radius was really stable and I can bend it up to 165 degrees - almost foldable.</li>
+<li>Straight intersecting lines: the further apart the single intersecting lines are, the bigger the bend radius will be. It was obvious that the one with 12mm interline cannot be bent at all, and the one with 6mm interline can only be bent insignificantly (less than 45°). The one with 3mm interline seemed to be the best option since the bend radius was really stable and I can bend it up to 165° - almost foldable.</li>
 <li>Wavy cut lines: the interline was a bit too big, therefore it can be bent insignificantly. However, it showed quite fair bending capabilities compared to the straight one with similar interline.</li>
 <li>Cross/honeycomb cut lines: it offered significant flexibility in other directions, even with a big 6mm interline.</li>
 <li>Large hexagons/honeycombs: the thin interline made the piece broke immediately when being bent. I also think one of the reason was that the pieces were bent in the same direction of the wood fiber.</li>
