@@ -91,8 +91,8 @@ active: 1
 <li>Select <code>.png</code> input format and load the <code>.png</code> file</li>
 <li>Select <code>.rml</code> output format</li>
 <li>Select the proper process: PCB traces (1/64) or PCB outline (1/32). This will automatically define the proper <strong>cut depth</strong> (0.1mm for milling traces and 0.6mm for cutting).</li>
-<li>Select <strong>SRM-20</strong> in the output machine. Modify settings to origin 0,0,0 (x,y,z); zjog = 12mm (to make sure the milling bit will be lifted up while moving across the workpiece and avoid damaging both the traces and the fragile bit itself); and home 0,0,12 (x,y,z).</li>
-<li>Select the proper <strong>direction</strong>. If there are thin traces on the board, we need to select the <strong>conventional</strong> direction in order to avoid broken traces.</li>
+<li>Select <i>SRM-20</i> in the output machine. Modify settings to origin 0,0,0 (x,y,z); <strong>zjog = 12mm</strong> (to make sure the milling bit will be lifted up while moving across the workpiece and avoid damaging both the traces and the fragile bit itself); and home 0,0,12 (x,y,z).</li>
+<li>Select the proper <strong>direction</strong>. If there are thin traces on the board, we need to select the <i>conventional</i> direction in order to avoid broken traces.</li>
 <li>Click the <strong>calculate</strong> button to calculate the toolpath and click the <strong>save</strong> button to save the <code>.rml</code> file.</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/group-1.png" class="img-fluid w-100"/>
@@ -128,7 +128,7 @@ active: 1
 <p>Some essential steps to follow:</p>
 <ul>
 <li>Right-click and select <strong>program > open server program</strong></li>
-<li>Select the machine used to mill the PCB, in this case, <strong>Roland Mill SRM-20</strong></li>
+<li>Select the machine used to mill the PCB, in this case, <i>Roland Mill SRM-20</i></li>
 <li>Select input format which is usually image <code>.png</code>, drawing <code>.svg</code>, or mesh <code>.stl</code>. In this case, I chose <code>.png</code>. Now we can see a Grasshopper look-alike, which is not something I fancy.</li>
 <li>Select the <code>.png</code> file</li>
 <li>Modify settings for <strong>Roland SRM-20 milling machine</strong> to origin 0,0,0 and home 0,0,12 (x,y,z). We also need to check the <strong>cut depth</strong> for both trace (1/64) and outline (1/32) milling processes in <strong>set PCB defaults</strong> module.</li>

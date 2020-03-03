@@ -29,10 +29,10 @@ active: 1
 <p>Steps to scan:</p>
 <ul>
 <li>Check the connection between Skanect and Kinect</li>
-<li>Select the <strong>Body</strong> scene with 1 x 1 x 1m bounding box and start scanning</li>
+<li>Select the <strong>Body</strong> scene with <i>1 x 1 x 1m</i> bounding box and start scanning</li>
 <li>Click the record button, rotate and maintain the object to make sure it could be scanned properly. Click the button again when finishing.</li>
 <li>Crop the lanky bottom of the mesh and ensure a flat base for the model by selecting the <strong>Move & Crop</strong> feature</li>
-<li>Making the mesh watertight by selecting the <strong>Fill Holes</strong> feature and choose the <strong>Medium</strong> option</li>
+<li>Making the mesh watertight and fill holes by selecting the <strong>Fill Holes</strong> feature and choose the <i>Medium</i> option</li>
 <li>Export to <code>.obj</code> or <code>.stl</code></li>
 </ul>
 <p>And here is the outcome imported to Blender (the size of the file was too big, that's why I just posted a screenshot here):</p>
@@ -65,7 +65,7 @@ active: 1
 
 <h2>3D printing</h2>
 <h5 id="group">Group assignment - Characterize the 3D printers</h5>
-<p>So what is 3D printing, or should I say, additive CAM? 3D printing is a technique of adding successive layers of material until an object is created. 3D printing has significant advantages: avoiding the waste of materials and allowing us to create models that would be impossible with other subtractive techniques. Before participating in the group test, I took a look at this useful <a href="https://www.matterhackers.com/articles/a-guide-to-understanding-the-tolerances-of-your-3d-printer">article</a> in order to understand what we were going to test. This week I participated in 2 groups to test 2 files provided by the instructors. For the first test on Thursday, </p>
+<p>First of all, what is 3D printing, or should I say, additive CAM? 3D printing is a technique of adding successive layers of material until an object is created. 3D printing has significant advantages: avoiding the waste of materials and allowing us to create models that would be impossible with other subtractive techniques. Before participating in the group test, I took a look at this useful <a href="https://www.matterhackers.com/articles/a-guide-to-understanding-the-tolerances-of-your-3d-printer">article</a> in order to understand what we were going to test. This week I participated in 2 groups to test 2 files provided by the instructors. For the first test on Thursday, </p>
 <h6>First test</h6>
 <p>I teamed up with <a href="https://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a> and <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard/">Antoine Jaunard</a> for the first test. We used the <a href="https://www.creality3d.shop/products/creality-cr-10s-s5-3d-printer-diy-kit-large-printing-size-500x500x500mm">Creality CR-10 S5 3D</a> printer to print the <a href="https://www.thingiverse.com/thing:1363023">first test</a> using 1.75mm PLA. The detailed specs of the machine:</p>
 <ul>
