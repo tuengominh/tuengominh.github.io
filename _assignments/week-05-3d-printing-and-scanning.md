@@ -17,7 +17,7 @@ active: 1
 <h2 id="scan">3D scanning</h2>
 <h5>Individual assignment - 3D scan myself</h5>
 <h6>Scanning with Kinect and Skanect</h6>
-<p>I used a <a href="https://ca.wikipedia.org/wiki/Kinect">Kinect Xbox 360 V1</a> to scan myself since I knew it's a common practice by looking at previous alumni's websites. Below is the detailed specs of the device:</p>
+<p>I used a <a href="https://ca.wikipedia.org/wiki/Kinect">Kinect Xbox 360 V1</a> to scan myself since I knew it's a common practice by looking at previous alumni's websites. Below are the detailed specs of the device:</p>
 <ul>
 <li>Sensors: color sensor (RGB camera), depth-sensing lenses (IR emitter + IR camera), voice microphone array, tilt motor for sensor adjustment (by detecting floor and players in the playspace)</li>
 <li>Field of view (FoV): 43° vertical x 57° horizontal</li>
@@ -25,7 +25,7 @@ active: 1
 <li>Depth sensor range: 1.2 - 3.5m</li>
 <li>Frame rate (depth and color stream): 30FPS</li>
 </ul>
-<p>The software paired with Kinect that we used to process the scan was <a href="https://skanect.occipital.com/">Skanect.</a> <a href="https://www.instructables.com/id/How-to-3D-scan-with-Skanect/">Here</a> we can find a step by step instruction on using Skanect. Choosing myself as the scanned object means I need further supports from others: someone tilted the Kinect vertically (Santi - our instructor), someone rotated me while I'm kneeling on the chair (my classmate Hala), and someone documented the process (Zoi - an MDEF student). The reason why I'm not sitting on the chair was to avoid having to process the chair from the exported mesh later.</p>
+<p>The software paired with Kinect that we used to process the scan was <a href="https://skanect.occipital.com/">Skanect.</a> <a href="https://www.instructables.com/id/How-to-3D-scan-with-Skanect/">Here</a> we can find a step by step instruction on using Skanect. Choosing myself as the scanned object means I required further supports from others: someone held and tilted the Kinect vertically (Santi - our instructor), someone rotated me while I'm kneeling on the chair (my classmate Hala), and someone documented the process (Zoi - an MDEF student). The reason why I'm not sitting on the chair was to avoid having to process the chair from the exported mesh later.</p>
 <p>Steps to scan:</p>
 <ul>
 <li>Check the connection between Skanect and Kinect</li>
@@ -37,36 +37,37 @@ active: 1
 </ul>
 <p>And here is the outcome imported to Blender (the size of the file was too big, that's why I just posted a screenshot here):</p>
 <p></p>
-<h6>Process the mesh with Blender</h6>
+<h6>Processing the mesh with Blender</h6>
 <p>Now let's make myself a bit prettier by 3D retouching the outcome! We had a class by Victor Barberan regarding fixing the mesh with Blender. I simply followed his instructions to work on my mess, oh I meant, mesh. Some steps followed (<strong>IMPORTANT: </strong> following the order can be life-saving. I started sculpting <strong>BEFORE</strong> switching to <strong>Edit Mode</strong> and immediately hit my head to the keyboard):</p>
 <ul>
-<li>In <strong>Object Mode</strong>: Rotate, Scale and Set Geometry to Origin</li>
-<li>In <strong>Edit Mode</strong>: use Select Circle tool to select the outside faces of my model, hide them, and delete the horrible mess inside. Also, hit space and Remove Duplicated Vertices.</li>
-<li>In <strong>Edit Mode</strong>: select the whole model and go to Mesh > Clean Up. Use Delete Loose to get rid of loose vertices and edges. Select the Decimate Geometry and reduced the ratio to collapse edges and get a less complicated model.</li> 
-<li>Activate and install Mesh: 3D Print Toolbox module in User Preferences > Add-ons. Now we can clean up problems with our model and make it printable by selecting Make Manifold to get rid of distorted edges.</li>
-<li>Go back to <strong>Object Mode</strong>: Solidify the object, to make sure there are no weird interior layers</li>
-<li>Go back to <strong>Edit Mode</strong>: spot holes in the model, select their borders and press <kbd>Option</kbd> + <kbd>F</kbd> to fill the holes.</li>
+<li>In <strong>Object Mode</strong>: rotate, scale and <i>Set Geometry to Origin</i></li>
+<li>In <strong>Edit Mode</strong>: use <i>Select Circle</i> tool to select the outside faces of my model, hide them, and delete the horrible mess inside. Also, hit space and remove duplicated vertices.</li>
+<li>In <strong>Edit Mode</strong>: select the whole model and go to <strong>Mesh > Clean Up</strong>. Use <i>Delete Loose</i> to get rid of loose vertices and edges. Select <i>Decimate Geometry</i> and reduced the ratio to collapse edges and get a less complicated model.</li> 
+<li>Activate and install <i>Mesh: 3D Print Toolbox</i> module in <strong>User Preferences > Add-ons</strong>. Now we can clean up problems with our model and make it printable by selecting <i>Make Manifold</i> to get rid of distorted edges.</li>
+<li>Go back to <strong>Object Mode</strong>: solidify the object, to make sure there are no weird interior layers</li>
+<li>Go back to <strong>Edit Mode</strong>: spot holes in the model, select their borders and press <kbd>Option</kbd> + <kbd>F</kbd> to fill the holes</li>
 <li>Now we can go to <strong>Object Mode</strong>: fine-tuning the model with sculpting tools such as <strong>Smooth, Flatten</strong> and <strong>Grab</strong></li>
 </ul>
-<p>And let me introduced you to the 3D Tue:</p>
+<p>And let me introduced you to the 3D Tue (not in a perfect state)!</p>
 <div class="sketchfab-embed-wrapper text-center">
     <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/0499030f69ce4d40b5ee5542f9d78dcb/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/3d-models/3d-tue-0499030f69ce4d40b5ee5542f9d78dcb?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic; font-weight: bold; color: #1CAAD9;">Selfish Tue</a>
+    <a href="https://sketchfab.com/3d-models/3d-tue-0499030f69ce4d40b5ee5542f9d78dcb?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic; font-weight: bold; color: #1CAAD9;">Tue</a>
     by <a href="https://sketchfab.com/tuengominh?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic; font-weight: bold; color: #1CAAD9;">tuengominh</a>
     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-style: italic; font-weight: bold; color: #1CAAD9;">Sketchfab</a>
 </p>
 </div>
+<p></p>
 <p>I studied sculpture in college before, so the <strong>Sculpt Mode</strong> indeed was really tempting to try. I indeed played around a bit by keeping the same amount of triangle faces from the scanning outcome, and fine-tuning it with other tools, such as <strong>Draw, Blob, Crease, Grab,</strong> and <strong>Pinch</strong>. Of course, the model looks way prettier and detailed. However, the size of the file would be unnecessarily large, and I cannot 3D-print it properly since there were so many non-manifold faces and messy layers. Cleaning them up could be a real pain. Hence, I decided not to continue with it.</p>
+<p>I also didn't proceed to print myself, because I wanted to allocate more time trying other 3D printing techniques. In the end, I couldn't make it on time for those additional explorations, but everything is in process ;).</p>
 <p></p>
 
 <h2>3D printing</h2>
 <h5 id="group">Group assignment - Characterize the 3D printers</h5>
-<p>3D printing is a technique of creating additive, this technique has two main advantages, the first is that no waste, all the material is used in the object creation, the second advantage is that it allows creating structures that would be impossible with other techniques.</p>
-<p>Before participating in the group test, I took a look at this useful <a href="https://www.matterhackers.com/articles/a-guide-to-understanding-the-tolerances-of-your-3d-printer">article</a> in order to understand what we were goint to test. This week I participated in 2 groups to test 2 files provided by the instructors.</p>
+<p>So what is 3D printing, or should I say, additive CAM? 3D printing is a technique of adding successive layers of material until an object is created. 3D printing has significant advantages: avoiding the waste of materials and allowing us to create models that would be impossible with other subtractive techniques. Before participating in the group test, I took a look at this useful <a href="https://www.matterhackers.com/articles/a-guide-to-understanding-the-tolerances-of-your-3d-printer">article</a> in order to understand what we were going to test. This week I participated in 2 groups to test 2 files provided by the instructors. For the first test on Thursday, </p>
 <h6>First test</h6>
-<p>I teamed up with <a href="https://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a> and <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard/">Antoine Jaunard</a> for the first test. We used the <a href="https://www.creality3d.shop/products/creality-cr-10s-s5-3d-printer-diy-kit-large-printing-size-500x500x500mm">Creality CR-10 S5 3D</a> printer to print the <a href="https://www.thingiverse.com/thing:1363023">first test</a>. The detailed specs of the machine:</p>
+<p>I teamed up with <a href="https://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a> and <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard/">Antoine Jaunard</a> for the first test. We used the <a href="https://www.creality3d.shop/products/creality-cr-10s-s5-3d-printer-diy-kit-large-printing-size-500x500x500mm">Creality CR-10 S5 3D</a> printer to print the <a href="https://www.thingiverse.com/thing:1363023">first test</a> using 1.75mm PLA. The detailed specs of the machine:</p>
 <ul>
 <li>Printing technology: FDM</li>
 <li>Printing size: 500 x 500 x 500mm</li>
@@ -76,12 +77,17 @@ active: 1
 <li>Materials：PLA, Copper, Wood, Carbon Fiber, etc.</li>
 <li>Printing method: SD card, USB</li>
 </ul>
-<p>We used <a href="https://ultimaker.com/software/ultimaker-cura">Cura</a> in order to modify some important settings for the 3D printing process and to generate a <code>.gcode</code> file. <a href="https://es.wikipedia.org/wiki/G-code">G-code</a> is the language through which we can communicate with computer-controlled machine tools (in this case, the 3D printers) and give them instructions on what to do. By selecting the printer in Cura, we will have a profile with proper settings. However, we had to modify some settings to manipulate the printing time:</p>
+<p>This test file allows us to test these features: Z-height check, warp check, spike, hole in wall, raft test, overhang Steps 50° - 70°, 2 different extrusion widths: 0.48mm & 0.4mm. We used <a href="https://ultimaker.com/software/ultimaker-cura">Ultimaker Cura</a> in order to modify some important settings for the 3D printing process and to generate a <code>.gcode</code> file. <a href="https://es.wikipedia.org/wiki/G-code">G-code</a> is the language through which we can communicate with computer-controlled machine tools (in this case, the 3D printers) and give them instructions on what to do. By selecting the printer in Cura, we will have a profile with tons of proper settings. However, we had to, and should only, modify some settings to manipulate the printing time:</p>
 <ul>
-<li>Layer height: the thinner the layer, the more detailed the result, and the longer the total printing time.</li>
+<li>Layer height: the thinner the layer, the more detailed the result, and the longer the total printing time. We chose 0.2mm for the tests to get a detailed result.</li>
+<li>Wall thickness: 0.8mm</li>
+<li>Infill density: 10%</li>
+<li>Print speed: 60mm/s</li>
+<li>Support: we might need to generate <a href="https://ultimaker.com/en/resources/52663-support">support</a> structure under the model to prevent the material from falling down in the case of large overhang angles</li>
 </ul>
+<p>The printing was done in less than 1 hour:</p>
 <p></p>
-<p>The overhang test show that the printer is capable to print model with overhang without support up to 70 degrees, however the surface for 60 degrees or above is uneven and not smooth.</p>
+<p>As we can see in the images above, the definition of the print is quite good, the details are respected and the print angles can be large. The printer is capable to print model with overhang without support up to 70 degrees, however the surface for 60 degrees or above is uneven and not smooth.</p>
 <h6>Second test</h6>
 <p>For the <a href="https://www.thingiverse.com/thing:636363">second test</a>, I teamed up with <a href="http://fabacademy.org/2020/labs/barcelona/students/roger-anguera/">Roger Anguera</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/bruno-molteni">Bruno Molteni</a>, <a href="https://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/lynn-dika">Lynn Dika</a>. We used the <a href="https://www.anycubic.com/products/anycubic-kossel-3d-printer">Anycubic Kossel Delta</a> printer. The detailed specs of the machine:</p>
 <ul>
@@ -93,17 +99,11 @@ active: 1
 <li>Printing method: SD card, USB</li>
 </ul>
 <p></p>
-<p>Dimensional accuracy is nothing more than demonstrating that your finished print / part possesses the same dimensions of the original part or design. This is often problematic when the base or bottom of a part is next to the bed.</p>
-<p>The 3 printout show that there is a shrink for the length, Width, thickness and holes sizes respectively. The minimum distance and walls also failed to print for 0.5 mm and below. Until 0.5mm, precision seems to be OK. Under this limit, 3D printing begins to be inaccurate: the filament layers don't stay in place and mix themselves.</p>
-<p>For the bridge test, they are fine but there is slightly sinked part at length 60.</p>
-<p>Next to warping and stringing, surface finish is the characteristic most noticed by the end user.  Surface finish is often material specific with PLA having a notoriously poor surface finish.  One method to improve the horizontal surface finish is to lower the top / bottom layer extrusion speeds to within 15 - 30 mm/s.  It may also help to increase the count of top / bottom layers to five to ensure a smooth finish</p>
-<p>When 3D printing with overhangs, the best guidance to remember the 45 degree rule.  Most printers can print overhangs up to 45 degrees with little issues, but angles up to 70 degrees may be achieved if you have your 3D printer dialed in </p>
-<p>Another thorn in the sides of designers and engineers is the negative space tolerance issue.  This really comes into play when attempting to join prints or parts together into one assembly. </p>
 <p></p>
 <h6>What I personally learned</h6>
 <p>Some constraints that we must take into account while designing objects to be 3D-printed:</p>
 <ul>
-<li>Pay attention to laws of gravity. We cannot print a piece in mid-air, and models must lie flat on the build plate or be supported (we have a <strong>Support</strong> feature in Cura).</li> 
+<li>Pay attention to laws of gravity. We cannot print a piece in mid-air, and models must lie flat on the build plate or be supported.</li> 
 <li>The model must fit within the printer’s working area.</li> 
 </ul>
 <p></p>
