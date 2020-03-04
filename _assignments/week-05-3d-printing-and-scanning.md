@@ -96,6 +96,8 @@ active: 1
 <li>Printing method: SD card, USB</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/test1-0.jpeg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/test1-1.jpeg" class="img-fluid w-100"/>
 <p>We used <a href="https://ultimaker.com/software/ultimaker-cura">Ultimaker Cura</a> in order to slice the model, to modify some important settings for the 3D printing process, and to generate a <code>.gcode</code> file. <a href="https://es.wikipedia.org/wiki/G-code">G-code</a> is the language through which we can communicate with computer-controlled machine tools (in this case, the 3D printers) and give them instructions on what to do. The Cura apps installed in Fab Lab Barcelona's computers have the profiles of all available printers with tons of proper settings. However, we had to, and should only, modify some settings to manipulate the printing time:</p>
 <ul>
 <li>Layer height: 0.2mm. The thinner the layer, the more detailed the result, and the longer the total printing time. We chose 0.2mm for the tests to get a more delicate result.</li>
@@ -104,8 +106,7 @@ active: 1
 <li>Print speed: 60mm/s. The lower the speed, the finer the outcome.</li>
 <li>Support: not in this case, but we might need to generate a <a href="https://ultimaker.com/en/resources/52663-support">support</a> structure under the model in order to prevent the material from falling down when it comes to large overhang angles.</li>
 </ul>
-<img src="{{site.baseurl}}/assets/img/assignments/week-05/test1-1.jpeg" class="img-fluid w-100"/>
-<p></p>
+<p>Here you go the video recording the printing process:</p>
 <div class="text-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ViD0EXA_V30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
