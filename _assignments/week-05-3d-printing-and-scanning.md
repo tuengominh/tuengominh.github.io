@@ -81,10 +81,10 @@ active: 1
 <p>We used <a href="https://ultimaker.com/software/ultimaker-cura">Ultimaker Cura</a> in order to modify some important settings for the 3D printing process and to generate a <code>.gcode</code> file. <a href="https://es.wikipedia.org/wiki/G-code">G-code</a> is the language through which we can communicate with computer-controlled machine tools (in this case, the 3D printers) and give them instructions on what to do. By selecting the printer in Cura, we will have a profile with tons of proper settings. However, we had to, and should only, modify some settings to manipulate the printing time:</p>
 <ul>
 <li>Layer height: 0.2mm. The thinner the layer, the more detailed the result, and the longer the total printing time. We chose 0.2mm for the tests to get a detailed result.</li>
-<li>Wall thickness: 0.8mm - usually double the size of nozzle diameter because we generally print with two shells: one for inside and one for outside</li>
+<li>Wall thickness: 0.8mm - usually double the size of nozzle diameter because we generally print with two shells: one for inside and one for outside.</li>
 <li>Infill density: 10% - Infill pattern: Grid. Infill is a repetitive structure used to fill the empty space in a print. A high infill density can make the printing time longer and the outcome heavier.</li>
 <li>Print speed: 60mm/s. The lower the speed, the finer the outcome.</li>
-<li>Support: not in this case, but generally we might need to generate <a href="https://ultimaker.com/en/resources/52663-support">support</a> structure under the model to prevent the material from falling down in the case of large overhang angles</li>
+<li>Support: not in this case, but generally we might need to generate <a href="https://ultimaker.com/en/resources/52663-support">support</a> structure under the model to prevent the material from falling down in the case of large overhang angles.</li>
 </ul>
 <p>The printing was done in 1 hour 27 minutes:</p>
 <p></p>
@@ -92,11 +92,11 @@ active: 1
 <ul>
 <li>Quality of wave (rounded print), star (sharp edges), CtrlV (complex shapes): slightly acceptable</li>
 <li>Dimension accuracy: +0.08mm (x,y) and +0.1mm (z)</li>
-<li>Tolerance (by measuring holes' diameters): 0.5mm - 0.6mm</li>
+<li>Tolerance (by measuring holes' diameters): 0.4mm - 0.5mm</li>
 <li>Minimum hole size: all passed, up to 3mm</li>
 <li>Minimum wall thickness: 0.1mm</li>
 <li>Minimum distance between walls: 0.6mm</li>
-<li>Horizontal surface finish: quite smooth to all shapes (spherea and pyramides)</li>
+<li>Horizontal surface finish: quite smooth, all passed (spheres and pyramides)</li>
 <li>Overhang angles: perfectly nice at 35°, slightly acceptable up to 60°</li>
 <li>Bridges: all passed, up to 16mm length</li>
 </ul>
@@ -153,8 +153,8 @@ active: 1
 <p>I used the same Anycubic Kossel Delta printer to print my vase. Josep guided me through some essential steps:</p>
 <ul>
 <li>Export the <code>.gcode</code> file and save to the SD Card of the printer</li>
-<li>In case we need to change material, heat up machine up: <strong>Prepare > Preheat PLA</strong>, up until 205-210°C and we can remove the broken filament.
-<li>Put SD card in and select <strong>Print from SD</strong>. Choose the file and start printing!</p>
+<li>In case we need to change material, heat up machine up: <strong>Prepare > Preheat PLA</strong>, up until 205-210°C and we can remove the broken filament.</li>
+<li>Put SD card in and select <strong>Print from SD</strong>. Choose the file and start printing!</li>
 <li>Check if there is any problem with the initial layer, or if the printer is printing in the air. We might need to calibrate the Z-axis or level the bed, and I usually ask Eduardo whenever it comes to this task.</li>
 </ul>
 <p>I then had some problems with the printing process. Although I reduced the overhang angle from the bottom of the vase to its top, the overhang angles between the twist parts were obviously too big and the printer started to print in the air. In order to both reduce the size and maintain a nice shape, I modified the cube in my design to a hexagon cylinder by utilizing the module used in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#construction-kit">3rd week</a>.</p>
@@ -172,6 +172,46 @@ active: 1
 
 <h2>Conclusion</h2>
 <h6>Settings for different FDM printers and test results:</h6>
+<p></p>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Machine</th>
+      <th scope="col">Layer height</th>
+      <th scope="col">Infill</th>
+      <th scope="col">Dimension accuracy</th>
+      <th scope="col">Tolerance</th>
+      <th scope="col">Minimum hole size</th>
+      <th scope="col">Minimum distance between walls</th>
+      <th scope="col">Maximum overhang angle</th>
+      <th scope="col">Maximum horizontal span</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Creality CR-10 S5</th>
+      <td>0.2mm</td>
+      <td>10%</td>
+      <td>+0.08mm (x,y) and +0.1mm (z)</td>
+      <td>0.4mm - 0.5mm</td>
+      <td>-</td>
+      <td>0.1mm</td>
+      <td>60°</td>
+      <td>16mm</td>
+    </tr>
+    <tr>
+      <th scope="row">Anycubic Kossel Delta</th>
+      <td>0.2mm</td>
+      <td>10%</td>
+      <td>+0.1mm (x,y,z)</td>
+      <td>0.5mm - 0.6mm</td>
+      <td>0.7mm</td>
+      <td>0.1mm</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 <p></p>
 <!--<h6>Comparison of 3D printing techniques:</h6>
 <p></p>-->
