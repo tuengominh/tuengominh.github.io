@@ -26,28 +26,28 @@ active: 1
 <li>Depth sensor range: 1.2 - 3.5m</li>
 <li>Frame rate (depth and color stream): 30FPS</li>
 </ul>
-<p>The software paired with Kinect that we used to process the scan was <a href="https://skanect.occipital.com/">Skanect.</a> <a href="https://www.instructables.com/id/How-to-3D-scan-with-Skanect/">Here</a> we can find a step by step instruction on using Skanect. Choosing myself as the scanned object means I required further supports from others: someone held and tilted the Kinect vertically (Santi - our instructor), someone rotated me while I'm kneeling on the chair (my classmate Hala), and someone documented the process (Zoi - an MDEF student). The reason why I'm not sitting on the chair was to avoid having to process the chair from the exported mesh later.</p>
+<p>The software paired with Kinect that we used to process the scan was <a href="https://skanect.occipital.com/">Skanect.</a> <a href="https://www.instructables.com/id/How-to-3D-scan-with-Skanect/">Here</a> we can find a step by step instruction on using Skanect. Choosing myself as the scanned object means I required further supports from others: someone held and tilted the Kinect vertically (Santi - our instructor), someone rotated me while I'm kneeling on the chair (my classmate Hala), and someone documented the process (Zoi - an MDEF student). The reason why I was not sitting on the chair was to avoid having to process the chair from the exported mesh later.</p>
 <p>Steps to scan:</p>
 <ul>
 <li>Check the connection between Skanect and Kinect</li>
 <li>Select the <strong>Body</strong> scene with <i>1 x 1 x 1m</i> bounding box and start scanning</li>
 <li>Click the record button, rotate and maintain the object to make sure it could be scanned properly. Click the button again when finishing.</li>
-<li>Crop the lanky bottom of the mesh and ensure a flat base for the model by selecting the <strong>Move & Crop</strong> feature</li>
+<li>Crop the messy bottom of the mesh and ensure a flat base for the model by selecting the <strong>Move & Crop</strong> feature</li>
 <li>Making the mesh watertight and fill holes by selecting the <strong>Fill Holes</strong> feature and choose the <i>Medium</i> option</li>
 <li>Export to <code>.obj</code> or <code>.stl</code></li>
 </ul>
 <p>And here is the outcome imported to Blender (the size of the file was too big, that's why I just posted a screenshot here):</p>
 <p></p>
 <h6>Processing the mesh with Blender</h6>
-<p>Now let's make myself a bit prettier by 3D retouching the outcome! We had a class by Victor Barberan regarding fixing the mesh with Blender. I simply followed his instructions to work on my mess, oh I meant, mesh. Some steps followed (<strong>IMPORTANT: </strong> following the order can be life-saving. I started sculpting <strong>BEFORE</strong> switching to <strong>Edit Mode</strong> and immediately hit my head to the keyboard):</p>
+<p>Now let's make myself a bit prettier by 3D retouching the outcome! We had a class by Victor Barberan regarding fixing the mesh with Blender. I simply followed his instructions to work on my mess, oh I meant, mesh. Some steps followed (<strong>IMPORTANT: </strong> following the order can be life-saving. I started sculpting <strong>BEFORE</strong> switching to <strong>Edit Mode</strong> and hit my head to the keyboard soon after):</p>
 <ul>
 <li>In <strong>Object Mode</strong>: rotate, scale and <i>Set Geometry to Origin</i></li>
 <li>In <strong>Edit Mode</strong>: use <i>Select Circle</i> tool to select the outside faces of my model, hide them, and delete the horrible mess inside. Also, hit space and remove duplicated vertices.</li>
-<li>In <strong>Edit Mode</strong>: select the whole model and go to <strong>Mesh > Clean Up</strong>. Use <i>Delete Loose</i> to get rid of loose vertices and edges. Select <i>Decimate Geometry</i> and reduced the ratio to collapse edges and get a less complicated model.</li> 
+<li>In <strong>Edit Mode</strong>: select the whole model and go to <strong>Mesh > Clean Up</strong>. Use <i>Delete Loose</i> to get rid of loose vertices and edges. Select <i>Decimate Geometry</i> and reduce the ratio to collapse edges and to get a less complicated model.</li> 
 <li>Activate and install <i>Mesh: 3D Print Toolbox</i> module in <strong>User Preferences > Add-ons</strong>. Now we can clean up problems with our model and make it printable by selecting <i>Make Manifold</i> to get rid of distorted edges.</li>
-<li>Go back to <strong>Object Mode</strong>: solidify the object, to make sure there are no weird interior layers</li>
 <li>Go back to <strong>Edit Mode</strong>: spot holes in the model, select their borders and press <kbd>Option</kbd> + <kbd>F</kbd> to fill the holes</li>
-<li>Now we can go to <strong>Object Mode</strong>: fine-tuning the model with sculpting tools such as <strong>Smooth, Flatten</strong> and <strong>Grab</strong></li>
+<li>Now we can go to <strong>Object Mode</strong>: fine-tune the model with sculpting tools such as <strong>Smooth, Flatten</strong> and <strong>Grab</strong></li>
+<li>Go back to <strong>Object Mode</strong>: solidify the object (optional) and add a cube base to the bottom of the model</li>
 </ul>
 <p>And let me introduced you to the 3D Tue (not in a perfect state)!</p>
 <div class="sketchfab-embed-wrapper text-center">
@@ -60,15 +60,25 @@ active: 1
 </p>
 </div>
 <p></p>
-<p>I studied sculpture in college before, so the <strong>Sculpt Mode</strong> indeed was really tempting to try. I indeed played around a bit by keeping the same amount of triangle faces from the scanning outcome, and fine-tuning it with other tools, such as <strong>Draw, Blob, Crease, Grab,</strong> and <strong>Pinch</strong>. Of course, the model looks way prettier and detailed. However, the size of the file would be unnecessarily large, and I cannot 3D-print it properly since there were so many non-manifold faces and messy layers. Cleaning them up could be a real pain. Hence, I decided not to continue with it.</p>
+<p>I studied sculpture in college before, so the <strong>Sculpt Mode</strong> indeed was really tempting to try. I indeed played around a bit by keeping the same amount of triangle faces from the scanning outcome, and fine-tune it with other sculpting tools, such as <strong>Draw, Blob, Crease, Grab,</strong> and <strong>Pinch</strong>. Of course, the model was way visually prettier and detailed. However, the size of the file was be unnecessarily large, and I could not 3D-print it properly since there were so many non-manifold faces and messy layers. Cleaning them up could be a real pain, therefore I decided not to continue with it.</p>
 <p>I also didn't proceed to print myself, because I wanted to allocate more time trying other 3D printing techniques. In the end, I couldn't make it on time for those additional explorations, but everything is in process ;)</p>
+<p></p>
+<h6>TL;DR</h6>
+<p>Tips to 3D scan and fixing an object:</p>
+<ul>
+<li>The bigger the object, the better</li>
+<li>Ensure a clearer background</li>
+<li>Maintain a stable speed while moving around the object</li>
+<li>Always get rid of trash first, then we can start adding modifiers while working on the mesh (unless you know what you're doing)</li>
+<li>Always start with <strong>Edit Mode</strong>, and after every modifications, check again in <strong>Edit Mode</strong>. It's very likely we're making the mess worse.</li>
+</ul>
 <p></p>
 
 <h2>3D printing</h2>
 <h5 id="group">Group assignment - Characterize the 3D printers</h5>
-<p>First of all, what is 3D printing, or should I say, additive CAM? 3D printing is a technique of adding successive layers of material until an object is created. 3D printing has significant advantages: avoiding the waste of materials and allowing us to create models that would be impossible with other subtractive techniques. Before participating in the group test, I took a look at this useful <a href="https://www.matterhackers.com/articles/a-guide-to-understanding-the-tolerances-of-your-3d-printer">article</a> in order to understand what we were going to test. This week I participated in 2 groups to test 2 files provided by the instructors.</p>
+<p>First of all, what is 3D printing, or should I say, additive CAM? 3D printing is a technique of adding successive layers of material until an object is created. 3D printing has significant advantages: avoiding the waste of materials and allowing us to create models that would be impossible with other subtractive techniques. Before participating in the group test, I took a look at this useful <a href="https://www.matterhackers.com/articles/a-guide-to-understanding-the-tolerances-of-your-3d-printer">article</a> in order to understand what we were going to test.</p>
 <h6>First test</h6>
-<p>I teamed up with <a href="https://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a> and <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard/">Antoine Jaunard</a> for the first test. We used the <a href="https://www.creality3d.shop/products/creality-cr-10s-s5-3d-printer-diy-kit-large-printing-size-500x500x500mm">Creality CR-10 S5 3D</a> printer to print the <a href="https://www.thingiverse.com/thing:1363023">first test</a> using 1.75mm PLA. The detailed specs of the machine:</p>
+<p>I teamed up with <a href="https://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a> and <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard/">Antoine Jaunard</a> for the first test. We used the <a href="https://www.creality3d.shop/products/creality-cr-10s-s5-3d-printer-diy-kit-large-printing-size-500x500x500mm">Creality CR-10 S5 3D</a> printer to print this <a href="https://www.thingiverse.com/thing:1363023">test file</a> using 1.75mm PLA. The detailed specs of the machine:</p>
 <ul>
 <li>Printing technology: FDM</li>
 <li>Printing size: 500 x 500 x 500mm</li>
@@ -92,7 +102,7 @@ active: 1
 <ul>
 <li>Quality of wave (rounded print), star (sharp edges), CtrlV (complex shapes): slightly acceptable</li>
 <li>Dimension accuracy: +0.08mm (x,y) and +0.1mm (z)</li>
-<li>Tolerance (by measuring holes' diameters): 0.4mm - 0.5mm</li>
+<li>Tolerance (by measuring holes' diameters): 0.3mm - 0.4mm</li>
 <li>Minimum hole size: all passed, up to 3mm</li>
 <li>Minimum wall thickness: 0.1mm</li>
 <li>Minimum distance between walls: 0.6mm</li>
@@ -111,7 +121,7 @@ active: 1
 <li>Materials：PLA, ABS, HIPS, Wood, etc.</li>
 <li>Printing method: SD card, USB</li>
 </ul>
-<p>The estimated printing time was too long, hence, we had to scale-down the object to 70%. We then used the same settings as the first test. The printing was done in less than 1 hour 35 minutes:</p>
+<p>The estimated printing time was too long, hence, we had to scale-down the object to 70%. We then used the same settings as the first test. The printing was done in 1 hour 35 minutes:</p>
 <p>Generally, the quality of the print is poorer compared to the one printed by Creality. Here are the detailed test results after I measured carefully the outcome with the caliper:</p>
 <ul>
 <li>Dimension accuracy: +0.1mm (x,y,z)</li>
@@ -120,18 +130,18 @@ active: 1
 <li>Minimum wall thickness: 0.1mm</li>
 <li>Minimum distance between walls: 0.3mm</li>
 <li>Horizontal surface finish: lower quality than the outcome of Creality</li>
-<li>None of the wheels of the above tolerance test could be able to move. The reason might be because we scaled-down the object to 70%.</li>
+<li>None of the wheels could be able to move, and the reason might be because we scaled-down the object to 70%.</li>
 </ul>
 <p></p>
-<h6>What I personally learned</h6>
-<p>Some constraints that we must take into account while designing objects to be 3D-printed:</p>
+<h6>TL;DR</h6>
+<p>What I personally learned:</p>
 <ul>
 <li>Pay attention to laws of gravity. We cannot print a piece in mid-air, and models must lie flat on the build plate or be supported.</li> 
 <li>The model must fit within the printer’s working area. The very first thing we need to check in Cura is the printer we're going to use!</li> 
 <li>Heat and curing may cause warping and often the initial base layer of a print is very easy to mess up. In order to mitigate this concern, we should use a brim or raft plate before printing the first layer of the actual part.</li>
-<li>A method to mitigate the overhang issue and to print angles greater than 45° could be to design in chamfers or fillets on the solid model. I used this trick in my <a href="#filament">individual assignment</a>, and the final outcome was great!</li>
 <li>To achieve longer bridges, we can slow the print speed down and reduce the temperature. The faster the speed, the greater the chances are for filament sags. This is because the capability of printing horizontal spans is mostly affected by the quality of the material and how close the bridge is to the heated bed.</li>
-<li>The tolerance is an important parameter while designing joined parts, and it could be slightly different when we use different printers or materials. For press-fit joints where parts are held together by friction, allow for a +0.3mm offset from the interior parts. For sliding-fit joints that allow movement or rotation, allow for +0.5mm offset from each side.</li>
+<li>Tolerance is an important parameter while designing joined parts, and it could be slightly different when we use different printers or materials. For press-fit joints where parts are held together by friction, allow for a 0.3 - 0.4mm offset from the interior parts. For sliding-fit joints that allow movement or rotation, allow for 0.5mm - 0.6mm offset from each side.</li>
+<li>Be careful when scaling objects with assembled parts.</li>
 </ul>
 <p></p>
 
@@ -153,16 +163,17 @@ active: 1
 <p>I used the same Anycubic Kossel Delta printer to print my vase. Josep guided me through some essential steps:</p>
 <ul>
 <li>Export the <code>.gcode</code> file and save to the SD Card of the printer</li>
-<li>In case we need to change material, heat up machine up: <strong>Prepare > Preheat PLA</strong>, up until 205-210°C and we can remove the broken filament.</li>
-<li>Put SD card in and select <strong>Print from SD</strong>. Choose the file and start printing!</li>
-<li>Check if there is any problem with the initial layer, or if the printer is printing in the air. We might need to calibrate the Z-axis or level the bed, and I usually ask Eduardo whenever it comes to this task.</li>
+<li>In case we need to change material, pre-heat the machine (<strong>Prepare > Preheat PLA</strong>) up until 205-210°C and we can remove the broken filament.</li>
+<li>Put SD card in and select <strong>Print from SD</strong>. Choose the <code>.gcode</code> file and start printing!</li>
+<li>Check if there is any problem with the initial layer, or whether the printer is printing in the air. We might need to calibrate the Z-axis or level the bed, and I usually ask our instructor Eduardo Chamorro or Mikrl Llobera whenever it comes to this task.</li>
 </ul>
-<p>I then had some problems with the printing process. Although I reduced the overhang angle from the bottom of the vase to its top, the overhang angles between the twist parts were obviously too big and the printer started to print in the air. In order to both reduce the size and maintain a nice shape, I modified the cube in my design to a hexagon cylinder by utilizing the module used in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#construction-kit">3rd week</a>.</p>
-<p>There you go the 2nd and 3rd failures. For the first print, I only selected the <strong>Skirt</strong> option in <strong>Plate Adhesion</strong> and the adhesion was fine. However, for the next print, the model started moving while being printed. I tried the second time by selecting the <strong>Brim</strong> option, but things didn't go well either. In the end, I had to print the 4th time with the option <strong>Raft</strong> selected.</p>
+<p>I then had some problems with the printing process. Although I reduced the overhang angle from the bottom of the vase to its top, the overhang angles between the twisty parts were obviously too big and the printer started to print in the air. In order to both reduce the size and maintain a nice shape, I modified the cube in my design to a hexagon cylinder by utilizing the module used in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#construction-kit">3rd week</a>.</p>
+<p>Here we go the 2nd and 3rd failures. For the first print, I only selected the <strong>Skirt</strong> option in <strong>Plate Adhesion</strong> and the adhesion was fine. However, for the next print, the model started moving while being printed. I tried the second time by selecting the <strong>Brim</strong> option, but things didn't go well either. In the end, I had to print the 4th time with the option <strong>Raft</strong> selected.</p>
 <p>Finally, I had the vase perfectly printed!</p>
 <p></p>
 <h6>Final result</h6>
 <p>I brought the vase to the landlady where I'm staying, and here you go the hero shots of the final result:</p>
+<p></p>
 
 <!--<h5 id="syringe">Additional test - Thick paste extrusion using syringe</h5>
 <p></p>
@@ -170,7 +181,7 @@ active: 1
 <h5 id="resin">Additional test - Stereolithography using SLA printer and UV resin</h5>
 <p></p>-->
 
-<h2>Conclusion</h2>
+<h5>Conclusion</h5>
 <h6>Settings for different FDM printers and test results:</h6>
 <p></p>
 <table class="table">
@@ -178,7 +189,7 @@ active: 1
     <tr>
       <th scope="col">Machine</th>
       <th scope="col">Layer height</th>
-      <th scope="col">Infill</th>
+      <th scope="col">Infill density</th>
       <th scope="col">Dimension accuracy</th>
       <th scope="col">Tolerance</th>
       <th scope="col">Minimum hole size</th>
@@ -193,7 +204,7 @@ active: 1
       <td>0.2mm</td>
       <td>10%</td>
       <td>+0.08mm (x,y) and +0.1mm (z)</td>
-      <td>0.4mm - 0.5mm</td>
+      <td>0.3mm - 0.4mm</td>
       <td>-</td>
       <td>0.1mm</td>
       <td>60°</td>
@@ -215,7 +226,7 @@ active: 1
 <p></p>
 <!--<h6>Comparison of 3D printing techniques:</h6>
 <p></p>-->
-<p>That's it, enough testing with 3D printers. The next step is to design the physical parts of my Final Project and try to see how can I assemble parts made with subtractive and additive techniques. I still need to think about how can I connect the modules both physically and electronically. Hence, I will delay the task a bit and update later on the <a href="{{site.baseurl}}/final-project.html">Final Project</a> page.</p>
+<p>That's it, enough testing with 3D printers. The next step is to design the physical parts of my Final Project and to see how can I assemble parts made with subtractive and additive techniques. I still need to make it clear about how can I connect the modules both physically and electronically. Hence, I will delay the task a bit and update later on the <a href="{{site.baseurl}}/final-project.html">Final Project</a> page.</p>
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html">Previous Assignment</a>
