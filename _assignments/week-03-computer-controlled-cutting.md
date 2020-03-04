@@ -291,7 +291,7 @@ active: 1
       <td>60</td>
       <td>0.5</td>
       <td>20000</td>
-      <td>0.45 ~ 0.5mm</td>
+      <td>0.45 - 0.5mm</td>
     </tr>
   </tbody>
 </table>

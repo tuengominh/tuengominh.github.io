@@ -99,7 +99,7 @@ active: 1
 <li><kbd>$ git push --force</kbd>: force push changes to the Gitlab remote repo</li>
 </ul>
 <p>However, after I push changes to the repo, the size remains the same. I continued to search for solutions, and from what I understand from <a href="https://github.com/rtyley/bfg-repo-cleaner/issues/208">here</a> and <a href="https://stackoverflow.com/questions/31932574/clean-up-large-files-on-git-server">there</a>, it might be a Gitlab issue. Anyway, I gave up. I will keep this in mind and will add/remove files properly for the next assignments.</p>
-<p class="font-weight-bold">* Good news: In the 5th week, the size of my Gitlab repo suddenly shrunk down from ~35MB to ~24MB. I've checked with Viktor Smari whether he changed anything or cleaned the repositories up, and the answer was no. I assume that after some time, Gitlab has performed some recurring clean-up tasks, and my previous efforts have paid off!(?)</p> 
+<p><strong>* Good news:</strong> In the 5th week, the size of my Gitlab repo suddenly shrunk down from ~35MB to ~24MB. I've checked with Viktor Smari whether he changed anything or cleaned the repositories up, and the answer was no. I assume that after some time, Gitlab has performed some recurring clean-up tasks, and my previous efforts have paid off!(?)</p> 
 <p></p>
 
 <div class="container w-100 text-center py-4">

@@ -89,10 +89,10 @@ active: 1
 <ul>
 <li>Printing technology: FDM</li>
 <li>Printing size: 500 x 500 x 500mm</li>
-<li>Printing accuracy：± 0.1mm</li>
-<li>Nozzle diameter：standard 0.4mm (can be changed to 0.3 or 0.2mm)</li>
-<li>Printing speed：normal 80mm/s, max 200mm/s</li>
-<li>Materials：PLA, Copper, Wood, Carbon Fiber, etc.</li>
+<li>Printing accuracy: ± 0.1mm</li>
+<li>Nozzle diameter: standard 0.4mm (can be changed to 0.3 or 0.2mm)</li>
+<li>Printing speed: normal 80mm/s, max 200mm/s</li>
+<li>Materials: PLA, Copper, Wood, Carbon Fiber, etc.</li>
 <li>Printing method: SD card, USB</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/test1-0.jpeg" class="img-fluid w-100"/>
@@ -115,11 +115,11 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/test1-2.jpg" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/test1-3.jpeg" class="img-fluid w-100"/>
-<p>As per the images above, the quality of the print was quite good, many details were respected. Here are the detailed test results after I measured carefully the outcome with the caliper:</p>
+<p>As per the images above, the quality of the print was quite good, many details were respected. Here are the test results after I measured carefully the outcome with the caliper:</p>
 <ul>
 <li>Quality of wave (rounded print), star (sharp edges), CtrlV (complex shapes): slightly acceptable</li>
 <li>Dimension accuracy: +0.08mm (x,y) and +0.1mm (z)</li>
-<li>Tolerance (by measuring holes' diameters): 0.3mm - 0.4mm</li>
+<li>Clearance (calculated by measuring holes' diameters): 0.3mm - 0.4mm, which means tolerance is around 0.15 - 0.2mm</li>
 <li>Minimum hole size: all passed, up to 0.6mm</li>
 <li>Minimum wall thickness: 0.1mm</li>
 <li>Minimum distance between walls: 0.6mm</li>
@@ -128,14 +128,14 @@ active: 1
 <li>Bridges: all passed, up to 16mm length</li>
 </ul>
 <p></p>
-<h6>Second test - Testing tolerances</h6>
+<h6>Second test - Tolerance and joint clearance</h6>
 <p>For the <a href="https://www.thingiverse.com/thing:636363">second test</a>, I teamed up with <a href="http://fabacademy.org/2020/labs/barcelona/students/roger-anguera/">Roger Anguera</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/bruno-molteni">Bruno Molteni</a>, <a href="https://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/lynn-dika">Lynn Dika</a>. We used the <a href="https://www.anycubic.com/products/anycubic-kossel-3d-printer">Anycubic Kossel Delta</a> printer, and our Fab Lab Manager Mikel Llobera guided us through the process. The detailed specs of the machine:</p>
 <ul>
 <li>Printing technology: FDM</li>
 <li>Printing size: 230 x 180 x 300mm</li>
-<li>Nozzle diameter：0.4mm</li>
-<li>Printing speed：20 - 80mm/s</li>
-<li>Materials：PLA, ABS, HIPS, Wood, etc.</li>
+<li>Nozzle diameter: 0.4mm</li>
+<li>Printing speed: 20 - 80mm/s</li>
+<li>Materials: PLA, ABS, HIPS, Wood, etc.</li>
 <li>Printing method: SD card, USB</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/test2-0.jpg" class="img-fluid w-100"/>
@@ -144,7 +144,7 @@ active: 1
 <p>Generally, the quality of the print was poorer compared to the one printed by the Creality printer. Here are the detailed test results measured by the caliper:</p>
 <ul>
 <li>Dimension accuracy: +0.1mm (x,y,z)</li>
-<li>Tolerance (by measuring holes' sizes): 0.5mm - 0.6mm</li>
+<li>Clearance (calculated by measuring holes' sizes): 0.4mm - 0.6mm, which means tolerance is around 0.2 - 0.3mm</li>
 <li>Minimum hole size: up to 0.7mm. Smaller than this, the printer ignored the walls and printed a big hole.</li>
 <li>Minimum wall thickness: 0.1mm</li>
 <li>Minimum distance between walls: 0.3mm</li>
@@ -159,7 +159,7 @@ active: 1
 <li>The model must fit within the printer’s working area. The very first thing we need to ensure in Cura is the printer we're going to use!</li> 
 <li>Heat and curing may cause warping and often the initial base layer of a print is very easy to mess up. In order to mitigate this concern, we should use a brim or raft plate before printing the first layer of the actual part.</li>
 <li>To achieve longer bridges, we can slow the print speed down and reduce the temperature. The faster the speed, the greater the chances are for filament sags. This is because the capability of printing horizontal spans is mostly affected by the quality of the material and how close the bridge is to the heated bed.</li>
-<li>Tolerance is an important parameter while designing joined parts, and it could be slightly different when we use different printers or materials. For press-fit joints where parts are held together by friction, allow for a 0.35 - 0.4mm offset from the interior parts. For sliding-fit joints that allow movement or rotation, allow for 0.5mm - 0.6mm offset from each side.</li>
+<li>Tolerance is an important parameter while designing assembled parts, and it could be slightly different when we use different printers or materials. For press-fit joints where parts are held together by friction, allow for a <strong>0.15 - 0.25mm</strong> offset from the interior parts. For sliding-fit joints that allow movement or rotation, allow for <strong>0.3mm - 0.5mm</strong> offset from each side.</li>
 <li>Be careful when scaling objects with nested parts. Use the <strong>Preview</strong> mode in Cura to make sure we're not going to mess up with the designed joint clearance.</li>
 </ul>
 <p></p>
@@ -170,16 +170,14 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/openscad-1.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Slicing with Cura</h6>
-<p>After exporting the <code>.scad</code> file to <code>.stl</code>, I started slicing the object in Cura. Since, My design was more about a nice shape rather than an object with too many details, I used these settings:</p>
+<p>After exporting the <code>.scad</code> file to <code>.stl</code>, I started slicing the object in Cura. Since my design was more about a nice shape rather than an object with too many details, I used these settings:</p>
 <ul>
 <li>Layer height: 0.3mm.</li>
 <li>Wall thickness: 0.8mm</li>
 <li>Print speed: 80mm/s</li>
 <li>Infill density: 10% - Infill pattern: Grid</li>
 </ul>
-<p>Since the estimated printing time was more than 3 hours, I had to reduce the size of the model by 50% directly in Cura, using the <strong>Snap</strong> tool.</p>
-<img src="{{site.baseurl}}/assets/img/assignments/week-05/cura-1.png" class="img-fluid w-100"/>
-<p>Ready to print!</p>
+<p>The estimated printing time was more than 3 hours, therefore I had to reduce the size of the model by 50% directly in Cura, using the <strong>Snap</strong> tool. Ready to print!</p>
 <p></p>
 <h6>Printing with PLA filament</h6>
 <p>I used the same Anycubic Kossel Delta printer to print my vase since we can use it without reservation. Josep guided me through some essential steps:</p>
@@ -194,6 +192,8 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/print-2.jpg" class="img-fluid w-100"/>
 <p>I then had some problems with the printing process. Although I reduced the overhang angle from the bottom of the vase to its top, the overhang angles between the twisty parts were obviously too big and the printer started to print in the air. In order to both reduce the size and maintain a nice shape, I modified the cube in my design to a hexagon cylinder by utilizing the module used in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#construction-kit">3rd week</a>.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/openscad-2.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/cura-1.png" class="img-fluid w-100"/>
 <p>Then I faced the 2nd and 3rd failures. For the first print, I only selected the <i>Skirt</i> option in <strong>Plate Adhesion</strong> and the adhesion was fine. However, for the next print, the model started moving while being printed. I tried the second time by selecting the <i>Brim</i> option, but things didn't go well either. In the end, I had to print the 4th time with the option <i>Raft</i> selected.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/print-3.jpg" class="img-fluid w-100"/>
 <p>Finally, I had the vase perfectly printed!</p>
@@ -235,7 +235,7 @@ active: 1
       <td>0.2mm</td>
       <td>10%</td>
       <td>+0.08mm (x,y) and +0.1mm (z)</td>
-      <td>0.3mm - 0.4mm</td>
+      <td>0.15mm - 0.2mm</td>
       <td>0.6mm</td>
       <td>0.1mm</td>
       <td>60°</td>
@@ -246,7 +246,7 @@ active: 1
       <td>0.2mm</td>
       <td>10%</td>
       <td>+0.1mm (x,y,z)</td>
-      <td>0.5mm - 0.6mm</td>
+      <td>0.2mm - 0.3mm</td>
       <td>0.7mm</td>
       <td>0.1mm</td>
       <td>45°</td>
