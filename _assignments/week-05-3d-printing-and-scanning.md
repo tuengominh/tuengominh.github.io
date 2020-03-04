@@ -9,11 +9,9 @@ active: 1
 
 <p class="font-italic font-weight-bold">* This week's group assignment was to test the <a href="#group">design rules for the 3D printers</a> available at Fab Lab Barcelona.</p>
 
-<!--<p>In order to explore the combination of subtractive and additive CAM parts in my Final Project, I also conducted a personal <a href="#tolerance">joint clearance test</a>.</p>-->
-
 <p class="font-italic font-weight-bold">* Besides, we were required to individually design and <a href="#filament">print something</a> with a standard FDM printer and <a href="#scan">3D scan an object</a> - in my case, I chose to scan myself.</p>
 
-<!--<p class="font-italic font-weight-bold">* I also attempted to try other 3D printing techniques, which were <a href="#syringe">paste extrusion with the syringe</a> and <a href="#resin">stereolithography with an SLA printer.</a></p>-->
+<!--<p class="font-italic font-weight-bold">* I also attempted to try other 3D printing techniques, which were <a href="#syringe">paste extrusion with the syringe</a> and <a href="#resin">stereolithography with an SLA printer.</a> However, since the printers are in the process of being calibrated and debugged, I could only proceed to file preparation steps. It was still fun to learn though, and when the machines are ready, I will try to print and update the content of this assignment.</p>-->
 
 <h2 id="scan">3D scanning</h2>
 <h5>Individual assignment - 3D scan myself</h5>
@@ -119,7 +117,7 @@ active: 1
 <ul>
 <li>Quality of wave (rounded print), star (sharp edges), CtrlV (complex shapes): slightly acceptable</li>
 <li>Dimension accuracy: +0.08mm (x,y) and +0.1mm (z)</li>
-<li>Clearance (calculated by measuring holes' diameters): 0.3mm - 0.4mm, which means tolerance is around 0.15 - 0.2mm</li>
+<li>Tolerance (calculated by measuring holes' diameters): 0.15 - 0.25mm, which means minimum clearance is around 0.3 - 0.5mm</li>
 <li>Minimum hole size: all passed, up to 0.6mm</li>
 <li>Minimum wall thickness: 0.1mm</li>
 <li>Minimum distance between walls: 0.6mm</li>
@@ -144,7 +142,7 @@ active: 1
 <p>Generally, the quality of the print was poorer compared to the one printed by the Creality printer. Here are the detailed test results measured by the caliper:</p>
 <ul>
 <li>Dimension accuracy: +0.1mm (x,y,z)</li>
-<li>Clearance (calculated by measuring holes' sizes): 0.4mm - 0.6mm, which means tolerance is around 0.2 - 0.3mm</li>
+<li>Tolerance (calculated by measuring holes' sizes): 0.25 - 0.3mm, which means minimum clearance is around 0.5 - 0.6mm</li>
 <li>Minimum hole size: up to 0.7mm. Smaller than this, the printer ignored the walls and printed a big hole.</li>
 <li>Minimum wall thickness: 0.1mm</li>
 <li>Minimum distance between walls: 0.3mm</li>
@@ -159,7 +157,7 @@ active: 1
 <li>The model must fit within the printer’s working area. The very first thing we need to ensure in Cura is the printer we're going to use!</li> 
 <li>Heat and curing may cause warping and often the initial base layer of a print is very easy to mess up. In order to mitigate this concern, we should use a brim or raft plate before printing the first layer of the actual part.</li>
 <li>To achieve longer bridges, we can slow the print speed down and reduce the temperature. The faster the speed, the greater the chances are for filament sags. This is because the capability of printing horizontal spans is mostly affected by the quality of the material and how close the bridge is to the heated bed.</li>
-<li>Tolerance is an important parameter while designing assembled parts, and it could be slightly different when we use different printers or materials. For press-fit joints where parts are held together by friction, allow for a <strong>0.15 - 0.25mm</strong> offset from the interior parts. For sliding-fit joints that allow movement or rotation, allow for <strong>0.3mm - 0.5mm</strong> offset from each side.</li>
+<li>Tolerance is an important parameter while designing assembled parts, and it could be slightly different when we use different printers or materials. For press-fit joints where parts are held together by friction, allow for a <strong>0.25mm</strong> offset from the interior parts. For sliding-fit joints that allow movement or rotation, allow for <strong>0.5mm</strong> offset from each side.</li>
 <li>Be careful when scaling objects with nested parts. Use the <strong>Preview</strong> mode in Cura to make sure we're not going to mess up with the designed joint clearance.</li>
 </ul>
 <p></p>
@@ -222,7 +220,7 @@ active: 1
       <th scope="col">Layer height</th>
       <th scope="col">Infill density</th>
       <th scope="col">Dimension accuracy</th>
-      <th scope="col">Tolerance</th>
+      <th scope="col">Minimum clearance</th>
       <th scope="col">Minimum hole size</th>
       <th scope="col">Minimum distance between walls</th>
       <th scope="col">Maximum overhang angle</th>
@@ -235,7 +233,7 @@ active: 1
       <td>0.2mm</td>
       <td>10%</td>
       <td>+0.08mm (x,y) and +0.1mm (z)</td>
-      <td>0.15mm - 0.2mm</td>
+      <td>0.3mm</td>
       <td>0.6mm</td>
       <td>0.1mm</td>
       <td>60°</td>
@@ -246,7 +244,7 @@ active: 1
       <td>0.2mm</td>
       <td>10%</td>
       <td>+0.1mm (x,y,z)</td>
-      <td>0.2mm - 0.3mm</td>
+      <td>0.5mm</td>
       <td>0.7mm</td>
       <td>0.1mm</td>
       <td>45°</td>
@@ -257,7 +255,7 @@ active: 1
 <p></p>
 <!--<h6>Comparison of 3D printing techniques:</h6>
 <p></p>-->
-<p>That's it, enough testing with 3D printers. The next step is to design the physical parts of my Final Project and to see how can I assemble parts made with subtractive and additive techniques. I still need to make it clear about how can I connect the modules both physically and electronically. Hence, I will delay the task a bit and update later on the <a href="{{site.baseurl}}/final-project.html">Final Project</a> page.</p>
+<p>That's it, enough testing with 3D printers. The next step is to design the physical parts of my Final Project and to see how can I assemble parts made with subtractive and additive techniques. Before doing that, I still need to make it clear about how can I connect the modules physically, electronically and informatively. Hence, I will delay the task a bit and update later on the <a href="{{site.baseurl}}/final-project.html">Final Project</a> page.</p>
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html">Previous Assignment</a>
