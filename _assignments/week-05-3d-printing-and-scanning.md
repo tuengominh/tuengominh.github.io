@@ -102,7 +102,7 @@ active: 1
 <ul>
 <li>Layer height: 0.2mm. The thinner the layer, the more detailed the result, and the longer the total printing time. We chose 0.2mm for the tests to get a more delicate result.</li>
 <li>Wall thickness: 0.8mm - usually double the size of nozzle diameter because we generally print with two shells: one for inside and one for outside.</li>
-<li>Infill density: 10% - Infill pattern: Grid. Infill is a repetitive structure used to fill the empty space in a print. A high infill density can make the printing time longer and the outcome heavier.</li>
+<li>Infill density: 10% - Infill pattern: Grid. Infill is a repetitive structure used to fill the empty space in a print. A high infill density can make the printing time longer and the outcome heavier and more rigid. In the case of printing assembles, a higher infill density is recommended.</li>
 <li>Print speed: 60mm/s. The lower the speed, the finer the outcome.</li>
 <li>Support: not in this case, but we might need to generate a <a href="https://ultimaker.com/en/resources/52663-support">support</a> structure under the model in order to prevent the material from falling down when it comes to large overhang angles.</li>
 </ul>
@@ -160,7 +160,7 @@ active: 1
 <li>Heat and curing may cause warping and often the initial base layer of a print is very easy to mess up. In order to mitigate this concern, we should use a brim or raft plate before printing the first layer of the actual part.</li>
 <li>To achieve longer bridges, we can slow the print speed down and reduce the temperature. The faster the speed, the greater the chances are for filament sags. This is because the capability of printing horizontal spans is mostly affected by the quality of the material and how close the bridge is to the heated bed.</li>
 <li>Tolerance is an important parameter while designing joined parts, and it could be slightly different when we use different printers or materials. For press-fit joints where parts are held together by friction, allow for a 0.35 - 0.4mm offset from the interior parts. For sliding-fit joints that allow movement or rotation, allow for 0.5mm - 0.6mm offset from each side.</li>
-<li>Be careful when scaling objects with assembled parts. Use the <strong>Preview</strong> mode in Cura to make sure we're not going to mess up with the designed joint clearance.</li>
+<li>Be careful when scaling objects with nested parts. Use the <strong>Preview</strong> mode in Cura to make sure we're not going to mess up with the designed joint clearance.</li>
 </ul>
 <p></p>
 
@@ -170,10 +170,11 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/openscad-1.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Slicing with Cura</h6>
-<p>After exporting the <code>.scad</code> file to <code>.stl</code>, I started slicing the object in Cura. The settings I used:</p>
+<p>After exporting the <code>.scad</code> file to <code>.stl</code>, I started slicing the object in Cura. Since, My design was more about a nice shape rather than an object with too many details, I used these settings:</p>
 <ul>
-<li>Layer height: 0.3mm. My design was more about a nice shape rather than an object with too many details.</li>
+<li>Layer height: 0.3mm.</li>
 <li>Wall thickness: 0.8mm</li>
+<li>Print speed: 80mm/s</li>
 <li>Infill density: 10% - Infill pattern: Grid</li>
 </ul>
 <p>Since the estimated printing time was more than 3 hours, I had to reduce the size of the model by 50% directly in Cura, using the <strong>Snap</strong> tool.</p>
@@ -186,7 +187,7 @@ active: 1
 <li>Export the <code>.gcode</code> file and save it to the SD Card of the printer</li>
 <li>In case we need to change material, pre-heat the machine (<strong>Prepare > Preheat PLA</strong>) up until 205-210°C and we can remove the broken filament</li>
 <li>Put SD card in and select <strong>Print from SD</strong>, the choose the <code>.gcode</code> file and start printing!</li>
-<li>Check if there is any problem with the initial layer, or whether the printer is printing in the air. We might need to calibrate the Z-axis or work on leveling the bed, and I usually ask our instructor Eduardo Chamorro or Mikrl Llobera whenever it comes to this task.</li>
+<li>Check if there is any problem with the initial layer, or whether the printer is printing in the air. We might need to calibrate the Z-axis or work on leveling the bed, and I usually ask our instructor Eduardo Chamorro or Mikel Llobera whenever it comes to this task.</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/print-1.jpg" class="img-fluid w-100"/>
 <p></p>
@@ -248,7 +249,7 @@ active: 1
       <td>0.5mm - 0.6mm</td>
       <td>0.7mm</td>
       <td>0.1mm</td>
-      <td>-</td>
+      <td>45°</td>
       <td>-</td>
     </tr>
   </tbody>
