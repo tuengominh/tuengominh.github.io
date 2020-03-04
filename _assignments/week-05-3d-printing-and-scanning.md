@@ -27,6 +27,7 @@ active: 1
 <li>Frame rate (depth and color stream): 30FPS</li>
 </ul>
 <p>The software paired with Kinect that we used to process the scan was <a href="https://skanect.occipital.com/">Skanect.</a> <a href="https://www.instructables.com/id/How-to-3D-scan-with-Skanect/">Here</a> we can find a step by step instruction on using Skanect. Choosing myself as the scanned object means I required further supports from others: someone held and tilted the Kinect vertically (Santi - our instructor), someone rotated me while I was kneeling on the chair (my classmate Hala), and someone documented the process (Zoi - an MDEF student). The reason why I was not sitting on the chair was to avoid having to process the chair from the exported mesh later.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/scan-1.jpg" class="img-fluid w-100"/>
 <p>Steps to scan:</p>
 <ul>
 <li>Check the connection between Skanect and Kinect</li>
@@ -37,7 +38,9 @@ active: 1
 <li>Make the mesh watertight and fill holes by selecting the <strong>Fill Holes</strong> feature and choosing the <i>Medium</i> option</li>
 <li>Export to <code>.obj</code> or <code>.stl</code></li>
 </ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/scan-2.jpg" class="img-fluid w-100"/>
 <p>And here is the outcome imported to Blender (the size of the file is too big, that's why I just posted a screenshot here):</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/blender-0.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Processing the mesh with Blender</h6>
 <p>Now let's make myself a bit prettier by 3D retouching the outcome! We had a class by Victor Barberan regarding fixing the mesh using Blender. I simply followed his instructions to work on my mess, oh I meant, mesh. Some steps followed (<strong>IMPORTANT: </strong> following the order can be life-saving. I started sculpting <strong>BEFORE</strong> switching to <strong>Edit Mode</strong> and I hit my head to the keyboard soon after):</p>
@@ -50,6 +53,9 @@ active: 1
 <li>Now we can go to <strong>Object Mode</strong>: fine-tune the model with sculpting tools such as <strong>Smooth, Flatten</strong> and <strong>Grab</strong></li>
 <li>Go back to <strong>Object Mode</strong>: solidify the object (optional) and add a cube base to the bottom of the model</li>
 </ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/blender-1.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/blender-2.png" class="img-fluid w-100"/>
 <p>And let me introduced you to the 3D Tue (not in a perfect state)!</p>
 <div class="sketchfab-embed-wrapper text-center">
     <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/0499030f69ce4d40b5ee5542f9d78dcb/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -62,10 +68,11 @@ active: 1
 </div>
 <p></p>
 <p>I studied sculpture in college before, so the <strong>Sculpt Mode</strong> was really tempting to try. I indeed played around a bit by keeping the same amount of triangle faces from the scanning outcome, and fine-tuned it with other sculpting tools, such as <strong>Draw, Blob, Crease, Grab,</strong> and <strong>Pinch</strong>. Of course, the model was way visually prettier and detailed. However, the size of the file was unnecessarily large, and I could not 3D-print it properly since there were so many non-manifold faces and messy layers. Cleaning them up could be a real pain, therefore I decided not to continue with it.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/blender-3.png" class="img-fluid w-100"/>
 <p>I also didn't proceed to print myself, because I wanted to allocate more time trying other 3D printing techniques. In the end, I couldn't make it on time for those additional explorations, but everything is in process ;)</p>
 <p></p>
 <h6>TL;DR</h6>
-<p>Tips to 3D scan and fixing an object:</p>
+<p>Nice tips to 3D scan and fixing an object:</p>
 <ul>
 <li>The bigger and simpler the object, the better</li>
 <li>Ensure a clear background and maintain a stable speed while moving around the object</li>
@@ -88,6 +95,7 @@ active: 1
 <li>Materials：PLA, Copper, Wood, Carbon Fiber, etc.</li>
 <li>Printing method: SD card, USB</li>
 </ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/test1-0.jpeg" class="img-fluid w-100"/>
 <p>We used <a href="https://ultimaker.com/software/ultimaker-cura">Ultimaker Cura</a> in order to slice the model, to modify some important settings for the 3D printing process, and to generate a <code>.gcode</code> file. <a href="https://es.wikipedia.org/wiki/G-code">G-code</a> is the language through which we can communicate with computer-controlled machine tools (in this case, the 3D printers) and give them instructions on what to do. The Cura apps installed in Fab Lab Barcelona's computers have the profiles of all available printers with tons of proper settings. However, we had to, and should only, modify some settings to manipulate the printing time:</p>
 <ul>
 <li>Layer height: 0.2mm. The thinner the layer, the more detailed the result, and the longer the total printing time. We chose 0.2mm for the tests to get a more delicate result.</li>
@@ -96,8 +104,16 @@ active: 1
 <li>Print speed: 60mm/s. The lower the speed, the finer the outcome.</li>
 <li>Support: not in this case, but we might need to generate a <a href="https://ultimaker.com/en/resources/52663-support">support</a> structure under the model in order to prevent the material from falling down when it comes to large overhang angles.</li>
 </ul>
-<p>The printing was done in 1 hour 27 minutes:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/test1-1.jpeg" class="img-fluid w-100"/>
 <p></p>
+<div class="text-center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ViD0EXA_V30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p></p>
+<p>The printing was done in 1 hour 27 minutes:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/test1-2.jpg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/test1-3.jpeg" class="img-fluid w-100"/>
 <p>As per the images above, the quality of the print was quite good, many details were respected. Here are the detailed test results after I measured carefully the outcome with the caliper:</p>
 <ul>
 <li>Quality of wave (rounded print), star (sharp edges), CtrlV (complex shapes): slightly acceptable</li>
@@ -121,7 +137,9 @@ active: 1
 <li>Materials：PLA, ABS, HIPS, Wood, etc.</li>
 <li>Printing method: SD card, USB</li>
 </ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/test2-0.jpg" class="img-fluid w-100"/>
 <p>The estimated printing time was too long, hence, we had to scale-down the object to 70%. We then used the same settings as the first test. The printing was done in 1 hour 35 minutes:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/test2-2.jpg" class="img-fluid w-100"/>
 <p>Generally, the quality of the print was poorer compared to the one printed by the Creality printer. Here are the detailed test results measured by the caliper:</p>
 <ul>
 <li>Dimension accuracy: +0.1mm (x,y,z)</li>
@@ -148,6 +166,7 @@ active: 1
 <h5 id="filament">Individual assignment - Design and print using FDM printer and PLA filament</h5>
 <h6>OpenSCAD</h6>
 <p>I utilized a flower-shaped vase I designed in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html#vase">2nd week</a> since it demonstrates perfectly an object that cannot be made subtractively (having overhangs and undercuts). My vase was designed in OpenSCAD, and I basically modeled a thin cube, then continuously cloned, rotated, enlarged and moved it up x 180 times to generate the base module <code>shape()</code>. 3 <code>shape()</code> modules were combined and subtracted to form the final model. In order to make sure of the ability to stand still of the vase as well as to reduce the total size, I modified it a bit by lessening the additional size of the cloned cubes.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/openscad-1.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Slicing with Cura</h6>
 <p>After exporting the <code>.scad</code> file to <code>.stl</code>, I started slicing the object in Cura. The settings I used:</p>
@@ -157,6 +176,7 @@ active: 1
 <li>Infill density: 10% - Infill pattern: Grid</li>
 </ul>
 <p>Since the estimated printing time was more than 3 hours, I had to reduce the size of the model by 50% directly in Cura, using the <strong>Snap</strong> tool.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/cura-1.png" class="img-fluid w-100"/>
 <p>Ready to print!</p>
 <p></p>
 <h6>Printing with PLA filament</h6>
@@ -167,12 +187,21 @@ active: 1
 <li>Put SD card in and select <strong>Print from SD</strong>, the choose the <code>.gcode</code> file and start printing!</li>
 <li>Check if there is any problem with the initial layer, or whether the printer is printing in the air. We might need to calibrate the Z-axis or work on leveling the bed, and I usually ask our instructor Eduardo Chamorro or Mikrl Llobera whenever it comes to this task.</li>
 </ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/print-1.jpg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/print-2.jpg" class="img-fluid w-100"/>
 <p>I then had some problems with the printing process. Although I reduced the overhang angle from the bottom of the vase to its top, the overhang angles between the twisty parts were obviously too big and the printer started to print in the air. In order to both reduce the size and maintain a nice shape, I modified the cube in my design to a hexagon cylinder by utilizing the module used in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#construction-kit">3rd week</a>.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/openscad-2.png" class="img-fluid w-100"/>
 <p>Then I faced the 2nd and 3rd failures. For the first print, I only selected the <i>Skirt</i> option in <strong>Plate Adhesion</strong> and the adhesion was fine. However, for the next print, the model started moving while being printed. I tried the second time by selecting the <i>Brim</i> option, but things didn't go well either. In the end, I had to print the 4th time with the option <i>Raft</i> selected.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/print-3.jpg" class="img-fluid w-100"/>
 <p>Finally, I had the vase perfectly printed!</p>
+<div class="text-center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GO2uaCgAKw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <p></p>
 <h6>Final result</h6>
 <p>I brought the vase to the landlady where I'm staying, and here you go the hero shots of the final result:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/hero.jpg" class="img-fluid w-100"/>
 <p></p>
 
 <!--<h5 id="syringe">Additional test - Thick paste extrusion using syringe</h5>
