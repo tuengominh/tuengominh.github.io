@@ -18,10 +18,10 @@ active: 1
 
 <h5>Electricity and how it works</h5>
 <ul>
-<li>Voltage is the measurement of electrical potential produced by electricity sources.</li>
-<li>Electricity needs to flow to do anything useful. Current is the rate at which charge is flowing.</li>
-<li>Resistance is the tendency of a certain material to resist the flow of charge (current).</li>
-<li>Electricity will flow from a higher voltage to a lower voltage. If we create a conductive path (for example, copper wire) between a higher voltage and a lower voltage, electricity will flow along that path.</li>
+<li>Voltage (V) is the measurement of electrical potential produced by electricity sources. A higher voltage means the electricity is being "pushed" harder through a circuit. Voltage is measured in volts. </li>
+<li>Electricity needs to flow to do anything useful. Electricity will flow from a higher voltage to a lower voltage. If we create a conductive path (for example, copper wire) between a higher voltage and a lower voltage, electricity will flow along that path. Current (I) is the rate at which charge is flowing. A higher current means more electricity is flowing. Current is measured in amperes.</li>
+<li>Resistance (R) is the tendency of a certain material to resist the flow of charge (current). A higher resistance means it is more difficult for electricity to flow. Resistance is measured in ohms.</li>
+<li><strong>Ohm's law equation:</strong> <i>V = I x R</i></li>
 <li>There are two types of electrical sources: alternating current (AC) and direct current (DC). With AC, the direction electricity flows throughout the circuit is constantly reversing. With DC, electricity flows in one direction between power and ground. DC voltage sources always have two sides, with the positive side having a higher voltage than the negative side.</li>
 </ul>
 <p></p>
@@ -86,7 +86,7 @@ active: 1
 <li>Material: Modeling Wax, Chemical Wood, Foam, Acrylic, PCB</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/machine.jpg" class="img-fluid w-100"/>
-<p>We prepared the <code>.rml</code> files using <a href="http://fabmodules.org/">Fab Modules</a>. The workflow of Fab Modules is pretty straightforward, and here are some recaps of steps followed:</p>
+<p id="fabmodules">We prepared the <code>.rml</code> files using <a href="http://fabmodules.org/">Fab Modules</a>. The workflow of Fab Modules is pretty straightforward, and here are some recaps of steps followed:</p>
 <ul>
 <li>Select <code>.png</code> input format and load the <code>.png</code> file</li>
 <li>Select <code>.rml</code> output format</li>
@@ -183,7 +183,7 @@ active: 1
 <p>After finishing the minimum requirements of this week, I tried to explore another PCB manufacturing process which is vinyl-cutting the board using copper vinyl sheet. For this extra ball, I chose to cut the SWD adapter. Josep guided me through the process since he had experiences cutting the copper vinyl before.</p>
 <p>The steps followed were quite similar to what I did <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#vinylcutter">last week</a> with the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> machine. The only difference is that I had to stick the copper vinyl on top of a plastic sheet, and modify the <strong>Force</strong> settings to be a bit lower, around <strong>80 gf</strong>.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-1.jpg" class="img-fluid w-100"/>
-<p>The trickiest part of this was peeling out the parts that I didn't want from a tiny board (those are the parts usually removed in the milling process). The copper vinyl might be thin, but not flexible. A good tip here was to use 2 tweezers at the same time, 1 tweezer to peel and the other to fix the positions of the parts I wanted to keep. After struggling for a while, I have my pretty cut board which I was quite happy with:</p>
+<p>The trickiest part of this was peeling out the parts that I didn't want from a tiny board (those are the parts usually removed in the milling process). The copper vinyl might be thin, but not flexible. A good tip here was to use 2 tweezers at the same time, 1 tweezer to peel and the other to fix the positions of the parts I wanted to keep. After struggling for a while, I got my pretty cut board which I was quite happy with:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-2.jpg" class="img-fluid w-100"/>
 <p>I decided not to proceed with the soldering process since I realized soldering over those not-so-clingy traces can be a real pain. I might want to try it out if I had some extra hands, and if so, I would solder as if I were performing an <a href="https://www.massageaholic.com/4-hand-massage-all-you-need-to-know/">Ayurvedic massage</a>.</p>
 <p></p>

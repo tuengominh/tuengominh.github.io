@@ -73,7 +73,7 @@ Kids 4-7 years old. If the mobile/tablet application is available, kids up to 12
 <li><a href="https://www.youtube.com/watch?v=FTpNI4NCvXA">Makeblock Inventor Kit</a> with the amazing idea about connecting blocks using pogo pins</li>
 <li><a href="https://ifttt.com/">IFTTT platform</a> which can make my life easier connecting different parts of the project and go deep dive into the logics</li>
 </ul>
-<p>We all agreed that what makes my idea different from other learning toy projects is the debugging process and the Logic blocks. We also think that being hung up on sensors and actuators will both distract me from making an almost-there prototype and distract the kids from trying out as many programming concepts as possible. Hence, my MVP for Fab Academy will have <strong>1 Input block, 1 Output block, and at least 2 Logic blocks</strong>. I'm also thinking about how to resemble <strong>functions</strong> with those blocks, maybe a <strong>Call</strong> output and a <strong>Called</strong> input?</p>
+<p>We all agreed that what makes my idea different from other learning toy projects is the debugging process and the Logic blocks. We also think that being hung up on sensors and actuators will both distract me from making an almost-there prototype and distract the kids from trying out as many programming concepts as possible. Hence, my MVP for Fab Academy will have <strong>1 Input block, 1 Output block, and at least 2 Logic blocks</strong>. I'm also thinking about how to resemble <strong>functions</strong> with those blocks, maybe a <strong>Call</strong> output and a <strong>Being Called</strong> input?</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">

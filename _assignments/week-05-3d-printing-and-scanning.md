@@ -45,10 +45,10 @@ active: 1
 <ul>
 <li>In <strong>Object Mode</strong>: rotate, scale and <i>Set Geometry to Origin</i></li>
 <li>In <strong>Edit Mode</strong>: use <i>Select Circle</i> tool to select the exterior faces of my model, hide them, and delete the horrible mess inside. Also, hit space and remove duplicated vertices.</li>
-<li>In <strong>Edit Mode</strong>: select the whole model and go to <strong>Mesh > Clean Up</strong>. Use <i>Delete Loose</i> to get rid of loose vertices and edges. Select <i>Decimate Geometry</i> and reduce the ratio to collapse edges and to get a less complicated model.</li> 
+<li>Select the whole model and go to <strong>Mesh > Clean Up</strong>. Use <i>Delete Loose</i> to get rid of loose vertices and edges. Select <i>Decimate Geometry</i> and reduce the ratio to collapse edges and to get a less complicated model.</li> 
 <li>Activate and install <i>Mesh: 3D Print Toolbox</i> module in <strong>User Preferences > Add-ons</strong>. Now we can clean up problems and make the model printable by selecting <i>Make Manifold</i> to get rid of distorted edges.</li>
 <li>Go back to <strong>Edit Mode</strong>: spot holes in the model, select their borders and press <kbd>Option</kbd> + <kbd>F</kbd> to fill the holes</li>
-<li>Now we can go to <strong>Object Mode</strong>: fine-tune the model with sculpting tools such as <strong>Smooth, Flatten</strong> and <strong>Grab</strong></li>
+<li>Now we can go to <strong>Sculpt Mode</strong>: fine-tune the model with sculpting tools such as <strong>Smooth, Flatten</strong> and <strong>Grab</strong></li>
 <li>Go back to <strong>Object Mode</strong>: solidify the object (optional) and add a cube base to the bottom of the model</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/blender-1.png" class="img-fluid w-100"/>
@@ -65,7 +65,7 @@ active: 1
 </p>
 </div>
 <p></p>
-<p>I studied sculpture in college before, so the <strong>Sculpt Mode</strong> was really tempting to try. I indeed played around a bit by keeping the same amount of triangle faces from the scanning outcome, and fine-tuned it with other sculpting tools, such as <strong>Draw, Blob, Crease, Grab,</strong> and <strong>Pinch</strong>. Of course, the model was way visually prettier and detailed. However, the size of the file was unnecessarily large, and I could not 3D-print it properly since there were so many non-manifold faces and messy layers. Cleaning them up could be a real pain, therefore I decided not to continue with it.</p>
+<p>I studied sculpture in college before, so the <strong>Sculpt Mode</strong> was really tempting to try. I indeed played around a bit by keeping the same amount of triangle faces from the scanning outcome, and fine-tuned the model with other sculpting tools, such as <strong>Draw, Blob, Crease, Grab,</strong> and <strong>Pinch</strong>. Of course, the model was way visually prettier and detailed. However, the size of the file was unnecessarily large, and I could not 3D-print it properly since there were so many non-manifold faces and messy layers. Cleaning them up could be a real pain, therefore I decided not to continue with it.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/blender-3.png" class="img-fluid w-100"/>
 <p>I also didn't proceed to print myself, because I wanted to allocate more time trying other 3D printing techniques. In the end, I couldn't make it on time for those additional explorations, but everything is in process ;)</p>
 <p></p>
@@ -147,7 +147,7 @@ active: 1
 <li>The model must fit within the printer’s working area. The very first thing we need to ensure in Cura is the printer we're going to use!</li> 
 <li>Heat and curing may cause warping and often the initial base layer of a print is very easy to mess up. In order to mitigate this concern, we should use a brim or raft plate before printing the first layer of the actual part.</li>
 <li>To achieve longer bridges, we can slow the print speed down and reduce the temperature. The faster the speed, the greater the chances are for filament sags. This is because the capability of printing horizontal spans is mostly affected by the quality of the material and how close the bridge is to the heated bed.</li>
-<li>Tolerance is an important parameter while designing assembled parts, and it could be slightly different when we use different printers or materials. For press-fit joints where parts are held together by friction, allow for a <strong>0.25mm</strong> offset from the interior parts. For sliding-fit joints that allow movement or rotation, allow for <strong>0.5mm</strong> offset from each side.</li>
+<li>Tolerance is an important parameter while designing assembled parts, and it could be slightly different when we use different printers or materials. For press-fit joints where parts are held together by friction, allow for a <strong>0.25mm</strong> offset from the interior parts. For sliding-fit/free-fit joints that allow movement or rotation, allow for <strong>0.5mm</strong> offset from each side.</li>
 <li>Be careful when scaling objects with nested parts. Use the <strong>Preview</strong> mode in Cura to make sure we're not going to mess up with the designed joint clearance.</li>
 </ul>
 <p></p>
@@ -160,7 +160,7 @@ active: 1
 <h6>Slicing with Cura</h6>
 <p>After exporting the <code>.scad</code> file to <code>.stl</code>, I started slicing the object in Cura. Since my design was more about a nice shape rather than an object with too many details, I used these settings:</p>
 <ul>
-<li>Layer height: 0.3mm.</li>
+<li>Layer height: 0.3mm</li>
 <li>Wall thickness: 0.8mm</li>
 <li>Print speed: 80mm/s</li>
 <li>Infill density: 10% - Infill pattern: Grid</li>
@@ -209,8 +209,10 @@ active: 1
       <th scope="col">Machine</th>
       <th scope="col">Settings</th>
       <th scope="col">Dimension accuracy</th>
-      <th scope="col">Minimum clearance</th>
+      <th scope="col">Minimum clearance (Press-fit)</th>
+      <th scope="col">Minimum clearance (Free-fit)</th>
       <th scope="col">Minimum hole size</th>
+      <th scope="col">Minimum wall thickness</th>
       <th scope="col">Minimum distance between walls</th>
       <th scope="col">Maximum overhang angle</th>
       <th scope="col">Maximum horizontal span</th>
@@ -223,8 +225,10 @@ active: 1
       <td>+0.08mm (x,y) and +0.1mm (z)</td>
       <td>0.3mm</td>
       <td>0.6mm</td>
+      <td>0.6mm</td>
       <td>0.1mm</td>
-      <td>60°</td>
+      <td>0.6mm</td>
+      <td>Up to 55° without support, preferably 45°</td>
       <td>16mm</td>
     </tr>
     <tr>
@@ -232,8 +236,10 @@ active: 1
       <td>Layer height: 0.2mm - Infill: 10%</td>
       <td>+0.1mm (x,y,z)</td>
       <td>0.5mm</td>
+      <td>1mm</td>
       <td>0.7mm</td>
       <td>0.1mm</td>
+      <td>0.3 mm</td>
       <td>45°</td>
       <td>-</td>
     </tr>
@@ -242,7 +248,7 @@ active: 1
 <p></p>
 <!--<h6>3D printing techniques assessment</h6>
 <p></p>-->
-<p>That's it, enough testing with 3D printers. The next step is to design the physical parts of my Final Project and to see how can I assemble parts made with subtractive and additive techniques. Before doing that, I still need to make it clear about how can I connect the modules physically, electronically and informatively. Hence, I will delay the task a bit and update later on the <a href="{{site.baseurl}}/final-project.html">Final Project</a> page.</p>
+<p>That's it, enough testing with 3D printers. The next step is to design the physical parts of my Final Project and to see how can I assemble parts made with subtractive and additive techniques. Before doing that, I still need to make it clear about how I can connect the modules physically, electronically and informatively. Hence, I will delay the task a bit and update later on the <a href="{{site.baseurl}}/final-project.html">Final Project</a> page.</p>
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html">Previous Assignment</a>

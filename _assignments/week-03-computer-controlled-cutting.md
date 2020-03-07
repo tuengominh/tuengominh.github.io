@@ -9,7 +9,7 @@ active: 1
 
 <p class="font-italic font-weight-bold">* This week's group assignment was to test the proper <a href="#group">power, speed, frequency and kerf</a> values of different materials using a laser-cutter. In order to explore possible materials for my Final Project, I also conducted a personal joint clearance and kerf bending test with <a href="#living-hinge">living hinges</a>.</p>
 
-<p class="font-italic font-weight-bold">* Besides, we were required to individually design and cut <a href="#vinylcutter">something</a> with the vinyl-cutter and a <a href="#construction-kit">parametric construction kit</a> that can be assembled in multiple ways.</p>
+<p class="font-italic font-weight-bold">* Besides, we were required to individually design and cut <a href="#vinylcutter">something</a> with the vinyl-cutter and to laser-cut a <a href="#construction-kit">parametric construction kit</a> that can be assembled in multiple ways.</p>
 
 <p>The very first thing I learned this week is time management. Staying in the queue for using the machines can be a disappointing waste of time if we don't know what to prepare and how to organize what to do. At the end of the week, I could only meet the minimum requirements of the assignment, and I was still left with the desire to try out more techniques and prototypes.</p>
 
@@ -84,10 +84,13 @@ active: 1
 <li>The delicate balance between translational speed and laser power defines the quality of the cut as well as the kerf width. We should abuse neither power nor speed.</li>
 <li>As power increases, the energy in the laser increases, which will result in a deeper cut and a bigger kerf. High power could also make more smoke and charred edges. So, power is a necessity to reach a required cutting or engraving depth, but over-using it is quite destructive to our materials.</li>
 <li>As speed increases, the energy is exposed to a point in a shorter time, which will result in a shallower, unstable cut and a thinner kerf. Increasing speed will also quicken the cutting time.</li>
+</ul>
+<p>Tips to laser-cur like a boss:</p>
+<ul>
 <li>Safety first: the laser-cutters cannot be left unattended, and the air ventilation should always be switched on.</li>
 <li>We need to test the proper settings for the chosen material and machine: power, speed, resolution (for raster engraving) and frequency (for vector cutting)</li>
 <li>We need to measure the kerf width and modify your design accordingly (measuring with the caliper is quite handy)</li>
-<li>We need to nest the design within the cutting area, remove hidden lines completely, ensure 1:1 scale, and color-code them respectively to the execution order: <strong>raster (engrave) > engrave (vector cut with faster speed)> inside cut (details) > outside cut (borders)</strong></li>
+<li>We need to nest the design within the cutting area, remove hidden lines completely, ensure 1:1 scale, and color-code them respectively to the execution order: <i>raster (engrave) > engrave (vector cut with faster speed)> inside cut (details) > outside cut (borders)</i></li>
 </ul>
 <p></p>
 
