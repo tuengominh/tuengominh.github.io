@@ -2,7 +2,7 @@
 layout: assignment
 title: 3D Printing And Scanning
 thumb: 06.jpg
-assignment: test the 3D printers (in-group); to design and 3D print an object that could not be made subtractively (individual); to 3D scan an object (individual). 
+assignment: characterize the design rules for 3D printing (in-group); to design and 3D print an object that could not be made subtractively (individual); to 3D scan an object (individual). 
 active: 1
 ---
 <p class="font-italic font-weight-bold">* All GCODE, STL, and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/print/">here</a>.</p>
@@ -201,7 +201,7 @@ active: 1
 <p></p>-->
 
 <h5>Conclusion</h5>
-<h6>Settings for different FDM printers and test results:</h6>
+<h6>Design rules for different FDM printers:</h6>
 <p></p>
 <table class="table">
   <thead class="thead-light">
@@ -240,11 +240,11 @@ active: 1
   </tbody>
 </table>
 <p></p>
-<!--<h6>Comparison of 3D printing techniques:</h6>
+<!--<h6>3D printing techniques assessment</h6>
 <p></p>-->
 <p>That's it, enough testing with 3D printers. The next step is to design the physical parts of my Final Project and to see how can I assemble parts made with subtractive and additive techniques. Before doing that, I still need to make it clear about how can I connect the modules physically, electronically and informatively. Hence, I will delay the task a bit and update later on the <a href="{{site.baseurl}}/final-project.html">Final Project</a> page.</p>
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html">Previous Assignment</a>
-<a class="btn btn-inactive m-2" href="#">Next Assignment</a>
+<a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-06-electronics-design.html">Next Assignment</a>
 </div>

@@ -2,7 +2,7 @@
 layout: assignment
 title: Computer-Controlled Cutting
 thumb: 04.jpg
-assignment: characterize a laser-cutter (in-group); to test the vinyl-cutter (individual); to design and to laser-cut a parametric construction kit (individual). 
+assignment: characterize a laser-cutter (in-group); to cut something with the vinyl-cutter (individual); to design and to laser-cut a parametric construction kit (individual). 
 active: 1
 ---
 <p class="font-italic font-weight-bold">* All DXF and original editable files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/cut">here</a>.</p>
@@ -199,7 +199,7 @@ active: 1
 <p></p>
 
 <h5>Conclusion</h5>
-<h6>Settings for different materials and processes:</h6>
+<h6>Settings for different materials and processes</h6>
 <p></p>
 <table class="table">
   <thead class="thead-light">
@@ -288,7 +288,7 @@ active: 1
   </tbody>
 </table>
 <p></p>
-<h6>Living hinges assessment:</h6>
+<h6>Living hinges assessment</h6>
 <p></p>
 <table class="table">
   <thead class="thead-light">

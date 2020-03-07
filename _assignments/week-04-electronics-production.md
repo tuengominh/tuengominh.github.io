@@ -140,7 +140,7 @@ active: 1
 <p>After generating the first <code>.rml</code> file, I decided to go back to Fab Modules for its Tue-friendly UI. In order to mill 4 FTDI boards at the same time, we had to generate 4 files with 4 different origins: 0,0,0; 25,0,0; 0,35,0; and 25,35,0. For milling 4 UPDI adapters, we exported 4 files with 4 different origins: 0,0,0; 25,0,0; 0,25,0; and 25,25,0.</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/fabmdl.png" class="img-fluid w-100"/>
 <p></p>
-<h6>Milling the PCB</h6>
+<h6>Milling the board</h6>
 <p>We used the same SRM-20 machine and followed the same above-mentioned steps to mill the 4 boards. Do I look like I was enjoying fixing the milling bit?</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/mill-1.jpg" class="img-fluid w-100"/>
 <p></p>

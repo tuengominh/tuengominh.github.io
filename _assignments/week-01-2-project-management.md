@@ -9,7 +9,7 @@ active: 1
 <p class="font-italic font-weight-bold">* I separated 2 assignments of this week in order to avoid talking about too many things in a post. Please go 
 <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html">here</a> to see the first part of the assignment.</p>
 <p class="font-italic font-weight-bold">* The Student Agreement has been signed <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/agreement.html">here.</a></p>
-<p class="font-italic font-weight-bold">* The website was built using <a href="#web">Jekyll</a> and was managed with <a href="#git">Git and Gitlab.</a></p> 
+<p class="font-italic font-weight-bold">* The website was built using <a href="#web">Jekyll</a> and was managed with <a href="#git">Git and GitLab.</a></p> 
 <p class="font-italic font-weight-bold">* To download the source code of the website, please run in Terminal:</p> 
 <pre class="bg-light py-2 mt-0"><code>$ git clone https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo.git</code></pre>
 <p></p>
@@ -46,27 +46,27 @@ active: 1
 </div>
 <p></p>
 
-<h2 id="git">Git and Gitlab</h2>
+<h2 id="git">Git and GitLab</h2>
 
 <h5>SSH key</h5>
-<p>Since I had access to my Gitlab repository from the very first class, and before I already generated an SSH key that links to my personal Gitlab account, the process became quite simple. All I need to do was to copy the SSH key in the personal Gitlab account and paste it into my gitlab.fabcloud.org account as an existing key.</p>
+<p><a href="https://git-scm.com/doc">Git</a> is a VCS (version control system) that helps us to track versions as well as contributions in projects, and <a href="https://about.gitlab.com/">GitLab</a> is a web-based DevOps tool that provides a Git-repository manager, issue-tracking and CI/CD pipeline features. Since I had access to my GitLab repository from the very first class, and before I already generated an SSH key that links to my personal GitLab account, the process became quite simple. All I need to do was to copy the SSH key in the personal GitLab account and paste it into my gitlab.fabcloud.org account as an existing key.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/ssh-1.png" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/ssh-2.png" class="img-fluid w-100"/>
 <p></p>
 
-<h5>Push changes to Gitlab</h5>
-<p>Git is a VCS (version control system) that helps us to track versions as well as contributions in projects. Since I developed my website <strong>BEFORE</strong> getting access to the repo, I didn't clone the project. Instead, I removed the existing files directly on Gitlab, which led to a huge amount of commits. I also deleted the <code>.gitlab-ci.yml</code> file which is used for MkDocs sites and created a new one for Jekyll there. The templates are available in the <strong>CI/CD Configuration</strong> section.</p>
+<h5>Push changes to GitLab</h5>
+<p>Since I developed my website <strong>BEFORE</strong> getting access to the repo, I didn't clone the project. Instead, I removed the existing files directly on GitLab, which led to a huge amount of commits. I also deleted the <code>.gitlab-ci.yml</code> file which is used for MkDocs sites and created a new one for Jekyll there. The templates are available in the <strong>CI/CD Configuration</strong> section.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/git-1.png" class="img-fluid w-100"/>
 <p></p>
-<p>The following command lines were slightly different from the usual add -> commit -> push process:</p>
+<p>The following command lines were slightly different from the usual <i>add -> commit -> push</i> process:</p>
 <ul>
 <li><kbd>$ git init</kbd>: initialize a local repo</li>
-<li><kbd>$ git remote add origin gitlab_URL</kbd>: connect the Gitlab remote branch to my local repo</li>
+<li><kbd>$ git remote add origin gitlab_URL</kbd>: connect the GitLab remote branch to my local repo</li>
 <li><kbd>$ git pull origin master --allow-unrelated-histories</kbd>: fetch and merge all files/changes that I don't have in my local repo, i.e. the new <code>.gitlab-ci.yml</code></li>
 <li><kbd>$ git status</kbd> and <kbd>$ git add</kbd>: to see changes and stage them for commit</li>
 <li><kbd>$ git commit -m "Messages here"</kbd>: commit changes</li>
-<li><kbd>$ git push --set-upstream origin master</kbd>: push changes to the Gitlab remote repo</li>
+<li><kbd>$ git push --set-upstream origin master</kbd>: push changes to the GitLab remote repo</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/git-3.png" class="img-fluid w-100"/>
 <p></p>
@@ -81,9 +81,9 @@ active: 1
 <p>In order to check the size of the local repo, I ran <kbd>du -sh * | sort -n</kbd> in Terminal. I used Photoshop to resize the images and to make sure the dpi (Resolution) to be 96 or 72. Since I'm not really happy with the way my Macbook screams and vibrates everytime I use Photoshop together with IntelliJ IDEA, I'm thinking about using <a href="https://imagemagick.org/index.php">ImageMagick</a> in the future.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/compress-1.png" class="img-fluid w-100"/>
 <p></p>
-<p>However, I forgot one thing that even if I drag-to-delete a giant file after pushing it, the size of the Gitlab repo will remain big, since the file is still cached somehow in the history. For example, the actual size of my local repo is ~5MB, but the total size of files in my Gitlab repo is ~9MB. I intended to try <kbd>$ git filter-branch</kbd> to rewrite the history, but later I figured out from Oscar that we cannot rebase commits and run <kbd>$ git push -force</kbd>. So I left it like that.</p>
+<p>However, I forgot one thing that even if I drag-to-delete a giant file after pushing it, the size of the GitLab repo will remain big, since the file is still cached somehow in the history. For example, the actual size of my local repo is ~5MB, but the total size of files in my GitLab repo is ~9MB. I intended to try <kbd>$ git filter-branch</kbd> to rewrite the history, but later I figured out from Oscar that we cannot rebase commits and run <kbd>$ git push -force</kbd>. So I left it like that.</p>
 <h6>Updates</h6> 
-<p>I continued to make mistakes by adding unnecessary large files in the second assignment. This time I was confused about whether I should upload the videos recording the process of modeling my design or not, and I decided to upload compressed ones (~3MB) because "compressing videos" is mentioned in the assignment. <strong>AFTER</strong> adding them to git, I found out that I only need to embed Youtube links. To be honest, seeing the size of my repo getting unnecessarily bigger is quite frustrated. That's why I spent a whole day trying to remove the deleted files from the history. I finally found 2 interesting sections in <strong>Settings > Repository</strong>. The first one is <strong>Protected Branches</strong> in which I can unprotect my branches in order to remove deleted files from the history, rewrite the history, and run <kbd>$ git push -force</kbd>. After asking for permission, I unprotected my master branch.</p>
+<p>I continued to make mistakes by adding unnecessary large files in the second assignment. This time I was confused about whether I should upload the videos recording the process of modeling my design or not, and I decided to upload compressed ones (~3MB) because "compressing videos" is mentioned in the assignment. <strong>AFTER</strong> adding them to git, I found out that I only need to embed Youtube links. To be honest, seeing the size of my repo getting unnecessarily bigger is quite frustrated. That was why I spent a whole day trying to remove the deleted files from the history. I finally found 2 interesting sections in <strong>Settings > Repository</strong>. The first one is <strong>Protected Branches</strong> in which I can unprotect my branches in order to remove deleted files from the history, rewrite the history, and run <kbd>$ git push -force</kbd>. After asking for permission, I unprotected my master branch.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/git-5.png" class="img-fluid w-100"/>
 <p></p>
 <p>The next thing I took a look at is the <strong>Repository Cleanup</strong>. First I followed the suggestion by installing <a href="https://rtyley.github.io/bfg-repo-cleaner/">BFG</a> and tried to use it to remove files with deleted mode.</p> 
@@ -96,10 +96,10 @@ active: 1
 <li><kbd>$ bfg --delete-folders "{assets, doc}" tue-ngo.git</kbd>: delete the folders that I want to remove from the history</li>
 <li><kbd>$ git reflog expire --expire=now --all && git gc --prune=now --aggressive</kbd>: clean up the mess</li>
 <li><kbd>$ du -sh .</kbd> and <kbd>$ git count-objects</kbd>: check the size of the bare repo again, which was 4.6M</li>
-<li><kbd>$ git push --force</kbd>: force push changes to the Gitlab remote repo</li>
+<li><kbd>$ git push --force</kbd>: force push changes to the GitLab remote repo</li>
 </ul>
-<p>However, after I push changes to the repo, the size remains the same. I continued to search for solutions, and from what I understand from <a href="https://github.com/rtyley/bfg-repo-cleaner/issues/208">here</a> and <a href="https://stackoverflow.com/questions/31932574/clean-up-large-files-on-git-server">there</a>, it might be a Gitlab issue. Anyway, I gave up. I will keep this in mind and will add/remove files properly for the next assignments.</p>
-<p><strong>* Good news:</strong> In the 5th week, the size of my Gitlab repo suddenly shrunk down from ~35MB to ~24MB. I've checked with Viktor Smari whether he changed anything or cleaned the repositories up, and the answer was no. I assume that after some time, Gitlab has performed some recurring clean-up tasks, and my previous efforts have paid off!(?)</p> 
+<p>However, after I push changes to the repo, the size remains the same. I continued to search for solutions, and from what I understand from <a href="https://github.com/rtyley/bfg-repo-cleaner/issues/208">here</a> and <a href="https://stackoverflow.com/questions/31932574/clean-up-large-files-on-git-server">there</a>, it might be a GitLab issue. Anyway, I gave up. I will keep this in mind and will add/remove files properly for the next assignments.</p>
+<p><strong>* Good news:</strong> In the 5th week, the size of my GitLab repo suddenly shrunk down from ~35MB to ~24MB. I've checked with Viktor Smari whether he changed anything or cleaned the repositories up, and the answer was no. I assume that after some time, GitLab has performed some recurring clean-up tasks, and my previous efforts have paid off!(?)</p> 
 <p></p>
 
 <div class="container w-100 text-center py-4">
