@@ -69,15 +69,6 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/blender-3.png" class="img-fluid w-100"/>
 <p>I also didn't proceed to print myself, because I wanted to allocate more time trying other 3D printing techniques. In the end, I couldn't make it on time for those additional explorations, but everything is in process ;)</p>
 <p></p>
-<h6>TL;DR</h6>
-<p>Nice tips to 3D scan and fixing an object:</p>
-<ul>
-<li>The bigger and simpler the object, the better</li>
-<li>Ensure a clear background and maintain a stable speed while moving around the object</li>
-<li>Always get rid of trash before adding modifiers while working on the mesh (unless you know what you're doing)</li>
-<li>After every single modification, check again in <strong>Edit Mode</strong>. It's very likely we're making the mess worse.</li>
-</ul>
-<p></p>
 
 <h2>3D printing</h2>
 <h5 id="group">Group assignment - Characterize the 3D printers</h5>
@@ -127,7 +118,7 @@ active: 1
 </ul>
 <p></p>
 <h6>Second test - Tolerance and joint clearance</h6>
-<p>For the <a href="https://www.thingiverse.com/thing:636363">second test</a>, I teamed up with <a href="http://fabacademy.org/2020/labs/barcelona/students/roger-anguera/">Roger Anguera</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/bruno-molteni">Bruno Molteni</a>, <a href="https://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/lynn-dika">Lynn Dika</a>. We used the <a href="https://www.anycubic.com/products/anycubic-kossel-3d-printer">Anycubic Kossel Delta</a> printer, and our Fab Lab Manager Mikel Llobera guided us through the process. The detailed specs of the machine:</p>
+<p>For the <a href="https://www.thingiverse.com/thing:636363">second test</a>, I teamed up with <a href="http://fabacademy.org/2020/labs/barcelona/students/roger-anguera/">Roger Anguera</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/bruno-molteni">Bruno Molteni</a>, <a href="https://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/lynn-dika">Lynn Dika</a>. We used the <a href="https://www.anycubic.com/products/anycubic-kossel-3d-printer">Anycubic Kossel Plus</a> printer, and our Fab Lab Manager Mikel Llobera guided us through the process. The detailed specs of the machine:</p>
 <ul>
 <li>Printing technology: FDM</li>
 <li>Printing size: 230 x 180 x 300mm</li>
@@ -150,8 +141,7 @@ active: 1
 <li>None of the wheels could be able to move, and the reason might be because we scaled-down the object to 70%.</li>
 </ul>
 <p></p>
-<h6>TL;DR</h6>
-<p>What I personally learned:</p>
+<h6>What I personally learned</h6>
 <ul>
 <li>Pay attention to laws of gravity. We cannot print a piece in mid-air, and models must lie flat on the build plate or be supported.</li> 
 <li>The model must fit within the printer’s working area. The very first thing we need to ensure in Cura is the printer we're going to use!</li> 
@@ -178,7 +168,7 @@ active: 1
 <p>The estimated printing time was more than 3 hours, therefore I had to reduce the size of the model by 50% directly in Cura, using the <strong>Snap</strong> tool. Ready to print!</p>
 <p></p>
 <h6>Printing with PLA filament</h6>
-<p>I used the same Anycubic Kossel Delta printer to print my vase since we can use it without reservation. Josep guided me through some essential steps:</p>
+<p>I used the same Anycubic Kossel Plus printer to print my vase since we can use it without reservation. Josep guided me through some essential steps:</p>
 <ul>
 <li>Export the <code>.gcode</code> file and save it to the SD Card of the printer</li>
 <li>In case we need to change material, pre-heat the machine (<strong>Prepare > Preheat PLA</strong>) up until 205-210°C and we can remove the broken filament</li>
@@ -217,8 +207,7 @@ active: 1
   <thead class="thead-light">
     <tr>
       <th scope="col">Machine</th>
-      <th scope="col">Layer height</th>
-      <th scope="col">Infill density</th>
+      <th scope="col">Settings</th>
       <th scope="col">Dimension accuracy</th>
       <th scope="col">Minimum clearance</th>
       <th scope="col">Minimum hole size</th>
@@ -230,8 +219,7 @@ active: 1
   <tbody>
     <tr>
       <th scope="row">Creality CR-10 S5</th>
-      <td>0.2mm</td>
-      <td>10%</td>
+      <td>Layer height: 0.2mm - Infill: 10%</td>
       <td>+0.08mm (x,y) and +0.1mm (z)</td>
       <td>0.3mm</td>
       <td>0.6mm</td>
@@ -240,9 +228,8 @@ active: 1
       <td>16mm</td>
     </tr>
     <tr>
-      <th scope="row">Anycubic Kossel Delta</th>
-      <td>0.2mm</td>
-      <td>10%</td>
+      <th scope="row">Anycubic Kossel Plus</th>
+      <td>Layer height: 0.2mm - Infill: 10%</td>
       <td>+0.1mm (x,y,z)</td>
       <td>0.5mm</td>
       <td>0.7mm</td>

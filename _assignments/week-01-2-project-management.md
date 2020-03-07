@@ -9,7 +9,7 @@ active: 1
 <p class="font-italic font-weight-bold">* I separated 2 assignments of this week in order to avoid talking about too many things in a post. Please go 
 <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html">here</a> to see the first part of the assignment.</p>
 <p class="font-italic font-weight-bold">* The Student Agreement has been signed <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/agreement.html">here.</a></p>
-<p class="font-italic font-weight-bold">* The website was built using <a href="#web">Jekyll</a> and was managed with <a href="#git">Gitlab.</a></p> 
+<p class="font-italic font-weight-bold">* The website was built using <a href="#web">Jekyll</a> and was managed with <a href="#git">Git and Gitlab.</a></p> 
 <p class="font-italic font-weight-bold">* To download the source code of the website, please run in Terminal:</p> 
 <pre class="bg-light py-2 mt-0"><code>$ git clone https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo.git</code></pre>
 <p></p>
@@ -17,7 +17,7 @@ active: 1
 <h2 id="web">Website development</h2>
 <h5>Jekyll</h5>
 <p>I have some experiences working with static site generators, namely <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://jekyllrb.com/docs/home/">Jekyll</a>. Our instructor Eduardo Chamorro also introduced us to MkDocs, and from what I understand it works in a similar way. Hence, I went ahead with Jekyll.</p>
-<p>In short, Jekyll renders texts in Markdown/HTML format using Liquid template. Static sites come out ready for deployment.</p>
+<p>In short, Jekyll renders texts in Markdown/HTML format using <a href="https://shopify.github.io/liquid/basics/introduction/">Liquid</a> template. Static sites come out ready for deployment.</p>
 <ul>
 <li><kbd>$ gem install bundler jekyll</kbd>: install Jekyll</li>
 <li><kbd>$ jekyll new tue-fab-website</kbd>: generate a new Jekyll site</li>

@@ -13,10 +13,32 @@ active: 1
 I have 2 nephews, one is 6 years old and one is 4 years old. As a dedicated aunt, I've always wanted to build or develop some toys that could engage them in STEAM activities, so when they grow up they will be more than well-prepared to adapt to future jobs. That's why I'm pretty sure that my Final Project should be a connected toy, and I came up with some below <strong>INITIAL</strong> ideas.
 <p></p>
 
-<h2 id="idea">#1. A modular robot to teach kids how to make (almost) anything</h2>
+<h2>#1. A duo of color picking and color mixing</h2>
+<p></p>
+<h5>What will they do?</h5>
+I intend to make a duo of 2 devices: 1 color picker that can detect RGB code from real-life objects, convert them to CMYK and send that information to the color mixer in order to generate the desired shade.
+<img src="{{site.baseurl}}/assets/img/assignments/week-01/idea-2.png" class="img-fluid w-100"/>
+<h5>Nice-to-have add-ons</h5>
+It would be nice if I can (and have enough time to) make the mobile app take pictures and detect colors (RGB, CMYK or HEX) from them.
+<p></p>
+<h5>Who will use them?</h5>
+<ul>
+<li>Kids can use the generated color to paint any object they like.</li>
+<li>Adults can also use the duo. The generated (edible) pigment can be mixed later with a white/transparent base - for example, lip balm - to make DIY cosmetic.</li>
+</ul>
+<p></p>
+<h5>Who has done this before?</h5>
+I actually feel less panic with this idea than the other one, because I can find many online projects about each part of this system (<a href="https://create.arduino.cc/projecthub/mjrobot/arduino-color-detection-57e4ce?ref=tag&ref_id=color-detector&offset=0">this color detector</a> and <a href="https://www.instructables.com/id/MESOMIX-Automated-Paint-Mixing-Machine/">this paint mixing machine</a>). I also found some related projects on Kickstarter:
+<ul>
+<li><a href="https://www.kickstarter.com/projects/picolor/picolor-any-color-anywhere-anytime">Picolor</a></li>
+<li><a href="https://www.kickstarter.com/projects/nixsensor/nix-color-sensor/posts">Nix Sensor</a></li>
+</ul>
+<p></p>
+
+<h2 id="idea">#2. A modular robot to teach kids how to make (almost) anything</h2>
 <p></p>
 <h5>What will it do?</h5>
-<p>For the first idea, I intend to make an off-the-screen and modular robot that kids can customize in order to learn basic ideas of programming and robotics. This concept is not new, in fact, it has a long history with many innovative approaches. Even though, the new value I'd like to contribute is how kids can develop a <strong>DEBUG</strong> mindset. My robot should be able to inform kids (or parents) whether each step is successful or there is an error.</p>
+<p>For this 2nd idea, I intend to make an off-the-screen and modular robot that kids can customize in order to learn basic ideas of programming and robotics. This concept is not new, in fact, it has a long history with many innovative approaches. Even though, the new value I'd like to contribute is how kids can develop a <strong>DEBUG</strong> mindset. My robot should be able to inform kids (or parents) whether each step is successful or there is an error.</p>
 <h6 id="final">Initial sketch</h6> 
 <p>There will be 3 groups of blocks: Input, Logic, Output. Kids will need at least one block of each group to perform the desired task. I want the robot to symbolize a cute and modular animal, for example, a Dachshund. Then my nephews and even my friends said they want to see an Asian dragon, because "You're Asian!" and "Dogs are boring, dragons are cool, they have powerrrrrrrr!". Hence, here is a dragon with customized powers that can be defined by kids through a trial-and-error process:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/idea-1.png" class="img-fluid w-100"/>
@@ -42,29 +64,7 @@ Kids 4-7 years old. If the mobile/tablet application is available, kids up to 12
 </ul>
 <p></p>
 
-<h2>#2. A duo of color picking and color mixing</h2>
-<p></p>
-<h5>What will they do?</h5>
-I intend to make a duo of 2 devices: 1 color picker that can detect RGB code from real-life objects, convert them to CMYK and send that information to the color mixer in order to generate the desired shade.
-<img src="{{site.baseurl}}/assets/img/assignments/week-01/idea-2.png" class="img-fluid w-100"/>
-<h5>Nice-to-have add-ons</h5>
-It would be nice if I can (and have enough time to) make the mobile app take pictures and detect colors (RGB, CMYK or HEX) from them.
-<p></p>
-<h5>Who will use them?</h5>
-<ul>
-<li>Kids can use the generated color to paint any object they like.</li>
-<li>Adults can also use the duo. The generated (edible) pigment can be mixed later with a white/transparent base - for example, lip balm - to make DIY cosmetic.</li>
-</ul>
-<p></p>
-<h5>Who has done this before?</h5>
-I actually feel less panic with this idea than the other one, because I can find many online projects about each part of this system (<a href="https://create.arduino.cc/projecthub/mjrobot/arduino-color-detection-57e4ce?ref=tag&ref_id=color-detector&offset=0">this color detector</a> and <a href="https://www.instructables.com/id/MESOMIX-Automated-Paint-Mixing-Machine/">this paint mixing machine</a>). I also found some related projects on Kickstarter:
-<ul>
-<li><a href="https://www.kickstarter.com/projects/picolor/picolor-any-color-anywhere-anytime">Picolor</a></li>
-<li><a href="https://www.kickstarter.com/projects/nixsensor/nix-color-sensor/posts">Nix Sensor</a></li>
-</ul>
-<p></p>
-
-<h2>Final decision - Idea #1</h2>
+<h2>Final decision - Idea #2</h2>
 <p>After having a discussion with our instructors Santiago Fuentemilla and Xavier Dominguez in the 4th week, I decided to go ahead with the <strong>MODULAR ROBOT.</strong> The twist-able segments can complicate my process of designing and programming the electronic parts of the prototype. Hence, in order to make my life easier, Santi suggested me to go with the <a href="#final"><strong>FIRST</strong></a> sketch. In addition, the younger kids won't be confused with the simple plug-and-play workflow though.</p>
 <p>Santi and Xavi also introduced some cool projects related to my idea:</p>
 <ul>
@@ -73,7 +73,7 @@ I actually feel less panic with this idea than the other one, because I can find
 <li><a href="https://www.youtube.com/watch?v=FTpNI4NCvXA">Makeblock Inventor Kit</a> with the amazing idea about connecting blocks using pogo pins</li>
 <li><a href="https://ifttt.com/">IFTTT platform</a> which can make my life easier connecting different parts of the project and go deep dive into the logics</li>
 </ul>
-<p>We all agreed that what makes my idea different from other learning toy projects is the debugging process and the Logic blocks. We also think that being hung up on sensors and actuators will both distract me from making an almost-there prototype and distract the kids from trying out as many programming concepts as possible. Hence, my MVP for Fab Academy will have <strong>1 Input block, 1 Output block, and at least 2 Logic blocks</strong>.</p>
+<p>We all agreed that what makes my idea different from other learning toy projects is the debugging process and the Logic blocks. We also think that being hung up on sensors and actuators will both distract me from making an almost-there prototype and distract the kids from trying out as many programming concepts as possible. Hence, my MVP for Fab Academy will have <strong>1 Input block, 1 Output block, and at least 2 Logic blocks</strong>. I'm also thinking about how to resemble <strong>functions</strong> with those blocks, maybe a <strong>Call</strong> output and a <strong>Called</strong> input?</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">

@@ -21,13 +21,13 @@ active: 1
 </div> 
 <p></p>
 <p>Another thing that made me overwhelmed is the introduced hand tools at the Fab Lab. Some of them are quite tough for girls. The good news is I finally managed to use a machine saw and cut a piece of wood. Even though, I need to make sure that my Final Project will be fabricated easily with computer-controlled processes.</p>
-<p>My plan was to design 3D-printable modules that have some similarities with the modular robot in my mind (see <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html#idea">idea #1</a>).</p> 
+<p>My plan was to design 3D-printable modules that have some similarities with the modular robot in my mind (see <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-01-1-principles-and-practices.html#idea">idea #2</a>).</p> 
  
 <h2>2D design</h2>
 <p>I've already used 2D Design software before in college. In order to allocate more time for learning new 3D software, I went ahead with the vector-based Illustrator which I already know how to use. For this assignment, I decided to simply draw a possible logo for my Final Project.</p>
 <h5 id="2d">Illustrator vs. Photoshop</h5>
 <p>In short, raster or bitmap graphics (<code>.jpg, .jpeg, .bmp</code>) are made up of a bunch of tiny dots, while vector graphics are made from mathematical paths. Because of that, vector graphics are easier to be scaled and modified without loss of quality or resolution.</p>
-<p>I think the most basic concept of Photoshop is to draw and fill color in separated "layers", then merge them to finalize the design. On the other hand, we draw shapes in Illustrator by placing paths in a given 2D space thanks to dimensions and angles, then combine or trim them to form the desired image:</p>
+<p>I think the most basic concept of Photoshop is to draw and color "pixels" in separated "layers", then merge them to finalize the design. On the other hand, we draw shapes in Illustrator by placing paths in a given 2D space thanks to dimensions and angles, then combine or trim them to form the desired image:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/2D.png" class="img-fluid w-100"/>
 <p></p>
 <h5>ImageMagick</h5>

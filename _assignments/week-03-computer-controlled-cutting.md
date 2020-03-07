@@ -43,7 +43,7 @@ active: 1
 <h5 id="group">Group assignment - Characterize the laser-cutting process</h5>
 <p>Our class decided to split the group based on who can come to the lab on Friday or Monday. For the Friday group, we tried to cut many pieces of different materials so each of us can go through the process once. I've worked with these classmates during my session: <a href="http://fabacademy.org/2020/labs/barcelona/students/arman-najari">Arman Naraji</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard">Antoine Jaunard</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/benjamin-scott/">Benjamin Scott</a>.</p>
 <p></p>
-<h6>First test with cardboard 4mm</h6>
+<h6>First test - Cardboard 4mm</h6>
 <p>We used this <a href="https://www.thingiverse.com/thing:728579">test file</a> provided by the instructors to test the laser cutter <a href="https://www.troteclaser.com/es/maquinas-laser/grabadora-laser-speedy/">Trotec Speedy 100</a> with different materials. The detailed specs of the machine:</p>
 <ul>
 <li>Work area: 610 x 305mm</li>
@@ -63,7 +63,7 @@ active: 1
 <p>Below is the result of the first test. The power seemed to be over-increased, hence the cardboard was burned while being raster-engraved:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-3.jpg" class="img-fluid w-100"/>
 <p></p>
-<h6>Second test with plywood 4mm</h6>
+<h6>Second test - Plywood 4mm</h6>
 <p>This time we divided the parts to be raster-engraved and the parts to be vector-cut into 2 separate layers, export them to JobControl with different outputs (raster and vector) and cut them in 2 separate cuts. The settings we used for plywood 4mm:</p>
 <ul>
 <li>Engrave (Raster): <strong>speed=100, power=80, PPI/Hz=1000</strong></li>
@@ -84,6 +84,10 @@ active: 1
 <li>The delicate balance between translational speed and laser power defines the quality of the cut as well as the kerf width. We should abuse neither power nor speed.</li>
 <li>As power increases, the energy in the laser increases, which will result in a deeper cut and a bigger kerf. High power could also make more smoke and charred edges. So, power is a necessity to reach a required cutting or engraving depth, but over-using it is quite destructive to our materials.</li>
 <li>As speed increases, the energy is exposed to a point in a shorter time, which will result in a shallower, unstable cut and a thinner kerf. Increasing speed will also quicken the cutting time.</li>
+<li>Safety first: the laser-cutters cannot be left unattended, and the air ventilation should always be switched on.</li>
+<li>We need to test the proper settings for the chosen material and machine: power, speed, resolution (for raster engraving) and frequency (for vector cutting)</li>
+<li>We need to measure the kerf width and modify your design accordingly (measuring with the caliper is quite handy)</li>
+<li>We need to nest the design within the cutting area, remove hidden lines completely, ensure 1:1 scale, and color-code them respectively to the execution order: <strong>raster (engrave) > engrave (vector cut with faster speed)> inside cut (details) > outside cut (borders)</strong></li>
 </ul>
 <p></p>
 
@@ -141,18 +145,6 @@ active: 1
 <p>I brought the kit to the landlady where I'm staying. She enjoyed playing with it, and her results were much more impressive. Here we have a resting bird, an angry lobster, a 2-headed monster with wings, and a square-headed scorpio!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kit-5.jpg" class="img-fluid w-100"/>
 <p></p>
-<h6>TL;DR</h6>
-<p>Essential steps to laser-cut like a boss:</p>
-<ul>
-<li>Safety first: the laser-cutters cannot be left unattended, and the air ventilation should always be switched on.</li>
-<li>Test the proper settings for the chosen material and machine: power, speed, resolution (for raster engraving) and frequency (for vector cutting)</li>
-<li>Measure the kerf width and modify your design accordingly (measuring with the caliper is quite handy)</li>
-<li>Nest the design within the cutting area, remove hidden lines completely, ensure 1:1 scale, and color-code them respectively to the execution order: <strong>raster (engrave) > engrave (vector cut with faster speed)> inside cut (details) > outside cut (borders)</strong></li>
-<li>Fix the material securely to the bed and manually focus the Z-axis</li>
-<li>Modify the settings for each process (raster, engrave, cut)</li>
-<li>Connect the user controller to the machine and execute</li>
-</ul>
-<p></p>
 
 <h5 id="living-hinge">Additional test - Joint clearance and living hinges</h5>
 <p>After the regional review, I realized that I didn't proceed with any joint clearance and kerf bending test with other materials rather than cardboard 4mm (which I'm pretty sure I won't use for my Final Project). I also bumped into <a href="https://www.rs-online.com/designspark/laser-cut-living-hinges-for-neater-designs">this article about neater design with living hinges</a>, which is also super tempting. Therefore, I'd like to go a further step by testing the cutting kerf width and the kerf bending capabilities of 2 potential materials for my Final Project: plywood 4mm and acrylic 3mm. I used the same above hexagons to test the kerf width and joint clearance (for acrylic 3mm, I prepared additional hexagons with bigger kerf values: 0.25mm, 0.30mm, 0.35mm and 0.4mm). For testing the kerf bending, I intended to use different living hinge templates which I downloaded from <a href="https://obrary.com/products/living-hinge-patterns?variant=798259727">this guy</a> (of course, I modified them a bit).</p>
@@ -186,7 +178,7 @@ active: 1
 <h6>Result of joint clearance test</h6>
 <p>The cut pieces shown below helped me confirm the kerf width of plywood 4mm would be <strong>0.15mm</strong> in order to assemble 2 pieces securely.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kerf-1.jpg" class="img-fluid w-100"/>
-<p>For acrylic 3mm, the joint of the hexagons with <strong>0.40mm</strong> kerf width was still barely loose (which surprised me a lot since I didn't expect such a big kerf). Also, the kerf width of each joint seemed to be inconsistent (I assumed that the laser cutter has different performances at different axes). That was why I used a caliper to measure carefully some dimensions, and after doing some annoying maths, the kerf for acrylic 3mm should be somewhere in between of <strong>0.45mm</strong> and <strong>0.5mm.</strong> However, this is not a good practice. In case I will go ahead with acrylic for my Final Project, I might need to test it properly again.</p>
+<p>For acrylic 3mm, the joint of the hexagons with <strong>0.40mm</strong> kerf width was still barely loose (which surprised me a lot since I didn't expect such a big kerf). Also, the kerf width of each joint seemed to be inconsistent (I assumed that the laser cutter has different performances at different axes). That was why I used a caliper to measure carefully some dimensions, and after doing some annoying maths, the kerf for acrylic 3mm should be somewhere in between of <strong>0.45mm</strong> and <strong>0.5mm.</strong> However, in case I will go ahead with acrylic for my Final Project, I might need to test it properly again.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/kerf-2.jpg" class="img-fluid w-100"/>
 <p>Another thing I noticed after the test was that the surface of the material is also an important factor in making the joint stronger. Cardboard is a soft and flexible material, therefore we can squeeze the parts a bit and they can fit together, and so a slightly tight joint doesn't matter. Plywood is a rigid material, so we need to be a bit more precise. However, the rough surface of plywood can help increase adhesion, which is very helpful in the case of loose joints. For acrylic with a smooth surface, the accuracy of kerf width needs to be increased, since the 2 pieces will slide out very easily if the actual kerf is just slightly bigger than the estimated one.</p>
 <p></p>
