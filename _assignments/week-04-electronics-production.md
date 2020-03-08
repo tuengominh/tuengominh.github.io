@@ -61,7 +61,7 @@ active: 1
 <p></p>
 
 <h5>Available ISPs at Fab Lab Barcelona</h5>
-<p><strong>In-circuit programmer (ICP):</strong> also known as in-system programmer (ISP) or serial programmer allows us to program and reprogram micro-controllers. For the different types of chips, there are different programmers.</p>
+<p><strong>In-circuit programmer (ICP):</strong> also known as in-system programmer (ISP) or serial programmer allows us to program and reprogram micro-controllers. For the different types of chips, there are different programmers. At Fab Lab Barcelona, we have:</p>
 <ul>
 <li>FabISP programmer</li>
 <li>FTDI SERIAL with UPDI adapter</li>

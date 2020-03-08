@@ -52,7 +52,7 @@ Very logical handling of bus connections.-->
 <p>Circuit simulation means using mathematical models to replicate the behavior of an actual electronic circuit. We were introduced to <a href="http://www.falstad.com/circuit/">Falstad Simulator</a> and I found it quite interesting, therefore I decided to play around with it.</p>
 <p></p>
 <h6>Generating toolpath with Fab Modules</h6>
-<p>The common file format to be sent for manufacturing would be to generate a <code>.gbr<code> file. However, since I've already been used to <a href="http://fabmodules.org/">Fab Modules</a>, I continued using it to generate the toolpath using exported <code>.png</code> files. The followed steps were similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#fabmodules">4th week</a>.</p>
+<p>The common file format to be sent for manufacturing would be to generate a <code>.gbr</code> file. However, since I've already been used to <a href="http://fabmodules.org/">Fab Modules</a>, I continued using it to generate the toolpath using exported <code>.png</code> files. The followed steps were similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#fabmodules">4th week</a>.</p>
 <p></p>
 <h6>Milling, soldering and troubleshooting</h6>
 <p>The workflow is similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#milling">4th week</a>.</p>

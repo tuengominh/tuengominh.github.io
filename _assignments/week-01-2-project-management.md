@@ -16,7 +16,7 @@ active: 1
 
 <h2 id="web">Website development</h2>
 <h5>Jekyll</h5>
-<p>I have some experiences working with static site generators, namely <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://jekyllrb.com/docs/home/">Jekyll</a>. Our instructor Eduardo Chamorro also introduced us to MkDocs, and from what I understand it works in a similar way. Hence, I went ahead with Jekyll.</p>
+<p>I have some experiences working with <a href="https://learn.cloudcannon.com/jekyll/why-use-a-static-site-generator/">static site generators</a>, namely <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://jekyllrb.com/docs/home/">Jekyll</a>. Our instructor Eduardo Chamorro also introduced us to MkDocs, and from what I understand it works in a similar way. Hence, I went ahead with Jekyll.</p>
 <p>In short, Jekyll renders texts in Markdown/HTML format using <a href="https://shopify.github.io/liquid/basics/introduction/">Liquid</a> template. Static sites come out ready for deployment.</p>
 <ul>
 <li><kbd>$ gem install bundler jekyll</kbd>: install Jekyll</li>
@@ -49,7 +49,7 @@ active: 1
 <h2 id="git">Git and GitLab</h2>
 
 <h5>SSH key</h5>
-<p><a href="https://git-scm.com/doc">Git</a> is a VCS (version control system) that helps us to track versions as well as contributions in projects, and <a href="https://about.gitlab.com/">GitLab</a> is a web-based DevOps tool that provides a Git-repository manager, issue-tracking and CI/CD pipeline features. Since I had access to my GitLab repository from the very first class, and before I already generated an SSH key that links to my personal GitLab account, the process became quite simple. All I need to do was to copy the SSH key in the personal GitLab account and paste it into my gitlab.fabcloud.org account as an existing key.</p>
+<p><a href="https://git-scm.com/doc">Git</a> is a VCS (version control system) that helps us to track versions as well as contributions in projects, and <a href="https://about.gitlab.com/">GitLab</a> is a web-based DevOps tool that provides a Git-repository manager, issue-tracking and CI/CD pipeline features. Since I had access to my GitLab repository from the very first class, and before I already generated an <a href="https://en.wikipedia.org/wiki/Ssh-keygen">SSH key</a> that links to my personal GitLab account, the process became quite simple. All I need to do was to copy the SSH key in the personal GitLab account and paste it into my gitlab.fabcloud.org account as an existing key.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/ssh-1.png" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/ssh-2.png" class="img-fluid w-100"/>
