@@ -187,14 +187,14 @@ active: 1
 <p>Another thing I noticed after the test was that the surface of the material is also an important factor in making the joint stronger. Cardboard is a soft and flexible material, therefore we can squeeze the parts a bit and they can fit together, and so a slightly tight joint doesn't matter. Plywood is a rigid material, so we need to be a bit more precise. However, the rough surface of plywood can help increase adhesion, which is very helpful in the case of loose joints. For acrylic with a smooth surface, the accuracy of kerf width needs to be increased, since the 2 pieces will slide out very easily if the actual kerf is just slightly bigger than the estimated one.</p>
 <p></p>
 <h6>Result of living hinge test</h6>
-<p>The templates I used for the living hinge test were: straight intersecting lines with different interline values of 3mm, 6mm, and 12mm (yeah I know it was stupid to go with 12mm, but it was for the sake of learning); wavy cut lines with 6mm interline; cross/honeycomb cut lines with 6mm interline; and large hexagons/honeycombs with 6mm interline.</p>
+<p>The templates I used for the living hinge test were: straight intersecting lines with different interline gap values of 3mm, 6mm, and 12mm (yeah I know it was stupid to go with 12mm, but it was for the sake of learning); wavy cut lines with 6mm interline; cross/honeycomb cut lines with 6mm interline; and large hexagons/honeycombs with 6mm interline.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/hinge-2.jpg" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/hinge-3.jpg" class="img-fluid w-100"/>
 <p>Some observations for plywood 4mm:</p>
 <ul>
 <li>Straight intersecting lines: the further apart the single intersecting lines are, the bigger the bend radius will be. It was obvious that the one with 12mm interline cannot be bent at all, and the one with 6mm interline can only be bent insignificantly (less than 45°). The one with 3mm interline seemed to be the best option since the bend radius was really stable and I can bend it up to 165° - almost foldable.</li>
-<li>Wavy cut lines: the interline was a bit too big, therefore it can be bent insignificantly. However, it showed quite fair bending capabilities compared to the straight one with similar interline.</li>
+<li>Wavy cut lines: the interline gap was a bit too big, therefore it can be bent insignificantly. However, it showed quite fair bending capabilities compared to the straight one with similar interline gap.</li>
 <li>Cross/honeycomb cut lines: it offered significant flexibility in other directions, even with a big 6mm interline.</li>
 <li>Large hexagons/honeycombs: the thin interline made the piece broke immediately when being bent. I also think one of the reason was that the pieces were bent in the same direction of the wood fiber.</li>
 </ul>

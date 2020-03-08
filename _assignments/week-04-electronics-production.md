@@ -11,7 +11,7 @@ active: 1
 
 <p class="font-italic font-weight-bold">* This week's group assignment was to do a <a href="#group">line test</a> in order to understand the machining process.</p>
 
-<p class="font-italic font-weight-bold">* I needed to individually make an ISP, and I randomly chose <a href="#milling">the FTDI SERIAL board and the UPDI adapter</a> this week. I also attempted to try <a href="#cutting">another method</a> to fabricate PCB.</p>
+<p class="font-italic font-weight-bold">* I needed to individually make an ISP, and I randomly chose <a href="#milling">the FTDI SERIAL board and the UPDI adapter</a> this week. I also attempted to try <a href="#cutting">another method</a> for fabricating PCBs.</p>
 
 <h2 id="theory">Understanding electronics and the boards</h2>
 <p>Yes, you're right, I'm that type of person who needs to understand what I'm doing before doing it. After digesting the take-away notes from Oscar's classes, I followed <a href="https://www.makerspaces.com/basic-electronics/">this tutorial</a> to organize better all pieces of knowledge. Allow me to go through a very long note without any images attached, or go straight to the assignments <a href="#assignment">below.</a></p>
@@ -109,7 +109,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/group-3.jpg" class="img-fluid w-100"/>
 <p>And here you go the result of the test:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/group-4.jpg" class="img-fluid w-100"/>
-<p>We had an issue with the outlines cutting. One side was not cut completely. We managed to generate the file multiple times and did the process again, but we still had the same problem. However, we could tell from the failed test that using the default settings of Fab Modules, the machine is able to mill up to <strong>0.010mm</strong> thin trace.</p>
+<p>We had an issue with the outlines cutting. One side was not cut completely. We managed to generate the file multiple times and did the process again, but we still had the same problem. However, we could tell from the failed test that using the default settings of Fab Modules, the machine is able to mill up to <strong>0.01mm</strong> thin trace.</p>
 <h6>What I personally learned</h6>
 <ul>
 <li>Be careful while using the double-sided tape to fix the position of the workpiece. Any negligence can lead to a mess, especially when we are going to use leftovers.</li>

@@ -37,11 +37,11 @@ active: 1
 <li>Export to <code>.obj</code> or <code>.stl</code></li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/scan-2.jpg" class="img-fluid w-100"/>
-<p>And here is the outcome imported to Blender (the size of the file is too big, that's why I just posted a screenshot here):</p>
+<p>And here is the outcome imported to Blender (the size of the file is too big, therefore I just posted a screenshot here):</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/blender-0.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Processing the mesh with Blender</h6>
-<p>Now let's make myself a bit prettier by 3D retouching the outcome! We had a class by Victor Barberan regarding fixing the mesh using Blender. I simply followed his instructions to work on my mess, oh I meant, mesh. Some steps followed (<strong>IMPORTANT: </strong> following the order can be life-saving. I started sculpting <strong>BEFORE</strong> switching to <strong>Edit Mode</strong> and I hit my head to the keyboard soon after):</p>
+<p>Let's make myself a bit prettier by 3D retouching the outcome! We had a class by Victor Barberan regarding fixing the mesh using Blender. I simply followed his instructions to work on my mess, oh I meant, mesh. Some steps followed (<strong>IMPORTANT: </strong> following the order can be life-saving. I started sculpting <strong>BEFORE</strong> switching to <strong>Edit Mode</strong> and I hit my head to the keyboard soon after):</p>
 <ul>
 <li>In <strong>Object Mode</strong>: rotate, scale and <i>Set Geometry to Origin</i></li>
 <li>In <strong>Edit Mode</strong>: use <i>Select Circle</i> tool to select the exterior faces of my model, hide them, and delete the horrible mess inside. Also, hit space and remove duplicated vertices.</li>
@@ -67,7 +67,7 @@ active: 1
 <p></p>
 <p>I studied sculpture in college before, so the <strong>Sculpt Mode</strong> was really tempting to try. I indeed played around a bit by keeping the same amount of triangle faces from the scanning outcome, and fine-tuned the model with other sculpting tools, such as <strong>Draw, Blob, Crease, Grab,</strong> and <strong>Pinch</strong>. Of course, the model was way visually prettier and detailed. However, the size of the file was unnecessarily large, and I could not 3D-print it properly since there were so many non-manifold faces and messy layers. Cleaning them up could be a real pain, therefore I decided not to continue with it.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/blender-3.png" class="img-fluid w-100"/>
-<p>I also didn't proceed to print myself, because I wanted to allocate more time trying other 3D printing techniques (SLA and paste extrusion using FDM printers). In the end, I couldn't make it on time for those additional explorations, but everything is in process ;)</p>
+<p>I also didn't proceed to print myself, because I wanted to allocate more time trying other 3D printing techniques (SLA and paste extrusion using FDM printer). In the end, I couldn't make it on time for those additional explorations, but everything is in process ;)</p>
 <p></p>
 
 <h2>3D printing</h2>
@@ -113,7 +113,7 @@ active: 1
 <li>Minimum hole size: all passed, up to 0.6mm</li>
 <li>Minimum wall thickness: 0.1mm</li>
 <li>Minimum distance between walls: 0.6mm</li>
-<li>Horizontal surface finish: quite smooth, all passed (both spheres and pyramides)</li>
+<li>Horizontal surface finish: quite smooth, all passed (both spheres and pyramids)</li>
 <li>Overhang angles: perfectly nice at 35°, slightly acceptable up to 60°</li>
 <li>Bridges: all passed, up to 16mm length</li>
 </ul>
@@ -229,7 +229,7 @@ active: 1
       <td>0.6mm</td>
       <td>0.1mm</td>
       <td>0.6mm</td>
-      <td>Up to 55° without support, preferably 45°</td>
+      <td>Up to 55° without support, preferably 35°</td>
       <td>16mm</td>
     </tr>
     <tr>

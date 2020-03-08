@@ -41,7 +41,7 @@ active: 1
 
 <h2>3D design</h2>
 <h5 id="openscad">OpenSCAD</h5>
-<p>Eduardo briefly introduced us to OpenSCAD before his Grasshopper session, and I found the idea of a script-only based modeler quite tempting. For my Final Project, I have a few options to model the <strong>connectors</strong> of blocks, such as built-in magnets, LEGO-compatible bricks, or hinges. I decided to try the <strong>LEGO</strong> option using OpenSCAD. I followed <a href="https://www.youtube.com/watch?v=ecd_eWPnynk">this tutorial</a>, with some customizations. My LEGO brick has a square shape and much thinner.</p>
+<p>Eduardo briefly introduced us to OpenSCAD before his Grasshopper session, and I found the idea of a script-only based modeler quite tempting. For my Final Project, I have a few options to model the <strong>connectors</strong> of blocks, such as built-in magnets, LEGO-compatible bricks, or hinges. I decided to try the <strong>LEGO</strong> option using OpenSCAD. I followed <a href="https://www.youtube.com/watch?v=ecd_eWPnynk">this tutorial</a>, with some customization. My LEGO brick has a square shape and much thinner.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/openscad-1.png" class="img-fluid w-100"/>
 <p>One of my favorite things about OpenSCAD is that I can modify a few variables to change the design of a whole object by <strong>TYPING</strong> (no need to select or click any button) or to check if certain parts of the modules can joint together without any complicated pre-calculation. In short, I can incorporate parametric design fast and algorithmically.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/openscad-4.png" class="img-fluid w-100"/>
@@ -83,7 +83,7 @@ active: 1
 <p><strong>I LOVE OPENSCAD!</strong> I've never imagined that I could create my first 3D Design in such a precise and straightforward way. It was such a nice experience for someone who has a programming background like me. It took me less than 10 minutes to create each model, and I'm so happy with the results. OpenSCAD is really powerful and has many potentials. I'd like to explore it more in the future.</p>
 <p></p>
 <h5 id="fusion">Fusion 360</h5>
-<p>Before the class, I took a look at previous students' websites and noticed that many of them chose to use <a href="https://www.autodesk.com/products/fusion-360/overview">Fusion 360.</a> That's why I tried it next. Since none of the "traditional" software (with the concept of modeling parts and making assemblies) has a Tue-friendly and intuitive UI, I watched <strong>MANY</strong> online tutorials in order to get used to the workflow. This is a good <a href="https://www.youtube.com/watch?v=qvrHuaHhqHI">tutorial</a>. After watching his series, I could create my first <strong>hinge connector</strong> model and I was quite happy with it.</p>
+<p>Before the class, I took a look at previous students' websites and noticed that many of them chose to use <a href="https://www.autodesk.com/products/fusion-360/overview">Fusion 360.</a> That's why I tried it next. Since none of the "traditional" software (with the concept of modeling parts and making assemblies) has a Tue-friendly and intuitive UI, I watched <strong>MANY</strong> online tutorials in order to get used to the workflow. This is a good <a href="https://www.youtube.com/watch?v=qvrHuaHhqHI">tutorial</a>. After watching his series, I could create my first <strong>hinge connector</strong> model, and I was quite happy with it.</p>
 <p>Below is the how-I-did-that videos:</p>
 <div class="text-center">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/aOBGm-fr3uk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -120,7 +120,7 @@ active: 1
 <h5 id="grasshopper">Rhino and Grasshopper</h5>
 <p> I followed this <a href="https://blog.ramboll.com/rcd/tutorials/a-beginners-guide-to-visual-scripting-with-grasshopper.html">tutorial</a> to learn Grasshopper without getting my brain tangled by its "spaghetti" workflow. However, my brain still exploded when I tried to create a press-fit enclosure for my robot block. In the end, since I'm not there yet, I went back to this <a href="https://www.youtube.com/watch?v=ZKfNJ1xEbaQ&feature=share&fbclid=IwAR11kqTYkCtYluORHRRZ4WRHLGB39lUTlNRoORs2SoBvbF0nVmzrmNKJaow">tutorial</a> and simply create the same parametric rotating table.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/grasshopper-1.jpg" class="img-fluid w-100"/>
-<p>I tried to input some customizations, mostly with using the same sliders to control both extrusion and offset at the same time:</p>
+<p>I tried to input some customization, mostly with using the same sliders to control both extrusion and offset at the same time:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-02/grasshopper-2.jpg" class="img-fluid w-100"/>
 <p>In the below video, I played around with the number sliders and the central point to see the table transforming:</p>
 <div class="text-center">
