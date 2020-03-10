@@ -57,8 +57,8 @@ active: 1
 <p></p>
 
 <h2 id="assignment">PCB design and fabrication</h2>
-<h5 id="group">Group assignment - Test a board with the multimeter</h5>
-<!--<p>Before participating in the group test, I took a look at this useful <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all">tutorial</a> in order to understand what we were going to test.</p> 
+<!--<h5 id="group">Group assignment - Test a board with the multimeter</h5>
+<p>Before participating in the group test, I took a look at this useful <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all">tutorial</a> in order to understand what we were going to test.</p> 
 <p></p>-->
 
 <h5 id="design">Individual assignment - Redesign an echo hello-world board</h5>
@@ -74,9 +74,9 @@ active: 1
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/library-0.png" class="img-fluid w-100"/>
 <p>I simply followed Oscar's <a href="http://fabacademy.org/2020/labs/barcelona/local/#material/extras/week06/kicad">instructions</a> to import all of the symbol and footprint libraries. However, in the <i>Connectors</i> library included in KiCad V5.0, there is an <i>AVR-UPDI-6</i> symbol with 6 pins (instead of 2 pins as the sample hello-world board). This UPDI component is also not linked to any footprint. That was why I decided to create a custom <i class="font-weight-bold">UPDI-SMD-HEADER</i> symbol and a custom <i class="font-weight-bold">fab-1X02SMD</i> footprint.</p>
-<p>To do that, the first step was to modify the <i>fab-1X06SMD</i> footprint (which links to the FTDI header) in <strong>Footprint Editor.</strong> I deleted the pad no.1, no.2, no.5, no.6, and renamed pad no.3 and no. 4 to 1 and 2. Then I export it as a new footprint named <i>fab-1X02SMD</i> and imported the new footprint to <strong>Footprint Libraries</strong>.</p>
+<p>To do that, the first step was to modify the <i>fab-1X06SMD</i> footprint (which links to the FTDI header) in <strong>Footprint Editor.</strong> I deleted the pad no.1, no.2, no.5, no.6, and renamed pad no.3 and no. 4 to "1" and "2". Then I exported it as a new footprint named <i>fab-1X02SMD</i> and imported the new footprint to <strong>Footprint Libraries</strong>.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/library-1.png" class="img-fluid w-100"/>
-<p>Next step is to add an <code>$INDEX</code> of <code>fab-1X02SMD</code> to the <code>fab.mod</code> file. In the same file, I input a new <code>$MODULE</code>:</p>
+<p>Next step was to input an <code>$INDEX</code> of <code>fab-1X02SMD</code> to the <code>fab.mod</code> file. In the same file, I added a new <code>$MODULE</code>:</p>
 <pre class="bg-light py-2 mt-0">
 <code>
     $INDEX 
@@ -132,20 +132,19 @@ active: 1
     ENDDEF 
 </code>
 </pre>
-<p>Now I have the new self-made UPDI symbol and footprint!</p>
+<p>Finally I had the new self-made UPDI symbol and footprint!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/library-2.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Designing schema with KiCad Eeschema</h6>
-<p>I started with sketching my board in the <a href="https://kicad-pcb.org/discover/eeschema/">Eeschema</a> schematic editor first. To understand the ATtiny1614 chip and its pins, I refer to the datasheet <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf">here.</a></p>
-<p>The workflow went like:</p>
+<p>I started with sketching my board in the <a href="https://kicad-pcb.org/discover/eeschema/">Eeschema</a> schematic editor first. To understand the ATtiny1614 chip and its pins, I refer to the datasheet <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf">here.</a> The workflow went like:</p>
 <ul>
 <li>Create new <code>.pro</code> KiCad project and open the <code>.sch</code> file in Eeschema</li>
 <li>Choose the <strong>Place component</strong> tool and select the components needed from the libraries. The components I used: <i>ATtiny1614-SS</i> for the IC, <i>FTDI-SMD-HEADER</i> for the FTDI header, <i>6MM_SWITCH6mm_SWITCH</i> for the button, <i>CAP-UNPOLARIZEDFAB</i> for the capacitor, <i>RES-US1206FAB</i> for the resistors, <i>LEDFAB1206</i> for the LEDs, and my custom <i>UPDI-SMD-HEADER</i> for the UPDI header.</li>
 <li>Edit the properties of the components (annotations, values, and footprints) by hovering and press <kbd>E</kbd>. In order to calculate the resistance value of the resistors, I also took a look at this <a href="https://datasheet.octopart.com/MCL-S250GC-Multicomp-datasheet-12568751.pdf">datasheet.</a></li>
 <li>Arrange related components to some basic building blocks: <i>FTDI SERIAL HEADER</i>, <i>UPDI HEADER</i>, and <i>BUTTON</i>.</li>
 <li>Choose the <strong>Place global label</strong> tool in order to assign some global "labels", such as GND or VCC, BTN or UPDI, etc. Separating blocks and wiring them (by pressing <kbd>W</kbd> to begin wire and <kbd>K</kbd> to end wire) with those global labels can make the schema more readable.</li>
-<li>As common practices, I added a pull-up resitor to the <i>BUTTON</i> block and wired a capacitor parallelly with the power supply.</li>
-<li>The final step is to <strong>Generate Netlist</strong>. Netlist serves as a link between the schema and the PCB layout.</li>
+<li>As common practices, add a pull-up resitor to the <i>BUTTON</i> block and wire a capacitor parallelly with the power supply.</li>
+<li>The final step was to <strong>Generate Netlist</strong>. Netlist serves as a link between the schema and the PCB layout.</li>
 </ul>
 <p>Here you go all the components displayed and wired together!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/schema.png" class="img-fluid w-100"/>
@@ -156,28 +155,28 @@ active: 1
 <li>Re-arrange the components: select pads from the footprints and press <kbd>M</kbd> to move them or press <kbd>R</kbd> to rotate/flip them. By taking a look at the white lines, I could more or less imagine whether my components could be routed easily.</li>
 <li>Set the proper <strong>Design Rules</strong> complying with the 1/64 milling bit. The set of rules was provided by our instructors.</li>
 <li>Use the <strong>Route tracks</strong> tool to draw traces that connected the pins of the components. I started with the IC and the LEDs first. Sometimes I modified the schema, generate the Netlist and read it again in order to solve some crossed traces.</li>
-<li>After struggling for a while, a good tip I learned was to connect all components with VCC pins first. The connections between GND pins will be done after the others, and they can be joined to form an overall shape of the layout.</li>
+<li>After struggling for a while, a good tip I learned was to connect all components with VCC pins first. The connections between GND pins should be done after the others, and they can be joined to form an overall shape of the layout.</li>
 </ul>
 <p></p>
-<img src="{{site.baseurl}}/assets/img/assignments/week-06/check-0.png" class="img-fluid w-100"/>
-<p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/pcbnew-1.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/check-0.png" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/pcbnew-2.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Electrical and design rules check</h6>
 <p>KiCad includes an <strong>Electrical Rule Checker</strong> in Eeschema and a <strong>Design Rule Check Control</strong> in PCBnew that are dedicated for sign-off checks. The LVS verification is included in DRC Control.</p>
-<p>Basically, no news is good news. However, I still had some issues which were indeed OK. For example, the ERC complained that I had some unused pins in the schema, and since I didn't create an edge cut in PCBnew, the DRC mistook the outer traces as the edge of the design.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/check-1.png" class="img-fluid w-100"/>
-<p>Ready to fabricate!</p>
+<p>Basically, no news is good news. However, I still had some issues which were indeed OK. For example, the ERC complained that I had some unused pins in the schema, and since I didn't create an edge cut in PCBnew, the DRC mistook the outer traces as the edge of the design.</p>
 <p></p>
 <h6>Generating toolpath with Fab Modules</h6>
-<p>The common file format to be sent for manufacturing would be to generate a <code>.gbr</code> file. However, since I've already been used to <a href="http://fabmodules.org/">Fab Modules</a>, I continued using it to generate the toolpath using exported <code>.png</code> files. Before doing that, I had to export an <code>.svg</code> file from PCBnew, and then I modified it in Illustrator.</p>
+<p>The common file format to be sent for manufacturing would be a <code>.gbr</code> file. However, since I've already been used to <a href="http://fabmodules.org/">Fab Modules</a>, I continued using it to generate the toolpath using exported <code>.png</code> files. Before doing that, I had to export an <code>.svg</code> file from PCBnew and modified it in Illustrator, then exported the <code>.svg</code> file to <code>.png</code>.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mod-0.png" class="img-fluid w-100"/>
-<p>The next steps in Fab Modules were similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#fabmodules">4th week</a>. However, after generating the toolpath in Fab Modules, I could spot some unwanted joined traces, and the reason was that they were too close together in the layout. Hence, I need to go back to PCBnew to modify them.</p>
+<p>The next steps in Fab Modules were similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#fabmodules">4th week</a>. However, after generating the toolpath in Fab Modules, I could spot some unwanted joined traces, and the reason was that they were too close together in the PCB layout. Hence, I needed to go back to PCBnew to modify.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mod-1.png" class="img-fluid w-100"/>
-<p>After checking again in Fab Modules and everything seemed to be alright, I moved forward to milling the PCB.</p>
+<p>After checking again in Fab Modules, everything seemed to be alright:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mod-2.png" class="img-fluid w-100"/>
+<p>Ready to fabricate!</p>
 <p></p>
 <h6>Milling, soldering, and troubleshooting</h6>
 <p>And the nightmare came.</p>
