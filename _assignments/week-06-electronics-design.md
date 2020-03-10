@@ -71,8 +71,11 @@ active: 1
 <li>Symbols: <a href="https://kicad.github.io/symbols/MCU_Microchip_ATtiny">ATtiny</a> and <a href="http://fabacademy.org/2020/labs/barcelona/local/#material/extras/week06/assets/ESP32-Footprints.zip">ESP32</a></li>
 <li>Footprints: <a href="https://kicad.github.io/footprints/Package_SO">ATtiny</a> and <a href="http://fabacademy.org/2020/labs/barcelona/local/#material/extras/week06/assets/ESP32-Footprints.zip">ESP32</a></li>
 </ul>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/library-0.png" class="img-fluid w-100"/>
 <p>I simply followed Oscar's <a href="http://fabacademy.org/2020/labs/barcelona/local/#material/extras/week06/kicad">instructions</a> to import all of the symbol and footprint libraries. However, in the <i>Connectors</i> library included in KiCad V5.0, there is an <i>AVR-UPDI-6</i> symbol with 6 pins (instead of 2 pins as the sample hello-world board). This UPDI component is also not linked to any footprint. That was why I decided to create a custom <i class="font-weight-bold">UPDI-SMD-HEADER</i> symbol and a custom <i class="font-weight-bold">fab-1X02SMD</i> footprint.</p>
 <p>To do that, the first step was to modify the <i>fab-1X06SMD</i> footprint (which links to the FTDI header) in <strong>Footprint Editor.</strong> I deleted the pad no.1, no.2, no.5, no.6, and renamed pad no.3 and no. 4 to 1 and 2. Then I export it as a new footprint named <i>fab-1X02SMD</i> and imported the new footprint to <strong>Footprint Libraries</strong>.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/library-1.png" class="img-fluid w-100"/>
 <p>Next step is to add an <code>$INDEX</code> of <code>fab-1X02SMD</code> to the <code>fab.mod</code> file. In the same file, I input a new <code>$MODULE</code>:</p>
 <pre class="bg-light py-2 mt-0">
 <code>
@@ -130,6 +133,7 @@ active: 1
 </code>
 </pre>
 <p>Now I have the new self-made UPDI symbol and footprint!</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/library-2.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Designing schema with KiCad Eeschema</h6>
 <p>I started with sketching my board in the <a href="https://kicad-pcb.org/discover/eeschema/">Eeschema</a> schematic editor first. To understand the ATtiny1614 chip and its pins, I refer to the datasheet <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf">here.</a></p>
@@ -144,6 +148,7 @@ active: 1
 <li>The final step is to <strong>Generate Netlist</strong>. Netlist serves as a link between the schema and the PCB layout.</li>
 </ul>
 <p>Here you go all the components displayed and wired together!</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/schema.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Designing PCB with KiCad PCBnew</h6>
 <p>When I <strong>Read Netlist</strong> in the PCB layout editor <a href="https://kicad-pcb.org/discover/pcbnew/">PCBnew</a> of KiCAD, I immediately saw a horrible tangled mess. The workflow used to save myself from that basically included 2 steps of Placement and Routing:</p>
@@ -154,17 +159,30 @@ active: 1
 <li>After struggling for a while, a good tip I learned was to connect all components with VCC pins first. The connections between GND pins will be done after the others, and they can be joined to form an overall shape of the layout.</li>
 </ul>
 <p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/check-0.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/pcbnew-1.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/pcbnew-2.png" class="img-fluid w-100"/>
+<p></p>
 <h6>Electrical and design rules check</h6>
 <p>KiCad includes an <strong>Electrical Rule Checker</strong> in Eeschema and a <strong>Design Rule Check Control</strong> in PCBnew that are dedicated for sign-off checks. The LVS verification is included in DRC Control.</p>
 <p>Basically, no news is good news. However, I still had some issues which were indeed OK. For example, the ERC complained that I had some unused pins in the schema, and since I didn't create an edge cut in PCBnew, the DRC mistook the outer traces as the edge of the design.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/check-1.png" class="img-fluid w-100"/>
 <p>Ready to fabricate!</p>
 <p></p>
 <h6>Generating toolpath with Fab Modules</h6>
-<p>The common file format to be sent for manufacturing would be to generate a <code>.gbr</code> file. However, since I've already been used to <a href="http://fabmodules.org/">Fab Modules</a>, I continued using it to generate the toolpath using exported <code>.png</code> files. Before doing that, I had to export an <code>.svg</code> file from PCBnew, and then I modified it in Illustrator and Photoshop.</p>
-<p>The next steps in Fab Modules were similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#fabmodules">4th week</a>.</p>
+<p>The common file format to be sent for manufacturing would be to generate a <code>.gbr</code> file. However, since I've already been used to <a href="http://fabmodules.org/">Fab Modules</a>, I continued using it to generate the toolpath using exported <code>.png</code> files. Before doing that, I had to export an <code>.svg</code> file from PCBnew, and then I modified it in Illustrator.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/mod-0.png" class="img-fluid w-100"/>
+<p>The next steps in Fab Modules were similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#fabmodules">4th week</a>. However, after generating the toolpath in Fab Modules, I could spot some unwanted joined traces, and the reason was that they were too close together in the layout. Hence, I need to go back to PCBnew to modify them.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/mod-1.png" class="img-fluid w-100"/>
+<p>After checking again in Fab Modules and everything seemed to be alright, I moved forward to milling the PCB.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/mod-2.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Milling, soldering, and troubleshooting</h6>
+<p>And the nightmare came.</p>
 <!--<p>Not much to say about these steps, since the workflow was also similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#milling">4th week</a>.</p>-->
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-0.png" class="img-fluid w-100"/>
 <p></p>
 
 <h5>Conclusion</h5>
