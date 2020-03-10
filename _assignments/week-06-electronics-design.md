@@ -58,8 +58,8 @@ active: 1
 
 <h2 id="assignment">PCB design and fabrication</h2>
 <h5 id="group">Group assignment - Test a board with the multimeter</h5>
-<p>Before participating in the group test, I took a look at this useful <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all">tutorial</a> in order to understand what we were going to test.</p> 
-<p></p>
+<!--<p>Before participating in the group test, I took a look at this useful <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all">tutorial</a> in order to understand what we were going to test.</p> 
+<p></p>-->
 
 <h5 id="design">Individual assignment - Redesign an echo hello-world board</h5>
 <p>I intended to make an <a href="https://www.electronickits.com/led-dice-slowdown-kit/">LED dice</a> as a concrete project during this week and the Embedded Programming week in order to fully understand the electronics design, production, and embedded programming process. This week's goal will simply be turning on/off all the LEDs when pressing a button, and displaying random numbers will be the main task for the 9th week.</p>
@@ -164,15 +164,15 @@ active: 1
 <p>The next steps in Fab Modules were similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#fabmodules">4th week</a>.</p>
 <p></p>
 <h6>Milling, soldering, and troubleshooting</h6>
-<p>Not much to say about these steps, since the workflow was also similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#milling">4th week</a>.</p>
+<!--<p>Not much to say about these steps, since the workflow was also similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#milling">4th week</a>.</p>-->
 <p></p>
 
 <h5>Conclusion</h5>
 <p>Things I don't like about KiCad:</p>
 <ul>
 <li>Confusing library management and third-party library support</li>
-<li>Lack of an easy way to automatic update between schematic and PCB layout</li>
-<li>Lack of an efficient interactive drag to move components without losing route tracks</li>
+<li>Lack of an easy way to automatically update between the schematic and PCB layout</li>
+<li>Lack of an efficient interactive drag to move components without losing the routed tracks</li>
 </ul>
 <p></p>
 
