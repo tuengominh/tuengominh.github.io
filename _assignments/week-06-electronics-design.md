@@ -187,6 +187,11 @@ active: 1
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-0.jpg" class="img-fluid w-100"/>
 <p>In order to "debug" this, I tried to go back and check every single step I did. All the trace widths in PCBnew were exactly 0.4mm, and our instructors recommended to keep it like that. All exported <code>.svg</code> lines had the same 0.4mm width. The settings of Fab Modules were exactly the same as my classmates' designs. Then I figured out that I didn't export my <code>.png</code> with +500 dpi resolution. I was not so certain whether this was the main reason since resolution seems to affect not the width of the horizontal and vertical traces but the 45° ones or the shapes of the pads. However, I still continued to mill another one, because it could be something I didn't understand about the way Fab Modules calculates the toolpath.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-1.jpg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-2.jpg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-3.jpg" class="img-fluid w-100"/>
 <p></p>
 
 <h5>Conclusion</h5>
