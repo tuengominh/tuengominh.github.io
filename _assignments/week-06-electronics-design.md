@@ -37,7 +37,7 @@ active: 1
 <ul>
 <li>Give the components room to breathe and avoid overlapping any parts.</li>
 <li>Place components that can't be moved first, for example: connectors, switches, USB ports, etc. Try to place the ICs in the middle of the layout.</li>
-<li>Place all components on the same side of the board. Avoid placing components on the edge of the board by making sure that all of the components are at least 1mm away from the edge of the PCB.</li>
+<li>Place all components on the same side of the board. Avoid placing components on the edge of the board by making sure that all of the components are at least 0.5mm away from the edge of the PCB.</li>
 <li>Orient similar components in the same direction as this will help with effective routing and ensuring an efficient and error-free soldering process during manufacturing.</li>
 </ul>
 <h6>Routing</h6>
@@ -155,13 +155,12 @@ active: 1
 <li>Re-arrange the components: select pads from the footprints and press <kbd>M</kbd> to move them or press <kbd>R</kbd> to rotate/flip them. By taking a look at the white lines, I could more or less imagine whether my components could be routed easily.</li>
 <li>Set the proper <strong>Design Rules</strong> complying with the 1/64 milling bit. The set of rules was provided by our instructors.</li>
 <li>Use the <strong>Route tracks</strong> tool to draw traces that connected the pins of the components. I started with the IC and the LEDs first. Sometimes I modified the schema, generate the Netlist and read it again in order to solve some crossed traces.</li>
-<li>After struggling for a while, a good tip I learned was to connect all components with VCC pins first. The connections between GND pins should be done after the others, and they can be joined to form an overall shape of the layout.</li>
 </ul>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/pcbnew-1.png" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/check-0.png" class="img-fluid w-100"/>
-<p></p>
+<p>After struggling for a while, a good tip I learned was to connect all components with VCC pins first. The connections between GND pins should be done after the others, and they can be joined to form an overall shape of the layout.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/pcbnew-2.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Electrical and design rules check</h6>
@@ -172,7 +171,7 @@ active: 1
 <h6>Generating toolpath with Fab Modules</h6>
 <p>The common file format to be sent for manufacturing would be a <code>.gbr</code> file. However, since I've already been used to <a href="http://fabmodules.org/">Fab Modules</a>, I continued using it to generate the toolpath using exported <code>.png</code> files. Before doing that, I had to export an <code>.svg</code> file from PCBnew and modified it in Illustrator, then exported the <code>.svg</code> file to <code>.png</code>.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mod-0.png" class="img-fluid w-100"/>
-<p>The next steps in Fab Modules were similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#fabmodules">4th week</a>. However, after generating the toolpath in Fab Modules, I could spot some unwanted joined traces, and the reason was that they were too close together in the PCB layout. Hence, I needed to go back to PCBnew to modify.</p>
+<p>The next steps in Fab Modules were similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#fabmodules">4th week</a>. However, after generating the toolpath in Fab Modules, I could spot some unwanted joined traces, and the reason was that they were too close together in the PCB layout. Hence, I needed to go back to PCBnew to modify those naughty traces.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mod-1.png" class="img-fluid w-100"/>
 <p>After checking again in Fab Modules, everything seemed to be alright:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mod-2.png" class="img-fluid w-100"/>
@@ -180,8 +179,14 @@ active: 1
 <p></p>
 <h6>Milling, soldering, and troubleshooting</h6>
 <p>And the nightmare came.</p>
-<!--<p>Not much to say about these steps, since the workflow was also similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#milling">4th week</a>.</p>-->
-<img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-0.png" class="img-fluid w-100"/>
+<p>Although I passed the design rules check, the <code>.rml</code> file seemed to be good in Fab Modules, and the workflow was similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#milling">4th week</a>, there were still <strong>MANY</strong> troubles when it comes to production. I tried 5 times with different SRM-20 machines available at the Fab Lab, and basically faced all these below issues:</p>
+<ul>
+<li>The trace width was obviously thinner than 0.4mm, which could lead to issues if they will have to carry a high current later.</li>
+<li>Both the widths of the traces and the gaps between them were inconsistent. From what I see, the inner traces where there was high density were thinner and more unstable. This was the weirdest thing that I didn't understand, because I assumed that even if I did something wrong with the settings, it supposed to maintain the same width of all traces(?)</li>
+<li>The cutting depth is not consistent: some parts were milled through completely, some were not. This could be a problem of the milling bed.</li>
+</ul>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-0.jpg" class="img-fluid w-100"/>
+<p>In order to "debug" this, I tried to go back and check every single step I did. All the trace widths in PCBnew were exactly 0.4mm, and our instructors recommended to keep it like that. All exported <code>.svg</code> lines had the same 0.4mm width. The settings of Fab Modules were exactly the same as my classmates' designs. Then I figured out that I didn't export my <code>.png</code> with +500 dpi resolution. I was not so certain whether this was the main reason since resolution seems to affect not the width of the horizontal and vertical traces but the 45° ones or the shapes of the pads. However, I still continued to mill another one, because it could be something I didn't understand about the way Fab Modules calculates the toolpath.</p>
 <p></p>
 
 <h5>Conclusion</h5>
