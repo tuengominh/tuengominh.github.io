@@ -57,12 +57,8 @@ active: 1
 <p></p>
 
 <h2 id="assignment">PCB design and fabrication</h2>
-<!--<h5 id="group">Group assignment - Test a board with the multimeter</h5>
-<p>Before participating in the group test, I took a look at this useful <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all">tutorial</a> in order to understand what we were going to test.</p> 
-<p></p>-->
-
 <h5 id="design">Individual assignment - Redesign an echo hello-world board</h5>
-<p>I intended to make an <a href="https://www.electronickits.com/led-dice-slowdown-kit/">LED dice</a> as a concrete project during this week and the Embedded Programming week in order to fully understand the electronics design, production, and embedded programming process. This week's goal will simply be turning on/off all the LEDs when pressing a button, and displaying random numbers will be the main task for the 9th week.</p>
+<p>I intended to make an <a href="https://www.electronickits.com/led-dice-slowdown-kit/">LED dice</a> as a concrete project during this week and the Embedded Programming week in order to fully understand the electronics design, production, and embedded programming process. This week's goal will simply be turning on/off all the LEDs when pressing a button, and displaying random numbers will be the main task for the 8th week.</p>
 <p>I chose to start with an <a href="http://academy.cba.mit.edu/classes/embedded_programming/t1614/hello.t1614.echo.jpg">ATtiny1614 hello-world board</a> after being consulted by Santi and Josep. In summary, the ESP ones are unnecessary complex and the sample ATtiny1614 board has FTDI/UPDI headers which means I could use the outcomes of the 4th week to talk to it. ATtiny1614 means the chip has 16 KiB flash memory and 14 pins, which seemed to be suitable since I needed 2 pins for VCC and GND, 1 pin for UPDI header, 2 pins for FTDI serial header, 7 pins for 7 LEDs and 1 pin for 1 button. The chip was also recommended by Neil as an easy one to start with.</p>
 <p></p>
 <h6>Managing libraries</h6>
@@ -177,7 +173,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mod-2.png" class="img-fluid w-100"/>
 <p>Ready to fabricate!</p>
 <p></p>
-<h6>Milling, soldering, and troubleshooting</h6>
+<h6>Milling and soldering</h6>
 <p>And the nightmare came.</p>
 <p>Although I passed the design rules check, the <code>.rml</code> file seemed to be good in Fab Modules, and the workflow was similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#milling">4th week</a>, there were still <strong>MANY</strong> troubles when it comes to production. I tried 5 times with different SRM-20 machines available at the Fab Lab, and basically faced all these below issues:</p>
 <ul>
@@ -187,11 +183,34 @@ active: 1
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-0.jpg" class="img-fluid w-100"/>
 <p>In order to "debug" this, I tried to go back and check every single step I did. All the trace widths in PCBnew were exactly 0.4mm, and our instructors recommended to keep it like that. All exported <code>.svg</code> lines had the same 0.4mm width. The settings of Fab Modules were exactly the same as my classmates' designs. Then I figured out that I didn't export my <code>.png</code> with +500 dpi resolution. I was not so certain whether this was the main reason since resolution seems to affect not the width of the horizontal and vertical traces but the 45° ones or the shapes of the pads. However, I still continued to mill another one, because it could be something I didn't understand about the way Fab Modules calculates the toolpath.</p>
+<p>The above-mentioned issues still happened. However, the result came out much cleaner than before and after testing with the multimeter, everything was OK. Hence, I went ahead with soldering it!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-1.jpg" class="img-fluid w-100"/>
-<p></p>
+<p>Not much to say about soldering. I only have some highlights regarding the soldering direction of the components: the cathode side of an LED is marked with a tiny green line, the dot in the IC indicates VCC pin, and we should pay attention to the connected legs of the button. Besides, I used the 220Ω resistors (instead of 200Ω ones as in the design) and red LEDs (instead of green ones) due to stockout issues.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-2.jpg" class="img-fluid w-100"/>
-<p></p>
+<p>Now I can use the FTDI and UPDI made in the 4th week to program the board!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-3.jpg" class="img-fluid w-100"/>
+<p></p>
+<h6>Programming with Arduino IDE</h6>
+<p>I chose <a href="https://www.arduino.cc/">Arduino IDE</a> to program my board, since it's easy to use for a newbie like me. I simply followed this <a href="https://www.electronics-lab.com/project/getting-started-with-the-new-attiny-chips-programming-the-microchips-0-series-and-1-series-attiny-with-the-arduino-ide/">tutorial</a> to install <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> to my Arduino IDE, and I use <a href="https://github.com/mraardvark/pyupdi">pyupdi</a> driver to program my LED dice with UPDI interface.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/code-0.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/code-1.png" class="img-fluid w-100"/>
+<p>As mentioned in the beginning of the assignment, I only intended to turn all the LEDs on this week. However, writing the code for a working LED dice is quite easy, therefore I went ahead with finishing it. I would like to document this part better on the 8th week. The first reason was that I wanted to focus this week on EDA design flows only. Besides, in the 8th week, I will try to program my LED dice in different languages and environments, or I will think of other games which could use a button and 7 LEDs. The only limit is the imagination, rite?</p>
+<div class="text-center">
+<iframe width="640" height="480" src="https://www.youtube.com/embed/zI0-utgwI8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p>Yay!</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/code-2.jpg" class="img-fluid w-100"/>
+<p></p>
+<h5 id="group">Group assignment - Test a board with the multimeter</h5>
+<p>Since our class couldn't do the group test together, I tried to fulfill this assignment by testing my fabricated board with the multimeter. Before doing that, I took a look at this useful <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all">tutorial</a> in order to understand what I was going to test.</p> 
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/test.jpg" class="img-fluid w-100"/>
+<p>In summary, before pluging the board to the computer, using a multimeter we can measure:</p>
+<ul>
+<li>Voltage (in my case, DC voltage), resistance, current: rotate the knob to select what to measure, connect each probe on each side of the target component to be measured, and the multimeter should display the related value</li>
+<li>Electronic continuity: check whether two lines are connected and the multimeter supposes to be in beep-beep mode</li>
+<li>Anode/Cathode position of diodes: connect the red probe to the anode and the black probe to the cathode and see whether the diode lights up</li>
+</ul>
 <p></p>
 
 <h5>Conclusion</h5>

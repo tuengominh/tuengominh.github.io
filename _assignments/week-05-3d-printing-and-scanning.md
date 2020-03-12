@@ -98,7 +98,7 @@ active: 1
 </ul>
 <p>Here you go the video recording the printing process:</p>
 <div class="text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ViD0EXA_V30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/ViD0EXA_V30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
 <p>The printing was done in 1 hour 27 minutes:</p>
@@ -187,7 +187,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/print-3.jpg" class="img-fluid w-100"/>
 <p>Finally, I had the vase perfectly printed!</p>
 <div class="text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GO2uaCgAKw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/GO2uaCgAKw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
 <h6>Final result</h6>
