@@ -191,36 +191,114 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-3.jpg" class="img-fluid w-100"/>
 <p></p>
 <h6>Programming with Arduino IDE</h6>
-<p>I chose <a href="https://www.arduino.cc/">Arduino IDE</a> to program my board, since it's easy to use for a newbie like me. I simply followed this <a href="https://www.electronics-lab.com/project/getting-started-with-the-new-attiny-chips-programming-the-microchips-0-series-and-1-series-attiny-with-the-arduino-ide/">tutorial</a> to install <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> to my Arduino IDE, and I use <a href="https://github.com/mraardvark/pyupdi">pyupdi</a> driver to program my LED dice with UPDI interface.</p>
+<p>I chose <a href="https://www.arduino.cc/">Arduino IDE</a> to program my board since it's easy to use for a newbie like me. I simply followed this <a href="https://www.electronics-lab.com/project/getting-started-with-the-new-attiny-chips-programming-the-microchips-0-series-and-1-series-attiny-with-the-arduino-ide/">tutorial</a> to install <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> to my Arduino IDE, and I use <a href="https://github.com/mraardvark/pyupdi">pyupdi</a> driver to program my LED dice with UPDI interface.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/code-0.png" class="img-fluid w-100"/>
-<p></p>
-<img src="{{site.baseurl}}/assets/img/assignments/week-06/code-1.png" class="img-fluid w-100"/>
-<p>As mentioned in the beginning of the assignment, I only intended to turn all the LEDs on this week. However, writing the code for a working LED dice is quite easy, therefore I went ahead with finishing it. I would like to document this part better on the 8th week. The first reason was that I wanted to focus this week on EDA design flows only. Besides, in the 8th week, I will try to program my LED dice in different languages and environments, or I will think of other games which could use a button and 7 LEDs. The only limit is the imagination, rite?</p>
+<p>As mentioned at the beginning of the assignment, I only intended to turn all the LEDs on this week. However, writing the code for a working LED dice is quite easy, therefore I went ahead with finishing it.</p>
+<pre class="bg-light py-2 mt-0">
+<code>
+    int LED_1 = 8;
+    int LED_2 = 9;
+    int LED_3 = 1;
+    int LED_4 = 0;
+    int LED_5 = 10;
+    int LED_6 = 3;
+    int LED_7 = 2;
+    int BUTTON = 7;
+    int displayTime = 2000;  
+    int pendingTime = 100;
+    int num = 1;
+    void setup() {
+    pinMode(BUTTON, INPUT);
+    pinMode(LED_1, OUTPUT);
+    pinMode(LED_2, OUTPUT);
+    pinMode(LED_3, OUTPUT);
+    pinMode(LED_4, OUTPUT);
+    pinMode(LED_5, OUTPUT);
+    pinMode(LED_6, OUTPUT);
+    pinMode(LED_7, OUTPUT);
+    }
+    void loop() {
+    if (digitalRead(BUTTON) == LOW) {
+    num = random(1, 7);  
+    displayRandom(num);
+    }
+    delay(pendingTime);    
+    }
+    void displayRandom(int numDisplayed) {
+    reset();
+    if (numDisplayed == 1) {
+    digitalWrite(LED_3, HIGH);
+    }
+    if (numDisplayed == 2) {
+    digitalWrite(LED_2, HIGH);
+    digitalWrite(LED_6, HIGH);
+    }
+    if (numDisplayed == 3) {
+    digitalWrite(LED_1, HIGH);
+    digitalWrite(LED_3, HIGH);
+    digitalWrite(LED_4, HIGH);
+    }
+    if (numDisplayed == 4) {
+    digitalWrite(LED_1, HIGH);
+    digitalWrite(LED_4, HIGH);
+    digitalWrite(LED_5, HIGH);
+    digitalWrite(LED_7, HIGH);
+    }
+    if (numDisplayed == 5) {
+    digitalWrite(LED_1, HIGH);
+    digitalWrite(LED_3, HIGH);
+    digitalWrite(LED_4, HIGH);
+    digitalWrite(LED_5, HIGH);
+    digitalWrite(LED_7, HIGH);
+    }
+    if (numDisplayed == 6) {
+    digitalWrite(LED_1, HIGH);
+    digitalWrite(LED_2, HIGH);
+    digitalWrite(LED_4, HIGH);
+    digitalWrite(LED_5, HIGH);
+    digitalWrite(LED_6, HIGH);
+    digitalWrite(LED_7, HIGH);
+    } 
+    delay(displayTime);
+    }
+    void reset() {
+    digitalWrite(LED_1, LOW);
+    digitalWrite(LED_2, LOW);
+    digitalWrite(LED_3, LOW);
+    digitalWrite(LED_4, LOW);   
+    digitalWrite(LED_5, LOW);
+    digitalWrite(LED_6, LOW);
+    digitalWrite(LED_7, LOW);
+    }
+</code>
+</pre>
+<p>I would like to document this part better in the 8th week. The first reason was that I wanted to focus this week on EDA design flows only. Besides, in the 8th week, I will try to program my LED dice in different languages and environments, or I will think of other games that could use a button and 7 LEDs. The only limit is the imagination, rite?</p>
 <div class="text-center">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/zI0-utgwI8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<p>Yay!</p>
+<p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/code-2.jpg" class="img-fluid w-100"/>
 <p></p>
 <h5 id="group">Group assignment - Test a board with the multimeter</h5>
 <p>Since our class couldn't do the group test together, I tried to fulfill this assignment by testing my fabricated board with the multimeter. Before doing that, I took a look at this useful <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all">tutorial</a> in order to understand what I was going to test.</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/test.jpg" class="img-fluid w-100"/>
-<p>In summary, before pluging the board to the computer, using a multimeter we can measure:</p>
+<p>In summary, before plugging the board to the computer, using a multimeter we can measure:</p>
 <ul>
-<li>Voltage (in my case, DC voltage), resistance, current: rotate the knob to select what to measure, connect each probe on each side of the target component to be measured, and the multimeter should display the related value</li>
+<li>Voltage, resistance, current: rotate the knob to select what to measure, connect each probe on each side of the target component to be measured, and the multimeter should display the related value</li>
 <li>Electronic continuity: check whether two lines are connected and the multimeter supposes to be in beep-beep mode</li>
 <li>Anode/Cathode position of diodes: connect the red probe to the anode and the black probe to the cathode and see whether the diode lights up</li>
 </ul>
 <p></p>
 
-<h5>Conclusion</h5>
+<!--<h5>Conclusion</h5>
+<p>In general, it was an exciting week and I was so happy to have my first electronic-something.</p>
 <p>Things I don't like about KiCad:</p>
 <ul>
 <li>Confusing library management and third-party library support</li>
 <li>Lack of an easy way to automatically update between the schematic and PCB layout</li>
 <li>Lack of an efficient interactive drag to move components without losing the routed tracks</li>
 </ul>
-<p></p>
+<p></p>-->
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-05-3d-printing-and-scanning.html">Previous Assignment</a>
