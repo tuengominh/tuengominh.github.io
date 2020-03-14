@@ -9,30 +9,30 @@ active: 1
 
 <p class="font-italic font-weight-bold">* To me, electronics is a whole new world, and therefore I need to go through tutorials about <a href="#theory">basic concepts</a> regarding electronic components and circuits.</p>
 
-<p class="font-italic font-weight-bold">* This week's group assignment was to do a <a href="#group">line test</a> in order to understand the machining process.</p>
+<p class="font-italic font-weight-bold">* This week's group assignment was to mill a <a href="#group">line test</a> in order to understand the machining process.</p>
 
-<p class="font-italic font-weight-bold">* I needed to individually make an ISP, and I randomly chose <a href="#milling">the FTDI SERIAL board and the UPDI adapter</a> this week. I also attempted to use <a href="#cutting">another method</a> for fabricating PCBs.</p>
+<p class="font-italic font-weight-bold">* I needed to individually make an <a href="https://en.wikipedia.org/wiki/In-system_programming">ISP</a>, and I randomly chose <a href="#milling">the FTDI SERIAL board and the UPDI adapter</a>. I also attempted to use <a href="#cutting">another method</a> for fabricating PCBs.</p>
 
 <h2 id="theory">Understanding electronics and the boards</h2>
-<p>Yes, you're right, I'm that type of person who needs to understand what I'm doing before doing it. After digesting the take-away notes from Oscar's classes, I followed <a href="https://www.makerspaces.com/basic-electronics/">this tutorial</a> to organize better all pieces of knowledge. Allow me to go through a very long note without any images attached, or go straight to the assignments <a href="#assignment">below.</a></p>
+<p>Yes, you're right, I'm that type of person who needs to understand what I'm doing before doing it. After digesting notes from Oscar's classes, I followed <a href="https://www.makerspaces.com/basic-electronics/">this tutorial</a> to organize better all pieces of knowledge. Allow me to go through a very long note without any images attached, or go straight to the assignments <a href="#assignment">below.</a></p>
 
 <h5>Electricity and how it works</h5>
 <ul>
-<li>Voltage (V) is the measurement of electrical potential produced by electricity sources. A higher voltage means the electricity is being "pushed" harder through a circuit. Voltage is measured in volts. </li>
-<li>Electricity needs to flow to do anything useful. Electricity will flow from a higher voltage to a lower voltage. If we create a conductive path (for example, copper wire) between a higher voltage and a lower voltage, electricity will flow along that path. Current (I) is the rate at which charge is flowing. A higher current means more electricity is flowing. Current is measured in amperes.</li>
-<li>Resistance (R) is the tendency of a certain material to resist the flow of charge (current). A higher resistance means it is more difficult for electricity to flow. Resistance is measured in ohms.</li>
-<li><strong>Ohm's law equation:</strong> <i>V = I x R</i></li>
+<li>Voltage (V) is the measurement of electrical potential produced by electricity sources. A higher voltage means the electricity is being "pushed" harder through a circuit. Voltage is measured in volts (V). </li>
+<li>Electricity needs to flow to do anything useful. Electricity will flow from a higher voltage to a lower voltage. If we create a conductive path (for example, copper wire) between a higher voltage and a lower voltage, electricity will flow along that path. Current (I) is the rate at which charge is flowing. A higher current means more electricity is flowing. Current is measured in amperes (A).</li>
+<li>Resistance (R) is the tendency of a certain material to resist the flow of charge (current). A higher resistance means it is more difficult for electricity to flow. Resistance is measured in ohms (Ω).</li>
+<li><strong>Ohm's law equation: <i>V = I x R</i></strong></li>
 <li>There are two types of electrical sources: alternating current (AC) and direct current (DC). With AC, the direction electricity flows throughout the circuit is constantly reversing. With DC, electricity flows in one direction between power and ground. DC voltage sources always have two sides, with the positive side having a higher voltage than the negative side.</li>
 </ul>
 <p></p>
 
 <h5>Circuit and PCB</h5>
 <ul>
-<li>A circuit is a circular path that starts and stops at the same place and allows electricity to flow. A circuit should always be closed to work.</li>
-<li>Circuits are built to make electricity do something: light up, make noise, run programs, etc. And if we insert something useful - which we call <strong>load</strong> - into the circuit like an LED, the flowing electricity will do some work, like lighting up that LED.</li>
-<li>A <strong>short circuit</strong> is created when we connect a wire directly from the positive to the negative side of a power supply. This is bad because if there is no load to restrict the current flow, there won't be anything to slow down the current, and it will try to be infinite. This could cause the wire to burn up, damage the power supply, or drain the battery. It is very important to prevent short circuits by making sure that the positive voltage is never wired directly to ground (the negative terminal).</li>
-<li>The opposite of a short circuit is an <strong>open circuit</strong>. This is a circuit where the loop isn't fully connected. If your circuit doesn't work, the most likely cause is an open circuit. This is usually due to a broken connection or a loose wire.</li>
-<li>A <strong>printed circuit board (PCB)</strong> connects components using conductive tracks and pads etched from a layer of copper laminated onto a non-conductive substrate. Components are generally soldered onto the PCB.</li>
+<li>An electronic circuit is a structure that directs and controls electric current to perform various functions including signal amplification, computation, and data transfer. Conductive wires or traces are used to connect the components to each other. However, a circuit is complete only if it starts and ends at the same point, forming a loop.</li>
+<li>If we insert something useful - which we call <strong>component</strong> or <strong>load</strong> (since they're parts of a circuit that consume electricity) - into the circuit like an LED, the flowing electricity will do some work, like lighting up that LED. Complex circuits have different loads such as resistors, capacitors, diodes, and transistors.</li>
+<li>A <strong>short circuit</strong> is created when a wire is connected directly from the positive to the negative side of a power supply. This is bad because if there is no load to restrict the current flow, there won't be anything to slow down the current, and it will try to be infinite. This could cause the wire to burn up, damage the power supply, or drain the battery. It is very important to prevent short circuits by making sure that the positive voltage is never wired directly to ground (the negative terminal).</li>
+<li>The opposite of a short circuit is an <strong>open circuit</strong>. This is a circuit where the loop isn't fully connected. If the circuit doesn't work, the most likely cause is an open circuit. This is usually due to a broken connection or a loose wire.</li>
+<li>A <strong>printed circuit board (PCB)</strong> connects components using conductive tracks and pads etched from a layer of copper laminated onto a non-conductive substrate. Components are directly soldered onto the surface of the pads (<a href="https://en.wikipedia.org/wiki/Surface-mount_technology">SMD</a>), or placed into drilled holes on a bare PCB (<a href="https://en.wikipedia.org/wiki/Through-hole_technology">through-hole</a>).</li>
 </ul>
 <p></p>
 
@@ -45,10 +45,10 @@ active: 1
 
 <h5>Basic components</h5>
 <ul>
-<li><strong>Resistors (R):</strong> They add resistance to the circuit and reduces the flow of electrical current. The resistance values are measured in ohms (Ω). Resistors of over 1000Ω are typically shorted using the letter K.</li>
-<li><strong>Capacitors (C):</strong> They ensure a steady electrical flow by storing electricity and discharging it into the circuit when there is a drop in electricity. Capacitors are measured in Farads( pF, nF, uF). These are often used interchangeably and that’s why a conversion chart is handy.</li>
-<li><strong>Diodes (D):</strong> They only allow electrical current to pass through them in one direction in order to prevent electricity from flowing in the wrong direction. <strong>LED</strong> is a light-emitting diode that will emit light when electricity flows through it.</li>
-<li><strong>Transistors (T):</strong> They turn current on or off when triggered by an electric signal by taking in a small electrical current at a base pin and amplifying it such that a much larger current can pass between the collector and emitter pins.</li>
+<li><strong>Resistors (R):</strong> They add resistance to the circuit and reduces the flow of electrical current. The resistance values are measured in ohms (Ω). Resistors of over 1000Ω are typically shorted using the letter K. Resistors have plenty of applications, but the most common ones are limiting current flow and dividing voltage. Sometimes, a particular part of a circuit such as a micro-controller may need a lower voltage than the circuit itself, and this is where a resistor comes in.</li>
+<li><strong>Capacitors (C):</strong> They ensure a steady electrical flow by storing electricity and discharging it into the circuit when there is a drop in electricity. In simple terms, they work as small rechargeable batteries that store electricity. However, unlike batteries, they can charge and discharge in the split of a second. Capacitance is the amount of energy stored in a capacitor and is measured in Farads( pF, nF, uF). These are often used interchangeably and that’s why a conversion chart is handy.</li>
+<li><strong>Diodes (D):</strong> They only allow electrical current to pass through them in one direction in order to prevent electricity from flowing in the wrong direction. They are commonly used to convert an AC into a DC or protect the loads from reverse connections. <strong>LED</strong> is a light-emitting diode that will emit light when electricity flows through it.</li>
+<li><strong>Transistors (T):</strong> They turn current on or off when triggered by an electric signal by taking in a small electrical current at a base pin and amplifying it such that a much larger current can pass between the collector and emitter pins. Designers often use a transistor as a switch because unlike a simple switch, it can turn a small current into a much larger one.</li>
 <li><strong>Integrated circuit (IC):</strong> An integrated circuit is an entire specialized circuit that has been miniaturized to fit onto one small chip. Each leg of the chip connecting to a point within the circuit.</li>
 </ul>
 <p></p>
@@ -56,12 +56,24 @@ active: 1
 <h5>Micro-controller and micro-processor</h5>
 <ul>
 <li><strong>Micro-processor:</strong> is an IC that has only the CPU inside them. RAM, ROM, and other peripherals must be added externally to make them functional. Microprocessors perform unspecific tasks such as developing software, games, websites, photo editing, creating documents, etc. The relationship between input and output is not defined. They need a high amount of resources like RAM, ROM, I/O ports, etc.</li>
-<li><strong>Micro-controller:</strong> is an IC containing a processor and ROM. We can consider a micro-controller as a mini programmable computer.  Micro-controllers are dedicated to one task and run one specific program, for example, keyboards, mouse, remote, microwave, mobiles, watches, etc. The relationship between input and output is specifically defined. The ROM is used to store the program instructions that are rarely changed during the life of the system, sometimes known as <strong>firmware</strong>. There is also a set of input and output pins that can be used to interact with other micro-controllers.</li>
+<li><strong>Micro-controller:</strong> is an IC containing a processor and ROM. We can consider a micro-controller as a mini programmable computer.  Micro-controllers are dedicated to one task and run one specific program, for example, keyboards, mouse, remote, microwave, mobiles, watches, etc. The relationship between input and output is specifically defined. The ROM is used to store the program instructions that are rarely changed during the life of the system, sometimes known as <strong>firmware</strong>.</li>
+<li>A micro-controller is supposed to be able to receive power, input signals, and send outputs to the outer world. Because of that, a micro-controller has a set of input and output pins that can be used to interact with the systems it controls and other micro-controllers.</li>
+<li>A digital pin is able to detect whether there is a voltage present on a pin or not. An analog pin is connected to an internal ADC (Analog to Digital Converter) and can measure the actual voltage on the pin.</li>
+<li>Input pins are used to read the logic state on some devices (“1” or “0”). Output pins are used to send logic states to some devices.</li>
+</ul>
+<p></p>
+
+<h5>Communication between circuits</h5>
+<p>In order for individual circuits to transfer information, they must share a common communication protocol. There are 2 types of communication protocol: parallel and serial.</p>
+<ul>
+<li>Parallel interfaces transfer multiple bits at the same time. They usually require buses of data - transmitting across 8, 16, or more wires. Parallel communication is fast, straightforward, and easy to implement. But it requires many more input/output lines which can become impractical.</li>
+<li>Serial interfaces stream their data, one single bit at a time. These interfaces can operate on as little as 1 wire, usually never more than 4 wires. The main advantage of serial communication is the cheaper cost of the entire embedded system and the ability to exchange data over a long distance. Some examples of serial communication architectures: SPI, Ethernet, USB, etc.</li>
 </ul>
 <p></p>
 
 <h5>Available ISPs at Fab Lab Barcelona</h5>
-<p><strong>In-circuit programmer (ICP):</strong> also known as in-system programmer (ISP) or serial programmer allows us to program and reprogram micro-controllers. For the different types of chips, there are different programmers. At Fab Lab Barcelona, we have:</p>
+<p><strong>In-circuit programmer (ICP):</strong> also known as in-system programmer (ISP) or serial programmer, allows micro-controllers to be programmed while installed in a complete system, rather than requiring the chip to be programmed prior to being installed.</p>
+<p>For the different types of chips, there are different programmers. At Fab Lab Barcelona, we have:</p>
 <ul>
 <li>FabISP programmer</li>
 <li>FTDI SERIAL with UPDI adapter</li>
@@ -161,7 +173,7 @@ active: 1
 <h6>Soldering components</h6>
 <p>Once I had the milled pieces all-good, I started the soldering process. I wrote down a shopping list of all required components and collected them from available components at the Fab Lab.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-1.jpg" class="img-fluid w-100"/>
-<p>It took me plenty of time and patience to solder the components, especially the tiny IC. I even burned my hair while trying to see more clearly with my bare eyes, since the LED light equipped loupe gave me headaches. Then our instructor Rutvij Pathak said one magic phrase that saved my life: "Solder like you're painting with watercolor!". And here you go the pretty, shiny, and conductive (after testing with the multimeter) result:</p>
+<p>It took me plenty of time and patience to solder the components, especially the tiny IC. I even burned my hair while trying to see more clearly with my bare eyes, since the LED light equipped loupe gave me headaches. Then our instructor Rutvij Pathak said one magic phrase that saved my life: "Solder like you're painting with watercolor!" And here you go the pretty, shiny, and conductive (after testing with the multimeter) result:</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-2.jpg" class="img-fluid w-100"/>
 <p>I tested the board with Santi's computer, and it was detected!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-3.jpg" class="img-fluid w-100"/>

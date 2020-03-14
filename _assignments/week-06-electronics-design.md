@@ -56,7 +56,7 @@ active: 1
 </ul>
 <p></p>
 
-<h2 id="assignment">PCB design and fabrication</h2>
+<h2 id="assignment">PCB design (and fabrication)</h2>
 <h5 id="design">Individual assignment - Redesign an echo hello-world board</h5>
 <p>I intended to make an <a href="https://www.electronickits.com/led-dice-slowdown-kit/">LED dice</a> as a concrete project during this week and the Embedded Programming week in order to fully understand the electronics design, production, and embedded programming process. This week's goal will simply be turning on/off all the LEDs when pressing a button, and displaying random numbers will be the main task for the 8th week.</p>
 <p>I chose to start with an <a href="http://academy.cba.mit.edu/classes/embedded_programming/t1614/hello.t1614.echo.jpg">ATtiny1614 hello-world board</a> after being consulted by Santi and Josep. In summary, the ESP ones are unnecessary complex and the sample ATtiny1614 board has FTDI/UPDI headers which means I could use the outcomes of the 4th week to talk to it. ATtiny1614 means the chip has 16 KiB flash memory and 14 pins, which seemed to be suitable since I needed 2 pins for VCC and GND, 1 pin for UPDI header, 2 pins for FTDI serial header, 7 pins for 7 LEDs and 1 pin for 1 button. The chip was also recommended by Neil as an easy one to start with.</p>
@@ -139,7 +139,7 @@ active: 1
 <li>Edit the properties of the components (annotations, values, and footprints) by hovering and press <kbd>E</kbd>. In order to calculate the resistance value of the resistors, I also took a look at this <a href="https://datasheet.octopart.com/MCL-S250GC-Multicomp-datasheet-12568751.pdf">datasheet.</a></li>
 <li>Arrange related components to some basic building blocks: <i>FTDI SERIAL HEADER</i>, <i>UPDI HEADER</i>, and <i>BUTTON</i>.</li>
 <li>Choose the <strong>Place global label</strong> tool in order to assign some global "labels", such as GND or VCC, BTN or UPDI, etc. Separating blocks and wiring them (by pressing <kbd>W</kbd> to begin wire and <kbd>K</kbd> to end wire) with those global labels can make the schema more readable.</li>
-<li>As common practices, add a pull-up resitor to the <i>BUTTON</i> block and wire a capacitor parallelly with the power supply.</li>
+<li>As common practices, add a pull-up resitor to the <i>BUTTON</i> block (in order to stabilize measurements while reading inputs) and wire a capacitor parallelly with the power supply (in order to avoid voltage fluctuations).</li>
 <li>The final step was to <strong>Generate Netlist</strong>. Netlist serves as a link between the schema and the PCB layout.</li>
 </ul>
 <p>Here you go all the components displayed and wired together!</p>
@@ -178,20 +178,20 @@ active: 1
 <p>Although I passed the design rules check, the <code>.rml</code> file seemed to be good in Fab Modules, and the workflow was similar to what I did in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#milling">4th week</a>, there were still <strong>MANY</strong> troubles when it comes to production. I tried 5 times with different SRM-20 machines available at the Fab Lab, and basically faced all these below issues:</p>
 <ul>
 <li>The trace width was obviously thinner than 0.4mm, which could lead to issues if they will have to carry a high current later.</li>
-<li>Both the widths of the traces and the gaps between them were inconsistent. From what I see, the inner traces where there was high density were thinner and more unstable. This was the weirdest thing that I didn't understand, because I assumed that even if I did something wrong with the settings, it supposed to maintain the same width of all traces(?)</li>
-<li>The cutting depth is not consistent: some parts were milled through completely, some were not. This could be a problem of the milling bed.</li>
+<li>Both the widths of the traces and the gaps between them were inconsistent. From what I see, the inner traces where there was high density were thinner and more unstable. This was the weirdest thing that I didn't understand because I assumed that even if I did something wrong with the settings, it supposed to maintain the same width of all traces(?)</li>
+<li>The cutting depth is not consistent: some parts were milled through completely, some were not. This could be a problem with the milling bed.</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-0.jpg" class="img-fluid w-100"/>
-<p>In order to "debug" this, I tried to go back and check every single step I did. All the trace widths in PCBnew were exactly 0.4mm, and our instructors recommended to keep it like that. All exported <code>.svg</code> lines had the same 0.4mm width. The settings of Fab Modules were exactly the same as my classmates' designs. Then I figured out that I didn't export my <code>.png</code> with +500 dpi resolution. I was not so certain whether this was the main reason since resolution seems to affect not the width of the horizontal and vertical traces but the 45° ones or the shapes of the pads. However, I still continued to mill another one, because it could be something I didn't understand about the way Fab Modules calculates the toolpath.</p>
+<p>In order to "debug" this, I tried to go back and check every single step I did. All the trace widths in PCBnew were exactly 0.4mm, and our instructors recommended to keep it like that. All exported <code>.svg</code> lines had the same 0.4mm width. The settings of Fab Modules were exactly the same as my classmates' designs. Then I figured out that I didn't export my <code>.png</code> with + 500dpi resolution. I was not so certain whether this was the main reason since resolution seems to affect not the width of the horizontal and vertical traces but the 45° ones or the shapes of the pads. However, I still continued to mill another one with 1000dpi resolution, because it could be something I didn't understand about the way Fab Modules calculates the toolpath.</p>
 <p>The above-mentioned issues still happened. However, the result came out much cleaner than before and after testing with the multimeter, everything was OK. Hence, I went ahead with soldering it!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-1.jpg" class="img-fluid w-100"/>
 <p>Not much to say about soldering. I only have some highlights regarding the soldering direction of the components: the cathode side of an LED is marked with a tiny green line, the dot in the IC indicates VCC pin, and we should pay attention to the connected legs of the button. Besides, I used the 220Ω resistors (instead of 200Ω ones as in the design) and red LEDs (instead of green ones) due to stockout issues.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-2.jpg" class="img-fluid w-100"/>
-<p>Now I can use the FTDI and UPDI made in the 4th week to program the board!</p>
+<p>Then I can used the FTDI and UPDI made in the 4th week to program the board!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-3.jpg" class="img-fluid w-100"/>
 <p></p>
 <h6>Programming with Arduino IDE</h6>
-<p>I chose <a href="https://www.arduino.cc/">Arduino IDE</a> to program my board since it's easy to use for a newbie like me. I simply followed this <a href="https://www.electronics-lab.com/project/getting-started-with-the-new-attiny-chips-programming-the-microchips-0-series-and-1-series-attiny-with-the-arduino-ide/">tutorial</a> to install <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> to my Arduino IDE, and I use <a href="https://github.com/mraardvark/pyupdi">pyupdi</a> driver to program my LED dice with UPDI interface.</p>
+<p>I chose <a href="https://www.arduino.cc/">Arduino IDE</a> to program my board since it was easy to use for a newbie like me. I simply followed this <a href="https://www.electronics-lab.com/project/getting-started-with-the-new-attiny-chips-programming-the-microchips-0-series-and-1-series-attiny-with-the-arduino-ide/">tutorial</a> to install <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> to my Arduino IDE, and I used <a href="https://github.com/mraardvark/pyupdi">pyupdi</a> driver to program my LED dice with UPDI interface.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/code-0.png" class="img-fluid w-100"/>
 <p>As mentioned at the beginning of the assignment, I only intended to turn all the LEDs on this week. However, writing the code for a working LED dice is quite easy, therefore I went ahead with finishing it.</p>
 <pre class="bg-light py-2 mt-0">
@@ -214,79 +214,79 @@ active: 1
     int pendingTime = 100;
     int num = 1;
     /* 
-    set up function 
+    setup function 
     */ 
     void setup() {
-    pinMode(BUTTON, INPUT);
-    pinMode(LED_1, OUTPUT);
-    pinMode(LED_2, OUTPUT);
-    pinMode(LED_3, OUTPUT);
-    pinMode(LED_4, OUTPUT);
-    pinMode(LED_5, OUTPUT);
-    pinMode(LED_6, OUTPUT);
-    pinMode(LED_7, OUTPUT);
+        pinMode(BUTTON, INPUT);
+        pinMode(LED_1, OUTPUT);
+        pinMode(LED_2, OUTPUT);
+        pinMode(LED_3, OUTPUT);
+        pinMode(LED_4, OUTPUT);
+        pinMode(LED_5, OUTPUT);
+        pinMode(LED_6, OUTPUT);
+        pinMode(LED_7, OUTPUT);
     }
     /* 
     loop function 
     */ 
     void loop() {
-    if (digitalRead(BUTTON) == LOW) {
-    num = random(1, 7);  
-    displayRandom(num);
-    }
-    delay(pendingTime);    
+        if (digitalRead(BUTTON) == LOW) {
+            num = random(1, 7);  
+            displayRandom(num);
+        }
+        delay(pendingTime);    
     }
     /* 
     display random number 
     */ 
     void displayRandom(int numDisplayed) {
-    reset();
-    if (numDisplayed == 1) {
-    digitalWrite(LED_3, HIGH);
-    }
-    if (numDisplayed == 2) {
-    digitalWrite(LED_2, HIGH);
-    digitalWrite(LED_6, HIGH);
-    }
-    if (numDisplayed == 3) {
-    digitalWrite(LED_1, HIGH);
-    digitalWrite(LED_3, HIGH);
-    digitalWrite(LED_4, HIGH);
-    }
-    if (numDisplayed == 4) {
-    digitalWrite(LED_1, HIGH);
-    digitalWrite(LED_4, HIGH);
-    digitalWrite(LED_5, HIGH);
-    digitalWrite(LED_7, HIGH);
-    }
-    if (numDisplayed == 5) {
-    digitalWrite(LED_1, HIGH);
-    digitalWrite(LED_3, HIGH);
-    digitalWrite(LED_4, HIGH);
-    digitalWrite(LED_5, HIGH);
-    digitalWrite(LED_7, HIGH);
-    }
-    if (numDisplayed == 6) {
-    digitalWrite(LED_1, HIGH);
-    digitalWrite(LED_2, HIGH);
-    digitalWrite(LED_4, HIGH);
-    digitalWrite(LED_5, HIGH);
-    digitalWrite(LED_6, HIGH);
-    digitalWrite(LED_7, HIGH);
-    } 
-    delay(displayTime);
+        reset();
+        if (numDisplayed == 1) {
+            digitalWrite(LED_3, HIGH);
+        }
+        if (numDisplayed == 2) {
+            digitalWrite(LED_2, HIGH);
+            digitalWrite(LED_6, HIGH);
+        }
+        if (numDisplayed == 3) {
+            digitalWrite(LED_1, HIGH);
+            digitalWrite(LED_3, HIGH);
+            digitalWrite(LED_4, HIGH);
+        }
+        if (numDisplayed == 4) {
+            digitalWrite(LED_1, HIGH);
+            digitalWrite(LED_4, HIGH);
+            digitalWrite(LED_5, HIGH);
+            digitalWrite(LED_7, HIGH);
+        }
+        if (numDisplayed == 5) {
+            digitalWrite(LED_1, HIGH);
+            digitalWrite(LED_3, HIGH);
+            digitalWrite(LED_4, HIGH);
+            digitalWrite(LED_5, HIGH);
+            digitalWrite(LED_7, HIGH);
+        }
+        if (numDisplayed == 6) {
+            digitalWrite(LED_1, HIGH);
+            digitalWrite(LED_2, HIGH);
+            digitalWrite(LED_4, HIGH);
+            digitalWrite(LED_5, HIGH);
+            digitalWrite(LED_6, HIGH);
+            digitalWrite(LED_7, HIGH);
+        } 
+        delay(displayTime);
     }
     /* 
     reset function 
     */ 
     void reset() {
-    digitalWrite(LED_1, LOW);
-    digitalWrite(LED_2, LOW);
-    digitalWrite(LED_3, LOW);
-    digitalWrite(LED_4, LOW);   
-    digitalWrite(LED_5, LOW);
-    digitalWrite(LED_6, LOW);
-    digitalWrite(LED_7, LOW);
+        digitalWrite(LED_1, LOW);
+        digitalWrite(LED_2, LOW);
+        digitalWrite(LED_3, LOW);
+        digitalWrite(LED_4, LOW);   
+        digitalWrite(LED_5, LOW);
+        digitalWrite(LED_6, LOW);
+        digitalWrite(LED_7, LOW);
     }
 </code>
 </pre>
@@ -303,20 +303,20 @@ active: 1
 <p>In summary, before plugging the board to the computer, using a multimeter we can measure:</p>
 <ul>
 <li>Voltage, resistance, current: rotate the knob to select what to measure, connect each probe on each side of the target component to be measured, and the multimeter should display the related value</li>
-<li>Electronic continuity: check whether two lines are connected and the multimeter supposes to be in beep-beep mode</li>
+<li>Electronic continuity: check whether two lines are connected and the multimeter is supposed to be in beep-beep mode</li>
 <li>Anode/Cathode position of diodes: connect the red probe to the anode and the black probe to the cathode and see whether the diode lights up</li>
 </ul>
 <p></p>
 
-<!--<h5>Conclusion</h5>
-<p>In general, it was an exciting week and I was so happy to have my first electronic-something.</p>
-<p>Things I don't like about KiCad:</p>
+<h5>Conclusion</h5>
+<p>In general, it was an exciting week and I was so happy to have my first electronic <i>something</i>. There are only a few things I don't like about KiCad:</p>
 <ul>
 <li>Confusing library management and third-party library support</li>
 <li>Lack of an easy way to automatically update between the schematic and PCB layout</li>
 <li>Lack of an efficient interactive drag to move components without losing the routed tracks</li>
 </ul>
-<p></p>-->
+<p>I know that it might take me more time to feel comfortable with electronics in general, but this could be an incredible start for my future projects. Stay tuned!</p>
+<p></p>
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-05-3d-printing-and-scanning.html">Previous Assignment</a>
