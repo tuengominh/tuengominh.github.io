@@ -13,7 +13,7 @@ active: 1
 I have 2 nephews, one is 6 years old and one is 4 years old. As a dedicated aunt, I've always wanted to build or develop some toys that could engage them in STEAM activities, so when they grow up they will be more than well-prepared to adapt to future jobs. That's why I'm pretty sure that my Final Project should be a connected toy, and I came up with some below <strong>INITIAL</strong> ideas.
 <p></p>
 
-<h2>#1. A duo of color picking and color mixing</h2>
+<h2 id="duolor">#1. A duo of color picking and color mixing</h2>
 <p></p>
 <h5>What will they do?</h5>
 I intend to make a duo of 2 devices: 1 color picker that can detect RGB code from real-life objects, convert them to CMYK and send that information to the color mixer in order to generate the desired shade.
@@ -55,7 +55,7 @@ It would be nice if I can (and have enough time to) make the mobile app connect 
 Kids 4-7 years old. If the mobile/tablet application is available, kids up to 12 years old are welcomed.
 <p></p>
 <h5>Who has done this before?</h5>
-<p>I found some STEAM toys (which are quite successful) with the similar idea, so I think my dragon would be useful and loved by my nephews!</p>
+<p>I found some STEAM toys (which are quite successful) with a similar idea, so I think my dragon would be useful and loved by my nephews!</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=3d4zXauy6EM">Code-a-pillar</a></li>
 <li><a href="https://www.youtube.com/watch?v=BtB8UT60VN8">Cubelets</a></li>

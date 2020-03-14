@@ -11,7 +11,7 @@ active: 1
 
 <p class="font-italic font-weight-bold">* Besides, we were required to individually design and cut <a href="#vinylcutter">something</a> with the vinyl-cutter and to laser-cut a <a href="#construction-kit">parametric construction kit</a> that can be assembled in multiple ways.</p>
 
-<p>The very first thing I learned this week is time management. Staying in the queue for using the machines can be a disappointing waste of time if we don't know what to prepare and how to organize what to do. At the end of the week, I could only meet the minimum requirements of the assignment, and I was still left with the desire to try out more techniques and prototypes.</p>
+<p>The very first thing I learned this week is time management. Staying in the queue for using the machines can be a disappointing waste of time if we don't know what to prepare and how to organize what to do. At the end of the week, I could only meet the minimum requirements of the assignment, and I was still left with the desire to try out more techniques and prototypes (waffle, stacking or bending).</p>
 
 <h2 id="vinylcutter">Vinyl cutting</h2>
 <h5>Individual assignment - Cut a vinyl sticker</h5>
@@ -97,7 +97,7 @@ active: 1
 
 <h5 id="construction-kit">Individual assignment - Parametric construction kit</h5>
 <h6>OpenSCAD</h6>
-<p>I find that pre-calculating the possibilities with which the pieces will be assembled will inadvertently limit those possibilities to what I can imagine, thereby reducing both the flexibility of the design and the creativity of ones who will actually use it. Therefore, I switched my approach to simply defining a certain rule for the pieces of the construction kit.</p>
+<p>I find that pre-calculating the possibilities with which the pieces will be assembled will inadvertently limit those possibilities to what I can imagine, thereby reducing both the flexibility of the design and the creativity of ones who will actually use it. Therefore, instead of following the usual "unfolding" process, I switched my approach to simply defining a certain rule for the pieces of the construction kit.</p>
 <p>The most important requirement for this week's assignment is that our design must be parametric. Parametric design is basically designing based on defined parameters, and by changing those parameters we can quickly adjust our design. After consulting some images online with the keyword "cardboard parametric design" as well as observing some of the previous year's models available at the Fab Lab, I decided to create a series of isosceles polygons, starting from triangles, squares, pentagons, and ending with hexagons. There would be different sizes for these polygons as well. After cutting and testing, I would add other supporting pieces, if necessary. With this in mind, it was obvious to know that OpenSCAD is the ideal choice to implement the design. Its object-oriented modeling capabilities would greatly reduce my time drawing the pieces.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/openscad.png" class="img-fluid w-100"/>
 <p>Here you go the detailed steps:</p>

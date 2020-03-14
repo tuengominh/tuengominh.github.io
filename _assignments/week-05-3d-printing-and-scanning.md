@@ -72,7 +72,7 @@ active: 1
 
 <h2>3D printing</h2>
 <h5 id="group">Group assignment - Characterize the 3D printers</h5>
-<p>First of all, what is 3D printing, or should I say, additive CAM? 3D printing is a technique of adding successive layers of material until an object is created, while subtractive CAM removes material from a larger piece (by cutting, drilling, milling, grinding or turning) to create objects. 3D printing has significant advantages: avoiding the waste of materials and allowing us to create models that would be tricky to be made using subtractive techniques (having undercuts, overhangs, nested parts or complex hollow parts). The only cons is that 3D printing is a relatively slow process compared to CNC subtractive techniques.</p>
+<p>First of all, what is 3D printing, or should I say, additive CAM? 3D printing is a technique of adding successive layers of material until an object is created, while subtractive CAM removes material from a larger piece (by cutting, drilling, milling, grinding or turning) to create objects. 3D printing has significant advantages: avoiding the waste of materials and allowing us to create models that would be tricky to be made using subtractive techniques (having undercuts, overhangs, nested parts or complex hollow parts).</p>
 <p>Depending on the technology, the 3D printer <a href="https://www.3dhubs.com/knowledge-base/introduction-fdm-3d-printing/">deposits material (FDM)</a>, <a href="https://www.lboro.ac.uk/research/amrg/about/the7categoriesofadditivemanufacturing/powderbedfusion/">selectively melts and fuses powder (PBF)</a>, or <a href="https://en.wikipedia.org/wiki/Stereolithography">cures liquid photopolymer materials (SLA)</a> to create parts based on the CAM data. We proceeded with our tests using the most common printing technology: FDM. Before participating in the group test, I took a look at this useful <a href="https://www.matterhackers.com/articles/a-guide-to-understanding-the-tolerances-of-your-3d-printer">article</a> in order to understand what we were going to test.</p>
 <h6>First test - General design rules</h6>
 <p>I teamed up with <a href="https://fabacademy.org/2020/labs/barcelona/students/david-prieto/">David Prieto</a> and <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard/">Antoine Jaunard</a> for the first test. We used the <a href="https://www.creality3d.shop/products/creality-cr-10s-s5-3d-printer-diy-kit-large-printing-size-500x500x500mm">Creality CR-10 S5</a> printer to print this <a href="https://www.thingiverse.com/thing:1363023">test file</a> using 1.75mm PLA. The detailed specs of the machine:</p>
@@ -202,7 +202,20 @@ active: 1
 <p></p>-->
 
 <h5>Conclusion</h5>
-<h6>Design rules for different FDM printers:</h6>
+<h6>Additive vs. Subtractive CAM</h6>
+<p>Things I like about 3D printing:</p>
+<ul>
+<li>Avoiding material waste</li>
+<li>Ability to design more complex objects with fewer constraints</li>
+</ul>
+<p>Things I wish 3D printing could match subtractive techniques:</p>
+<ul>
+<li>More precise tolerances</li>
+<li>Better surface quality</li>
+<li>Faster process for small prototypes</li>
+<li>Lack of suitability for mass production</li>
+</ul>
+<h6>Design rules for FDM printers</h6>
 <p></p>
 <table class="table">
   <thead class="thead-light">

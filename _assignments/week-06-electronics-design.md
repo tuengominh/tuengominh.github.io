@@ -196,6 +196,9 @@ active: 1
 <p>As mentioned at the beginning of the assignment, I only intended to turn all the LEDs on this week. However, writing the code for a working LED dice is quite easy, therefore I went ahead with finishing it.</p>
 <pre class="bg-light py-2 mt-0">
 <code>
+    /* 
+    assign output and input pins to variables 
+    */ 
     int LED_1 = 8;
     int LED_2 = 9;
     int LED_3 = 1;
@@ -204,9 +207,15 @@ active: 1
     int LED_6 = 3;
     int LED_7 = 2;
     int BUTTON = 7;
+    /* 
+    some useful variables 
+    */ 
     int displayTime = 2000;  
     int pendingTime = 100;
     int num = 1;
+    /* 
+    set up function 
+    */ 
     void setup() {
     pinMode(BUTTON, INPUT);
     pinMode(LED_1, OUTPUT);
@@ -217,6 +226,9 @@ active: 1
     pinMode(LED_6, OUTPUT);
     pinMode(LED_7, OUTPUT);
     }
+    /* 
+    loop function 
+    */ 
     void loop() {
     if (digitalRead(BUTTON) == LOW) {
     num = random(1, 7);  
@@ -224,6 +236,9 @@ active: 1
     }
     delay(pendingTime);    
     }
+    /* 
+    display random number 
+    */ 
     void displayRandom(int numDisplayed) {
     reset();
     if (numDisplayed == 1) {
@@ -261,6 +276,9 @@ active: 1
     } 
     delay(displayTime);
     }
+    /* 
+    reset function 
+    */ 
     void reset() {
     digitalWrite(LED_1, LOW);
     digitalWrite(LED_2, LOW);

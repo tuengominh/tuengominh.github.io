@@ -11,7 +11,7 @@ active: 1
 
 <p class="font-italic font-weight-bold">* This week's group assignment was to do a <a href="#group">line test</a> in order to understand the machining process.</p>
 
-<p class="font-italic font-weight-bold">* I needed to individually make an ISP, and I randomly chose <a href="#milling">the FTDI SERIAL board and the UPDI adapter</a> this week. I also attempted to try <a href="#cutting">another method</a> for fabricating PCBs.</p>
+<p class="font-italic font-weight-bold">* I needed to individually make an ISP, and I randomly chose <a href="#milling">the FTDI SERIAL board and the UPDI adapter</a> this week. I also attempted to use <a href="#cutting">another method</a> for fabricating PCBs.</p>
 
 <h2 id="theory">Understanding electronics and the boards</h2>
 <p>Yes, you're right, I'm that type of person who needs to understand what I'm doing before doing it. After digesting the take-away notes from Oscar's classes, I followed <a href="https://www.makerspaces.com/basic-electronics/">this tutorial</a> to organize better all pieces of knowledge. Allow me to go through a very long note without any images attached, or go straight to the assignments <a href="#assignment">below.</a></p>
