@@ -11,7 +11,7 @@ active: 1
 
 <p class="font-italic font-weight-bold">* Besides, we were required to individually design and cut <a href="#vinylcutter">something</a> with the vinyl-cutter and to laser-cut a <a href="#construction-kit">parametric construction kit</a> that can be assembled in multiple ways.</p>
 
-<p>The very first thing I learned this week is time management. Staying in the queue for using the machines can be a disappointing waste of time if we don't know what to prepare and how to organize what to do. At the end of the week, I could only meet the minimum requirements of the assignment, and I was still left with the desire to try out more techniques and prototypes (waffle, stacking or bending).</p>
+<p>The very first thing I learned this week is time management. Staying in the queue for using the machines can be a disappointing waste of time if we don't know what to prepare and how to organize what to do. At the end of the week, I could only meet the minimum requirements of the assignment, and I was still left with the desire to try out more design techniques (waffle, stacking or bending).</p>
 
 <h2 id="vinylcutter">Vinyl cutting</h2>
 <h5>Individual assignment - Cut a vinyl sticker</h5>

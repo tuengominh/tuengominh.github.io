@@ -22,9 +22,9 @@ active: 1
 <li><kbd>$ gem install bundler jekyll</kbd>: install Jekyll</li>
 <li><kbd>$ jekyll new tue-fab-website</kbd>: generate a new Jekyll site</li>
 <li><kbd>$ cd tue-fab-website</kbd></li>
-<li>To avoid repeating myself, the next step is to create <code>_layouts</code> and pages/posts (<code>_assignments</code>) with <a href="https://jekyllrb.com/docs/front-matter/">front matters.</a> I used some Ruby codes to loop through posts, get <var>post.variable</var> values, and display them in HTML.</li> 
+<li>To avoid repeating myself, the next step was to create <code>_layouts</code> and pages/posts (<code>_assignments</code>) with <a href="https://jekyllrb.com/docs/front-matter/">front matters.</a> I used some Ruby codes to loop through posts, get <var>post.variable</var> values, and display them in HTML.</li> 
 <li>There are pieces of HTML that are re-usable in the <code>_includes</code> folder, e.g. footer or menu.</li>
-<li>Finally, I need to set a <code>baseurl</code> in <code>_config.yml</code> for configuration.</li> 
+<li>Finally, I had to set a <code>baseurl</code> in <code>_config.yml</code> for configuration.</li> 
 <li><kbd>$ bundle exec jekyll serve</kbd>: now if I browse <a href="http://localhost:4000">http://localhost:4000</a> in my local machine, I can review my rendered site.</li>
 <li>To review the content of the project as a tree in Terminal, run <kbd>find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'</kbd>.</li>
 </ul>
@@ -63,7 +63,7 @@ active: 1
 <ul>
 <li><kbd>$ git init</kbd>: initialize a local repo</li>
 <li><kbd>$ git remote add origin gitlab_URL</kbd>: connect the GitLab remote branch to my local repo</li>
-<li><kbd>$ git pull origin master --allow-unrelated-histories</kbd>: fetch and merge all files/changes that I don't have in my local repo, i.e. the new <code>.gitlab-ci.yml</code></li>
+<li><kbd>$ git pull origin master --allow-unrelated-histories</kbd>: fetch and merge all files/changes that I didn't have in my local repo, i.e. the new <code>.gitlab-ci.yml</code></li>
 <li><kbd>$ git status</kbd> and <kbd>$ git add</kbd>: to see changes and stage them for commit</li>
 <li><kbd>$ git commit -m "Messages here"</kbd>: commit changes</li>
 <li><kbd>$ git push --set-upstream origin master</kbd>: push changes to the GitLab remote repo</li>
@@ -72,18 +72,18 @@ active: 1
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/git-4.png" class="img-fluid w-100"/>
 <p></p>
-<p>After pushing, I still couldn't deploy my website properly on Fab Academy server. It seems like the Bundler version required (2.0.2) is greater than the version in my <code>Gemfile.lock</code> (2.0.1 - checked the very last lines).</p>
+<p>After pushing, I still couldn't deploy my website properly on Fab Academy server. It seemed like the Bundler version required (2.0.2) is greater than the version in my <code>Gemfile.lock</code> (2.0.1 - checked the very last lines).</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/git-8.png" class="img-fluid w-100"/>
-<p>With the help from our instructor Oscar Gonzalez and Viktor Smari from the Code Lab, I solved this by adding this line <code>- gem install bundler -v 2.0.2</code> right before <code>- bundle install</code> in the <code>.gitlab-ci.yml</code>. And I have my website deployed successfully!</p>
+<p>With the help from our instructor Oscar Gonzalez and Viktor Smari from the Code Lab, I solved this by adding this line <code>- gem install bundler -v 2.0.2</code> right before <code>- bundle install</code> in the <code>.gitlab-ci.yml</code>. And I had my website deployed successfully!</p>
 <p></p>
 
 <h5>Managing size of the local and remote repositories</h5>
-<p>In order to check the size of the local repo, I ran <kbd>du -sh * | sort -n</kbd> in Terminal. I used Photoshop to resize the images and to make sure the dpi (Resolution) to be 96 or 72. Since I'm not really happy with the way my Macbook screams and vibrates everytime I use Photoshop together with IntelliJ IDEA, I'm thinking about using <a href="https://imagemagick.org/index.php">ImageMagick</a> in the future.</p>
+<p>In order to check the size of the local repo, I ran <kbd>du -sh * | sort -n</kbd> in Terminal. I used Photoshop to resize the images and to make sure the dpi (Resolution) to be 96 or 72. Since I was not really happy with the way my Macbook screams and vibrates everytime I use Photoshop together with IntelliJ IDEA, I'm thinking about using <a href="https://imagemagick.org/index.php">ImageMagick</a> in the future.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/compress-1.png" class="img-fluid w-100"/>
 <p></p>
 <p>However, I forgot one thing that even if I drag-to-delete a giant file after pushing it, the size of the GitLab repo will remain big, since the file is still cached somehow in the history. For example, the actual size of my local repo is ~5MB, but the total size of files in my GitLab repo is ~9MB. I intended to try <kbd>$ git filter-branch</kbd> to rewrite the history, but later I figured out from Oscar that we cannot rebase commits and run <kbd>$ git push -force</kbd>. So I left it like that.</p>
 <h6>Updates</h6> 
-<p>I continued to make mistakes by adding unnecessary large files in the second assignment. This time I was confused about whether I should upload the videos recording the process of modeling my design or not, and I decided to upload compressed ones (~3MB) because "compressing videos" is mentioned in the assignment. <strong>AFTER</strong> adding them to git, I found out that I only need to embed Youtube links. To be honest, seeing the size of my repo getting unnecessarily bigger is quite frustrated. That was why I spent a whole day trying to remove the deleted files from the history. I finally found 2 interesting sections in <strong>Settings > Repository</strong>. The first one is <strong>Protected Branches</strong> in which I can unprotect my branches in order to remove deleted files from the history, rewrite the history, and run <kbd>$ git push -force</kbd>. After asking for permission, I unprotected my master branch.</p>
+<p>I continued to make mistakes by adding unnecessary large files in the second assignment. This time I was confused about whether I should upload the videos recording the process of modeling my design or not, and I decided to upload compressed ones (~3MB) because "compressing videos" was mentioned in the assignment. <strong>AFTER</strong> adding them to git, I found out that I only need to embed Youtube links. To be honest, seeing the size of my repo getting unnecessarily bigger was quite frustrated. That was why I spent a whole day trying to remove the deleted files from the history. I finally found 2 interesting sections in <strong>Settings > Repository</strong>. The first one is <strong>Protected Branches</strong> in which I can unprotect my branches in order to remove deleted files from the history, rewrite the history, and run <kbd>$ git push -force</kbd>. After asking for permission, I unprotected my master branch.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/git-5.png" class="img-fluid w-100"/>
 <p></p>
 <p>The next thing I took a look at is the <strong>Repository Cleanup</strong>. First I followed the suggestion by installing <a href="https://rtyley.github.io/bfg-repo-cleaner/">BFG</a> and tried to use it to remove files with deleted mode.</p> 
@@ -91,15 +91,15 @@ active: 1
 <p></p>
 <ul>
 <li><kbd>$ git clone --mirror gitlab_URL</kbd>: clone a bare repo <code>tue-ngo.git</code> in my local machine</li>
-<li><kbd>$ du -sh .</kbd>: check the size of the bare repo which was 18M</li>
+<li><kbd>$ du -sh .</kbd>: check the size of the bare repo, which was 18M</li>
 <li><kbd>$ git log --diff-filter=D --summary | grep "delete mode" > deleted_files.txt</kbd>: create a <code>deleted_files.txt</code> which includes all files in .git history with delete mode</li>
-<li><kbd>$ bfg --delete-folders "{assets, doc}" tue-ngo.git</kbd>: delete the folders that I want to remove from the history</li>
+<li><kbd>$ bfg --delete-folders "{assets, doc}" tue-ngo.git</kbd>: delete the folders that need to be removed from the history</li>
 <li><kbd>$ git reflog expire --expire=now --all && git gc --prune=now --aggressive</kbd>: clean up the mess</li>
 <li><kbd>$ du -sh .</kbd> and <kbd>$ git count-objects</kbd>: check the size of the bare repo again, which was 4.6M</li>
 <li><kbd>$ git push --force</kbd>: force push changes to the GitLab remote repo</li>
 </ul>
-<p>However, after I push changes to the repo, the size remains the same. I continued to search for solutions, and from what I understand from <a href="https://github.com/rtyley/bfg-repo-cleaner/issues/208">here</a> and <a href="https://stackoverflow.com/questions/31932574/clean-up-large-files-on-git-server">there</a>, it might be a GitLab issue. Anyway, I gave up. I will keep this in mind and will add/remove files properly for the next assignments.</p>
-<p><strong>* Good news:</strong> In the 5th week, the size of my GitLab repo suddenly shrunk down from ~35MB to ~24MB. I've checked with Viktor Smari whether he changed anything or cleaned the repositories up, and the answer was no. I assume that after some time, GitLab has performed some recurring clean-up tasks, and my previous efforts have paid off!(?)</p> 
+<p>However, after I pushed changes to the repo, the size remained the same. I continued to search for solutions, and from what I understood from <a href="https://github.com/rtyley/bfg-repo-cleaner/issues/208">here</a> and <a href="https://stackoverflow.com/questions/31932574/clean-up-large-files-on-git-server">there</a>, it might be a GitLab issue. Anyway, I gave up. I will keep this in mind and will add/remove files properly for the next assignments.</p>
+<p><strong>* Good news:</strong> In the 5th week, the size of my GitLab repo suddenly shrunk down from ~35MB to ~24MB. I've checked with Viktor Smari whether he changed anything or cleaned the repositories up, and the answer was no. I assumed that after some time, GitLab has performed some recurring clean-up tasks, and my previous efforts have paid off!(?)</p> 
 <p></p>
 
 <div class="container w-100 text-center py-4">
