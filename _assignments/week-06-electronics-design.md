@@ -187,17 +187,13 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-1.jpg" class="img-fluid w-100"/>
 <p>Not much to say about soldering. I only have some highlights regarding the soldering direction of the components: the cathode side of an LED is marked with a tiny green line, the dot in the IC indicates VCC pin, and we should pay attention to the connected legs of the button. Besides, I used the 220Ω resistors (instead of 200Ω ones as in the design) and red LEDs (instead of green ones) due to stockout issues.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-2.jpg" class="img-fluid w-100"/>
-<p>Then I can used the FTDI and UPDI made in the 4th week to program the board!</p>
+<p id="dice">Then I can used the FTDI and UPDI made in the 4th week to program the board!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/mill-3.jpg" class="img-fluid w-100"/>
 <p></p>
 <h6>Programming with Arduino IDE</h6>
 <p>I chose <a href="https://www.arduino.cc/">Arduino IDE</a> to program my board since it was easy to use for a newbie like me. I simply followed this <a href="https://www.electronics-lab.com/project/getting-started-with-the-new-attiny-chips-programming-the-microchips-0-series-and-1-series-attiny-with-the-arduino-ide/">tutorial</a> to install <a href="https://github.com/SpenceKonde/megaTinyCore">megaTinyCore</a> to my Arduino IDE, and I used <a href="https://github.com/mraardvark/pyupdi">pyupdi</a> driver to program my LED dice with UPDI interface.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/code-0.png" class="img-fluid w-100"/>
-<p>As mentioned at the beginning of the assignment, I only intended to turn all the LEDs on this week. However, writing the code for a working LED dice is quite easy, therefore I went ahead with finishing it. I would like to document this part better in the 8th week. The first reason was that I wanted to focus this week on EDA design flows only. Besides, in the 8th week, I will try to program my LED dice in different languages and environments, or I will think of other games that could use a button and 7 LEDs. The only limit is the imagination, rite?</p>
-<div class="text-center">
-<iframe width="640" height="480" src="https://www.youtube.com/embed/zI0-utgwI8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p></p>
+<p>As mentioned at the beginning of the assignment, I only intended to turn all the LEDs on this week. However, writing the code for a working LED dice is quite easy, therefore I went ahead with finishing it. I would like to document this part better in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-08-embedded-programming.html#dice">8th week</a>. The first reason was that I wanted to focus this week on EDA design flows only. Besides, in the 8th week, I will try to program my LED dice in different languages and environments, or I will think of other games that could use a button and 7 LEDs. The only limit is the imagination, rite?</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-06/code-2.jpg" class="img-fluid w-100"/>
 <p></p>
 <h5 id="group">Group assignment - Test a board with the multimeter</h5>

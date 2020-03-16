@@ -1,12 +1,21 @@
 ---
 layout: assignment
 title: Embedded Programming
-thumb: 00.jpg
-active: 0
+thumb: 09.png
+assignment: read a micro-controller data sheet (individual); to program the desined board (individual); to compare the performance and development workflows of different architectures (in-group). 
+active: 1
 ---
-<p class="font-italic">The content of this page has not been developed yet.</p>
+<p class="font-italic font-weight-bold">* All Arduino and Makefile files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/firmware">here</a>.</p>
 
-<!--<pre class="bg-light py-2 mt-0">
+<p class="font-italic font-weight-bold">* This week's group assignment was to compare the performance and development workflows of <a href="#group">different architectures.</a></p>
+
+<p class="font-italic font-weight-bold">* I needed to individually read a <a href="#datasheet">ATtiny1614 data sheet</a> and program my board designed in <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-06-electronics-design.html#dice">the 6th week</a>.</p>
+
+<h2 id="datasheet">Reading the ATtiny1614 data sheet</h2>
+<p></p>
+<h2>Programming with Arduino IDE</h2>
+<h5 id="dice">Programming the LED dice</h5>
+<pre class="bg-light py-2 mt-0">
 <code>
     /* 
     assign output and input pins to variables 
@@ -101,4 +110,9 @@ active: 0
         digitalWrite(LED_7, LOW);
     }
 </code>
-</pre>-->
+</pre>
+<p>And here you go my working LED dice!</p>
+<div class="text-center">
+<iframe width="640" height="480" src="https://www.youtube.com/embed/zI0-utgwI8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p></p>
