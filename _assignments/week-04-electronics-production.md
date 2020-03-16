@@ -57,9 +57,7 @@ active: 1
 <ul>
 <li><strong>Micro-processor:</strong> is an IC that has only the CPU inside them. RAM, ROM, and other peripherals must be added externally to make them functional. Microprocessors perform unspecific tasks such as developing software, games, websites, photo editing, creating documents, etc. The relationship between input and output is not defined. They need a high amount of resources like RAM, ROM, I/O ports, etc.</li>
 <li><strong>Micro-controller:</strong> is an IC containing a processor and ROM. We can consider a micro-controller as a mini programmable computer.  Micro-controllers are dedicated to one task and run one specific program, for example, keyboards, mouse, remote, microwave, mobiles, watches, etc. The relationship between input and output is specifically defined. The ROM is used to store the program instructions that are rarely changed during the life of the system, sometimes known as <strong>firmware</strong>.</li>
-<li>A micro-controller is supposed to be able to receive power, input signals, and send outputs to the outer world. Because of that, a micro-controller has a set of input and output pins that can be used to interact with the systems it controls and other micro-controllers.</li>
-<li>A digital pin is able to detect whether there is a voltage present on a pin or not. An analog pin is connected to an internal ADC (Analog to Digital Converter) and can measure the actual voltage on the pin.</li>
-<li>Input pins are used to read the logic state on some devices (“1” or “0”). Output pins are used to send logic states to some devices.</li>
+<li>A micro-controller is supposed to be able to receive power, input signals, and send outputs to the outer world. Because of that, a micro-controller has a set of input and output pins that can be used to interact with the systems it controls and other micro-controllers. A digital pin is able to detect whether there is a voltage present on a pin or not. An analog pin is connected to an internal ADC (Analog to Digital Converter) and can measure the actual voltage on the pin. Input pins are used to read the logic state on some devices (“1” or “0”). Output pins are used to send logic states to some devices.</li>
 </ul>
 <p></p>
 
@@ -67,17 +65,17 @@ active: 1
 <p>In order for individual circuits to transfer information, they must share a common communication protocol. There are 2 types of communication protocol: parallel and serial.</p>
 <ul>
 <li>Parallel interfaces transfer multiple bits at the same time. They usually require buses of data - transmitting across 8, 16, or more wires. Parallel communication is fast, straightforward, and easy to implement. But it requires many more input/output lines which can become impractical.</li>
-<li>Serial interfaces stream their data, one single bit at a time. These interfaces can operate on as little as 1 wire, usually never more than 4 wires. The main advantage of serial communication is the cheaper cost of the entire embedded system and the ability to exchange data over a long distance. Some examples of serial communication architectures: SPI, Ethernet, USB, etc.</li>
+<li>Serial interfaces stream their data, one single bit at a time. These interfaces can operate on as little as 1 wire, usually never more than 4 wires. The main advantage of serial communication is the cheaper cost of the entire embedded system and the ability to exchange data over a long distance. Some examples of serial communication protocols: SPI, UART, I2C, etc. <a href="https://www.seeedstudio.com/blog/2019/09/25/uart-vs-i2c-vs-spi-communication-protocols-and-uses/">Here</a> we can find more detailed information about the differences between them.</li>
 </ul>
 <p></p>
 
 <h5>Available ISPs at Fab Lab Barcelona</h5>
-<p><strong>In-circuit programmer (ICP):</strong> also known as in-system programmer (ISP) or serial programmer, allows micro-controllers to be programmed while installed in a complete system, rather than requiring the chip to be programmed prior to being installed.</p>
+<p><strong>In-circuit programmer (ICP):</strong> also known as in-system programmer (ISP) or serial programmer, allows micro-controllers to be programmed while installed in a complete system, rather than requiring the chip to be programmed prior to being installed. Micro-controllers are usually programmed through an ISP unless there is a bootloader (a piece of firmware) in the micro-controller that allows installing new firmware without the need of an external programmer.</p>
 <p>For the different types of chips, there are different programmers. At Fab Lab Barcelona, we have:</p>
 <ul>
-<li>FabISP programmer</li>
-<li>FTDI SERIAL with UPDI adapter</li>
-<li>CMSIS-DAP with SWD adapter</li>
+<li><a href="http://fab.cba.mit.edu/content/archive/projects/fabisp/">FabISP</a> programmer: an ISP for AVR micro-controllers, designed for production within a Fab Lab. Programming can be done through <a href="https://www.nongnu.org/avrdude/">avrdude</a>.</li>
+<li>FTDI SERIAL with UPDI adapter. The <a href="https://en.wikipedia.org/wiki/FTDI">FTDI</a> is a USB to Serial converter which allows for a simple way to connect <a href="https://en.wikipedia.org/wiki/Transistor%E2%80%93transistor_logic">TTL</a> interface devices to USB. The UPDI is an interface for external programming and on-chip debugging of newer ATtiny and ATmega devices.</li>
+<li>CMSIS-DAP with SWD adapter. CMSIS-DAP is an on-board interface chip, providing direct USB connection from a board to a debugger running on a host computer on one side, and access the <a href="https://arm-software.github.io/CMSIS_5/DAP/html/index.html">DAP</a> of a micro-controller via 5-pin <a href="https://en.wikipedia.org/wiki/JTAG">JTAG</a> or 2-pin <a href="https://www.silabs.com/community/mcu/32-bit/knowledge-base.entry.html/2014/10/21/serial_wire_debugs-qKCT">SWD</a> on the other side.</li>
 </ul>
 <p>That's it, enough knowledge for this week. In 2 weeks, I will try to learn more about how to understand circuit diagrams and how to design a circuit board.</p>
 <p></p>
