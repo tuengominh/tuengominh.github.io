@@ -18,9 +18,9 @@ active: 1
 
 <h5>Electricity and how it works</h5>
 <ul>
-<li>Voltage (V) is the measurement of electrical potential produced by electricity sources. A higher voltage means the electricity is being "pushed" harder through a circuit. Voltage is measured in volts (V). </li>
+<li>Voltage (V) is the measurement of electrical potential produced by electricity sources. Higher voltage means the electricity is being "pushed" harder through a circuit. Voltage is measured in volts (V). </li>
 <li>Electricity needs to flow to do anything useful. Electricity will flow from a higher voltage to a lower voltage. If we create a conductive path (for example, copper wire) between a higher voltage and a lower voltage, electricity will flow along that path. Current (I) is the rate at which charge is flowing. A higher current means more electricity is flowing. Current is measured in amperes (A).</li>
-<li>Resistance (R) is the tendency of a certain material to resist the flow of charge (current). A higher resistance means it is more difficult for electricity to flow. Resistance is measured in ohms (Ω).</li>
+<li>Resistance (R) is the tendency of a certain material to resist the flow of charge (current). Higher resistance means it is more difficult for electricity to flow. Resistance is measured in ohms (Ω).</li>
 <li><strong>Ohm's law equation: <i>V = I x R</i></strong></li>
 <li>There are two types of electrical sources: alternating current (AC) and direct current (DC). With AC, the direction electricity flows throughout the circuit is constantly reversing. With DC, electricity flows in one direction between power and ground. DC voltage sources always have two sides, with the positive side having a higher voltage than the negative side.</li>
 </ul>
