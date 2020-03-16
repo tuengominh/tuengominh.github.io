@@ -126,7 +126,7 @@ active: 1
 <li>In order to pause the milling process immediately when something bad happens, always keep the speed a bit slow, around 50 - 60%. In the case of using leftovers, keep the speed around 20 - 30%.</li>
 <li>In order to check if the cut depth is enough, we should execute the <strong>Spindle</strong> option and make sure the color of the dust is a pinky combination of copper and resin.</li>
 <li>Always reset Z origin after changing the milling bits, and moving to Z origin should be done <i>poco a poco</i>.</li>
-<li><code>.rml</code> files of boards with thin traces should be generated with conventional direction selected.</li>
+<li>The machine will remove more material when we use <code>.rml</code> files generated with conventional direction selected. The climb option is recommended.</li>
 <li>Last but not least, <strong>NEVER DROP THE MILLING BITS ONTO THE FLOOR!</strong></li>
 </ul>
 <p></p>
