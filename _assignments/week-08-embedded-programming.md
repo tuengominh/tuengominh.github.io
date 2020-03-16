@@ -1,7 +1,7 @@
 ---
 layout: assignment
 title: Embedded Programming
-thumb: 09.png
+thumb: 09.jpg
 assignment: read a micro-controller data sheet (individual); to program the desined board (individual); to compare the performance and development workflows of different architectures (in-group). 
 active: 1
 ---
@@ -9,12 +9,14 @@ active: 1
 
 <p class="font-italic font-weight-bold">* This week's group assignment was to compare the performance and development workflows of <a href="#group">different architectures.</a></p>
 
-<p class="font-italic font-weight-bold">* I needed to individually read a <a href="#datasheet">ATtiny1614 data sheet</a> and program my board designed in <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-06-electronics-design.html#dice">the 6th week</a>.</p>
+<p class="font-italic font-weight-bold">* I needed to individually read a <a href="#datasheet">ATtiny1614 datasheet</a> and program the board previously designed in <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-06-electronics-design.html#dice">the 6th week</a>.</p>
 
-<h2 id="datasheet">Reading the ATtiny1614 data sheet</h2>
+<h2 id="datasheet">Understanding electronics datasheets</h2>
+<h5>Individual assignment - Read the ATtiny1614 datasheet</h5>
 <p></p>
-<h2>Programming with Arduino IDE</h2>
-<h5 id="dice">Programming the LED dice</h5>
+<h2>Embedded programming</h2>
+<h5>Individual assignment - Program the LED dice</h5>
+<h6 id="dice">Arduino IDE</h6>
 <pre class="bg-light py-2 mt-0">
 <code>
     /* 
@@ -116,3 +118,8 @@ active: 1
 <iframe width="640" height="480" src="https://www.youtube.com/embed/zI0-utgwI8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
+
+<div class="container w-100 text-center py-4">
+<a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-07-computer-controlled-machining.html">Previous Assignment</a>
+<a class="btn btn-inactive m-2" href="#">Next Assignment</a>
+</div>

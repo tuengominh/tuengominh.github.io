@@ -131,7 +131,7 @@ active: 1
 </ul>
 <p></p>
 
-<h5 id="milling">Individual assignment - Milling and soldering the FTDI SERIAL board and the UPDI adapter</h5>
+<h5 id="milling">Individual assignment - Mill and solder the FTDI SERIAL board and the UPDI adapter</h5>
 <p>In order to save time and materials, I teamed up with <a href="http://fabacademy.org/2020/labs/barcelona/students/roger-anguera/">Roger Anguera</a>, <a href="http://fabacademy.org/2020/labs/barcelona/students/antoine-jaunard">Antoine Jaunard</a>, and <a href="http://fabacademy.org/2020/labs/barcelona/students/marco-cataffo">Marco Cataffo</a> because all of us were going to make the FTDI board & UPDI adapter. We did not expect that due to this we faced a lot of problems which perhaps we would not know of while milling a single board. I also learned how to mill multiple boards at the same time which is useful for my own Final Project.</p>
 <h6>mods vs. Fab Modules</h6>
 <p>We tried to use <a href="http://mods.cba.mit.edu/">mods</a> to create our first <code>.rml</code> files for the <a href="http://academy.cba.mit.edu/classes/embedded_programming/FTDI/USB-FT230XS-serial.traces.png">traces</a> of the FTDI SERIAL board. The workflow is a bit more complicated than Fab Modules, but is still digestible in general.</p>
@@ -189,7 +189,7 @@ active: 1
 <p>It was a useful week since electronics was one of the most important skills that I would like to acquire during the Fab Academy. This week is all about showing our capabilities of making the PCB, but I feel more confident to explore further the designing and programming process.</p>
 <p></p>
 
-<h5 id="cutting">Additional delivery - Vinyl cutting the SWD adapter</h5>
+<h5 id="cutting">Additional delivery - Vinyl-cut the SWD adapter</h5>
 <p>After finishing the minimum requirements of this week, I tried to explore another PCB manufacturing process which is vinyl-cutting the board using copper vinyl sheet. For this extra ball, I chose to cut the SWD adapter. Josep guided me through the process since he had experiences cutting the copper vinyl before.</p>
 <p>The steps followed were quite similar to what I did <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-03-computer-controlled-cutting.html#vinylcutter">last week</a> with the <a href="https://www.rolanddga.com/es/soporte/products/cutting/camm-1-gx-24-24-vinyl-cutter">Roland CAMM-1 Servo GX-24</a> machine. The only difference is that I had to stick the copper vinyl on top of a plastic sheet, and modify the <strong>Force</strong> settings to be a bit lower, around <strong>80 gf</strong>.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/vinyl-1.jpg" class="img-fluid w-100"/>
