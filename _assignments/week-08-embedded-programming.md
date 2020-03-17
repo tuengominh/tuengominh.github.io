@@ -1,7 +1,7 @@
 ---
 layout: assignment
 title: Embedded Programming
-thumb: 09.jpg
+thumb: 00.jpg
 assignment: read a micro-controller data sheet (individual); to program the desined board (individual); to compare the performance and development workflows of different architectures (in-group). 
 active: 0
 ---
