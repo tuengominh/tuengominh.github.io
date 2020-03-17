@@ -3,7 +3,7 @@ layout: assignment
 title: Computer-Controlled Machining
 thumb: 08.png
 assignment: test run-out, alignment, speeds, feeds, and toolpaths of the CNC machine (in-group); to make something big (individual). 
-active: 1
+active: 0
 ---
 
 <div class="container w-100 text-center py-4">

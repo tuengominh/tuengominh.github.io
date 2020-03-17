@@ -192,6 +192,8 @@ active: 1
 <p></p>
 <h6>Final result</h6>
 <p>I brought the vase to the landlady where I'm staying, and here you go the hero shots of the final result:</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-05/hero-1.jpg" class="img-fluid w-100"/>
+<p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/hero.jpg" class="img-fluid w-100"/>
 <p></p>
 
