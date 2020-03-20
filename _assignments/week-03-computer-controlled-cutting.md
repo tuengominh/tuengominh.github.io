@@ -109,7 +109,7 @@ active: 1
 <li>Use <code>projection(cut=true)</code> to flatten the set of pieces</li>
 <li>Render and export to <code>.dxf</code></li>
 </ul>
-<p>In order to test the kerf width and joint clearance, I directly used the hexagon pieces in my design and proceeded with these following values of kerf width: 0.05mm, 0.1mm, 0.15mm, 0.2mm.</p>
+<p>In order to test the kerf width and joint clearance, I directly used the hexagon pieces in my design and proceeded with these following values of kerf width: 0.05mm, 0.1mm, 0.15mm, 0.2mm. <strong>NOTE:</strong> kerf width=0.15mm means to allow an offset of 0.075mm from each side to make a perfect fit.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/openscad-2.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Joint clearance test and final cut</h6>

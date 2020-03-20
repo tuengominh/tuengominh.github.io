@@ -2,7 +2,7 @@
 layout: assignment
 title: Embedded Programming
 thumb: 09.jpg
-assignment: read a micro-controller data sheet (individual); to program the desined board (individual); to compare the performance and development workflows of different architectures (in-group). 
+assignment: read a micro-controller data sheet (individual); to program the desined board (individual); to compare the different architectures (in-group). 
 active: 1
 ---
 <p class="font-italic font-weight-bold">* All Arduino and Makefile files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/firmware">here</a>.</p>
