@@ -177,7 +177,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-3.jpg" class="img-fluid w-100"/>
 <p>However, when I tried to test it with other computers, it couldn't be detected. After checking whether all connections are in beep-beep mode once again as Oscar suggested, I put more solder to one of the resistors, and finally, the board was detected on my Macbook!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-4.jpg" class="img-fluid w-100"/>
-<p>Things I learned during the soldering process:</p>
+<strong>Things I learned during the soldering process:</strong>
 <ul>
 <li>Be careful of the soldering order. Make sure it's easy to access all components inside out, and none of them will be over-heated.</li>
 <li> To have easier access to the components, I used double-sided tape to fix the board to the table.</li>

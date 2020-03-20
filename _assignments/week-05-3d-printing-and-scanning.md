@@ -92,7 +92,7 @@ active: 1
 <ul>
 <li>Layer height: 0.2mm. The thinner the layer, the more detailed the result, and the longer the total printing time. We chose 0.2mm for the tests to get a more delicate result.</li>
 <li>Wall thickness: 0.8mm - usually double the size of nozzle diameter because we generally print with two shells: one for inside and one for outside.</li>
-<li>Infill density: 10% - Infill pattern: Grid. Infill is a repetitive structure used to fill the empty space in a print. A high infill density can make the printing time longer and the outcome heavier and more rigid. In the case of printing assembles, a higher infill density is recommended.</li>
+<li>Infill density: 10% - Infill pattern: Grid. Infill is a repetitive structure used to fill the empty space in a print. A high infill density can make the printing time longer and the outcome heavier and more rigid. In the case of printing solid constructible parts, a higher infill density is recommended.</li>
 <li>Print speed: 60mm/s. The lower the speed, the finer the outcome.</li>
 <li>Support: not in this case, but we might need to generate a <a href="https://ultimaker.com/en/resources/52663-support">support</a> structure under the model in order to prevent the material from falling down when it comes to large overhang angles.</li>
 </ul>
@@ -205,16 +205,16 @@ active: 1
 
 <h5>Conclusion</h5>
 <h6>Additive vs. Subtractive CAM</h6>
-<p>Things I like about 3D printing:</p>
+<strong>Things I like about 3D printing:</strong>
 <ul>
 <li>Avoiding material waste</li>
-<li>Ability to design more complex objects with fewer constraints</li>
+<li>Ability to design more complex objects without being brain-tangled while unfolding the design from 3D to 2D</li>
+<li>Somehow somewhat, fewer constraints</li>
 </ul>
-<p>Things I wish 3D printing could match subtractive techniques:</p>
+<strong>Things I wish 3D printing could match subtractive techniques:</strong>
 <ul>
 <li>More precise tolerances</li>
 <li>Better surface quality</li>
-<li>Faster process for small prototypes</li>
 <li>Lack of suitability for mass production</li>
 </ul>
 <h6>Design rules for FDM printers</h6>
