@@ -102,7 +102,7 @@ active: 1
 <li>Select <code>.rml</code> output format</li>
 <li>Select the proper process: PCB traces (1/64) or PCB outline (1/32). This will automatically define the proper <strong>cut depth</strong> (0.1mm for milling traces and 0.6mm for cutting).</li>
 <li>Select <i>SRM-20</i> in the output machine. Modify settings to origin 0,0,0 (x,y,z); <strong>zjog = 12mm</strong> (to make sure the milling bit will be lifted up while moving across the workpiece and avoid damaging both the traces and the fragile bit itself); and home 0,0,12 (x,y,z).</li>
-<li>Select the proper <strong>direction</strong>. If there are thin traces on the board, we need to select the <i>conventional</i> direction in order to avoid broken traces.</li>
+<li>Select the proper <strong>direction</strong>. The <i>climb</i> direction is the default one. More information of when to use which direction can be found <a href="https://www.harveyperformance.com/in-the-loupe/conventional-vs-climb-milling/">here.</a></li>
 <li>Click the <strong>calculate</strong> button to calculate the toolpath and click the <strong>save</strong> button to save the <code>.rml</code> file.</li>
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/group-1.png" class="img-fluid w-100"/>
@@ -177,7 +177,7 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-3.jpg" class="img-fluid w-100"/>
 <p>However, when I tried to test it with other computers, it couldn't be detected. After checking whether all connections are in beep-beep mode once again as Oscar suggested, I put more solder to one of the resistors, and finally, the board was detected on my Macbook!</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-04/solder-4.jpg" class="img-fluid w-100"/>
-<strong>Things I learned during the soldering process:</strong>
+<p><strong>Things I learned during the soldering process:</strong></p>
 <ul>
 <li>Be careful of the soldering order. Make sure it's easy to access all components inside out, and none of them will be over-heated.</li>
 <li> To have easier access to the components, I used double-sided tape to fix the board to the table.</li>

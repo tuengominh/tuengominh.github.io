@@ -155,7 +155,7 @@ active: 1
 
 <h5 id="filament">Individual assignment - Design and print using FDM printer and PLA filament</h5>
 <h6>OpenSCAD</h6>
-<p>I utilized a flower-shaped vase I designed in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html#vase">2nd week</a> since it demonstrates perfectly an object that cannot be made subtractively (having overhangs and undercuts). My vase was designed in OpenSCAD, and I basically modeled a thin cube, then continuously cloned, rotated, enlarged and moved it up x 180 times to generate the base module <code>shape()</code>. 3 <code>shape()</code> modules were combined and subtracted to form the final model. In order to make sure of the ability to stand still of the vase as well as to reduce the total size, I modified it a bit by lessening the additional size of the cloned cubes.</p>
+<p>I utilized a flower-shaped vase I designed in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-02-computer-aided-design.html#vase">2nd week</a> since it can be considered as an object that cannot be made subtractively (having overhangs and undercuts). My vase was designed in OpenSCAD, and I basically modeled a thin cube, then continuously cloned, rotated, enlarged and moved it up x 180 times to generate the base module <code>shape()</code>. 3 <code>shape()</code> modules were combined and subtracted to form the final model. In order to make sure of the ability to stand still of the vase as well as to reduce the total size, I modified it a bit by lessening the additional size of the cloned cubes.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-05/openscad-1.png" class="img-fluid w-100"/>
 <p></p>
 <h6>Slicing with Cura</h6>
@@ -205,13 +205,13 @@ active: 1
 
 <h5>Conclusion</h5>
 <h6>Additive vs. Subtractive CAM</h6>
-<strong>Things I like about 3D printing:</strong>
+<p><strong>Things I like about 3D printing:</strong></p>
 <ul>
 <li>Avoiding material waste</li>
 <li>Ability to design more complex objects without being brain-tangled while unfolding the design from 3D to 2D</li>
 <li>Somehow somewhat, fewer constraints</li>
 </ul>
-<strong>Things I wish 3D printing could match subtractive techniques:</strong>
+<p><strong>Things I wish 3D printing could match subtractive techniques:</strong></p>
 <ul>
 <li>More precise tolerances</li>
 <li>Better surface quality</li>

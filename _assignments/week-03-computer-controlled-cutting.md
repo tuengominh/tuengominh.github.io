@@ -52,8 +52,7 @@ active: 1
 </ul>
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-1.jpg" class="img-fluid w-100"/>
 <p>We chose to proceed with cardboard 4mm and plywood 4mm because we can find nice leftovers of those materials. I've personally learned from Santi that flexible plywood is not a good material for cutting.</p>
-<p>The controller of TROTEC laser-cutters, <a href="https://www.troteclaser.com/en/laser-machines/laser-software/jobcontrol/">TROTEC JobControl</a>, calls the processes slightly different from us: the raster engraving process is called <strong>Engrave</strong>, the vector engraving process is the <strong>Cut</strong> one with way faster speed, and the vector cutting process is still called <strong>Cut</strong>.</p> 
-<p>For the <strong>Material Settings</strong> in JobControl, we followed the information on the samples at the Fab Lab. The parts to be raster-engraved were color-coded with black, and the parts to be vector-cut were color-coded with red.</p> 
+<p>The controller of TROTEC laser-cutters, <a href="https://www.troteclaser.com/en/laser-machines/laser-software/jobcontrol/">TROTEC JobControl</a>, calls the processes slightly different from us: the raster engraving process is called <strong>Engrave</strong>, the vector engraving process is the <strong>Cut</strong> one with way faster speed, and the vector cutting process is still called <strong>Cut</strong>. For the <strong>Material Settings</strong> in JobControl, we followed the information on the samples at the Fab Lab. The parts to be raster-engraved were color-coded with black, and the parts to be vector-cut were color-coded with red.</p> 
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-2.jpg" class="img-fluid w-100"/>
 <p>The settings we used for cardboard 4mm:</p> 
 <ul>
@@ -79,14 +78,14 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-03/laser-4.jpg" class="img-fluid w-100"/>
 <p></p>
 <h6>What I personally learned</h6>
-<strong>Translational speed, laser power, and cutting kerf:</strong>
+<p><strong>Translational speed, laser power, and cutting kerf:</strong></p>
 <ul>
-<li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process. Kerf width depends on many parameters, such as the thickness of the material (the thicker the material, the thinner the kerf), type of material (for example, I assumed that acrylic and other materials with low melting point will tend to create bigger kerf), the machine itself, the focus of the beam, and the settings of power, speed, and frequency.</li>
+<li>Cutting kerf width is the width of material that is removed by the laser beam during a cutting process. Kerf width depends on many parameters, such as the thickness of the material (the thicker the material, the bigger the kerf), type of material (for example, I assumed that acrylic with low melting point will tend to create bigger kerf than plywood), the machine itself, the focus of the beam, and the settings of power, speed, and frequency.</li>
 <li>The delicate balance between translational speed and laser power defines the quality of the cut as well as the kerf width. We should abuse neither power nor speed.</li>
 <li>As power increases, the energy in the laser increases, which will result in a deeper cut and a bigger kerf. High power could also make more smoke and charred edges. So, power is a necessity to reach a required cutting or engraving depth, but over-using it is quite destructive to our materials.</li>
 <li>As speed increases, the energy is exposed to a point in a shorter time, which will result in a shallower, unstable cut and a thinner kerf. Increasing speed will also quicken the cutting time.</li>
 </ul>
-<strong>Tips to laser-cut like a boss:</strong>
+<p><strong>Tips to laser-cut like a boss:</strong></p>
 <ul>
 <li>Safety first: the laser-cutters cannot be left unattended, and the air ventilation should always be switched on.</li>
 <li>We need to test the proper settings for the chosen material and machine: power, speed, resolution (for raster engraving) and frequency (for vector cutting)</li>

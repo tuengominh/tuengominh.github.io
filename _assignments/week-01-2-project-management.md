@@ -42,14 +42,14 @@ active: 1
 <p>I often use an IDE called <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> from Jetbrains. They're not free, but I have a perpetual license until July 2020, since I used IntelliJ as a student before, and got a good discount for all Jetbrains products (they have WebStorm for JavaScript, PyCharm for Python, etc.) for the upcoming years. I heard that institutions can apply for a <strong>FREE</strong> educational license though.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/ide.png" class="img-fluid w-100"/>
 <p></p>
-<p>With this IDE, I can easily create files from a template, and they also integrate a Terminal emulator. As the above screenshot, I can run command lines and open <a href="https://www.vim.org/">vim</a> editor right inside the IDE. But what I love the most are all of the smart code completion, framework assistance, and safe refactoring features.</p>
+<p>With this IDE, I can easily create files from a template, and they also integrate a Terminal emulator. As the above screenshot, I can run command lines and open <a href="https://www.vim.org/">vim</a> editor right inside the IDE (which makes no sense at all, but still pretty fun, huh?). But what I love the most are all of the smart code completion, framework assistance, and safe refactoring features.</p>
 </div>
 <p></p>
 
 <h2 id="git">Git and GitLab</h2>
 
 <h5>SSH key</h5>
-<p><a href="https://git-scm.com/doc">Git</a> is a VCS (version control system) that helps us to track versions as well as contributions in projects, and <a href="https://about.gitlab.com/">GitLab</a> is a web-based DevOps tool that provides a Git-repository manager, issue-tracking and CI/CD pipeline features. Since I had access to my GitLab repository from the very first class, and before I already generated an <a href="https://en.wikipedia.org/wiki/Ssh-keygen">SSH key</a> that links to my personal GitLab account, the process became quite simple. All I need to do was to copy the SSH key in the personal GitLab account and paste it into my gitlab.fabcloud.org account as an existing key.</p>
+<p><a href="https://git-scm.com/doc">Git</a> is a VCS (version control system) that helps us to track versions as well as contributions in projects, and <a href="https://about.gitlab.com/">GitLab</a> is a web-based DevOps tool that provides a Git-repository manager, issue-tracking and CI/CD pipeline features. Since I had access to my GitLab repository from the very first class, and before I already generated an <a href="https://en.wikipedia.org/wiki/Ssh-keygen">SSH key</a> that links to my personal GitLab account, the process became quite simple. All I need to do was to copy the SSH key in the personal GitLab account and paste it into my <i>gitlab.fabcloud.org</i> account as an existing key.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/ssh-1.png" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/ssh-2.png" class="img-fluid w-100"/>
@@ -74,7 +74,7 @@ active: 1
 <p></p>
 <p>After pushing, I still couldn't deploy my website properly on Fab Academy server. It seemed like the Bundler version required (2.0.2) is greater than the version in my <code>Gemfile.lock</code> (2.0.1 - checked the very last lines).</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/git-8.png" class="img-fluid w-100"/>
-<p>With the help from our instructor Oscar Gonzalez and Viktor Smari from the Code Lab, I solved this by adding this line <code>- gem install bundler -v 2.0.2</code> right before <code>- bundle install</code> in the <code>.gitlab-ci.yml</code>. And I had my website deployed successfully!</p>
+<p>With the help from our instructor Oscar Gonzalez and Viktor Smari from Fab Lab Barcelona, I solved this by adding this line <code>- gem install bundler -v 2.0.2</code> right before <code>- bundle install</code> in the <code>.gitlab-ci.yml</code>. And I had my website deployed successfully!</p>
 <p></p>
 
 <h5>Managing size of the local and remote repositories</h5>
@@ -83,7 +83,7 @@ active: 1
 <p></p>
 <p>However, I forgot one thing that even if I drag-to-delete a giant file after pushing it, the size of the GitLab repo will remain big, since the file is still cached somehow in the history. For example, the actual size of my local repo is ~5MB, but the total size of files in my GitLab repo is ~9MB. I intended to try <kbd>$ git filter-branch</kbd> to rewrite the history, but later I figured out from Oscar that we cannot rebase commits and run <kbd>$ git push -force</kbd>. So I left it like that.</p>
 <h6>Updates</h6> 
-<p>I continued to make mistakes by adding unnecessary large files in the second assignment. This time I was confused about whether I should upload the videos recording the process of modeling my design or not, and I decided to upload compressed ones (~3MB) because "compressing videos" was mentioned in the assignment. <strong>AFTER</strong> adding them to git, I found out that I only need to embed Youtube links. To be honest, seeing the size of my repo getting unnecessarily bigger was quite frustrated. That was why I spent a whole day trying to remove the deleted files from the history. I finally found 2 interesting sections in <strong>Settings > Repository</strong>. The first one is <strong>Protected Branches</strong> in which I can unprotect my branches in order to remove deleted files from the history, rewrite the history, and run <kbd>$ git push -force</kbd>. After asking for permission, I unprotected my master branch.</p>
+<p>I continued to make mistakes by adding unnecessary large files in the second assignment. This time I was confused about whether I should upload the videos recording the process of modeling my design or not, and I decided to upload compressed ones (~3MB) because <i>compressing videos</i> was mentioned in the assignment. <strong>AFTER</strong> adding them to git, I found out that I only need to embed Youtube links. To be honest, seeing the size of my repo getting unnecessarily bigger was quite frustrated. That was why I spent a whole day trying to remove the deleted files from the history. I finally found 2 interesting sections in <strong>Settings > Repository</strong>. The first one is <strong>Protected Branches</strong> in which I can unprotect my branches in order to remove deleted files from the history, rewrite the history, and run <kbd>$ git push -force</kbd>. After asking for permission, I unprotected my master branch.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-01/git-5.png" class="img-fluid w-100"/>
 <p></p>
 <p>The next thing I took a look at is the <strong>Repository Cleanup</strong>. First I followed the suggestion by installing <a href="https://rtyley.github.io/bfg-repo-cleaner/">BFG</a> and tried to use it to remove files with deleted mode.</p> 
@@ -91,15 +91,15 @@ active: 1
 <p></p>
 <ul>
 <li><kbd>$ git clone --mirror gitlab_URL</kbd>: clone a bare repo <code>tue-ngo.git</code> in my local machine</li>
-<li><kbd>$ du -sh .</kbd>: check the size of the bare repo, which was 18M</li>
+<li><kbd>$ du -sh .</kbd>: check the size of the bare repo (which was 18M)</li>
 <li><kbd>$ git log --diff-filter=D --summary | grep "delete mode" > deleted_files.txt</kbd>: create a <code>deleted_files.txt</code> which includes all files in .git history with delete mode</li>
 <li><kbd>$ bfg --delete-folders "{assets, doc}" tue-ngo.git</kbd>: delete the folders that need to be removed from the history</li>
 <li><kbd>$ git reflog expire --expire=now --all && git gc --prune=now --aggressive</kbd>: clean up the mess</li>
-<li><kbd>$ du -sh .</kbd> and <kbd>$ git count-objects</kbd>: check the size of the bare repo again, which was 4.6M</li>
+<li><kbd>$ du -sh .</kbd> and <kbd>$ git count-objects</kbd>: check the size of the bare repo again (which was 4.6M)</li>
 <li><kbd>$ git push --force</kbd>: force push changes to the GitLab remote repo</li>
 </ul>
 <p>However, after I pushed changes to the repo, the size remained the same. I continued to search for solutions, and from what I understood from <a href="https://github.com/rtyley/bfg-repo-cleaner/issues/208">here</a> and <a href="https://stackoverflow.com/questions/31932574/clean-up-large-files-on-git-server">there</a>, it might be a GitLab issue. Anyway, I gave up. I will keep this in mind and will add/remove files properly for the next assignments.</p>
-<p><strong>* Good news:</strong> In the 5th week, the size of my GitLab repo suddenly shrunk down from ~35MB to ~24MB. I've checked with Viktor Smari whether he changed anything or cleaned the repositories up, and the answer was no. I assumed that after some time, GitLab has performed some recurring clean-up tasks, and my previous efforts have paid off!(?)</p> 
+<p><strong>* Good news:</strong> In the 5th week, the size of my GitLab repo suddenly shrunk down from ~35MB to ~24MB. I've checked with Viktor whether he changed anything or cleaned the repositories up, and the answer was no. I assumed that after some time, GitLab has performed some recurring clean-up tasks, and my previous efforts have paid off!(?)</p> 
 <p></p>
 
 <div class="container w-100 text-center py-4">

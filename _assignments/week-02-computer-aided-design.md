@@ -36,7 +36,7 @@ active: 1
 <code>$ magick idea.png idea.jpg</code>
 <code>$ convert idea.jpg -resize 1000 -quality 96 idea-resized.jpg</code>
 </pre>
-<p>I also put the .svg logo on the navbar of the website.</p>
+<p>I also put the <code>.svg</code> logo on the navbar of the website.</p>
 <p></p>
 
 <h2>3D design</h2>
@@ -93,7 +93,7 @@ active: 1
 <iframe width="640" height="480" src="https://www.youtube.com/embed/i9y54l6TezE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
-<p>I had a few problems modeling the hinge: I created the first sketch before creating the component (that led to many inconveniences because I had to copy the first sketch -> mirror the copy -> delete the copy to get the second sketch), and I forgot to include tolerance in my design. This is the most annoying thing about the GUI of Fusion 360. After struggling for a while, here is the model on Sketchfab:</p>
+<p>I had a few problems modeling the hinge: I created the first sketch before creating the component (that led to many inconveniences because I had to copy the first sketch -> mirror the copy -> delete the copy to get the second sketch), and I forgot to include tolerance in my design. After struggling for a while, here is the model on Sketchfab:</p>
 <div class="sketchfab-embed-wrapper text-center">
     <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/b18cda9a693b45b2bf2282c1f918926b/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
@@ -204,7 +204,7 @@ active: 1
 <p>Here is a useful <a href="https://www.dummies.com/web-design-development/blender/blender-for-dummies-cheat-sheet/">cheat sheet.</a></p>
 <p></p>
 <h6>Conclusion</h6> 
-<p>To be honest, I've never been a fan of the concept of modifying surfaces, curves, edges, vertices, and meshes. I personally prefer tools that give me the feeling that I'm being precise and formulaic. Blender is an amazing software and it gives its users a lot of freedom, but manipulating the whole model as if it's an artwork is simply not my thing. However, for some specific parts of my Final Project (for example the dragon's head), I might need to incorporate Blender and figure out a way to exchange files easily from Blender to Fusion 360.</p>
+<p>To be honest, I've never been a fan of the concept of modifying surfaces, curves, edges, vertices, and meshes. I personally prefer tools that give me the feeling that I'm being precise and formulaic. Blender is an amazing software and it gives its users a lot of freedom, but manipulating the whole model as if it's an artwork is simply not my thing. However, for some specific parts of my Final Project (for example the dragon's head), I might need to incorporate Blender and figure out a way to work on exchanged files from Blender in Fusion 360.</p>
 <p></p>
 
 <div class="container w-100 text-center py-4">
