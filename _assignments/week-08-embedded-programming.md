@@ -25,7 +25,7 @@ active: 1
 <li>Programming interfaces: downloading and uploading the on-chip memories. <a href="https://www.nongnu.org/avrdude/">avrdude</a> is a programming interface working with <a href="https://gcc.gnu.org/wiki/avr-gcc">avr-gcc</a> compiler/linker and can be used effectively via the command line. <a href="https://en.wikipedia.org/wiki/Make_(software)">GNU Make</a> is another automation tool for compiling and building applications, with the option of transferring the <code><a href="https://en.wikipedia.org/wiki/Intel_HEX">hex</a></code> file into the target chip.</li>
 <p>In short, a toolchain is able to compile source code written in a high-level language (C/C++) into executables that can run on target devices.</p>
 <h5>Individual assignment - Program the LED dice</h5>
-<h6 id="dice">Arduino IDE + megaTinyCore + pyupdi</h6>
+<h6 id="dice">Arduino IDE</h6>
 <pre class="bg-light py-2 mt-0">
 <code>
     /* 
@@ -122,10 +122,20 @@ active: 1
     }
 </code>
 </pre>
+<pre class="bg-light py-2 mt-0">
+<code>ls /dev/cu.*</code>
+</pre>
+<pre class="bg-light py-2 mt-0">
+<code>pyupdi.py -d tiny1614 -c /dev/tty.usbmodem14301 -b 9600 -f /tmp/arduino_build_152122/led-dice.ino.hex -v</code>
+</pre>
 <p>And here you go my working LED dice!</p>
 <div class="text-center">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/zI0-utgwI8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+<p></p>
+<h6>PlatformIO IDE</h6>
+<p></p>
+<h6>GNU Make</h6>
 <p></p>
 
 <div class="container w-100 text-center py-4">
