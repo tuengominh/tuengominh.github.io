@@ -15,7 +15,15 @@ active: 1
 <h5>Individual assignment - Read the ATtiny1614 datasheet</h5>
 <p></p>
 <h2>Embedded programming</h2>
-<p><strong>What is a toolchain?</strong> A <a href="https://elinux.org/Toolchains">toolchain</a> is the set of software development tools that are chained together such as compilers, debuggers, linkers, assemblers, run-time libraries, sometimes bootloader and kernel. It has to be able to compile source code written in assembly/C/C++ into executables that can run on target devices.</p>
+<p><strong>What is a toolchain?</strong> A <a href="https://elinux.org/Toolchains">toolchain</a> is the set of software development tools that are chained together. <a href="https://en.wikipedia.org/wiki/GNU_toolchain">GNU toolchain</a> is widely used in programming embedded systems. A toolchain usually consists of:</p>
+<li>Compiler: transforming the code into object code written by <a href="https://en.wikipedia.org/wiki/Assembly_language">low-level language</a> that a machine can understand. <a href="https://gcc.gnu.org/">GCC</a> is a commonly used compilers.</li> 
+<li>Editor: editing source code to control embedded systems. It could be a standalone application or built into an IDE. An IDE consists of a source code editor, a compiler, a linker and a debugger.</li>
+<li>Assembler: converting assembly code into executable machine code. It takes the basic commands and operations from assembly code and converts them into binary code that can be recognized by a specific type of processor. IDEs often include assemblers.</li> 
+<li>Linker: combining all small pieces and modules of code together, creating an executable program. A commonly used linker for embedded systems is <a href="https://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_mono/ld.html">ld (GNU)</a>.</li>
+<li>Debugger: testing and debugging programs. There are both source-level debugger or machine-language debugger. <a href="https://en.wikipedia.org/wiki/JTAG">JTAG</a> can be used to debug the software on the embedded system. <a href="https://en.wikipedia.org/wiki/GNU_Debugger">GDB</a> is the GNU debugger.</li>
+<li>Libraries: collections of code, such as an API, that allow the app to reference prebuilt functions or other resources. For example, <a href="https://en.wikipedia.org/wiki/GNU_C_Library">GNU C Library</a>.</li>
+<li>Programming interfaces: downloading and uploading the on-chip memories. <a href="https://www.nongnu.org/avrdude/">avrdude</a> is a programming interface working with <a href="https://gcc.gnu.org/wiki/avr-gcc">avr-gcc</a> compiler/linker and can be used effectively via the command line. <a href="https://en.wikipedia.org/wiki/Make_(software)">GNU Make</a> is another automation tool for compiling and building applications, with the option of transferring the <code><a href="https://en.wikipedia.org/wiki/Intel_HEX">hex</a></code> file into the target chip.</li>
+<p>In short, a toolchain is able to compile source code written in a high-level language (C/C++) into executables that can run on target devices.</p>
 <h5>Individual assignment - Program the LED dice</h5>
 <h6 id="dice">Arduino IDE + megaTinyCore + pyupdi</h6>
 <pre class="bg-light py-2 mt-0">

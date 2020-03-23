@@ -12,7 +12,7 @@ active: 1
 <p class="font-italic font-weight-bold">* I needed to individually <a href="#big">design, mill and assemble</a> something big.</p>
 
 <h2>CNC machining</h2>-->
-<p class="font-italic font-weight-bold">Due to the COVID-19 outbreak situation, we had to confine ourselves at home right after the global class and couldn't get access to the lab by any means. This assignment will be resumed after to quarantine.</p> 
+<p class="font-italic font-weight-bold">Due to the COVID-19 outbreak situation, we had to confine ourselves at home right after the global class and couldn't get access to the lab by any means. This assignment will be resumed after the quarantine.</p> 
 <!--Hence, my plan was to go ahead with designing the individual assignment first and prepare all possible CAM files, then when we can go back to the lab we should be ready to test, fabricate and assemble.</p>
 <h5 id="group">Group assignment - Test the CNC machine</h5>
 <p class="font-italic font-weight-bold">* To be continued after the COVID-19 pandemic.</p>
