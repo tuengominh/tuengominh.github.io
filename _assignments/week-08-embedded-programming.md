@@ -7,7 +7,7 @@ active: 1
 ---
 <p class="font-italic font-weight-bold">* All Arduino and Makefile files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/firmware">here</a>.</p>
 
-<p class="font-italic font-weight-bold">* This week's group assignment was to compare the performance and development workflows of <a href="#group">different micro-controller families.</a></p>
+<!--<p class="font-italic font-weight-bold">* This week's group assignment was to compare the performance and development workflows of <a href="#group">different micro-controller families.</a></p>-->
 
 <p class="font-italic font-weight-bold">* I needed to individually read a <a href="#datasheet">micro-controller datasheet</a> and program the board previously designed in <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-06-electronics-design.html#dice">the 6th week</a>.</p>
 
@@ -15,8 +15,9 @@ active: 1
 <h5>Individual assignment - Read the ATtiny1614 datasheet</h5>
 <p></p>
 <h2>Embedded programming</h2>
+<p><strong>What is a toolchain?</strong> A <a href="https://elinux.org/Toolchains">toolchain</a> is the set of software development tools that are chained together such as compilers, debuggers, linkers, assemblers, run-time libraries, sometimes bootloader and kernel. It has to be able to compile source code written in assembly/C/C++ into executables that can run on target devices.</p>
 <h5>Individual assignment - Program the LED dice</h5>
-<h6 id="dice">Arduino IDE + Arduino Libraries + pyupdi</h6>
+<h6 id="dice">Arduino IDE + megaTinyCore + pyupdi</h6>
 <pre class="bg-light py-2 mt-0">
 <code>
     /* 
