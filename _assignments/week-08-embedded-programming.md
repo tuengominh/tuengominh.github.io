@@ -16,7 +16,7 @@ active: 1
 <p></p>
 <h2>Embedded programming</h2>
 <h5>Individual assignment - Program the LED dice</h5>
-<h6 id="dice">Arduino IDE</h6>
+<h6 id="dice">Arduino IDE + Arduino Libraries + pyupdi</h6>
 <pre class="bg-light py-2 mt-0">
 <code>
     /* 
