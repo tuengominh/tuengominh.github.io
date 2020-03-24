@@ -5,12 +5,32 @@ thumb: 09.jpg
 assignment: read a micro-controller data sheet (individual); to program the desined board (individual); to compare the different architectures (in-group). 
 active: 1
 ---
-<p class="font-italic font-weight-bold">* All Arduino and Makefile files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/firmware">here</a>.</p>
+<p class="font-italic font-weight-bold">* All Arduino and Make files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/firmware">here</a>.</p>
 
-<!--<p class="font-italic font-weight-bold">* This week's group assignment was to compare the performance and development workflows of <a href="#group">different micro-controller families.</a></p>-->
+<p class="font-italic font-weight-bold">* To keep the momentum of the 4th and 6th weeks, I tried to understand the <a href="#theory">embedded systems and development toolchain</a>.</p>
+
+<p class="font-italic font-weight-bold">* This week's group assignment was to compare the performance and development workflows of <a href="#group">different micro-controller families.</a></p>
 
 <p class="font-italic font-weight-bold">* I needed to individually read a <a href="#datasheet">micro-controller datasheet</a> and program the board previously designed in <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-06-electronics-design.html#dice">the 6th week</a>.</p>
 
+<h2 id="theory">Understanding embedded systems</h2>
+<h5>Processor</h5>
+<h5>Memory</h5>
+<h5>Programmer</h5>
+<!--<li>Bootloader: a piece of firmware in the micro-controller that allows installing new firmware without the need of an external programmer.</li>
+<li>Programming interfaces: downloading and uploading the on-chip memories. <a href="https://www.nongnu.org/avrdude/">avrdude</a> is a programming interface working with <a href="https://gcc.gnu.org/wiki/avr-gcc">avr-gcc</a> compiler/linker and can be used effectively via the command line. <a href="https://en.wikipedia.org/wiki/Make_(software)">GNU Make</a> is another automation tool for compiling and building applications, with the option of transferring the <code><a href="https://en.wikipedia.org/wiki/Intel_HEX">hex</a></code> file into the target chip.</li>-->
+<h5>Peripheral</h5>
+<h5>Toolchain</h5>
+<p>A <a href="https://elinux.org/Toolchains">toolchain</a> is the set of software development tools that are chained together. <a href="https://en.wikipedia.org/wiki/GNU_toolchain">GNU toolchain</a> which consists a C compiler is widely used in programming embedded systems and most toolchains are developed base on GNU (for instance, AVR GNU toolchain and ARM GNU toolchain). A toolchain usually consists of:</p>
+<li>Editor: editing source code to control embedded systems. It could be a standalone application or built into an IDE. An IDE often consists of a source code editor, a compiler, a linker and a debugger.</li>
+<li>Compiler: transforming the code into object code written by <a href="https://en.wikipedia.org/wiki/Assembly_language">low-level language</a> that a machine can understand. <a href="https://gcc.gnu.org/">GCC</a> is the compiler included in GNU toolchain.</li> 
+<li>Assembler: converting assembly code into executable machine code. It takes the basic commands and operations from assembly code and converts them into binary code that can be recognized by a specific type of processor. IDEs often include assemblers.</li> 
+<li>Linker: combining all small pieces and modules of code together, creating an executable program. The linker of GNU toolchain is called <a href="https://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_mono/ld.html">ld (GNU)</a>.</li>
+<li>Debugger: testing and debugging programs. There are both source-level debugger or machine-language debugger. <a href="https://en.wikipedia.org/wiki/JTAG">JTAG</a> can be used to debug the software on the embedded system. <a href="https://en.wikipedia.org/wiki/GNU_Debugger">GDB</a> is the GNU debugger.</li>
+<li>Libraries: collections of code, such as an API, that allow the app to reference prebuilt functions or other resources. <a href="https://en.wikipedia.org/wiki/GNU_C_Library">glibc</a> provides the core libraries for the GNU system as well as many other systems that use Linux as the kernel.</li>
+<p>In short, a toolchain is able to compile source code written in a high-level language (C/C++) into executables that can run on target devices.</p>
+<h5>Summary</h5>
+<p></p>
 <h2 id="datasheet">Understanding electronics datasheets</h2>
 <h5>Individual assignment - Read the ATtiny1614 datasheet</h5>
 <p>I indeed took a look at this <a href="https://github.com/SpenceKonde/megaTinyCore/blob/master/megaavr/extras/ATtiny_x14.md">pinout diagram</a> and this <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf">datasheet</a> in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-06-electronics-design.html">6th week</a> in order to know where should I connect the FTDI (RX, TX) and UPDI (RESET) header to the chip.</p>
@@ -19,17 +39,8 @@ active: 1
 <img src="{{site.baseurl}}/assets/img/assignments/week-08/datasheet-2.png" class="img-fluid w-100"/>
 <p></p>
 <h2>Embedded programming</h2>
-<p><strong>What is a toolchain?</strong> A <a href="https://elinux.org/Toolchains">toolchain</a> is the set of software development tools that are chained together. <a href="https://en.wikipedia.org/wiki/GNU_toolchain">GNU toolchain</a> is widely used in programming embedded systems. A toolchain usually consists of:</p>
-<li>Compiler: transforming the code into object code written by <a href="https://en.wikipedia.org/wiki/Assembly_language">low-level language</a> that a machine can understand. <a href="https://gcc.gnu.org/">GCC</a> is a commonly used compilers.</li> 
-<li>Editor: editing source code to control embedded systems. It could be a standalone application or built into an IDE. An IDE consists of a source code editor, a compiler, a linker and a debugger.</li>
-<li>Assembler: converting assembly code into executable machine code. It takes the basic commands and operations from assembly code and converts them into binary code that can be recognized by a specific type of processor. IDEs often include assemblers.</li> 
-<li>Linker: combining all small pieces and modules of code together, creating an executable program. A commonly used linker for embedded systems is <a href="https://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_mono/ld.html">ld (GNU)</a>.</li>
-<li>Debugger: testing and debugging programs. There are both source-level debugger or machine-language debugger. <a href="https://en.wikipedia.org/wiki/JTAG">JTAG</a> can be used to debug the software on the embedded system. <a href="https://en.wikipedia.org/wiki/GNU_Debugger">GDB</a> is the GNU debugger.</li>
-<li>Libraries: collections of code, such as an API, that allow the app to reference prebuilt functions or other resources. For example, <a href="https://en.wikipedia.org/wiki/GNU_C_Library">GNU C Library</a>.</li>
-<li>Programming interfaces: downloading and uploading the on-chip memories. <a href="https://www.nongnu.org/avrdude/">avrdude</a> is a programming interface working with <a href="https://gcc.gnu.org/wiki/avr-gcc">avr-gcc</a> compiler/linker and can be used effectively via the command line. <a href="https://en.wikipedia.org/wiki/Make_(software)">GNU Make</a> is another automation tool for compiling and building applications, with the option of transferring the <code><a href="https://en.wikipedia.org/wiki/Intel_HEX">hex</a></code> file into the target chip.</li>
-<p>In short, a toolchain is able to compile source code written in a high-level language (C/C++) into executables that can run on target devices.</p>
-<h5>Individual assignment - Program the LED dice</h5>
-<h6 id="dice">Arduino IDE</h6>
+<h5>Individual assignment - Program the ATtiny1614 LED dice</h5>
+<h6 id="dice">Arduino IDE + pyupdi/jtag2updi</h6>
 <pre class="bg-light py-2 mt-0">
 <code>
     /* 
@@ -140,6 +151,8 @@ active: 1
 <h6>PlatformIO IDE</h6>
 <p></p>
 <h6>GNU Make</h6>
+<p></p>
+<h5>Group assignment - Compare tinyAVR, megaAVR and Xtensa families</h5>
 <p></p>
 
 <div class="container w-100 text-center py-4">
