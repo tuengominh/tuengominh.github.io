@@ -13,6 +13,10 @@ active: 1
 
 <h2 id="datasheet">Understanding electronics datasheets</h2>
 <h5>Individual assignment - Read the ATtiny1614 datasheet</h5>
+<p>I indeed took a look at this <a href="https://github.com/SpenceKonde/megaTinyCore/blob/master/megaavr/extras/ATtiny_x14.md">pinout diagram</a> and this <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf">datasheet</a> in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-06-electronics-design.html">6th week</a> in order to know where should I connect the FTDI (RX, TX) and UPDI (RESET) header to the chip.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-08/datasheet-1.png" class="img-fluid w-100"/>
+<p>The RXD pin of the chip will be connected to the TX pin of the FTDI header, and the TXD pin of the chip will be connected to the RX pin of the FTDI header. This is the basic of UART serial communication.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-08/datasheet-2.png" class="img-fluid w-100"/>
 <p></p>
 <h2>Embedded programming</h2>
 <p><strong>What is a toolchain?</strong> A <a href="https://elinux.org/Toolchains">toolchain</a> is the set of software development tools that are chained together. <a href="https://en.wikipedia.org/wiki/GNU_toolchain">GNU toolchain</a> is widely used in programming embedded systems. A toolchain usually consists of:</p>
