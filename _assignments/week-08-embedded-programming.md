@@ -80,7 +80,7 @@ active: 1
 <p></p>
 <h2>Embedded programming</h2>
 <h5>Individual assignment - Program the ATtiny1614 LED dice</h5>
-<h6 id="dice">Arduino IDE</h6>
+<h6 id="dice">Arduino IDE + pyupdi/jtag2updi</h6>
 <p>Let's take a look at my LED dice case as an example of the process: after compiling the <strong>C++ source code</strong> and linking with the <strong>AVR GNU toolchain</strong>, the <strong>Arduino IDE</strong> employs <strong>avrdude</strong> to convert the executable code into a <code>.hex</code> file that is loaded into the ATtiny1614 board via <strong>UPDI</strong> programmer using a <strong>USB-UART</strong> adapter, with the support of <strong>pyupdi</strong> driver.</p>
 <pre class="bg-light py-2 mt-0">
 <code>
@@ -189,11 +189,40 @@ active: 1
 <iframe width="640" height="480" src="https://www.youtube.com/embed/zI0-utgwI8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/code-2.jpg" class="img-fluid w-100"/>
+<p></p>
 <!--<h6>PlatformIO IDE</h6>
 <p></p>
 <h6>GNU Make</h6>
+<p></p>-->
+<h5>Individual assignment - Program the Barduino 2.0</h5>
+<p>Barduino 2.0 is a ESP32 compatible board designed by our intructor Eduardo Chamorro. During the last day of the lab before the quarantine, we had a chance to quickly fabricate it.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-08/barduino.jpg" class="img-fluid w-100"/>
+<h6>Arduino IDE + ArduinoISP</h6>
+<p>In order to test the Barduino board, I tried a simple blink program. The built-in LED is connected to the GPIO-13 pin.</p>
+<pre class="bg-light py-2 mt-0">
+<code>
+#define BUILTIN_LED 13 
+void setup() {
+  pinMode(BUILTIN_LED, OUTPUT);     
+}
+void loop() {
+  digitalWrite(BUILTIN_LED, LOW);   
+  delay(1000);                     
+  digitalWrite(BUILTIN_LED, HIGH);  
+  delay(1000);                      
+}
+</code>
+</pre>
 <p></p>
-<h5>Group assignment - Compare tinyAVR, megaAVR and Xtensa families</h5>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/barduino-code.png" class="img-fluid w-100"/>
+<p></p>
+<p>I chose the ESP32 Dev Module as the board and ArduinoISP as the programmer. It works as expected!</p>
+<div class="text-center">
+<iframe width="640" height="480" src="https://www.youtube.com/embed/xItGrBRDxX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p></p>
+<!--<h5>Group assignment - Compare tinyAVR, megaAVR and Xtensa families</h5>
 <p></p>-->
 
 <div class="container w-100 text-center py-4">
