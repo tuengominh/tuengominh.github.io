@@ -28,6 +28,7 @@ active: 1
 
 <h5>Software development toolchain</h5>
 <p>A <a href="https://elinux.org/Toolchains">toolchain</a> is the set of software development tools that are chained together. <a href="https://en.wikipedia.org/wiki/GNU_toolchain">GNU toolchain</a> which consists a C compiler is widely used in programming embedded systems and most toolchains are developed base on GNU (for instance, <a href="https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers">AVR GNU toolchain and ARM GNU toolchain</a>). A toolchain usually consists of:</p>
+<ul>
 <li>Editor: editing source code to control embedded systems. It could be a standalone application or built into an IDE. An IDE often consists of a source code editor, a compiler, a linker and a debugger. <a href="https://www.arduino.cc/en/main/software">Arduino IDE</a> and <a href="https://www.microchip.com/mplab/avr-support/atmel-studio-7">Atmel studio</a> are widely used by electronics lovers, and we were also introduced to <a href="https://platformio.org/">PlatformIO</a> by Oscar.</li>
 <li>Compiler: transforming the code into object code written by <a href="https://en.wikipedia.org/wiki/Assembly_language">low-level language</a> that a machine can understand. <a href="https://gcc.gnu.org/">GCC</a> is the compiler included in GNU toolchain.</li> 
 <li>Assembler: converting assembly code into executable machine code. It takes the basic commands and operations from assembly code and converts them into binary code that can be recognized by a specific type of processor. IDEs often include assemblers.</li> 
@@ -35,20 +36,18 @@ active: 1
 <li>Debugger: testing and debugging programs. There are both source-level debugger or machine-language debugger. <a href="https://en.wikipedia.org/wiki/JTAG">JTAG</a> can be used to debug the software on the embedded system. <a href="https://en.wikipedia.org/wiki/GNU_Debugger">GDB</a> is the GNU debugger.</li>
 <li>Libraries: collections of code, such as an API, that allow the app to reference prebuilt functions or other resources. <a href="https://en.wikipedia.org/wiki/GNU_C_Library">glibc</a> provides the core libraries for the GNU system as well as many other systems that use Linux as the kernel.</li>
 <li>Frameworks: an abstraction layer in which software providing generic functionality can be selectively changed by additional user-written code. Some examples: <a href="https://www.arduino.cc/reference/en/">Arduino</a> framework based on <a href="http://wiring.org.co/">Wiring</a> (AVR, ARM), <a href="https://www2.keil.com/mdk5/cmsis">CMSIS</a> framework (Cortex-M/A), <a href="https://github.com/espressif/esp-idf?utm_source=platformio&utm_medium=docs">ESP-IDF</a> framework (ESP32), etc.</li>
+</ul>
 <p>In short, a toolchain is able to compile source code written in a high-level language (C/C++) into executables that can run on target devices. Most of the programs are written in C/C++, but there are also <a href="https://en.wikipedia.org/wiki/Espruino">Espruino</a> that supports JavaScript and <a href="https://micropython.org/">MicroPython</a> that supports Python 3. Both of them have compatible hardware and software.</p>
 <p></p>
 
 <h5>In-system programmer</h5>
-<p>I've already read about ISP in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#isp">4th week</a>. An arduino board can also be used as a programmer to burn a bootloader on another board.</p> 
+<p>I've already read about ISP in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#isp">4th week</a>. An arduino board can also be used as a programmer to burn a bootloader on another board.</p>
 <p>Programming interfaces are used to download and upload the on-chip memories. <a href="https://www.nongnu.org/avrdude/">avrdude</a> is a programming interface working with <a href="https://gcc.gnu.org/wiki/avr-gcc">avr-gcc</a> compiler/linker and can be used effectively via the command line. <a href="https://en.wikipedia.org/wiki/Make_(software)">GNU Make</a> is another automation tool for compiling and building applications, with the option of transferring the <code><a href="https://en.wikipedia.org/wiki/Intel_HEX">hex</a></code> file into the target chip.</p>
-<p>Let's take a look at my <a href="#dice">LED dice case</a> as an example of the process: after compiling the <strong>C++ source code</strong> and linking with the <strong>AVR GNU toolchain</strong>, the <strong>Arduino IDE</strong> employs <strong>avrdude</strong> to convert the executable code into a <code>.hex</code> file that is loaded into the ATtiny1614 board via <strong>UPDI</strong> programmer using a <strong>USB-UART</strong> adapter, with the support of <strong>pyupdi</strong> driver.</p>
 <p></p>
 
 <h2 id="assignment">Understanding electronics datasheets</h2>
 <h5 id="datasheet">Individual assignment - Read the ATtiny1614 datasheet</h5>
-<p>I indeed took a look at this <a href="https://github.com/SpenceKonde/megaTinyCore/blob/master/megaavr/extras/ATtiny_x14.md">pinout diagram</a> and this <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf">datasheet</a> in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-06-electronics-design.html">6th week</a> in order to know where should I connect the FTDI (RX, TX) and UPDI (RESET) header to the chip.</p>
-<img src="{{site.baseurl}}/assets/img/assignments/week-08/datasheet-1.png" class="img-fluid w-100"/>
-<p>The RXD pin of the chip will be connected to the TX pin of the FTDI header, and the TXD pin of the chip will be connected to the RX pin of the FTDI header. This is the basic of UART serial communication.</p>
+<p>I indeed took a look at this <a href="https://github.com/SpenceKonde/megaTinyCore/blob/master/megaavr/extras/ATtiny_x14.md">pinout diagram</a> and this <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1614-data-sheet-40001995A.pdf">datasheet</a> in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-06-electronics-design.html">6th week</a> in order to know where should I connect the FTDI (RX, TX) and UPDI (RESET) header to the chip. The RXD pin of the chip will be connected to the TX pin of the FTDI header, and the TXD pin of the chip will be connected to the RX pin of the FTDI header. This is the basic of UART serial communication.</p>
 <img src="{{site.baseurl}}/assets/img/assignments/week-08/datasheet-2.png" class="img-fluid w-100"/>
 <p><strong>Here are some specs of the ATtiny1614 chip:</strong></p>
 <ul>
@@ -60,26 +59,29 @@ active: 1
 <li>Analog/Digital pins: 10</li>
 <li>ADC Channels: 10 (9 usable)</li>
 <li>DAC: Yes</li>
-<li>Interfaces: UART, SPI, I2C</li>
+<li>Supported interfaces: UART, SPI, I2C</li>
 <li>Programming: UPDI</li>
 <li>Voltage: -0.5 - 6V</li>
 </ul>
-<p><strong>A summary of I/O pins:</strong></p>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-08/datasheet-1.png" class="img-fluid w-100"/>
+<p><strong>A summary of I/O pins and how to use them:</strong></p>
 <ul>
 <li>GND: ground</li>
 <li>VCC: power supply</li>
 <li>PA0 - UDPI/RESET: programming & reset pin</li>
 <li>PA6 - DAC: digital to analog converter</li>
 <li>PA5 - VREF: voltage reference</li>
-<li>PA1, PA2, PA3, PA4 - MOSI, MISO, SCK, SS: I2C interface support.</li>
-<li>PB0, PB1 - SCL, SDA: I2C interface support. PA1 and PA2 can also be used for the same purpose.</li>
-<li>2 digital pins PB2, PB3 - RXD, TXD: UART interface support. PA1 and PA2 can also be used for the same purpose.</li>
+<li>PA1, PA2, PA3, PA4 - MOSI, MISO, SCK, SS: <a href="https://en.wikipedia.org/wiki/Serial_Peripheral_Interface">SPI</a> interface support.</li>
+<li>PB0, PB1 - SCL, SDA: <a href="https://i2c.info/">I2C</a> interface support. PA1 and PA2 can also be used for the same purpose.</li>
+<li>PB2, PB3 - RXD, TXD: <a href="https://www.circuitbasics.com/basics-uart-communication/">UART</a> interface support. PA1 and PA2 can also be used for the same purpose.</li>
 </ul>
-<p>The numbers 0-10 (marked with green and blue colors) can be used while programming in order to indicate the pinout we want to refer to.</p>
+<p>The numbers 0-10 (marked with orange and blue colors) can be used while programming in order to indicate the pin we want to refer to.</p>
 <p></p>
 <h2>Embedded programming</h2>
 <h5>Individual assignment - Program the ATtiny1614 LED dice</h5>
-<h6 id="dice">Arduino IDE + pyupdi/jtag2updi</h6>
+<h6 id="dice">Arduino IDE</h6>
+<p>Let's take a look at my LED dice case as an example of the process: after compiling the <strong>C++ source code</strong> and linking with the <strong>AVR GNU toolchain</strong>, the <strong>Arduino IDE</strong> employs <strong>avrdude</strong> to convert the executable code into a <code>.hex</code> file that is loaded into the ATtiny1614 board via <strong>UPDI</strong> programmer using a <strong>USB-UART</strong> adapter, with the support of <strong>pyupdi</strong> driver.</p>
 <pre class="bg-light py-2 mt-0">
 <code>
     /* 
@@ -187,12 +189,12 @@ active: 1
 <iframe width="640" height="480" src="https://www.youtube.com/embed/zI0-utgwI8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
-<h6>PlatformIO IDE</h6>
+<!--<h6>PlatformIO IDE</h6>
 <p></p>
 <h6>GNU Make</h6>
 <p></p>
 <h5>Group assignment - Compare tinyAVR, megaAVR and Xtensa families</h5>
-<p></p>
+<p></p>-->
 
 <div class="container w-100 text-center py-4">
 <a class="btn m-2" href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-07-computer-controlled-machining.html">Previous Assignment</a>
