@@ -82,6 +82,8 @@ active: 1
 <h5>Individual assignment - Program the ATtiny1614 LED dice</h5>
 <h6 id="dice">Arduino IDE + pyupdi</h6>
 <p>Let's take a look at my LED dice case as an example of the process: after compiling the <strong>C++ source code</strong> and linking with the <strong>AVR GNU toolchain</strong>, the <strong>Arduino IDE</strong> employs <strong>avrdude</strong> to convert the executable code into a <code>.hex</code> file that is loaded into the ATtiny1614 board via <strong>UPDI</strong> programmer using a <strong>USB-UART</strong> adapter, with the support of <strong>pyupdi</strong> driver.</p>
+<img src="{{site.baseurl}}/assets/img/assignments/week-06/code-0.png" class="img-fluid w-100"/>
+<p></p>
 <pre class="bg-light py-2 mt-0">
 <code>
     /* 
@@ -221,7 +223,7 @@ void loop() {
 <p></p>
 <p>I chose the ESP32 Dev Module as the board and ArduinoISP as the programmer. It works as expected!</p>
 <div class="text-center">
-<iframe width="640" height="480" src="https://www.youtube.com/embed/xItGrBRDxX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/OAR-qHhIklg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
 <!--<h5>Group assignment - Compare tinyAVR, megaAVR and Xtensa families</h5>
