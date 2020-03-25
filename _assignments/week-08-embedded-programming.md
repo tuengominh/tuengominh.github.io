@@ -7,7 +7,7 @@ active: 1
 ---
 <p class="font-italic font-weight-bold">* All Arduino and Make files can be downloaded <a href="https://gitlab.fabcloud.org/academany/fabacademy/2020/labs/barcelona/students/tue-ngo/tree/master/assets/img/firmware">here</a>.</p>
 
-<p class="font-italic font-weight-bold">* To keep the momentum of the 4th and 6th weeks, I tried to understand the <a href="#theory">embedded systems and development toolchain</a>.</p>
+<p class="font-italic font-weight-bold">* To keep the momentum of the 4th and 6th weeks, I tried to write down what I understand about the <a href="#theory">embedded systems and development toolchain</a>.</p>
 
 <p class="font-italic font-weight-bold">* This week's group assignment was to compare the performance and development workflows of <a href="#group">different micro-controller families.</a></p>
 
@@ -16,20 +16,20 @@ active: 1
 <h2 id="theory">Understanding embedded systems</h2>
 <p>Allow me to go through a very long note without any images attached, or go straight to the assignments <a href="#assignment">below.</a></p>
 <h5>Micro-controller unit (MCU)</h5>
-<p>A typical <a href="https://en.wikipedia.org/wiki/Microcontroller">micro-controller</a> includes a processor core, memory and input/output (I/O) peripherals on a single chip. A micro-controller controls a singular function by interpreting data received from I/O peripherals using the central processor. The temporary information that the micro-controller receives is stored in its data memory, where the processor accesses it and uses instructions stored in its program memory (firmware) to decipher and apply the incoming data. It then uses its I/O peripherals to communicate and enact the appropriate action.</p>
+<p>A typical <a href="https://en.wikipedia.org/wiki/Microcontroller">micro-controller</a> includes a processor core, memory and input/output (I/O) peripherals on a single chip. A micro-controller controls a singular function by interpreting data received from I/O peripherals using the central processor. The temporary information that the micro-controller receives is stored in its data memory, where the processor accesses it and uses instructions stored in its program memory (firmware) to decipher and apply the incoming data. It then uses its I/O peripherals to communicate and enact the appropriate action. There are many available micro-controller families, some of them are widely used such as AVR (tinyAVR and megaAVR), ARM (Cortex-A/R/M), or Xtensa (ESP32, ESP8266), etc. For example, the ATTiny1614 chip used in my LED dice board is from tinyAVR family. Due to the COVID-19 outbreak situation, we were also provided by the instructors an <a href="https://en.wikipedia.org/wiki/Arduino_Uno">Arduino Uno</a> board with ATmega328P chip, <a href="https://www.luisllamas.es/esp8266-nodemcu/">NodeMCU</a> board with ESP8266 chip and a <a href="https://gitlab.fabcloud.org/barcelonaworkshops/barduino-2.0">Barduino</a> board with ESP32 WROOM chip.</p>
 <ul>
-<li>Central processor (CPU): ranging from small and simple 4-bit processors to complex 64-bit processors. There are many available micro-controller families, some of them are widely used such as AVR (tinyAVR and megaAVR), ARM (Cortex-A/R/M), or Xtensa (ESP32, ESP8266), etc. For example, the ATTiny1614 chip used in my LED dice board has a 16-bit processor from tinyAVR family with 14 I/O pins. Due to the COVID-19 outbreak situation, we were also provided by the instructors an <a href="https://en.wikipedia.org/wiki/Arduino_Uno">Arduino Uno</a> board with ATmega328P processor, <a href="https://www.luisllamas.es/esp8266-nodemcu/">NodeMCU</a> board with ESP8266 processor and a <a href="https://gitlab.fabcloud.org/barcelonaworkshops/barduino-2.0">Barduino</a> board with ESP32 WROOM processor. A processor can be considered as the brain of the device. It can respond to events and perform basic logic and I/O operations. It also performs data transfer operations, which communicate commands to other components in the larger embedded system.</li>
+<li>Central processor (CPU): ranging from small and simple 4-bit processors to complex 64-bit processors. A processor can be considered as the brain of the device. It can respond to events and perform basic logic and I/O operations. It also performs data transfer operations, which communicate commands to other components in the larger embedded system.</li>
 <li>Memory: volatile memory (RAM) for data storage and read-only ROM, EPROM, EEPROM or Flash memory for program storage. Bootloader is a piece of firmware stored in ROM that allows installing new firmware without the need of an external programmer.</li>
 <li>Analog-to-digital converters (ADC) or digital-to-analog converters (DAC): An ADC converts analog signals to digital signals and allows the processor to interface with external analog devices, such as sensors. A DAC allows the processor to communicate its outgoing signals to external analog components.</li>
 <li>Serial communications interfaces and ports: an I/O port allows the micro-controller to connect to external components. It has a similar function to a USB or a parallel port but differs in the way it exchanges bits: I2C, SPI, UART. More information can be found <a href="https://maker.pro/arduino/tutorial/common-communication-peripherals-on-the-arduino-uart-i2c-and-spi">here.</a></li>
-<li>In-circuit programming and in-circuit debugging support: in my case, it's the RESET pin of the chip that is connected to the UPDI header.</li>
+<li>In-circuit programming and in-circuit debugging support: in my case, it's the PA0 pin of the chip that is connected to the UPDI header.</li>
 </ul>
 <p></p>
 
 <h5>Software development toolchain</h5>
 <p>A <a href="https://elinux.org/Toolchains">toolchain</a> is the set of software development tools that are chained together. <a href="https://en.wikipedia.org/wiki/GNU_toolchain">GNU toolchain</a> which consists a C compiler is widely used in programming embedded systems and most toolchains are developed base on GNU (for instance, <a href="https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers">AVR GNU toolchain and ARM GNU toolchain</a>). A toolchain usually consists of:</p>
 <ul>
-<li>Editor: editing source code to control embedded systems. It could be a standalone application or built into an IDE. An IDE often consists of a source code editor, a compiler, a linker and a debugger. <a href="https://www.arduino.cc/en/main/software">Arduino IDE</a> and <a href="https://www.microchip.com/mplab/avr-support/atmel-studio-7">Atmel studio</a> are widely used by electronics lovers, and we were also introduced to <a href="https://platformio.org/">PlatformIO</a> by Oscar.</li>
+<li>Editor: editing source code to control embedded systems. It could be a standalone application or built into an IDE. An IDE often consists of a source code editor, a compiler, a linker and a debugger. <a href="https://www.arduino.cc/en/main/software">Arduino IDE</a> and <a href="https://www.microchip.com/mplab/avr-support/atmel-studio-7">Atmel studio</a> are widely used by electronics lovers, and we were also introduced to <a href="https://platformio.org/">PlatformIO</a> by our instructor Oscar.</li>
 <li>Compiler: transforming the code into object code written by <a href="https://en.wikipedia.org/wiki/Assembly_language">low-level language</a> that a machine can understand. <a href="https://gcc.gnu.org/">GCC</a> is the compiler included in GNU toolchain.</li> 
 <li>Assembler: converting assembly code into executable machine code. It takes the basic commands and operations from assembly code and converts them into binary code that can be recognized by a specific type of processor. IDEs often include assemblers.</li> 
 <li>Linker: combining all small pieces and modules of code together, creating an executable program. The linker of GNU toolchain is called <a href="https://ftp.gnu.org/old-gnu/Manuals/ld-2.9.1/html_mono/ld.html">ld (GNU)</a>.</li>
@@ -37,12 +37,12 @@ active: 1
 <li>Libraries: collections of code, such as an API, that allow the app to reference prebuilt functions or other resources. <a href="https://en.wikipedia.org/wiki/GNU_C_Library">glibc</a> provides the core libraries for the GNU system as well as many other systems that use Linux as the kernel.</li>
 <li>Frameworks: an abstraction layer in which software providing generic functionality can be selectively changed by additional user-written code. Some examples: <a href="https://www.arduino.cc/reference/en/">Arduino</a> framework based on <a href="http://wiring.org.co/">Wiring</a> (AVR, ARM), <a href="https://www2.keil.com/mdk5/cmsis">CMSIS</a> framework (Cortex-M/A), <a href="https://github.com/espressif/esp-idf?utm_source=platformio&utm_medium=docs">ESP-IDF</a> framework (ESP32), etc.</li>
 </ul>
-<p>In short, a toolchain is able to compile source code written in a high-level language (C/C++) into executables that can run on target devices. Most of the programs are written in C/C++, but there are also <a href="https://en.wikipedia.org/wiki/Espruino">Espruino</a> that supports JavaScript and <a href="https://micropython.org/">MicroPython</a> that supports Python 3. Both of them have compatible hardware and software.</p>
+<p>In short, a toolchain is able to compile source code written in a high-level language into executables that can run on target devices. Most of the programs are written in C/C++, but there are also <a href="https://en.wikipedia.org/wiki/Espruino">Espruino</a> that supports JavaScript and <a href="https://micropython.org/">MicroPython</a> that supports Python 3. Both of them have their compatible hardware and software.</p>
 <p></p>
 
 <h5>In-system programmer</h5>
-<p>I've already read about ISP in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#isp">4th week</a>. An arduino board can also be used as a programmer to burn a bootloader on another board.</p>
-<p>Programming interfaces are used to download and upload the on-chip memories. <a href="https://www.nongnu.org/avrdude/">avrdude</a> is a programming interface working with <a href="https://gcc.gnu.org/wiki/avr-gcc">avr-gcc</a> compiler/linker and can be used effectively via the command line. <a href="https://en.wikipedia.org/wiki/Make_(software)">GNU Make</a> is another automation tool for compiling and building applications, with the option of transferring the <code><a href="https://en.wikipedia.org/wiki/Intel_HEX">hex</a></code> file into the target chip.</p>
+<p>I've already read about ISPs in the <a href="http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo/assignments/week-04-electronics-production.html#isp">4th week</a>. An Arduino board can also be used as a programmer to burn the bootloader on another board.</p>
+<p>Programming interfaces are used to download and upload the on-chip memories. <a href="https://www.nongnu.org/avrdude/">avrdude</a> is a programming interface working with <a href="https://gcc.gnu.org/wiki/avr-gcc">avr-gcc</a> compiler/linker and can be used effectively via the command line. <a href="https://en.wikipedia.org/wiki/Make_(software)">GNU Make</a> is another automation tool for compiling and building applications, with the option of transferring the <code>.hex</code> file into the target chip.</p>
 <p></p>
 
 <h2 id="assignment">Understanding electronics datasheets</h2>
@@ -80,7 +80,7 @@ active: 1
 <p></p>
 <h2>Embedded programming</h2>
 <h5>Individual assignment - Program the ATtiny1614 LED dice</h5>
-<h6 id="dice">Arduino IDE + pyupdi/jtag2updi</h6>
+<h6 id="dice">Arduino IDE + pyupdi</h6>
 <p>Let's take a look at my LED dice case as an example of the process: after compiling the <strong>C++ source code</strong> and linking with the <strong>AVR GNU toolchain</strong>, the <strong>Arduino IDE</strong> employs <strong>avrdude</strong> to convert the executable code into a <code>.hex</code> file that is loaded into the ATtiny1614 board via <strong>UPDI</strong> programmer using a <strong>USB-UART</strong> adapter, with the support of <strong>pyupdi</strong> driver.</p>
 <pre class="bg-light py-2 mt-0">
 <code>
@@ -178,11 +178,13 @@ active: 1
     }
 </code>
 </pre>
+<p>In order to know the USB port, I ran this in Terminal:</p>
 <pre class="bg-light py-2 mt-0">
 <code>ls /dev/cu.*</code>
 </pre>
+<p>To upload the program to the board, I ran this in Terminal:</p>
 <pre class="bg-light py-2 mt-0">
-<code>pyupdi.py -d tiny1614 -c /dev/tty.usbmodem14301 -b 9600 -f /tmp/arduino_build_152122/led-dice.ino.hex -v</code>
+<code>pyupdi.py -d tiny1614 -c /dev/ttyUSB0 -b 9600 -f /tmp/arduino_build_152122/led-dice.ino.hex -v</code>
 </pre>
 <p>And here you go my working LED dice!</p>
 <div class="text-center">
