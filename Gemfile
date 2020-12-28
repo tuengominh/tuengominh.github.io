@@ -6,8 +6,13 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "jekyll", "~> 3.8"
-
-gem 'bootstrap', '~> 4.0.0'
+# gem "jekyll", "~> 3.8"
 
 gem 'github-pages', group: :jekyll_plugins
+
+group :jekyll_plugins do
+  # gem "jekyll-github-metadata", "~> 1.0"
+  gem 'bootstrap', '~> 4.0.0'
+  gem 'autoprefixer-rails'
+  gem 'jekyll-assets'
+end

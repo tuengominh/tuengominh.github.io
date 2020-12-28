@@ -2,5 +2,5 @@ baseurl: http://tuengominh.github.io/
 
 exclude: ['README.md']
 collections:
-  assignments:
+  electronics:
     output: true

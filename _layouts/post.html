@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="pt-4 text-center">
+    <h2>{{page.title}}</h2>
+</div>
+<div class="container py-4 mb-5">
+    {% if page.meta %}
+    <div class="pb-2">
+        <p class="highlight">{{page.meta}}</p>
+    </div>
+    {% endif %}
+    <div class="pb-2">
+        {{ content }}
+    </div>
+</div>
