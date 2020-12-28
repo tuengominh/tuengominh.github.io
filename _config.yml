@@ -1,4 +1,4 @@
-baseurl: http://academany.fabcloud.io/fabacademy/2020/labs/barcelona/students/tue-ngo
+baseurl: http://tuengominh.github.io/
 
 exclude: ['README.md']
 collections:
