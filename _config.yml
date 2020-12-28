@@ -1,6 +1,10 @@
-baseurl: http://tuengominh.github.io/
+baseurl: https://tuengominh.github.io
 
 exclude: ['README.md']
 collections:
-  assignments:
+  projects:
+    output: true
+  research:
+    output: true
+  tinkering:
     output: true

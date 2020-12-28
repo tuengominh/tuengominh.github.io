@@ -1,0 +1,16 @@
+---
+layout: default
+title: Research
+---
+<div class="pt-4 text-center">
+    <h2>{{page.title}}</h2>
+</div>
+
+<div class="container py-4 mb-5">
+    <div class="card-group row text-center">
+        {% assign posts = site.research | reverse %}
+        {% for post in posts %}
+        {% include post_group.html %}
+        {% endfor %}
+    </div>
+</div>

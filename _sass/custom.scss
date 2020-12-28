@@ -5,21 +5,17 @@ body {
   flex-direction:column;
 }
 
-h2, h6, h4 {
-  font-family: 'Oswald', sans-serif !important;
-  color: slategrey !important;
+h2, h3, h6, h4 {
+  font-family: 'Nunito Sans', sans-serif !important;
+  color: #001866 !important;
 }
 
 h6 {
   font-size: 18px !important;
 }
 
-.nav-link:hover {
-  color: black !important;
-}
-
 a {
-  color: slategrey !important;
+  color:  #809fff !important;
   cursor: pointer;
 }
 
@@ -38,7 +34,7 @@ a {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: black;
+  background-color: #000000;
 }
 
 .card-img:hover .card-img-overlay {
@@ -59,7 +55,7 @@ a {
 
 .highlight {
   background-color: lightgoldenrodyellow;
-  color: black;
+  color: #000000;
   font-style: italic;
   width: 100%;
   padding: 10px 5px;
@@ -67,7 +63,7 @@ a {
 }
 
 .btn {
-  background-color: black;
+  background-color: #000000;
   color: white !important;
   a {
     color: white !important;
@@ -75,7 +71,8 @@ a {
 }
 
 .btn-inactive, kbd {
-  background-color: lightslategrey !important;
+  background-color:  #bfcfff !important;
+  color: 001247 !important;
 }
 
 #footer {
@@ -84,7 +81,7 @@ a {
   position: fixed;
   height: 50px;
   text-align: center;
-  background-color: black;
+  background-color: #000000;
 }
 
 
