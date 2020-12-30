@@ -2,7 +2,7 @@ baseurl: https://tuengominh.github.io
 
 exclude: ['README.md']
 collections:
-  projects:
+  project:
     output: true
   research:
     output: true
