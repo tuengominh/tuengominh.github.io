@@ -7,16 +7,16 @@ title: Project
 </div>
 
 <div class="container text-center pt-3 mb-4">
-    <a class="btn m-2" href="#">All</a>
+    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project.html">All</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-pecs.html">Cognitive Systems</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-eci.html">Embodied Interaction</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-tbra.html">Bits & Atoms</a>
-    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-others.html">Others</a>
+    <a class="btn m-2" href="#">Others</a>
 </div>
 
 <div class="container py-3 mb-5">
     <div class="card-group row text-center">
-        {% assign posts = site.project %}
+        {% assign posts = site.project | where: "tag", "others" %}
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}

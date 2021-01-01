@@ -1,8 +1,6 @@
-- name: About 
-  link: /about.html
+- name: About
+  link: /
 - name: Project
   link: /project.html
-- name: Research
-  link: /research.html
 - name: Tinkering
   link: /tinkering.html

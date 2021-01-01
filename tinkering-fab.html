@@ -7,17 +7,17 @@ title: Tinkering
 </div>
 
 <div class="container text-center pt-3 mb-4">
-    <a class="btn m-2" href="#">All</a>
+    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering.html">All</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-code.html">Programming</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-eda.html">Electronics</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-3d.html">3D Modeling</a>
-    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-fab.html">Fabrication</a>
+    <a class="btn m-2" href="#">Fabrication</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-others.html">Others</a>
 </div>
 
 <div class="container py-3 mb-5">
     <div class="card-group row text-center">
-        {% assign posts = site.tinkering %}
+        {% assign posts = site.tinkering | where: "tag", "fab" %}
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}

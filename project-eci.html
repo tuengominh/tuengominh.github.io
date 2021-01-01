@@ -7,16 +7,20 @@ title: Project
 </div>
 
 <div class="container text-center pt-3 mb-4">
-    <a class="btn m-2" href="#">All</a>
+    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project.html">All</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-pecs.html">Cognitive Systems</a>
-    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-eci.html">Embodied Interaction</a>
+    <a class="btn m-2" href="#">Embodied Interaction</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-tbra.html">Bits & Atoms</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-others.html">Others</a>
 </div>
 
+<div class="container mb-3">
+    <p class="float-right highlight">These projects are inspired by my time studying interdisciplinary courses provided by the <a href="https://www.upf.edu/web/cmtech">Full-Body Interaction Lab (FubIntLab)</a> at University Pompeu Fabra, led by Dr.Narcís Parés.</p>
+</div>
+
 <div class="container py-3 mb-5">
     <div class="card-group row text-center">
-        {% assign posts = site.project %}
+        {% assign posts = site.project | where: "tag", "eci" %}
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}
