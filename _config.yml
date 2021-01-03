@@ -4,8 +4,8 @@ exclude: ['README.md']
 collections:
   project:
     output: true
-  #tag:
-    #output: true
+  tag:
+    output: true
   tinkering:
     output: true
   
