@@ -14,4 +14,10 @@ layout: default
     <div class="pb-2">
         {{ content }}
     </div>
+    <div class="pb-5">
+        {% if page.tags.size > 0 %}
+        Tag{% if page.tags.size > 1 %}s{% endif %}:
+        {{ page.tags | sort | join: ", " }}
+        {% endif %}
+    </div>
 </div>
