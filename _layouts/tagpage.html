@@ -7,13 +7,13 @@ layout: default
 
 <div class="container pt-3 pb-5 mb-5">
     <div class="card-group row text-center">
-        {% assign posts = site.project | where_exp: "post", "post.tags contains {{page.tag}}" %}
-        {% for post in posts %}
+        <!--{% assign posts = site.project | where_exp: "post", "post.tags contains {{page.tag}}" %}-->
+        {% for post in site.project %}
         {% include post_group.html %}
         {% endfor %}
 
-        {% assign posts = site.tinkering | where_exp: "post", "post.tags contains {{page.tag}}" %}
-        {% for post in posts %}
+        <!--{% assign posts = site.tinkering | where_exp: "post", "post.tags contains {{page.tag}}" %}-->
+        {% for post in site.tinkering %}
         {% include post_group.html %}
         {% endfor %}
     </div>
