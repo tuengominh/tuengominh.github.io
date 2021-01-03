@@ -5,7 +5,7 @@ thumb: code/processing-to-arduino.png
 meta: A simple Processing app controlling a passive buzzer to play classic ringtones.   
 highlight: 1
 topic: code
-tags: [Processing, Arduino, Serial, Piezoelectric Buzzer]
+tags: [processing, arduino, piezoelectric-output-device]
 ---
 
 <p>I want to experiment Serial communication from Processing to Arduino by developing a simple Processing app controlling a passive buzzer. The app plays the classic theme songs of Super Mario, Harry Potter, Game of Thrones, and Tetris.</p>

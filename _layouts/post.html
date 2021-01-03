@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div class="pt-4 container text-center">
+<div class="pt-3 container text-center">
     <h2>{{page.title}}</h2>
 </div>
-<div class="container py-4 mb-5">
+<div class="container py-3 mb-5">
     {% if page.meta %}
     <div class="pb-2">
         <p class="highlight">{{page.meta}}</p>
@@ -14,13 +14,12 @@ layout: default
     <div class="pb-2">
         {{ content }}
     </div>
-    <div class="pb-5">
-        <span>[
+    <div class="pb-3">
+        <h6 class="pb-2" style="line-height: 2.1;">
             {% for tag in page.tags %}
-              {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a href="/tag/{{ tag_name }}"><code class=""><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+            <kbd><a href="{{site.baseurl}}/tag/{{tag}}" style="color: white !important;"><code><nobr>{{tag}}</nobr></code></a></kbd>
             {% endfor %}
-          ]</span>
+        </h6>
     </div>
 </div>
 

@@ -5,7 +5,7 @@ thumb: tbra/pong.png
 meta: A ping-pong game for blind people using HandPose, IMU and vibro-tactile substitution.   
 highlight: 1
 topic: tbra
-tags: [Visual-Inertial Fusion, Sensory Substitution, Haptic Feedback, Processing, Runway ML, HandPose, IMU, Motor Driver, I2C, Serial, OSC, Sensor Fusion]
+tags: [sensor-calibration, sensory-substitution, haptic-feedback, processing, arduino, machine-learning, electromagnetic-output-device, inertial-sensor, gesture-estimation]
 ---
 
 <h4>Demo</h4>
