@@ -1,4 +1,4 @@
 ---
-layout: tagpage
+layout: tag
 tag: 3d-printing
 ---

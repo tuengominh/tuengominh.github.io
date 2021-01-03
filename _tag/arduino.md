@@ -1,4 +1,4 @@
 ---
-layout: tagpage
-title: arduino
+layout: tag
+tag: arduino
 ---
