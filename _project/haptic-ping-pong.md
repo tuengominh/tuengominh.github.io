@@ -13,4 +13,3 @@ tags: [sensory-substitution, haptic-feedback, gesture-estimation, machine-learni
 <div class="text-center">
 <iframe width="100%" height = "480" src="https://www.youtube.com/embed/_gn2VWhzZ2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<p></p>

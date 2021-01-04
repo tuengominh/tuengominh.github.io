@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Processing Ringtone Collection
+title: Processing Ringtone Collection 
 thumb: thumb/processing-to-arduino.png
 meta: A simple Processing app controlling a passive buzzer to play classic ringtones.   
 highlight: 1
@@ -13,7 +13,7 @@ tags: [processing, arduino, piezoelectric-actuator, serial]
 <h4>The Arduino program</h4>
 <h5>Hardware</h5>
 <p>There are two types of piezoelectric buzzer: an active buzzer that has additional circuitry in it which makes it simpler to control (turn on/off) but limits the buzzer to only one tone; and a passive buzzer which can make different tones, but the MCU has to provide an electronic signal at a desired frequency and that frequency will determine the tone. Here is a very nice <a href="https://bgsu.instructure.com/courses/1157282/pages/tutorial-passive-buzzer">tutorial</a> of the ARTC 4330/5330 passive buzzer.</p>
-<img src="{{site.baseurl}}/assets/img/processing/ringtone-2.jpg" class="img-fluid w-100"/>
+<img src="{{site.baseurl}}/assets/img/code/processing/ringtone-2.jpg" class="img-fluid w-100"/>
 <p>The connection is as easy as the wiring above: (-) pin of the buzzer was connected to GND pin of Arduino Uno, and digital pin 4 of Arduino Uno was connected to the (+) pin of the buzzer.</p>
 <p></p>
 
@@ -266,9 +266,8 @@ tags: [processing, arduino, piezoelectric-actuator, serial]
 
 <h4>The Processing program</h4>
 <p><a href="https://processing.org/">Processing</a> is a flexible software sketchbook that allows its users to write code with Java-based syntax within the context of the visual arts. I used to code in Java so it was not a big problem. The <a href="https://processing.org/reference/libraries/serial/index.html">Serial</a> library of Processing is used to open a serial communication with the Arduino Uno board through the USB port, and then we can call <code>write()</code> functions to send the ID of the selected song to the Arduino program.</p>
-<img src="{{site.baseurl}}/assets/img/processing/ringtone-1.png" class="img-fluid w-100"/>
-
-<p><strong>** NOTE **:</strong> I made a mistake by using the <code>mousePressed == true</code> condition within the <code>draw()</code> function instead of the <code>mousePressed()</code> function, that's why we could see in the console that the songs were repeated.</p>
+<img src="{{site.baseurl}}/assets/img/code/processing/ringtone-1.png" class="img-fluid w-100"/>
+<p></p>
 <pre class="bg-light py-2 mt-0" style="overflow: auto; max-height: 350px;">
     <code>
     /* 

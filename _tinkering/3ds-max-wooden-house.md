@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 3Ds Max 101
+title: 3Ds Max Wooden House
 thumb: thumb/3ds-max.png
-meta: Non-intimidating first steps to 3D modeling with Autodesk's 3Ds Max.  
+meta: Wooden house with simple furniture pieces modeled with Autodesk 3Ds Max.  
 highlight: 0
 topic: 3d
 tags: [3ds-max]
