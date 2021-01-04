@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Processing Ringtone Collection
-thumb: code/processing-to-arduino.png
+thumb: thumb/processing-to-arduino.png
 meta: A simple Processing app controlling a passive buzzer to play classic ringtones.   
 highlight: 1
 topic: code
-tags: [processing, arduino, piezoelectric-output-device]
+tags: [processing, arduino, piezoelectric-actuator, serial]
 ---
 
 <p>I want to experiment Serial communication from Processing to Arduino by developing a simple Processing app controlling a passive buzzer. The app plays the classic theme songs of Super Mario, Harry Potter, Game of Thrones, and Tetris.</p>
@@ -16,6 +16,7 @@ tags: [processing, arduino, piezoelectric-output-device]
 <img src="{{site.baseurl}}/assets/img/processing/ringtone-3.jpg" class="img-fluid w-100"/>
 <p>The connection was easy: (-) pin of the buzzer was connected to GND pin of Arduino Uno, and digital pin 4 of Arduino Uno was connected to the (+) pin of the buzzer.</p>
 <p></p>
+
 <h5>Software</h5>
 <p>After looking for their melodies and tempos online, I found <a href="https://github.com/robsoncouto/arduino-songs">this</a> cool repository with a collection of many of my favorite songs. However, the way the durations were calculated and how the music was composed vary. Hence, I had to rewrite a bit.</p>
 <pre class="bg-light py-2 mt-0" style="overflow: auto; max-height: 350px;">
@@ -355,4 +356,3 @@ tags: [processing, arduino, piezoelectric-output-device]
 <div class="text-center">
 <iframe width="100%" height = "480" src="https://www.youtube.com/embed/fnHk2H0XTYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<p></p>

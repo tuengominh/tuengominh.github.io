@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Haptic Ping-Pong Game for The Visually Impaired
-thumb: tbra/pong.png
+thumb: thumb/pong.png
 meta: A ping-pong game for blind people using HandPose, IMU and vibro-tactile substitution.   
 highlight: 1
 topic: tbra
-tags: [sensor-calibration, sensory-substitution, haptic-feedback, processing, arduino, machine-learning, electromagnetic-output-device, inertial-sensor, gesture-estimation]
+tags: [sensory-substitution, haptic-feedback, gesture-estimation, machine-learning, processing, arduino, runway-ml, electromagnetic-actuator, inertial-sensor, sensor-calibration, motor-driver, i2c, serial, osc]
 ---
 
 <h4>Demo</h4>

@@ -1,0 +1,18 @@
+---
+layout: default
+title: Tags
+---
+<div class="pt-3 text-center">
+    <h2 style="color: black !important;">{{page.title}}</h2>
+</div>
+
+<div class="container pt-3">
+    <div class="card-group row text-center">
+        <h6 class="px-3" style="line-height: 2.1;">
+            {% for post in site.tag %}
+            <a class="btn btn-inactive my-2 mr-2" href="{{site.baseurl}}/tag/{{post.tag}}.html"><code><nobr>#{{post.tag}}</nobr></code></a>
+            {% endfor %}
+        </h6>
+    </div>
+</div>
+
