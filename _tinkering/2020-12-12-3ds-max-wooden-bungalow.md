@@ -1,9 +1,10 @@
 ---
 layout: post
-title: 3Ds Max Wooden House
+title: 3Ds Max Wooden Bungalow
 thumb: thumb/3ds-max.png
-meta: Wooden house with simple furniture pieces modeled with Autodesk 3Ds Max.  
+meta: Bungalow with simple furniture pieces modeled with Autodesk 3Ds Max.  
 highlight: 0
+active: 0
 topic: 3d
 tags: [3ds-max]
 ---

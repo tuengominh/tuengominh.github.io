@@ -16,7 +16,7 @@ title: Projects
 
 <div class="container pt-3 pb-5 mb-5">
     <div class="card-group row text-center">
-        {% assign posts = site.project | where: "topic", "others" %}
+        {% assign posts = site.project | where: "topic", "others" | where: "active", "1" | reverse %}
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}

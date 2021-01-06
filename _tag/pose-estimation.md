@@ -1,6 +1,6 @@
 ---
 layout: default
-tag: gesture-estimation
+tag: pose-estimation
 ---
 
 <div class="pt-3 container text-center">
@@ -9,11 +9,11 @@ tag: gesture-estimation
 
 <div class="container pt-3 pb-5 mb-5">
     <div class="card-group row text-center">
-        {% assign posts = site.project | where_exp:"item", "item.tags contains 'gesture-estimation'" }} %}
+        {% assign posts = site.project | where_exp:"item", "item.tags contains 'pose-estimation'" }} %}
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}
-        {% assign posts = site.tinkering | where_exp:"item", "item.tags contains 'gesture-estimation'" }} %}
+        {% assign posts = site.tinkering | where_exp:"item", "item.tags contains 'pose-estimation'" }} %}
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}

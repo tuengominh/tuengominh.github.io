@@ -4,23 +4,23 @@ layout: default
 
 <div class="container pt-3">
     <div class="card-group row text-center">
-        {% assign posts = site.project | where: "highlight", "1" | reverse %}
+        {% assign posts = site.project | where: "highlight", "1" | where: "active", "1" | reverse %}
         {% for post in posts limit:3 %}
         {% include post_group.html %}
         {% endfor %}
-        {% assign posts = site.tinkering | where: "highlight", "1" | reverse %}
+        {% assign posts = site.tinkering | where: "highlight", "1" | where: "active", "1" | reverse %}
         {% for post in posts limit:3 %}
         {% include post_group.html %}
         {% endfor %}
     </div>
-    <p class="float-right highlight mb-4">These are my latest projects. See all of them <a href="https://tuengominh.github.io/project.html">here</a>!</p>
+    <p class="float-right highlight mb-4">These are my favorite projects. Look for more of them <a href="https://tuengominh.github.io/tag.html">here</a>!</p>
 </div>
 
 <div class="container mb-5 pt-2 pb-5">
     <p>I'm <a href="https://www.linkedin.com/in/tue-m-ngo-2b544489/">Tue M. Ngo,</a> an infinite learner from Vietnam and currently based in Barcelona.</p>
     <p>Possessing a multi-disciplinary background, I am confident in leveraging my understanding of human behaviors and emerging technologies to connect the dots, to bridge the gaps and to create impacts across various segments.</p>
     <p>Currently, I am actively seeking an opportunity to deepen my knowledge and gain hands-on experience in the fields of interactive intelligent systems, tangible user interfaces, modular robotics and technology-enhanced experiences. I am also leaning towards being a part of the community of anti-disciplinary social innovators, software craftsmen, digital artists and makers.</p>
-    <p>This website is used to document my journey <a href="{{site.baseurl}}/tinkering.html">gaining new knowledge</a> and <a href="{{site.baseurl}}/project.html">experimenting with ideas</a>. If you have any interesting projects to discuss, feel free to shoot me an <a href="mailto:tue.ngominh@gmail.com">email</a>.</p>
+    <p>This website is used to document my journey <a href="{{site.baseurl}}/tinkering.html">enhancing my cognitive flexibility</a> and <a href="{{site.baseurl}}/project.html">experimenting with ideas</a>. If you have any interesting projects to discuss, feel free to shoot me an <a href="mailto:tue.ngominh@gmail.com">email</a>.</p>
 </div>
 
 

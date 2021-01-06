@@ -4,6 +4,7 @@ title: 3D Software Review
 thumb: thumb/cad.png
 meta: Comparing different 3D computer-aided design tools.  
 highlight: 0
+active: 0
 topic: 3d
 tags: [3ds-max, open-scad, blender, fusion-360, grasshopper]
 ---
