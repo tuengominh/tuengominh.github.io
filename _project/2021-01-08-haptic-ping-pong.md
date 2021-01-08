@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Haptic Ping-Pong Game
+title: Haptic Ping-Pong 
 thumb: thumb/pong.png
 meta: A ping-pong game for blind people using HandPose, IMU and vibro-tactile substitution.   
 highlight: 1
