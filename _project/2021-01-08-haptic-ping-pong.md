@@ -2,26 +2,47 @@
 layout: post
 title: Haptic Ping-Pong 
 thumb: thumb/pong.png
-meta: A ping-pong game for blind people using HandPose, IMU and vibro-tactile substitution.   
+meta: A ping-pong game for blind people using HandPose, IMU and vibro-tactile feedback.   
 highlight: 1
 active: 1
 topic: tbra
 tags: [sensory-substitution, haptic-feedback, machine-learning, computer-vision, pose-estimation, processing, arduino, runway-ml, electromagnetic-actuator, inertial-sensor, sensor-calibration, motor-driver, i2c, serial, osc]
 ---
 
+<h4>Introduction</h4>
+<p></p>
+
+<h5>Inspirations</h5>
+<p></p>
+
+<h5>Pipeline</h5>
 <img src="{{site.baseurl}}/assets/img/code/pong/pong-1.png" class="img-fluid w-100"/>
 <p></p>
-<img src="{{site.baseurl}}/assets/img/code/pong/pong-2.png" class="img-fluid w-100"/>
-<p></p>
+
+<h4>Hardware</h4>
 <img src="{{site.baseurl}}/assets/img/code/pong/pong-3.png" class="img-fluid w-100"/>
 <p></p>
+
+<h4>Software</h4>
+<h5>The Processing ping-pong app</h5>
+<img src="{{site.baseurl}}/assets/img/code/pong/pong-2.png" class="img-fluid w-100"/>
+<p></p>
+
+<h5>Inertial sensor-based motion tracking</h5>
 <img src="{{site.baseurl}}/assets/img/code/pong/pong-4.png" class="img-fluid w-100"/>
 <p></p>
+
+<h5>Vision-based hand pose estimation</h5>
 <img src="{{site.baseurl}}/assets/img/code/pong/pong-5.png" class="img-fluid w-100"/>
 <p></p>
+
+<h5>Vision-to-touch sensory substitution</h5>
 <img src="{{site.baseurl}}/assets/img/code/pong/pong-6.png" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/code/pong/pong-7.png" class="img-fluid w-100"/>
+<p></p>
+
+<h4>Future development</h4>
 <p></p>
 
 <h4>Demo</h4>
