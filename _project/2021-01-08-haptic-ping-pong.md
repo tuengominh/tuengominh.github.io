@@ -9,6 +9,21 @@ topic: tbra
 tags: [sensory-substitution, haptic-feedback, machine-learning, computer-vision, pose-estimation, processing, arduino, runway-ml, electromagnetic-actuator, inertial-sensor, sensor-calibration, motor-driver, i2c, serial, osc]
 ---
 
+<img src="{{site.baseurl}}/assets/img/code/pong/pong-1.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/code/pong/pong-2.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/code/pong/pong-3.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/code/pong/pong-4.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/code/pong/pong-5.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/code/pong/pong-6.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/code/pong/pong-7.png" class="img-fluid w-100"/>
+<p></p>
+
 <h4>Demo</h4>
 <p></p>
 <div class="text-center">
