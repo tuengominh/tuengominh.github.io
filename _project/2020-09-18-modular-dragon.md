@@ -6,8 +6,47 @@ meta: A modular robot to teach preschoolers how to make (almost) anything. Using
 highlight: 1
 active: 1
 topic: tbra
-tags: [3d-printing, laser-cutting, arduino, fusion-360, esp, mqtt, node-red, i2c]
+tags: [3d-printing, laser-cutting, arduino, fusion-360, esp, i2c]
 ---
+
+<h4>Introduction</h4>
+<p></p>
+
+<h5>Inspirations</h5>
+<p></p>
+
+<h5>Pipeline</h5>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/dragon-1.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/dragon-3.png" class="img-fluid w-100"/>
+<p></p>
+
+<h4>Electronics</h4>
+<p></p>
+
+<h4>Programming</h4>
+<p></p>
+
+<h4>Casing</h4>
+<h5>Computer-aided design</h5>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/cad-1.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/cad-2.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/cad-3.png" class="img-fluid w-100"/>
+<p></p>
+<h5>Subtractive fabrication - Laser-cutting</h5>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/cad-4.png" class="img-fluid w-100"/>
+<p></p>
+<p></p>
+<h5>Additive fabrication - 3D printing</h5>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/3d-print-1.png" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/3d-print-2.png" class="img-fluid w-100"/>
+<p></p>
+
+<h4>Assembly</h4>
+<p></p>
 
 <h4>Demo</h4>
 <p></p>
