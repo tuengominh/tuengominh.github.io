@@ -38,14 +38,29 @@ tags: [3d-printing, laser-cutting, arduino, fusion-360, esp, i2c]
 <h5>Subtractive fabrication - Laser-cutting</h5>
 <img src="{{site.baseurl}}/assets/img/fab/dragon/cad-4.png" class="img-fluid w-100"/>
 <p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/laser-1.jpg" class="img-fluid w-100"/>
 <p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/laser-2.jpg" class="img-fluid w-100"/>
+<p></p>
+
 <h5>Additive fabrication - 3D printing</h5>
 <img src="{{site.baseurl}}/assets/img/fab/dragon/3d-print-1.png" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/fab/dragon/3d-print-2.png" class="img-fluid w-100"/>
 <p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/3d-print-3.jpg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/3d-print-4.jpg" class="img-fluid w-100"/>
+<p></p>
 
 <h4>Assembly</h4>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/assem-1.jpg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/assem-2.jpg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/final-1.jpg" class="img-fluid w-100"/>
+<p></p>
+<img src="{{site.baseurl}}/assets/img/fab/dragon/final-2.jpg" class="img-fluid w-100"/>
 <p></p>
 
 <h4>Demo</h4>
