@@ -6,7 +6,7 @@ meta: Comparing different 3D computer-aided design tools.
 highlight: 0
 active: 0
 topic: 3d
-tags: [3ds-max, open-scad, blender, fusion-360, grasshopper]
+tags: [open-scad, blender, fusion-360, grasshopper]
 ---
 
 <p></p>
@@ -22,11 +22,6 @@ tags: [3ds-max, open-scad, blender, fusion-360, grasshopper]
 <p></p>
 <div class="sketchfab-embed-wrapper text-center">
     <iframe width="100%" height = "480" src="https://sketchfab.com/models/f0b2c2e778cc4ad08c8590eda7e951d2/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div> 
-
-<p></p>
-<div class="sketchfab-embed-wrapper text-center">
-    <iframe width="100%" height = "480" src="https://sketchfab.com/models/83082e9022044550a2ba6207adaf420b/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div> 
 
 <p></p>
