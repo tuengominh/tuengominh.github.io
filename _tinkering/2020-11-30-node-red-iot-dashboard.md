@@ -5,8 +5,8 @@ thumb: thumb/mqtt.png
 meta: Testing <a href="https://tuengominh.github.io/project/2020-07-22-3-layer-pcb.html">McDuino ESP32 Board</a> with Mosquitto and Node-RED.  
 highlight: 0
 active: 1
-topic: code
-tags: [mqtt, esp, node-red, arduino, python, internet-of-things, environment-sensor, proximity-sensor, photosensor, piezoelectric-actuator, electroluminescence-actuator, serial]
+topic: eda
+tags: [internet-of-things, mqtt, node-red, arduino, python, esp32, environment-sensor, proximity-sensor, photosensor, piezoelectric-actuator, electroluminescence-actuator]
 ---
 
 <p>During the <a href="http://academy.cba.mit.edu/classes/networking_communications/index.html">Networking and Communications</a> week of the Fab Academy, our instructor Óscar González Fernández set up an MQTT broker on his Raspberry Pi and got all the students to exchange data from their own projects. <a href="https://www.hivemq.com/blog/how-to-get-started-with-mqtt/">MQTT</a> is a machine-to-machine connectivity protocol which uses a publish/subscribe architecture.</p>

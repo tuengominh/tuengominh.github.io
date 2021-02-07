@@ -6,7 +6,7 @@ meta: A ping-pong game for blind people using HandPose, IMU and vibro-tactile fe
 highlight: 1
 active: 1
 topic: eci
-tags: [sensory-substitution, haptic-feedback, machine-learning, computer-vision, pose-estimation, processing, arduino, runway-ml, electromagnetic-actuator, inertial-sensor, sensor-calibration, motor-driver, i2c, serial, osc]
+tags: [physical-computing, machine-learning, sensory-substitution, haptic-feedback, computer-vision,  pose-estimation, processing, arduino, tensorflow, electromagnetic-actuator, inertial-sensor, sensor-calibration, motor-driver]
 ---
 
 <h4>Introduction</h4>

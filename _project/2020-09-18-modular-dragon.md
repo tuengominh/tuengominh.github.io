@@ -6,7 +6,7 @@ meta: A modular robot to teach preschoolers how to make (almost) anything. Using
 highlight: 1
 active: 1
 topic: tbra
-tags: [3d-printing, laser-cutting, arduino, fusion-360, esp, i2c]
+tags: [digital-fabrication, physical-computing, 3d-printing, laser-cutting, arduino, fusion-360, esp32]
 ---
 
 <h4>Introduction</h4>

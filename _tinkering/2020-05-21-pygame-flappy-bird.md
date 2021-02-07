@@ -4,15 +4,15 @@ title: Pygame Flappy Bird
 thumb: thumb/flappy-bird.png
 meta: A pygame Flappy Bird clone using ultrasonic sensor to translate sprites.   
 highlight: 0
-active: 0
+active: 1
 topic: code
-tags: [python, arduino, proximity-sensor, serial]
+tags: [python, arduino, proximity-sensor]
 ---
 
-<img src="{{site.baseurl}}/assets/img/code/pygame/flappy-wire.jpg" class="img-fluid w-100"/>
+<img src="{{site.baseurl}}/assets/img/code/flappy/flappy-wire.jpg" class="img-fluid w-100"/>
 <p></p>
 
-<img src="{{site.baseurl}}/assets/img/code/pygame/flappy-pygame.png" class="img-fluid w-100"/>
+<img src="{{site.baseurl}}/assets/img/code/flappy/flappy-pygame.png" class="img-fluid w-100"/>
 <p></p>
 
 <h4>Demo</h4>
