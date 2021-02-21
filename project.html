@@ -6,14 +6,6 @@ title: Projects
     <h2 style="color: black !important;">{{page.title}}</h2>
 </div>
 
-<div class="container text-center pt-3 mb-4">
-    <a class="btn m-2" href="#">All</a>
-    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-pecs.html">Cognitive Systems</a>
-    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-eci.html">Embodied Interaction</a>
-    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-tbra.html">Modular Robotics</a>
-    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/project-others.html">Others</a>
-</div>
-
 <div class="container pt-3 pb-5 mb-5">
     <div class="card-group row text-center">
         {% assign posts = site.project | where: "active", "1" | reverse %}

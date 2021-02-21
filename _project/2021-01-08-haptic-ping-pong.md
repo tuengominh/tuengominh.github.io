@@ -5,7 +5,6 @@ thumb: thumb/pong.png
 meta: A ping-pong game for blind people using HandPose, IMU and vibro-tactile feedback.   
 highlight: 1
 active: 1
-topic: eci
 tags: [physical-computing, machine-learning, sensory-substitution, haptic-feedback, computer-vision,  pose-estimation, processing, arduino, tensorflow, electromagnetic-actuator, inertial-sensor, sensor-calibration, motor-driver]
 ---
 
