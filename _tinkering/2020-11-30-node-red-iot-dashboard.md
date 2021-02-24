@@ -19,7 +19,7 @@ tags: [internet-of-things, mqtt, node-red, arduino, python, esp32, environment-s
 <p>I followed <a href="https://subscription.packtpub.com/book/application_development/9781787287815/1/ch01lvl1sec12/installing-a-mosquitto-broker-on-macos">this instruction</a> to install Mosquitto for macOS. Running both Mosquitto and Node-RED and plugging in my custom ESP32 board, I could detect a new connection (Node-RED) and a new client (ESP32 board).</p>
 <p></p>
 
-<h4>The Node-RED dashboard</h4>
+<h4>Node-RED dashboard</h4>
 <p><a href="https://nodered.org/">Node-RED</a> is a popular tool providing an elegant solution to wire together IoT devices, APIs, and online services over MQTT. It has a browser-based editor that makes it easy to wire together flows using the wide range of nodes and nice UI elements. <a href="http://noderedguide.com/">This website</a> contains many advanced guides to Node-RED.</p>
 
 <p>I installed Node-RED locally following <a href="https://nodered.org/docs/getting-started/local">this instruction</a>. I expected to see Node-RED installed and connected to MQTT broker.</p>
@@ -38,7 +38,8 @@ tags: [internet-of-things, mqtt, node-red, arduino, python, esp32, environment-s
 <img src="{{site.baseurl}}/assets/img/eda/mqtt/node-red-4.png" class="img-fluid w-100"/>
 
 <h4>Wireless communication</h4>
-<h5>The Arduino program</h5>
+
+<h5>Arduino program</h5>
 <p>I used <code>PubSubClient</code> library to publish all the sensors' data to Node-RED over MQTT, and also subscribed to the payloads sent by Node-RED. Full API documentation can be found <a href="https://pubsubclient.knolleary.net/api.html">here</a>.</p>
 <pre class="bg-light py-2 mt-0" style="overflow: auto; max-height: 350px;">
 <code>
@@ -232,7 +233,8 @@ tags: [internet-of-things, mqtt, node-red, arduino, python, esp32, environment-s
 
 <h4>Wired communication</h4>
 <p>If we don’t have a wifi-capable module but a normal Arduino board, we can use <a href="https://mntolia.com/mqtt-python-with-paho-mqtt-client/">paho-mqtt</a> - a Python MQTT client as a mediator that can exchange data over serial port with the MCU as well as exchange MQTT messages with Mosquitto broker.</p>
-<h5>The Python program</h5>
+
+<h5>Python program</h5>
 <p>In this case, I wired a buzzer and an LDR to an Arduino Uno. LDR data received over serial port will be used to control the NeoPixel strip of the custom ESP32 board. The Python program will also receive MQTT messages to control the buzzer and send it to the Arduino board. The Arduino program is not provided here.</p>
 <pre class="bg-light py-2 mt-0" style="overflow: auto; max-height: 350px;">
 <code>

@@ -5,11 +5,7 @@ layout: default
 <div class="container pt-3">
     <div class="card-group row text-center">
         {% assign posts = site.project | where: "highlight", "1" | where: "active", "1" | reverse %}
-        {% for post in posts limit:3 %}
-        {% include post_group.html %}
-        {% endfor %}
-        {% assign posts = site.tinkering | where: "highlight", "1" | where: "active", "1" | reverse %}
-        {% for post in posts limit:3 %}
+        {% for post in posts limit:6 %}
         {% include post_group.html %}
         {% endfor %}
     </div>
