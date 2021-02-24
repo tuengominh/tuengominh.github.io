@@ -1,6 +1,6 @@
 ---
 layout: default
-tag: associative-memory
+tag: eeg
 ---
 
 <div class="pt-3 container text-center">
@@ -9,11 +9,11 @@ tag: associative-memory
 
 <div class="container pt-3 pb-5 mb-5">
     <div class="card-group row text-center">
-        {% assign posts = site.project | where_exp:"item", "item.tags contains 'associative-memory'" }} %}
+        {% assign posts = site.project | where_exp:"item", "item.tags contains 'eeg'" }} %}
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}
-        {% assign posts = site.tinkering | where_exp:"item", "item.tags contains 'associative-memory'" }} %}
+        {% assign posts = site.tinkering | where_exp:"item", "item.tags contains 'eeg'" }} %}
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}

@@ -1,8 +1,8 @@
 - name: About
   link: /
-- name: Projects
+- name: Project
   link: /project.html
-- name: Experiments
+- name: Tinkering
   link: /tinkering.html
-- name: Tags
+- name: Tag
   link: /tag.html

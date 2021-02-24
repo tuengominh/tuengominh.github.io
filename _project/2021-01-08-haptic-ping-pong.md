@@ -9,6 +9,7 @@ tags: [physical-computing, machine-learning, sensory-substitution, haptic-feedba
 ---
 
 <h4>Introduction</h4>
+<strong>Contributors</strong>: Tue M. Ngo, Pablo Talavante Diaz.
 <p></p>
 
 <h5>Inspirations</h5>
@@ -23,7 +24,7 @@ tags: [physical-computing, machine-learning, sensory-substitution, haptic-feedba
 <p></p>
 
 <h4>Software</h4>
-<h5>The Processing ping-pong app</h5>
+<h5>Processing ping-pong app</h5>
 <img src="{{site.baseurl}}/assets/img/code/pong/pong-2.png" class="img-fluid w-100"/>
 <p></p>
 
@@ -49,4 +50,5 @@ tags: [physical-computing, machine-learning, sensory-substitution, haptic-feedba
 <div class="text-center">
 <iframe width="100%" height = "480" src="https://www.youtube.com/embed/SQLM95XENuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
 

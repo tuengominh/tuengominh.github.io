@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pygame Flappy Bird
+title: Sonar Flappy Bird
 thumb: thumb/flappy-bird.png
 meta: A pygame Flappy Bird clone using ultrasonic sensor to translate sprites.   
 highlight: 0
