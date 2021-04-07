@@ -5,6 +5,7 @@ thumb: thumb/emotion-memory.png
 meta: Expression-based emotion classification and its influence on memory formation.   
 highlight: 0
 active: 1
+topic: code
 tags: [associative-memory, emotion-classification, machine-learning, python]   
 ---
 

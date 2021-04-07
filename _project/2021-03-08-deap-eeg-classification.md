@@ -5,7 +5,7 @@ thumb: thumb/eeg.png
 meta: EEG-based emotion classification using DEAP dataset.   
 highlight: 1
 active: 1
-tags: [eeg, emotion-classification, machine-learning, data-analysis, python]   
+tags: [eeg-classification, emotion-classification, supervised-learning, machine-learning, data-analysis, python]   
 ---
 
 <h4>Introduction</h4>
