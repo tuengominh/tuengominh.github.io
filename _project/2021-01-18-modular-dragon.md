@@ -5,16 +5,10 @@ thumb: thumb/dragon.jpg
 meta: A modular robot to teach preschoolers how to make (almost) anything. Using the <a href="https://tuengominh.github.io/project/2020-07-22-3-layer-pcb.html">McDuino ESP32 Board</a>.   
 highlight: 1
 active: 1
-tags: [robotics, digital-fabrication, physical-computing, 3d-printing, laser-cutting, arduino, fusion-360, esp32]
+tags: [digital-fabrication, physical-computing, 3d-printing, laser-cutting, arduino, fusion-360, esp32]
 ---
 
 <h4>Introduction</h4>
-<p></p>
-
-<h5>Inspirations</h5>
-<p></p>
-
-<h5>Pipeline</h5>
 <img src="{{site.baseurl}}/assets/img/fab/dragon/dragon-1.png" class="img-fluid w-100"/>
 <p></p>
 <img src="{{site.baseurl}}/assets/img/fab/dragon/dragon-3.png" class="img-fluid w-100"/>

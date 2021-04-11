@@ -6,7 +6,7 @@ meta: Expression-based emotion classification and its influence on memory format
 highlight: 0
 active: 1
 topic: code
-tags: [associative-memory, emotion-classification, machine-learning, python]   
+tags: [episodic-memory, emotion-classification, machine-learning, python]   
 ---
 
 <h4>Introduction</h4>
