@@ -5,7 +5,7 @@ thumb: thumb/mqtt.png
 meta: Testing <a href="https://tuengominh.github.io/project/2020-07-22-3-layer-pcb.html">McDuino ESP32 Board</a> with Mosquitto and Node-RED.  
 highlight: 0
 active: 1
-topic: eda
+topic: code
 tags: [internet-of-things, mqtt, node-red, arduino, python, esp32, environment-sensor, proximity-sensor, photosensor, piezoelectric-actuator, electroluminescence-actuator]
 ---
 
