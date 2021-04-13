@@ -4,7 +4,7 @@ title: Associative Memory and Emotion Regconition
 thumb: thumb/emotion-memory.png
 meta: Expression-based emotion classification and its influence on memory formation.   
 highlight: 0
-active: 0
+active: 1
 tags: [episodic-memory, emotion-classification, machine-learning, python]   
 ---
 

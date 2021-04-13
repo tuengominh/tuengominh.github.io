@@ -7,10 +7,10 @@ highlight: 1
 active: 1
 tags: [eeg, emotion-classification, supervised-learning, machine-learning, data-analysis, python]   
 ---
+<strong>Contributors:</strong> Tue M. Ngo, Maja Haugstrup From Andersen, Esen Küçüktütüncü, Aarushi Sharma.
+<p><strong>Source code:</strong> <a href="https://github.com/tuengominh/deap-eeg-classification">deap-eeg-classification</a>.</p>
 
 <h4>Introduction</h4>
-<strong>Contributors</strong>: Tue M. Ngo, Maja Haugstrup From Andersen, Esen Küçüktütüncü, Aarushi Sharma.
-<p><strong>Source code</strong>: <a href="https://github.com/tuengominh/deap-eeg-classification">deap-eeg-classification</a>.</p>
 <p></p>
 
 <h4>DEAP dataset</h4>
