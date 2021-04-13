@@ -2,15 +2,15 @@
 layout: post
 title: How You Get There From Here
 thumb: thumb/nav.png
-meta: A Unity experiment to study the use of egocentric vs. allocentric strategies in spatial navigation.   
+meta: A Unity experiment to study the use of egocentric vs. allocentric strategies in human spatial navigation.   
 highlight: 1
 active: 1
 tags: [episodic-memory, spatial-navigation, virtual-reality, data-analysis, unity, python]   
 ---
+<p><strong>Contributors:</strong> Tue M. Ngo, Pablo Talavante Diaz, Mario Tsavalos, William McFadden.</p>
+<p><strong>Source code:</strong> <a href="https://github.com/tuengominh/hygtfh">how-you-get-there-from-here</a>.</p>
 
 <h4>Introduction</h4>
-<p><strong>Contributors</strong>: Tue M. Ngo, Pablo Talavante Diaz, Mario Tsavalos, William McFadden.</p>
-<p><strong>Source code</strong>: <a href="https://github.com/tuengominh/hygtfh">how-you-get-there-from-here</a>.</p>
 <p></p>
 
 <h4>Unity experiment</h4>

@@ -7,10 +7,10 @@ highlight: 1
 active: 1
 tags: [physical-computing, machine-learning, sensory-substitution, haptic-feedback, computer-vision,  pose-estimation, processing, arduino, electromagnetic-actuator, inertial-sensor, sensor-calibration, motor-driver]
 ---
+<p><strong>Contributors:</strong> Tue M. Ngo, Pablo Talavante Diaz.</p>
+<p><strong>Source code:</strong> <a href="https://github.com/tuengominh/haptic-ping-pong">haptic-ping-pong</a>.</p>
 
 <h4>Introduction</h4>
-<p><strong>Contributors</strong>: Tue M. Ngo, Pablo Talavante Diaz.</p>
-<p><strong>Source code</strong>: <a href="https://github.com/tuengominh/haptic-ping-pong">haptic-ping-pong</a>.</p>
 <img src="{{site.baseurl}}/assets/img/code/pong/pong-1.png" class="img-fluid w-100"/>
 <p></p>
 

@@ -8,9 +8,9 @@ active: 1
 topic: eda
 tags: [digital-fabrication, physical-computing, 3d-printing, arduino, esp32, motor-driver, electroluminescence-actuator, electromagnetic-actuator]
 ---
+<p><strong>Contributors:</strong> Tue M. Ngo, David Prieto.</p>
 
 <h4>Introduction</h4>
-<strong>Contributors</strong>: Tue M. Ngo, David Prieto.
 <p></p>
 
 <h4>Electronics</h4>
