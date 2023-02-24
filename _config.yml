@@ -9,3 +9,5 @@ collections:
   tinkering:
     output: true
   
+plugins:
+  - jemoji

@@ -1,10 +1,10 @@
-- name: about
+- name: About
   link: /
-- name: projects
+- name: Projects
   link: /projects.html
-- name: tinkering
+- name: Tinkering
   link: /tinkering.html
-- name: tl;dr
+- name: TL;DR
   link: /tldr.html
-- name: tags
+- name: Tags
   link: /tags.html
