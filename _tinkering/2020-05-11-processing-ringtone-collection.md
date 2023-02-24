@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Processing Ringtone Collection 
-thumb: thumb/processing-to-arduino.png
+thumb: thumb/ringtone.png
 meta: A simple Processing app controlling a passive buzzer to play classic ringtones.   
 highlight: 0
 active: 1

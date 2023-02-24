@@ -1,0 +1,25 @@
+---
+layout: default
+title: Tinkering
+---
+<div class="pt-3 text-center">
+    <h2 style="color: black !important;">{{page.title}}</h2>
+</div>
+
+<div class="container text-center pt-3 mb-4">
+    <a class="btn m-2" href="#">All</a>
+    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-code.html">Programming</a>
+    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-eda.html">Electronics</a>
+    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-fab.html">Fabrication</a>
+    <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-others.html">Others</a>
+</div>
+
+<div class="container pt-3 pb-5 mb-5">
+    <div class="card-group row text-center">
+        {% assign posts = site.tinkering | where: "active", "1" | reverse %}
+        {% for post in posts %}
+        {% include post_group.html %}
+        {% endfor %}
+    </div>
+</div>
+
