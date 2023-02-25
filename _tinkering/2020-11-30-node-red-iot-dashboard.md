@@ -9,7 +9,7 @@ topic: code
 tags: [internet-of-things, mqtt, node-red, arduino, python, esp32, environment-sensor, proximity-sensor, photosensor, piezoelectric-actuator, electroluminescence-actuator]
 ---
 
-<p>During the <a href="http://academy.cba.mit.edu/classes/networking_communications/index.html">Networking and Communications</a> week of the Fab Academy, our instructor Óscar González Fernández set up an MQTT broker on his Raspberry Pi and got all the students to exchange data from their own projects. <a href="https://www.hivemq.com/blog/how-to-get-started-with-mqtt/">MQTT</a> is a machine-to-machine connectivity protocol which uses a publish/subscribe architecture.</p>
+<p>During the <a href="http://academy.cba.mit.edu/classes/networking_communications/index.html">Networking and Communications</a> week of the Fab Academy, @oscargonfer set up an MQTT broker on his Raspberry Pi and got all peers to exchange data from their own projects. <a href="https://www.hivemq.com/blog/how-to-get-started-with-mqtt/">MQTT</a> is a machine-to-machine connectivity protocol which uses a publish/subscribe architecture.</p>
 <img src="{{site.baseurl}}/assets/img/eda/mqtt/mqtt-0.png" class="img-fluid w-100"/>
 <p>I decided to work on the whole setup myself and test whether I could apply MQTT with my custom <a href="https://tuengominh.github.io/project/2020-07-22-3-layer-pcb.html">McDuino ESP32 Board</a>. It is not mandatory to test my board with other boards, hence, my plan was to simply send messages from my sensors to my actuators of the same board over MQTT. I added another node to the networking flow, which is a Node-RED dashboard.</p>
 
