@@ -97,58 +97,6 @@ a {
   background-color: #000000;
 }
 
-#search-bar {
-  margin: 32px auto;
-  border: 1px solid #000000;
-  border-radius: 20px;
-  padding: 0 20px;
 
-  & #search {
-    font-family: 'Roboto Mono', monospace !important;
-    width: calc(100% - 30px);
-    border: none;
-    line-height: 44px;
-    outline: none;
-    border-style: none;
-  }
-
-  & #search-result {
-    display: none;
-    position: absolute;
-    top: 80px;
-    width: calc(100% - 70px);
-    max-height: 325px;
-    overflow-y: auto;
-    background-color: white;
-    box-shadow: 0px 4px 8px 0 #ccc;
-    z-index: 99999;
-
-    & .result-item {
-      display: block;
-      padding: 8px 16px;
-      text-decoration: none;
-
-      & .title,
-      .description {
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      & .title {
-        font-family: 'JetBrains Mono', monospace !important;
-        color: #7195ff !important;
-        padding-bottom: 4px;
-        font-weight: 300 !important;
-        font-size: 11px;
-      }
-      & .description {
-        font-family: 'Roboto Mono', monospace !important;
-        color: #000000;
-        font-size: 11px;
-      }
-    }
-  }
-}
 
 
