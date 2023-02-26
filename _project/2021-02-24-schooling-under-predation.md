@@ -3,7 +3,7 @@ layout: post
 title: Schooling Under Predation
 thumb: thumb/boids.png
 meta: A V-REP boids simulation based on the principles of intensity and priority.   
-highlight: 1
+highlight: 0
 active: 1
 tags: [robotics, reactive-behavior, homeostasis, allostasis, python, v-rep]   
 ---
