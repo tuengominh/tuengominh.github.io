@@ -7,7 +7,7 @@ highlight: 1
 active: 1
 tags: [robotics, reactive-behavior, homeostasis, allostasis, python, v-rep]   
 ---
-<p><strong>Contributors:</strong> Tue M. Ngo, Mario Tsavalos, Aarushi Sharma.</p>
+
 <p><strong>Source code:</strong> <a href="https://github.com/tuengominh/flocking-under-predation">schooling-under-predation</a>.</p>
 
 <h4>Introduction</h4>

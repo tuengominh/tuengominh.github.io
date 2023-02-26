@@ -7,7 +7,8 @@ highlight: 1
 active: 1
 tags: [eeg, emotion-classification, supervised-learning, machine-learning, data-analysis, python]   
 ---
-<strong>Contributors:</strong> Tue M. Ngo, Maja Haugstrup From Andersen.
+
+<p><strong>In collaboration with:</strong> <a href="https://dk.linkedin.com/in/maja-from-andersen">Maja From Andersen.</a></p>
 <p><strong>Source code:</strong> <a href="https://github.com/tuengominh/deap-eeg-classification">deap-eeg-classification</a>.</p>
 
 <h4>Introduction</h4>

@@ -9,17 +9,20 @@ topic: code
 tags: [processing, arduino, piezoelectric-actuator]
 ---
 
-<p>I want to experiment Serial communication from Processing to Arduino by developing a simple Processing app controlling a passive buzzer. The app plays the classic theme songs of Super Mario, Harry Potter, Game of Thrones, and Tetris.</p>
+<p>I want to try serial communication from Processing to Arduino by developing a simple Processing app controlling a passive buzzer. The app plays the classic theme songs of Super Mario, Harry Potter, Game of Thrones, and Tetris.</p>
 
 <h4>Arduino program</h4>
 <h5>Hardware</h5>
-<p>There are two types of piezoelectric buzzer: an active buzzer that has additional circuitry in it which makes it simpler to control (turn on/off) but limits the buzzer to only one tone; and a passive buzzer which can make different tones, but the MCU has to provide an electronic signal at a desired frequency and that frequency will determine the tone. Here is a very nice <a href="https://bgsu.instructure.com/courses/1157282/pages/tutorial-passive-buzzer">tutorial</a> of the ARTC 4330/5330 passive buzzer.</p>
+<p>There are two types of piezoelectric buzzer: an active buzzer that has additional circuitry in it which makes it simpler to control (turn on/off) but limits the buzzer to only one tone; and a passive buzzer which can make different tones, but the MCU has to provide an electronic signal at a desired frequency and that frequency will determine the tone. Here is a nice <a href="https://bgsu.instructure.com/courses/1157282/pages/tutorial-passive-buzzer">tutorial</a> for simple controls of ARTC 4330/5330 passive buzzer.</p>
+
 <img src="{{site.baseurl}}/assets/img/code/ringtone/ringtone-2.jpg" class="img-fluid w-100"/>
+
 <p>The connection is as easy as the wiring above: (-) pin of the buzzer was connected to GND pin of Arduino Uno, and digital pin 4 of Arduino Uno was connected to the (+) pin of the buzzer.</p>
 <p></p>
 
 <h5>Software</h5>
-<p>After looking for their melodies and tempos online, I found <a href="https://github.com/robsoncouto/arduino-songs">this</a> cool repository with a collection of many of my favorite songs. However, the way the durations were calculated and how the music was composed vary. Hence, I had to rewrite a bit.</p>
+<p>After looking for their melodies and tempos online, I found <a href="https://github.com/robsoncouto/arduino-songs">this super guay repository</a> with a collection of many of my favorite childhood theme songs. However, the way the durations were calculated and how the music was composed vary. Hence, I had to rewrite a bit.</p>
+
 <pre class="bg-light py-2 mt-0" style="overflow: auto; max-height: 350px;">
 <code>
     /* 
@@ -266,7 +269,8 @@ tags: [processing, arduino, piezoelectric-actuator]
 <p></p>
 
 <h4>Processing program</h4>
-<p><a href="https://processing.org/">Processing</a> is a flexible software sketchbook that allows its users to write code with Java-based syntax within the context of the visual arts. I used to code in Java so it was not a big problem. The <a href="https://processing.org/reference/libraries/serial/index.html">Serial</a> library of Processing is used to open a serial communication with the Arduino Uno board through the USB port, and then we can call <code>write()</code> functions to send the ID of the selected song to the Arduino program.</p>
+<p><a href="https://processing.org/">Processing</a> is a flexible software sketchbook that allows its users to write code with Java-based syntax within the context of the visual arts. The <a href="https://processing.org/reference/libraries/serial/index.html">Serial</a> library of Processing is used to open a serial communication with the Arduino Uno board through the USB port, and then we can call <code>write()</code> functions to send the ID of the selected song to the Arduino program.</p>
+
 <img src="{{site.baseurl}}/assets/img/code/ringtone/ringtone-1.png" class="img-fluid w-100"/>
 <p></p>
 <pre class="bg-light py-2 mt-0" style="overflow: auto; max-height: 350px;">
