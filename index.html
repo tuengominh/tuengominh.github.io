@@ -7,7 +7,7 @@ layout: default
     <p>Currently, I am interested in topics such as biomimetic adaptive systems, neuromorphic engineering, modular robotics and bits-to-atoms computation. I am also leaning towards being part of a community of anti-disciplinary software craftsmen and makers.</p>
     <p class="mb-4">This website is used to document my journey <a href="{{site.baseurl}}/tldr.html">finding personal knowledge online</a> :woman_scientist:, <a href="{{site.baseurl}}/tinkering.html">exploring new tools</a> :woman_technologist: and <a href="{{site.baseurl}}/projects.html">building (almost) anything</a> :woman_mechanic:. If you have any interesting ideas to discuss, shoot me an <a href="mailto:tue.ngominh@gmail.com">email</a>.</p>
     <p class="float-right highlight pt-3 mb-4">These are my favorite projects. Look for more of them <a href="https://tuengominh.github.io/tag.html">here</a>!</p>
-    <div class="card-group row text-center">
+    <div class="card-group row text-center mb-5">
         {% assign posts = site.project | where: "highlight", "1" | where: "active", "1" | reverse %}
         {% for post in posts limit:6 %}
         {% include post_group.html %}
