@@ -1,0 +1,14 @@
+- name: Predoctoral Researcher 
+  org: Donders Institute for Brain, Cognition and Behaviour
+  url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
+  loc: Nijmegen, The Netherlands
+  tags: [spiking neural networks, biological neuron models, neuromorphic computing]
+  date: 2022 - 2026
+  img:
+- name: Research Assistant 
+  org: Institute for Bioengineering of Catalonia 
+  url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
+  loc: Barcelona, Spain
+  tags: [arduino]
+  date: 2021 - 2022
+  img:

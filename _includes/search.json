@@ -1,0 +1,9 @@
+[
+  {% for p in site.project %}
+    {
+      "title": "{{ p.title | escape }}",
+      "tags": "{{ p.tags | join: ', ' }}",
+      "url": "{{ site.baseurl }}{{ p.url }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
