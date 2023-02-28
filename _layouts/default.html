@@ -20,6 +20,7 @@
 
     {% include navigation.html %}
     {{ content }}
+    {% include search.html %}
     {% include footer.html %}
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -32,13 +33,13 @@
           searchInput: document.getElementById('search-input'),
           resultsContainer: document.getElementById('results-container'),
           json: '/search.json',
-          searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+          searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
           noResultsText: 'No results found',
-          limit: 10,
+          limit: 3,
           fuzzy: false,
           exclude: ['Welcome']
         })
     </script>
-    
+
 </body>
 </html>
