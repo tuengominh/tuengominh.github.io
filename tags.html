@@ -10,13 +10,19 @@ title: Tags
     <p class="highlight">Look for a keyword of your interest here, maybe I have done something with it before!</p>
 </div>
 
+<div id="search-bar" class="container pt-3">
+    <input type="text" onkeyup="search_project()" name="search" id="search-input" placeholder="What are you looking for?">
+    <ul id="results-container"></ul>
+</div>
+
 <div class="container pt-2 pb-5 mb-5">
     <div class="card-group row text-center">
         <h6 class="px-3" style="line-height: 2.1;">
             {% for post in site.tag %}
-            <a class="btn btn-inactive my-2 mr-2" href="{{site.baseurl}}/tag/{{post.tag}}.html"><code><nobr>#{{post.tag}}</nobr></code></a>
+            <a class="search_results btn btn-inactive my-2 mr-2" href="{{site.baseurl}}/tag/{{post.tag}}.html"><code><nobr>#{{post.tag}}</nobr></code></a>
             {% endfor %}
         </h6>
     </div>
 </div>
 
+<script src="{{site.baseurl}}/assets/js/search.js"></script> 
