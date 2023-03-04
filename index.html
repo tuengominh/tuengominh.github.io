@@ -13,7 +13,20 @@ layout: default
 </div>
 
 <div class="container pt-3 pb-5 mb-5">
-    {% include slider.html %}
+    <a class="carousel-control-prev w-auto" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <div class="card-group row text-center">
+        {% assign posts = site.project | where: "highlight", "1" | where: "active", "1" | reverse %}
+        {% for post in posts %}
+        {% include post_group.html %}
+        {% endfor %}
+    </div>
+    <a class="carousel-control-next w-auto" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
 
 
