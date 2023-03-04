@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predict Emotions Through Brain Waves
+title: Predict Emotions Through EEG Data
 thumb: thumb/eeg.png
 meta: An exploratory study of EEG-based emotion classification by means of brain waves and corresponding brain regions.   
 highlight: 1

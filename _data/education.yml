@@ -2,11 +2,11 @@
   org: Radboud Universiteit
   url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
   loc: Nijmegen, The Netherlands
-  tags: [spiking neural networks, biological neuron models, neuromorphic computing]
+  tags: [neuromorphic-computing]
   date: 2022 - 2026
 - name: MSc, Cognitive Systems and Interactive Media 
   org: Universitat Pompeu Fabra
   url: https://www.upf.edu/web/csim 
   loc: Barcelona, Spain
-  tags: [reinforcement learning, supervised learning]
+  tags: [reinforcement-learning, supervised-learning]
   date: 2020 - 2021

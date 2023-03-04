@@ -1,10 +1,11 @@
-<h5>{{item.name}}</h5>
-<h6><a href="{{site.baseurl}}{{item.url}}">{{item.org}}</a></h6>
-{% if item.loc %}
-<p style="display:inline">{{item.loc}} &#x2022; </p>
-{% endif %}
+<h6 style="color:#000000 !important;">{{item.name}}</h6>
+<p><a style="color:#ff00ff !important; font-weight: 500 !important;" href="{{site.baseurl}}{{item.url}}">{{item.org}}</a></p>
+{% item.loc %}
+<p>{{item.loc}} &#x2022; {{item.date}}</p>
+{% else %}
 <p>{{item.date}}</p>
-<h6 class="px-0 pb-3" style="line-height: 2.1;">
+{% endif %}
+<h6 class="px-0 pb-5" style="line-height: 2.1;">
     {% for tag in item.tags %}
     <kbd><a class="m-1" href="{{site.baseurl}}/tag/{{tag}}.html" style="color: white !important;"><code><nobr>#{{tag}}</nobr></code></a></kbd>
     {% endfor %}
