@@ -3,7 +3,7 @@ layout: post
 title: How You Get There From Here
 thumb: thumb/nav.png
 meta: A Unity experiment to study the use of egocentric vs. allocentric strategies in human spatial navigation.   
-highlight: 1
+highlight: 0
 active: 1
 tags: [spatial-navigation, working-memory, virtual-reality, data-analysis, unity]   
 ---
