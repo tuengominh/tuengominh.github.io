@@ -7,7 +7,7 @@ highlight: 1
 active: 1
 tags: [virtual-reality, spatial-navigation, working-memory, data-analysis, unity]   
 ---
-<p><strong>In collaboration with:</strong> <a href="https://github.com/pablotalavante">Pablo Talavante Diaz.</a></p>
+<p><strong>In collaboration with:</strong> <a href="https://github.com/pablotalavante">Pablo Talavante Diaz</a>.</p>
 <p><strong>Source code:</strong> <a href="https://github.com/tuengominh/hygtfh">how-you-get-there-from-here</a>.</p>
 
 <h4>Introduction</h4>

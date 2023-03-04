@@ -8,7 +8,7 @@ active: 1
 topic: fab
 tags: [motor-driver, electroluminescence-actuator, electromagnetic-actuator]
 ---
-<p><strong>In collaboration with:</strong> <a href="https://twitter.com/d_prieto">David Prieto.</a></p>
+<p><strong>In collaboration with:</strong> <a href="https://twitter.com/d_prieto">David Prieto</a>.</p>
 
 <h4>Introduction</h4>
 <p></p>

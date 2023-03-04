@@ -10,5 +10,14 @@ title: TL;DR
     <p class="highlight">Here are scientific articles I found interesting and my attempts to summarize and replicate them.</p>
 </div>
 
+<div class="container pt-3 pb-5 mb-5">
+    <div class="card-group row text-center">
+        {% assign posts = site.tldr | where: "active", "1" | reverse %}
+        {% for post in posts %}
+        {% include post_group.html %}
+        {% endfor %}
+    </div>
+</div>
+
 
 

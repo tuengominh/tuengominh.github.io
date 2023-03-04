@@ -7,7 +7,7 @@ highlight: 1
 active: 1
 tags: [physical-computing, sensory-substitution, haptic-feedback, pose-estimation, motion-tracking, sensor-fusion, processing, arduino, imu-sensor, electromagnetic-actuator]
 ---
-<p><strong>In collaboration with:</strong> <a href="https://github.com/pablotalavante">Pablo Talavante Diaz.</a></p>
+<p><strong>In collaboration with:</strong> <a href="https://github.com/pablotalavante">Pablo Talavante Diaz</a>.</p>
 <p><strong>Source code:</strong> <a href="https://github.com/tuengominh/haptic-ping-pong">haptic-ping-pong</a>.</p>
 
 <h4>Introduction</h4>

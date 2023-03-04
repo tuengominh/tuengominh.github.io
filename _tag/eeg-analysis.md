@@ -17,5 +17,9 @@ tag: eeg-analysis
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}
+        {% assign posts = site.tldr | where_exp:"item", "item.tags contains 'eeg-analysis'" }} %}
+        {% for post in posts %}
+        {% include post_group.html %}
+        {% endfor %}
     </div>
 </div>

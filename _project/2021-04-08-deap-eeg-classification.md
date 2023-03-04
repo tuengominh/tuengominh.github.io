@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Emotions and Brain Waves
+title: Predict Emotions Through Brain Waves
 thumb: thumb/eeg.png
 meta: An exploratory study of EEG-based emotion classification by means of brain waves and corresponding brain regions.   
 highlight: 1
@@ -8,7 +8,7 @@ active: 1
 tags: [eeg-analysis, emotion-classification, supervised-learning, data-analysis]   
 ---
 
-<p><strong>In collaboration with:</strong> <a href="https://dk.linkedin.com/in/maja-from-andersen">Maja From Andersen.</a></p>
+<p><strong>In collaboration with:</strong> <a href="https://dk.linkedin.com/in/maja-from-andersen">Maja From Andersen</a>.</p>
 <p><strong>Source code:</strong> <a href="https://github.com/tuengominh/deap-eeg-classification">deap-eeg-classification</a>.</p>
 
 <h4>Introduction</h4>
