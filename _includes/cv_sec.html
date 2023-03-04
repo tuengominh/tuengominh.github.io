@@ -1,9 +1,8 @@
 <h6 style="color:#000000 !important;">{{item.name}}</h6>
-<p><a style="color:#ff00ff !important; font-weight: 500 !important;" href="{{site.baseurl}}{{item.url}}">{{item.org}}</a></p>
 {% if item.loc %}
-<p>{{item.loc}} &#x2022; {{item.date}}</p>
+<p><a style="color: #7195ff !important; font-weight: 500 !important;" href="{{site.baseurl}}{{item.url}}">{{item.org}}</a> &#x2022; {{item.loc}} &#x2022; {{item.date}}</p>
 {% else %}
-<p>{{item.date}}</p>
+<p><a style="color: #7195ff !important; font-weight: 500 !important;" href="{{site.baseurl}}{{item.url}}">{{item.org}}</a> &#x2022; {{item.date}}</p>
 {% endif %}
 <h6 class="px-0 pb-5" style="line-height: 2.1;">
     {% for tag in item.tags %}
