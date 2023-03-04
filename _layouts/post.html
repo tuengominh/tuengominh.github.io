@@ -13,12 +13,12 @@ layout: default
 </div>
 
 <div class="container pt-2 pb-5 mb-5">
-    <div class="mb-3">
+    <div class="mb-5">
         {{ content }}
     </div>
     
     <div>
-        <h6 class="px-3 mx-0" style="line-height: 2.1;">
+        <h6 class="px-0" style="line-height: 2.1;">
             {% for tag in page.tags %}
             <kbd><a class="m-1" href="{{site.baseurl}}/tag/{{tag}}.html" style="color: white !important;"><code><nobr>#{{tag}}</nobr></code></a></kbd>
             {% endfor %}

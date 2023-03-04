@@ -1,6 +1,6 @@
 ---
 layout: default
-tag: internet-of-things
+tag: sensor-fusion
 ---
 
 <div class="pt-3 container text-center">
@@ -9,11 +9,11 @@ tag: internet-of-things
 
 <div class="container pt-3 pb-5 mb-5">
     <div class="card-group row text-center">
-        {% assign posts = site.project | where_exp:"item", "item.tags contains 'internet-of-things'" }} %}
+        {% assign posts = site.project | where_exp:"item", "item.tags contains 'sensor-fusion'" }} %}
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}
-        {% assign posts = site.tinkering | where_exp:"item", "item.tags contains 'internet-of-things'" }} %}
+        {% assign posts = site.tinkering | where_exp:"item", "item.tags contains 'sensor-fusion'" }} %}
         {% for post in posts %}
         {% include post_group.html %}
         {% endfor %}

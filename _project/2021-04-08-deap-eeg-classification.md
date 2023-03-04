@@ -5,7 +5,7 @@ thumb: thumb/eeg.png
 meta: An exploratory study of EEG-based emotion classification by means of brain waves and corresponding brain regions.   
 highlight: 1
 active: 1
-tags: [eeg, emotion-classification, supervised-learning, machine-learning, data-analysis, python]   
+tags: [eeg-analysis, emotion-classification, supervised-learning, data-analysis]   
 ---
 
 <p><strong>In collaboration with:</strong> <a href="https://dk.linkedin.com/in/maja-from-andersen">Maja From Andersen.</a></p>

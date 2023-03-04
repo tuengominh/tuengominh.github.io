@@ -6,7 +6,7 @@ meta: Testing <a href="https://tuengominh.github.io/project/2020-07-22-3-layer-p
 highlight: 0
 active: 1
 topic: code
-tags: [internet-of-things, mqtt, node-red, arduino, python, esp32, environment-sensor, proximity-sensor, photosensor, piezoelectric-actuator, electroluminescence-actuator]
+tags: [iot, mqtt, node-red, arduino, esp32, environment-sensor, proximity-sensor, photo-sensor, piezoelectric-actuator, electroluminescence-actuator]
 ---
 
 <p>During the <a href="http://academy.cba.mit.edu/classes/networking_communications/index.html">Networking and Communications</a> week of the Fab Academy, <a href="https://github.com/oscgonfer">Oscar</a> set up an <a href="https://www.hivemq.com/blog/how-to-get-started-with-mqtt/">MQTT</a> broker on his Raspberry Pi and got all peers to exchange data from their own projects. MQTT is a machine-to-machine connectivity protocol following a publish/subscribe architecture:</p>
