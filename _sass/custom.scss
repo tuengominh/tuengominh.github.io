@@ -53,9 +53,19 @@ a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  a {
-    color: #7195ff !important;
-  }
+}
+
+.card-tag {
+  color: #7195ff;
+  font-weight: 500 !important;
+  font-size: 16px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .highlight {
