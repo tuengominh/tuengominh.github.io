@@ -1,5 +1,8 @@
-<div class="slide-content swiper-wrapper col-sm-6 col-md-4 mb-4">
-    <div class="card swiper-slide bg-dark text-white border-0 m-0">
+<div class="carousel-list col-sm-6 col-md-4 mb-4">
+    {% assign posts = site.project | where: "highlight", "1" | where: "active", "1" | reverse %}  
+    {% assign counter = -2 %}
+    {% for post in posts %}
+    <div class="carousel_item card bg-dark text-white border-0 m-0" data-pos="{{counter}}">
         <a href="{{site.baseurl}}{{post.url}}">
             <div class="card-img">
                 <img src="{{site.baseurl}}/assets/img/{{post.thumb}}" class="img-fluid w-100"/>
@@ -12,10 +15,9 @@
             </div>
         </a>
     </div>
+    {% increment counter %}
+    {% endfor %}
 </div>
 
-<div class="swiper-button-next swiper-navBtn"></div>
-<div class="swiper-button-prev swiper-navBtn"></div>
-<div class="swiper-pagination"></div>
-
 <script src="{{site.baseurl}}/assets/js/slider.js"></script> 
+
