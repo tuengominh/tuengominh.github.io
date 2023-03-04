@@ -6,9 +6,7 @@
                 <div class="card-img-overlay">
                     <div>
                         <p class="card-text">{{post.title}}</p>
-                        {% for tag in post.tags limit:2 %}
-                        <a class="card-tag my-2 mr-2" href="{{site.baseurl}}/tag/{{tag}}.html"><code><nobr>#{{tag}}</nobr></code></a>
-                        {% endfor %}
+                        <p><a class="card-tag my-2 mr-2" href="{{site.baseurl}}/tag/{{post.tags.first}}.html"><code><nobr>#{{post.tags.first}}</nobr></code></a></p>
                     </div>
                 </div>
             </div>
