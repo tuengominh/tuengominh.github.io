@@ -5,7 +5,7 @@ thumb: thumb/pong.png
 meta: A ping-pong game for blind people using HandPose, IMU and vibro-tactile feedback.   
 highlight: 1
 active: 1
-tags: [sensory-substitution, physical-computing, haptic-feedback, pose-estimation, motion-tracking, sensor-fusion, processing, arduino, imu-sensor, electromagnetic-actuator]
+tags: [physical-computing, sensory-substitution, haptic-feedback, pose-estimation, motion-tracking, sensor-fusion, processing, arduino, imu-sensor, electromagnetic-actuator]
 ---
 <p><strong>In collaboration with:</strong> <a href="https://github.com/pablotalavante">Pablo Talavante Diaz.</a></p>
 <p><strong>Source code:</strong> <a href="https://github.com/tuengominh/haptic-ping-pong">haptic-ping-pong</a>.</p>

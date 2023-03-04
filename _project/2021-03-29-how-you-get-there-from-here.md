@@ -5,7 +5,7 @@ thumb: thumb/nav.png
 meta: A Unity experiment to study the use of egocentric vs. allocentric strategies in human spatial navigation.   
 highlight: 1
 active: 1
-tags: [spatial-navigation, working-memory, virtual-reality, data-analysis, unity]   
+tags: [virtual-reality, spatial-navigation, working-memory, data-analysis, unity]   
 ---
 <p><strong>In collaboration with:</strong> <a href="https://github.com/pablotalavante">Pablo Talavante Diaz.</a></p>
 <p><strong>Source code:</strong> <a href="https://github.com/tuengominh/hygtfh">how-you-get-there-from-here</a>.</p>

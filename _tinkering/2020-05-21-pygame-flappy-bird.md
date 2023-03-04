@@ -6,7 +6,7 @@ meta: A pygame Flappy Bird clone using ultrasonic sensor to translate sprites.
 highlight: 0
 active: 1
 topic: code
-tags: [arduino, proximity-sensor]
+tags: [pygame, arduino, proximity-sensor]
 ---
 
 <img src="{{site.baseurl}}/assets/img/code/flappy/flappy-wire.jpg" class="img-fluid w-100"/>

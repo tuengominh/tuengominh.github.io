@@ -5,7 +5,7 @@ thumb: thumb/boids.png
 meta: A V-REP boids simulation based on the principles of intensity and priority.   
 highlight: 0
 active: 1
-tags: [allostatic-control, robotics, robotic-simulation]   
+tags: [robotic-simulation, allostatic-control, robotics]   
 ---
 
 <p><strong>Source code:</strong> <a href="https://github.com/tuengominh/flocking-under-predation">schooling-under-predation</a>.</p>
