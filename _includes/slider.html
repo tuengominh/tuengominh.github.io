@@ -1,0 +1,21 @@
+<div class="slide-content swiper-wrapper col-sm-6 col-md-4 mb-4">
+    <div class="card swiper-slide bg-dark text-white border-0 m-0">
+        <a href="{{site.baseurl}}{{post.url}}">
+            <div class="card-img">
+                <img src="{{site.baseurl}}/assets/img/{{post.thumb}}" class="img-fluid w-100"/>
+                <div class="card-img-overlay">
+                    <div>
+                        <p class="card-text">{{post.title}}</p>
+                        <p><a class="card-tag" href="{{site.baseurl}}/tag/{{post.tags.first}}.html"><code><nobr>#{{post.tags.first}}</nobr></code></a></p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="swiper-button-next swiper-navBtn"></div>
+<div class="swiper-button-prev swiper-navBtn"></div>
+<div class="swiper-pagination"></div>
+
+<script src="{{site.baseurl}}/assets/js/slider.js"></script> 
