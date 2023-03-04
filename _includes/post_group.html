@@ -4,11 +4,11 @@
             <div class="card-img">
                 <img src="{{site.baseurl}}/assets/img/{{post.thumb}}" class="img-fluid w-100"/>
                 <div class="card-img-overlay">
-                    <div class="card-text">{{post.title}}</div>
                     <div>
+                        <p class="card-text">{{post.title}}</p>
                         {% assign tags = post.tags %}
                         {% for tag in tags limit:3 %}
-                        <a class="btn btn-inactive btn-overlay my-2" href="{{site.baseurl}}/tag/{{tag}}.html"><code><nobr>#{{tag}}</nobr></code></a>
+                        <a class="btn btn-overlay my-2" href="{{site.baseurl}}/tag/{{tag}}.html"><code><nobr>#{{tag}}</nobr></code></a>
                         {% endfor %}
                     </div>
                 </div>
