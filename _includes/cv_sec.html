@@ -1,6 +1,6 @@
 <h6 style="color:#000000 !important;">{{item.name}}</h6>
 <p><a style="color:#ff00ff !important; font-weight: 500 !important;" href="{{site.baseurl}}{{item.url}}">{{item.org}}</a></p>
-{% item.loc %}
+{% if item.loc %}
 <p>{{item.loc}} &#x2022; {{item.date}}</p>
 {% else %}
 <p>{{item.date}}</p>
