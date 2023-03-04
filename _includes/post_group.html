@@ -8,7 +8,7 @@
                         <p class="card-text">{{post.title}}</p>
                         {% assign tags = post.tags %}
                         {% for tag in tags limit:2 %}
-                        <p><a class="btn" style="bottom: 15px;" href="{{site.baseurl}}/tag/{{tag}}.html"><code><nobr>#{{tag}}</nobr></code></a></p>
+                        <p><a class="btn" style="bottom: 5px;" href="{{site.baseurl}}/tag/{{tag}}.html"><code><nobr>#{{tag}}</nobr></code></a></p>
                         {% endfor %}
                     </div>
                 </div>
