@@ -1,4 +1,4 @@
-function search_tag(){ 
+function search_project(){ 
     let input = document.getElementById('search-input').value 
     input = input.toLowerCase(); 
 
