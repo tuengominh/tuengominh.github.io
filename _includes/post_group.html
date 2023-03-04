@@ -5,6 +5,10 @@
                 <img src="{{site.baseurl}}/assets/img/{{post.thumb}}" class="img-fluid w-100"/>
                 <div class="card-img-overlay">
                     <div class="card-text">{{post.title}}</div>
+                    {% assign tags = post.tags %}
+                    {% for tag in tags limit:2 %}
+                    <a class="btn btn-inactive" href="{{site.baseurl}}/tag/{{tag}}.html"><code><nobr>#{{tag}}</nobr></code></a>
+                    {% endfor %}
                 </div>
             </div>
         </a>
