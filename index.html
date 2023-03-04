@@ -6,14 +6,20 @@ layout: default
     <p>Possessing a multi-disciplinary background, I am confident in integrating various theoretical, computational, experimental and technological techniques to conduct diverse scientific and engineering projects, as long as they're inspriring and enjoyable.</p>
     <p>Currently, I am interested in topics such as biomimetic systems, neuromorphic engineering, modular robotics and bits-to-atoms computation. I am also leaning towards being part of a community of anti-disciplinary software craftsmen, new media artists and makers.</p>
     <p class="mb-4">This website is used to document my journey <a href="{{site.baseurl}}/tldr.html">finding personal knowledge</a> :woman_technologist:, <a href="{{site.baseurl}}/tinkering.html">exploring new tools</a> :woman_scientist: and <a href="{{site.baseurl}}/projects.html">building (almost) anything</a> :woman_mechanic:. If you have any interesting ideas to discuss, message me on <a href="https://www.linkedin.com/in/tue-m-ngo/">LinkedIn</a> or shoot me an <a href="mailto:tue.ngominh@gmail.com">email</a>.</p>
-    <p class="float-right highlight pt-3 mb-4">These are my favorite projects. Look for more of them <a href="https://tuengominh.github.io/tags.html">here</a>!</p>
-    <div class="card-group row text-center pt-3 pb-5 mb-5">
+</div> 
+
+<div class="container pt-3">
+    <p class="highlight">These are my favorite projects. Look for more of them <a href="https://tuengominh.github.io/tags.html">here</a>!</p>
+</div>
+
+<div class="container pt-3 pb-5 mb-5">
+    <div class="card-group row text-center">
         {% assign posts = site.project | where: "highlight", "1" | where: "active", "1" | reverse %}
         {% for post in posts limit:6 %}
         {% include post_group.html %}
         {% endfor %}
     </div>
-</div> 
+</div>
 
 
 
