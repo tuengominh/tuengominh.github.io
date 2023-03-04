@@ -2,7 +2,7 @@
 layout: default
 title: Tinkering
 ---
-<div class="pt-3 text-center">
+<div class="pt-3 container text-center">
     <h2 style="color: black !important;">{{page.title}}</h2>
 </div>
 
@@ -10,7 +10,7 @@ title: Tinkering
     <p class="highlight">From time to time I will try to learn new skills through online tutorials and document the progress here.</p>
 </div>
 
-<div class="container text-center pt-2 mb-4">
+<div class="container text-center pt-2 mb-3">
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering.html">All</a>
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-code.html">Programming</a>
     <a class="btn m-2" href="#">Electronics</a>
@@ -18,7 +18,7 @@ title: Tinkering
     <a class="btn btn-inactive m-2" href="https://tuengominh.github.io/tinkering-others.html">Others</a>
 </div>
 
-<div class="container pt-2 pb-5 mb-5">
+<div class="container pt-3 pb-5 mb-5">
     <div class="card-group row text-center">
         {% assign posts = site.tinkering | where: "topic", "eda" | where: "active", "1" | reverse %}
         {% for post in posts %}
