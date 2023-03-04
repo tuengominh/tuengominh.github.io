@@ -4,7 +4,7 @@
 {% else %}
 <p><a style="color: #7195ff !important; font-weight: 500 !important;" href="{{item.url}}">{{item.org}}</a> &#x2022; {{item.date}}</p>
 {% endif %}
-<h6 class="px-0 pb-5" style="line-height: 2.1;">
+<h6 class="px-0 pb-3" style="line-height: 2.1;">
     {% for tag in item.tags %}
     <kbd><a class="m-1" href="{{site.baseurl}}/tag/{{tag}}.html" style="color: white !important;"><code><nobr>#{{tag}}</nobr></code></a></kbd>
     {% endfor %}
