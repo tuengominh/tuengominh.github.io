@@ -53,6 +53,9 @@ a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  a {
+    color: #7195ff !important;
+  }
 }
 
 .highlight {
