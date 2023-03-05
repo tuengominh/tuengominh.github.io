@@ -4,22 +4,18 @@
   url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
   loc: Nijmegen, The Netherlands
   tags: [neuromorphic-computing]
-  date: May 2022 - present
-  img:
+  date: May 2022 - Present
 - name: Research Assistant 
-  meta:
+  meta: ROS & Arduino programming, experimental setup and data analysis for robotic projects.
   org: Institute for Bioengineering of Catalonia 
   url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
   loc: Barcelona, Spain
   tags: [arduino]
   date: Oct 2021 - Mar 2022
-  img:
-- name: Research Assistant 
-  meta:
-  org: Institute for Bioengineering of Catalonia 
-  url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
+- name: Software Developer
+  meta: Web interface for the Smart Citizen project.
+  org: Fab Lab Barcelona
+  url: https://fablabbcn.org/projects/type/sense-making
   loc: Barcelona, Spain
-  tags: [arduino]
-  date: 2021 - 2022
-  img:
-
+  tags: [esp32]
+  date: Jan 2019 - Jul 2020
