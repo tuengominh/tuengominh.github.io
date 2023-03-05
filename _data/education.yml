@@ -1,12 +1,21 @@
 - name: PhD, Computational Neuroscience
+  meta: Computational modeling as the central methodology used to understand naturally intelligent systems, build artificially intelligent systems and improve the interactions between natural and artificial systems. 
   org: Radboud Universiteit
   url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
   loc: Nijmegen, The Netherlands
   tags: [neuromorphic-computing]
-  date: 2022 - 2026
+  date: May 2022 - Present
 - name: MSc, Cognitive Systems and Interactive Media 
+  meta: Investigate, develop and design the interactive cognitive systems of tomorrow. Results might be BCI devices, autonomous agents or sophisticated software that provides new experiences and/or virtual environments.
   org: Universitat Pompeu Fabra
   url: https://www.upf.edu/web/csim 
   loc: Barcelona, Spain
   tags: [reinforcement-learning, supervised-learning]
-  date: 2020 - 2021
+  date: Sep 2020 - Sep 2021
+- name: Postgraduate Diploma, Digital Fabrication and Physical Computing 
+  meta: Distributed program directed by Neil Gershenfeld of MIT Center For Bits and Atoms and based on the MAS.863 course <a href="https://fab.cba.mit.edu/classes/MAS.863/">How to Make (Almost) Anything</a>. 
+  org: Institute for Advanced Architecture of Catalonia
+  url: https://iaac.net/educational-programmes/applied-research-programmes/postgrad-fabacademy/
+  loc: Barcelona, Spain
+  tags: [physical-computing, 3d-printing, arduino]
+  date: Jan 2020 - Jul 2020

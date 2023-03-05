@@ -1,14 +1,25 @@
 - name: Predoctoral Researcher 
+  meta: Study the computational principles, mechanisms and algorithms that drive learning, inference and control in neural systems and replicate these processes in synthetic agents, thereby reducing the gap between artificial and natural intelligence. 
   org: Donders Institute for Brain, Cognition and Behaviour
   url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
   loc: Nijmegen, The Netherlands
   tags: [neuromorphic-computing]
-  date: 2022 - 2026
+  date: May 2022 - present
   img:
 - name: Research Assistant 
+  meta:
+  org: Institute for Bioengineering of Catalonia 
+  url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
+  loc: Barcelona, Spain
+  tags: [arduino]
+  date: Oct 2021 - Mar 2022
+  img:
+- name: Research Assistant 
+  meta:
   org: Institute for Bioengineering of Catalonia 
   url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
   loc: Barcelona, Spain
   tags: [arduino]
   date: 2021 - 2022
   img:
+

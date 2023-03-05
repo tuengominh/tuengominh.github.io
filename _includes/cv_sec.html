@@ -1,11 +1,14 @@
 <h6 style="color:#000000 !important;">{{item.name}}</h6>
 {% if item.loc %}
-<p><a style="color: #7195ff !important; font-weight: 500 !important;" href="{{site.baseurl}}{{item.url}}">{{item.org}}</a> &#x2022; {{item.loc}} &#x2022; {{item.date}}</p>
+<p><a style="color: #ff00ff !important; font-weight: 500 !important;" href="{{site.baseurl}}{{item.url}}">{{item.org}}</a> &#x2022; {{item.loc}} &#x2022; {{item.date}}</p>
 {% else %}
-<p><a style="color: #7195ff !important; font-weight: 500 !important;" href="{{site.baseurl}}{{item.url}}">{{item.org}}</a> &#x2022; {{item.date}}</p>
+<p><a style="color: #ff00ff !important; font-weight: 500 !important;" href="{{site.baseurl}}{{item.url}}">{{item.org}}</a> &#x2022; {{item.date}}</p>
+{% endif %}
+{% if item.meta %}
+<p>{{item.meta}}</p>
 {% endif %}
 <h6 class="px-0 pb-5" style="line-height: 2.1;">
     {% for tag in item.tags %}
-    <kbd><a class="m-1" href="{{site.baseurl}}/tag/{{tag}}.html" style="color: white !important;"><code><nobr>#{{tag}}</nobr></code></a></kbd>
+    <a class="btn btn-inactive m-1" href="{{site.baseurl}}/tag/{{tag}}.html" style="color: white !important;"><code><nobr>#{{tag}}</nobr></code></a>
     {% endfor %}
 </h6>
