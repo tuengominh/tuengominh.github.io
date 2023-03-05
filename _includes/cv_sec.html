@@ -8,10 +8,10 @@
 <p>{{item.meta}}</p>
 {% endif %}
 {% if item.eu %}
-<p>{{item.eu}}</p>
+<p><strong>Projects:</strong> {{item.eu}}</p>
 {% endif %}
 <h6 class="px-0 pb-3" style="line-height: 2.1;">
     {% for tag in item.tags %}
-    <a class="btn btn-inactive m-1" href="{{site.baseurl}}/tag/{{tag}}.html"><code><nobr>#{{tag}}</nobr></code></a>
+    <kbd><a class="m-1" href="{{site.baseurl}}/tag/{{tag}}.html"><code><nobr>#{{tag}}</nobr></code></a></kbd>
     {% endfor %}
 </h6>
