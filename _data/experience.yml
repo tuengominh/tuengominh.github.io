@@ -9,16 +9,16 @@
 - name: Research Assistant 
   meta: ROS & Arduino programming, experimental setup and data analysis for robotic projects.
   org: Institute for Bioengineering of Catalonia 
-  url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
+  url: https://ibecbarcelona.eu/former-group/synthetic-perceptive-emotive-and-cognitive-systems
   loc: Barcelona, Spain
   tags: [arduino]
   date: Oct 2021 - Mar 2022
   eu: <a href="https://cordis.europa.eu/project/id/820742">Hybrid Human-Robot Recycling Plant for Electrical and Electronic Equipment (HR-Recycler)</a>
 - name: Software Developer
-  meta: Web interface for the Smart Citizen project.
+  meta: Web interface for Fab Initiative projects.
   org: Fab Lab Barcelona
-  url: https://fablabbcn.org/projects/type/sense-making
+  url: https://fablabbcn.org/projects/
   loc: Barcelona, Spain
   tags: [esp32]
   date: Jan 2019 - Jul 2020
-  eu: <a href="https://cordis.europa.eu/project/id/689954">Improving the Smart Control of Air Pollution in Europe (Smart Citizen - iSCAPE)</a>
+  eu: <a href="https://cordis.europa.eu/project/id/689954">Improving the Smart Control of Air Pollution in Europe (iSCAPE)</a> &#x2022; <a href="https://fablabbcn.org/projects/smart-citizen">Smart Citizen</a> &#x2022; <a href="https://fablabbcn.org/projects/fab-city">Fab City</a>
