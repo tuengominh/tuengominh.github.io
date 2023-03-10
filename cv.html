@@ -2,42 +2,8 @@
 layout: default
 ---
 
-<div class="container pt-3 text-center">
-    <h2 style="color:#000000 !important;">Experience</h2>   
-</div>
-
-<div class="container pt-3">
-    {% for item in site.data.experience %}
-    {% include cv_sec.html %}
-    {% endfor %}
-</div>
-
-<div class="container pt-3 text-center">
-    <h2 style="color:#000000 !important;">Education</h2>   
-</div>
-
-<div class="container pt-3">
-    {% for item in site.data.education %}
-    {% include cv_sec.html %}
-    {% endfor %}
-</div>
-
-<div class="container pt-3 text-center">
-    <h2 style="color:#000000 !important;">Courses</h2>   
-</div>
-
-<div class="container pt-3">
-    {% for item in site.data.courses %}
-    {% include cv_sec.html %}
-    {% endfor %}
-</div>
-
-<div class="container pt-3 text-center">
-    <h2 style="color:#000000 !important;">Publication</h2>   
-</div>
-
-<div class="container pt-3 pb-5 mb-5">
-    {% for item in site.data.publication %}
-    {% include cv_sec.html %}
+<div class="pb-5 mb-5">
+    {% for section in site.data.cv.section %}
+    {% include cv_section.html %}
     {% endfor %}
 </div>

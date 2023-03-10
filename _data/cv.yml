@@ -1,0 +1,70 @@
+- section: experience
+  data:
+  - name: Predoctoral Researcher 
+    meta: Study the computational principles, mechanisms and algorithms that drive learning, inference and control in neural systems and replicate these processes in synthetic agents, thereby reducing the gap between artificial and natural intelligence. 
+    org: Donders Institute for Brain, Cognition and Behaviour
+    url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
+    loc: Nijmegen, The Netherlands
+    tags: [neuromorphic-computing]
+    date: May 2022 - Present
+    eu: <a href="https://cordis.europa.eu/project/id/101071178">Counterfactual Assessment and Valuation for Awareness Architecture (CAVAA)</a> &#x2022; <a href="https://cordis.europa.eu/project/id/871767/">Rehabilitation Based on Hybrid Neuroprosthesis (ReHyb)</a>
+  - name: Research Assistant 
+    meta: ROS & Arduino programming, experimental setup and data analysis for robotic projects.
+    org: Institute for Bioengineering of Catalonia 
+    url: https://ibecbarcelona.eu/former-group/synthetic-perceptive-emotive-and-cognitive-systems
+    loc: Barcelona, Spain
+    tags: [arduino]
+    date: Oct 2021 - Mar 2022
+    eu: <a href="https://cordis.europa.eu/project/id/820742">Hybrid Human-Robot Recycling Plant for Electrical and Electronic Equipment (HR-Recycler)</a>
+  - name: Software Developer
+    meta: Web interface for Fab Initiative projects.
+    org: Fab Lab Barcelona
+    url: https://fablabbcn.org/projects/
+    loc: Barcelona, Spain
+    tags: [esp32]
+    date: Jan 2019 - Jul 2020
+    eu: <a href="https://cordis.europa.eu/project/id/689954">Improving the Smart Control of Air Pollution in Europe (iSCAPE)</a> &#x2022; <a href="https://fablabbcn.org/projects/smart-citizen">Smart Citizen</a> &#x2022; <a href="https://fablabbcn.org/projects/fab-city">Fab City</a>
+
+- section: education
+  data:
+  - name: PhD, Computational Neuroscience
+    meta: Computational modeling as the central methodology used to understand naturally intelligent systems, build artificially intelligent systems and improve the interactions between natural and artificial systems. 
+    org: Radboud Universiteit
+    url: https://www.ru.nl/donders/research/theme-4-neural-computation-neurotechnology/
+    loc: Nijmegen, The Netherlands
+    tags: [neuromorphic-computing]
+    date: May 2022 - Present
+  - name: MSc, Cognitive Systems and Interactive Media 
+    meta: Investigate, develop and design the interactive cognitive systems of tomorrow. Results might be BCI devices, autonomous agents or sophisticated software that provides new experiences and/or virtual environments.
+    org: Universitat Pompeu Fabra
+    url: https://www.upf.edu/web/csim 
+    loc: Barcelona, Spain
+    tags: [reinforcement-learning, supervised-learning]
+    date: Sep 2020 - Sep 2021
+  - name: Postgraduate Diploma, Digital Fabrication and Physical Computing 
+    meta: Distributed program directed by Neil Gershenfeld of MIT Center For Bits and Atoms and based on the MAS.863 course <a href="https://fab.cba.mit.edu/classes/MAS.863/">How to Make (Almost) Anything</a>. 
+    org: Institute for Advanced Architecture of Catalonia
+    url: https://iaac.net/educational-programmes/applied-research-programmes/postgrad-fabacademy/
+    loc: Barcelona, Spain
+    tags: [physical-computing, 3d-printing, arduino]
+    date: Jan 2020 - Jul 2020
+
+- section: courses
+  data:
+  - name: <a href="https://portal.neuromatchacademy.org/certificate/e1400b8a-e1f0-4e78-9070-a77a3a2ee1c0">NMA Computational Neuroscience</a> 
+    org: Neuromatch Academy
+    tags: [reinforcement-learning]
+    date: 2022
+  - name: <a href="https://www.coursera.org/account/accomplishments/verify/54HGXA3HCNCP?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course">Computational Neuroscience</a>
+    org: University of Washington
+    tags: [reinforcement-learning, supervised-learning] 
+    date: 2021
+
+- section: publications
+  data:
+  - name: <a href="https://link.springer.com/chapter/10.1007/978-3-031-20470-8_33">Homeostatic and Allostatic Principles for Behavioral Regulation in Desert Reptiles - A Robotic Evaluation</a>
+    org: Living Machines 2022 - 11th International Conference on Biomimetic and Biohybrid Systems
+    tags: [robotics, allostatic-control] 
+    date: 02-12-2022
+    authors: T. Ngo, <a href="https://oscarguerrerorosado.github.io/">O. Guerrero</a>, <a href="https://scholar.google.com/citations?user=h0-y94oAAAAJ&hl=es">I. T. Freire</a> & <a href="https://scholar.google.com/citations?user=LKeEO5MAAAAJ&hl=en">P. F. M. J. Verschure</a> 
+
